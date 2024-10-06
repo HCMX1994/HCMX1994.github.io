@@ -8,13 +8,9 @@ date: 2021-10-01
 location: "Canterbury, UK"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+Title: A Stable Multivibrator Circuit
+Aim: To learn how to identify various components, and assemble them into a circuit on the prototyping board (‘Breadboard’).
 
-Heading 1
+Sessional Demonstrator
 ======
 
-Heading 2
-======
-
-Heading 3
-======

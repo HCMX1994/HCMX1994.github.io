@@ -14,6 +14,7 @@ In the academic community, I serve as a reviewer for several prestigious interna
 Outside of work, I love to explore the world, record my experiences, and enjoy running and hiking.
 
 
+------
 
 
 Professional Experience
@@ -38,7 +39,6 @@ Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd (Full-time: Feb 2017
 
 
 ------
-
 
 
 Education

@@ -1,5 +1,5 @@
 ---
-title: "Paper Title Number 2"
+title: "Dual-Band Eight-Element MIMO Array Using Multi-Slot Decoupling Technique for 5G Terminals"
 collection: publications
 category: manuscripts
 permalink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8878081'

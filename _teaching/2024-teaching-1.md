@@ -2,7 +2,7 @@
 title: "EENG0033 AUT: Engineering and Programming Skills (2021) "
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2024-teaching-1
 venue: "The University of Kent, School of Engineering and Digital Arts"
 date: 2021-10-01
 location: "Canterbury, UK"

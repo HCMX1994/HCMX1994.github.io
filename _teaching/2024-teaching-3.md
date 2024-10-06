@@ -2,7 +2,7 @@
 title: "EENG3050 AUT: Introduction to Electronics (2022)"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/2024-teaching-3
 venue: "The University of Kent, School of Engineering and Digital Arts"
 date: 2022-10-01
 location: "Canterbury, UK"

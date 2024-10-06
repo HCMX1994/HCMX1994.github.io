@@ -3,7 +3,7 @@ title: "A Compact Dual-Polarized Filtering Antenna With Steep Cut-Off for Base-S
 collection: publications
 category: manuscripts
 permalink: 'https://ieeexplore.ieee.org/abstract/document/9743668'
-excerpt: 'A dual-polarized filtering antenna with steep cut-off and compact size is developed for base-station applications.'
+excerpt: #'A dual-polarized filtering antenna with steep cut-off and compact size is developed for base-station applications.'
 date: 2022-03-28
 venue: 'IEEE Transactions on Antennas and Propagation'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'

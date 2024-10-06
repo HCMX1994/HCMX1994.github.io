@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "The University of Kent, School of Engineering and Digital Arts"
-date: 2021-10
+date: 2021-10-01
 location: "Canterbury, UK"
 ---
 

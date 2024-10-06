@@ -3,7 +3,7 @@ title: "Dual-Band Ten-Element MIMO Array Based on Dual-Mode IFAs for 5G Terminal
 collection: publications
 category: manuscripts
 permalink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8930474'
-excerpt: #'A dual-band ten-element MIMO array based on dual-mode inverted-F antennas (IFAs) for 5G terminal applications is proposed in this paper.'
+excerpt: 'A dual-band ten-element MIMO array based on dual-mode inverted-F antennas (IFAs) for 5G terminal applications is proposed in this paper.'
 date: 2019-12-10
 venue: 'IEEE Access'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'

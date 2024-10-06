@@ -3,7 +3,7 @@ title: "A Mutual-Coupling-Suppressed Dual-Band Dual-Polarized Base Station Anten
 collection: publications
 category: manuscripts
 permalink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9906784'
-excerpt: #'A dual-polarized filtering antenna with steep cut-off and compact size is developed for base-station applications.'
+excerpt: 'An interleaved shared-aperture dual-band dual-polarized base station array antenna is proposed in this paper.'
 date: 2022-09-30
 venue: 'IEEE Transactions on Antennas and Propagation'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'

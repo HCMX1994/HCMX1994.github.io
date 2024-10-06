@@ -37,6 +37,8 @@ Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd (Full-time: Feb 2017
 - Simulate the broadband radio frequency array at the system level and verify the performance of the practical RF link. 
 
 
+------
+
 
 
 Education

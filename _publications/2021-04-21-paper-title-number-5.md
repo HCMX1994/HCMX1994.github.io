@@ -7,7 +7,7 @@ excerpt: 'A wideband differentially fed microstrip patch antenna (MPA) with trip
 date: 2021-04-21
 venue: 'IEEE Antennas and Wireless Propagation Letters'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'
-paperurl: 'chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://kar.kent.ac.uk/103053/1/Final%20Manuscript_PDF%20Version.pdf'
+paperurl: 'https://kar.kent.ac.uk/103053/1/Final%20Manuscript_PDF%20Version.pdf'
 citation: #'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
 ---
 

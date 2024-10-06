@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Xuekang Liu"
+title                    : "Xuekang Liu/Personal"
 title_separator          : "-"
 name                     : &name "Xuekang Liu"
 description              : &description "Research Associate in Sub-THz Antennas at Lancaster University"

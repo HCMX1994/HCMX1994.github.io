@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "EENG0033 AUT: Engineering and Programming Skills (2021) "
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "The University of Kent, School of Engineering and Digital Arts"
+date: 2021-10
+location: "Canterbury, UK"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.

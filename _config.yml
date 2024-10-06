@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Xuekang Liu/Personal"
 title_separator          : "-"
 name                     : &name "Xuekang Liu"
-description              : &description "Research Associate in Sub-THz Antennas at Lancaster University"
+description              : &description "Research Associate in Sub-THz Antennas"
 url                      : https://HCMX1994.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "HCMX1994/HCMX1994.github.io"
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/xuekang-liu-7a383a1b0/"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

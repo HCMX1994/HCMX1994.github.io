@@ -15,6 +15,7 @@ Outside of work, I love to explore the world, record my experiences, and enjoy r
 
 
 
+
 Professional Experience
 ======
 
@@ -30,12 +31,35 @@ Research Assistant (Part-time) -University of Hertfordshire (Apr 2024-Jun 2024)
 - Fabricate and measure antennas and conduct literature review on RIS (Reconfigurable Intelligent Surfaces).
 - Oversee project documentation, supporting grant application processes, and writing reports and articles. 
 
-Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd (Full time: Feb 2017-Aug 2017, Part time: Sept 2017-Nov 2018)
+Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd (Full-time: Feb 2017-Aug 2017, Part-time: Sept 2017-Nov 2018)
 ------
 
 - Simulate the broadband radio frequency array at the system level and verify the performance of the practical RF link. 
 
 
+
+
+Education
+======
+
+PhD in Electronic Engineering - University of Kent, Canterbury, UK (Jan 2021-Jun 2024) 
+------
+
+- Supervisors: Prof. [Steven Gao](https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang) [Google Scholar](https://scholar.google.co.uk/citations?user=R8mVLdoAAAAJ&hl=en), FIEEE, FRAeS, FIET, Editor-in-Chief of IEEE AWPL, and Dr [Benito Sanz-Izquierdo](https://www.kent.ac.uk/engineering/people/730/sanz-izquierdo-benito) [Google Scholar](https://scholar.google.co.uk/citations?user=YRlPbC0AAAAJ&hl=en).
+
+
+MEng in Electromagnetic Field and Microwave Technology- Xidian University, Xi’an, China (Sept 2017-Jul 2020)
+------
+
+- Supervisor: Prof. [Wei Hu](https://faculty.xidian.edu.cn/HW4/zh_CN/index/374539/list/index.htm) [Google Scholar](https://scholar.google.com/citations?user=fZO24w0AAAAJ&hl=en)
+ 
+
+BEng in Electronic Information Engineering- Xidian University, Xi’an, China (Sept 2012-Jul 2016) 
+------
+
+- 
+
+- 
 Getting started
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)

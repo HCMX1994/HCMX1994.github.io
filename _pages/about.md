@@ -45,7 +45,7 @@ Education
 PhD in Electronic Engineering - University of Kent, Canterbury, UK (Jan 2021-Jun 2024) 
 ------
 
-- Supervisors: Prof. [Steven Gao](https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang), [Google Scholar](https://scholar.google.co.uk/citations?user=R8mVLdoAAAAJ&hl=en), FIEEE, FRAeS, FIET, Editor-in-Chief of IEEE AWPL, and Dr [Benito Sanz-Izquierdo](https://www.kent.ac.uk/engineering/people/730/sanz-izquierdo-benito), [Google Scholar](https://scholar.google.co.uk/citations?user=YRlPbC0AAAAJ&hl=en).
+- Supervisors: Prof. [Steven Gao](https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang), [Google Scholar](https://scholar.google.co.uk/citations?user=R8mVLdoAAAAJ&hl=en), FIEEE, FRAeS, FIET, Editor-in-Chief of IEEE AWPL, and Dr. [Benito Sanz-Izquierdo](https://www.kent.ac.uk/engineering/people/730/sanz-izquierdo-benito), [Google Scholar](https://scholar.google.co.uk/citations?user=YRlPbC0AAAAJ&hl=en).
 
 
 MEng in Electromagnetic Field and Microwave Technology- Xidian University, Xi’an, China (Sept 2017-Jul 2020)

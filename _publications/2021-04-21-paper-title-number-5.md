@@ -3,7 +3,7 @@ title: "A Wideband Triple-Mode Differentially Fed Microstrip Patch Antenna"
 collection: publications
 category: manuscripts
 permalink: 'https://ieeexplore.ieee.org/abstract/document/9409956'
-excerpt: 'A wideband differentially fed microstrip patch antenna (MPA) with triple-resonant modes is presented in this letter.  '
+excerpt: #'A wideband differentially fed microstrip patch antenna (MPA) with triple-resonant modes is presented in this letter.  '
 date: 2021-04-21
 venue: 'IEEE Antennas and Wireless Propagation Letters'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'

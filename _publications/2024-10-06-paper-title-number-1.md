@@ -2,7 +2,7 @@
 title: "Compact Wideband Folded Dipole Antenna With Multi-Resonant Modes"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-10-06-paper-title-number-1
+permalink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8770282'
 excerpt: 'A compact and wideband folded dipole antenna with multi-resonant modes is presented in this paper.'
 date: 2019-07-23
 venue: 'IEEE Transactions on Antennas and Propagation'

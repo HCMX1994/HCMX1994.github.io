@@ -9,6 +9,7 @@ location: "Canterbury, UK"
 ---
 
 Title: A Stable Multivibrator Circuit
+
 Aim: To learn how to identify various components, and assemble them into a circuit on the prototyping board (‘Breadboard’).
 
 Sessional Demonstrator

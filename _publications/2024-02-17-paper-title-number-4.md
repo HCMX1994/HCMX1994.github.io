@@ -3,7 +3,7 @@ title: "A Broadband Circularly Polarized Antenna With Triple-Mode Characteristic
 collection: publications
 category: conferences
 permalink: 'https://ieeexplore.ieee.org/abstract/document/9136036'
-excerpt: 'A novel circularly polarized (CP) antenna based on the triple-mode characteristics is presented in this paper.'
+excerpt: #'A novel circularly polarized (CP) antenna based on the triple-mode characteristics is presented in this paper.'
 date: 2020-07-08
 venue: '2020 14th European Conference on Antennas and Propagation (EuCAP)'
 paperurl: 'https://ieeexplore.ieee.org/abstract/document/9136036'

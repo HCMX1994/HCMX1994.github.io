@@ -1,13 +1,13 @@
 ---
-title: "Dual-Band Eight-Element MIMO Array Using Multi-Slot Decoupling Technique for 5G Terminals"
+title: "Dual-Band Ten-Element MIMO Array Based on Dual-Mode IFAs for 5G Terminal Applications"
 collection: publications
 category: manuscripts
-permalink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8878081'
-excerpt: 'This paper presents a dual-band eight-element multiple-input multiple-output (MIMO) array using a multi-slot decoupling technique for the fifth generation (5G) mobile communication. '
-date: 2019-10-21
+permalink: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8930474'
+excerpt:'This paper presented a dual-band ten-element MIMO array based on dual-mode inverted-F antennas (IFAs) for 5G terminal applications. The proposed dual-mode IFA is composed of two radiators, which are etched on the outer and inner surfaces of the side-edge frame.  '
+date: 2019-12-10
 venue: 'IEEE Access'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'
-paperurl: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8878081'
+paperurl: 'https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8930474'
 citation: #'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
 

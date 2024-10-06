@@ -3,7 +3,7 @@ title: "Wideband Circularly Polarized Microstrip Patch Antenna With Multimode Re
 collection: publications
 category: manuscripts
 permalink: 'https://ieeexplore.ieee.org/abstract/document/9345361'
-excerpt: 'This letter proposed a novel wideband circularly polarized microstrip patch antenna (MPA) with multimode resonance. '
+excerpt: 'A novel wideband circularly polarized microstrip patch antenna (MPA) with multimode resonance is proposed in this letter. '
 date: 2021-02-02
 venue: 'IEEE Antennas and Wireless Propagation Letters'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'

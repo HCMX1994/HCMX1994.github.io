@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Xuekang Liu/Personal"
+title                    : "Xuekang's Personal Website"
 title_separator          : "-"
 name                     : &name "Xuekang Liu"
 description              : &description "Research Associate in Sub-THz Antennas"
@@ -21,10 +21,10 @@ repository               : "HCMX1994/HCMX1994.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "XuekangPhoto.png"
   name             : "Xuekang Liu"
   pronouns         : "he/him"  
-  bio              : "Research Associate in Sub-THz Antennas at Lancaster University"
+  bio              : "Research Associate in Sub-THz Antennas"
   location         : "UK"
   employer         : "Lancaster University"
   uri              : # URL

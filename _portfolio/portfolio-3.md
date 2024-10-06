@@ -1,6 +1,6 @@
 ---
-title: "Wideband Triple-Mode Differentially Fed Microstrip Patch Antenna"
-excerpt: "<img src='/images/MultiModePatch.png'>"
+title: "Wideband Multi-Mode Circularly Polarized Antenna"
+excerpt: "<img src='/images/MultiModeCP.png'>"
 collection: portfolio
 ---
 

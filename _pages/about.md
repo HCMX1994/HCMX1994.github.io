@@ -24,7 +24,7 @@ Research Associate (Full-time) -Lancaster University, UK (Jun 2024-Present)
 ------
 
 - Successfully designed 2-bit and 3-bit quad-beam transmitarrays utilizing a combination of CNC machining, PCB technology, and 3D printing. Achieved a sidelobe level reduction to below -20 dB.
-- A W-band communication system is currently under development.
+- A W-band communication system is currently being developed.
 - Successfully developed a range of single-beam and multi-beam dielectric lens antennas, compatible with both 3D printing and CNC machining technologies.
 - Contribute to experimental setup for antenna/array measurements (W-band).
 

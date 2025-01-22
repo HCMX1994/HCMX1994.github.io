@@ -23,21 +23,21 @@ Professional Experience
 Research Associate (Full-time) -Lancaster University, UK (Jun 2024-Present) 
 ------
 
-•	Successfully designed 2-bit and 3-bit quad-beam transmitarrays utilizing a combination of CNC machining, PCB technology, and 3D printing. Achieved a sidelobe level reduction to below -20 dB.
-•	A W-band communication system is currently under development.
-•	Successfully developed a range of single-beam and multi-beam dielectric lens antennas, compatible with both 3D printing and CNC machining technologies.
-•	Contribute to experimental setup for antenna/array measurements (W-band).
+- Successfully designed 2-bit and 3-bit quad-beam transmitarrays utilizing a combination of CNC machining, PCB technology, and 3D printing. Achieved a sidelobe level reduction to below -20 dB.
+- A W-band communication system is currently under development.
+- Successfully developed a range of single-beam and multi-beam dielectric lens antennas, compatible with both 3D printing and CNC machining technologies.
+- Contribute to experimental setup for antenna/array measurements (W-band).
 
 Research Assistant (Part-time) -University of Hertfordshire, UK (Apr 2024-Jun 2024)
 ------
 
-•	Fabricate and measure antennas and conduct literature review on RIS (Reconfigurable Intelligent Surfaces).
-•	Oversee project documentation, supporting grant application processes, and writing reports and articles. 
+- Fabricate and measure antennas and conduct literature review on RIS (Reconfigurable Intelligent Surfaces).
+- Oversee project documentation, supporting grant application processes, and writing reports and articles. 
 
 Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd, China (Full-time: Feb 2017-Aug 2017, Part-time: Sept 2017-Nov 2018)
 ------
 
-•	Participated in constructing the target simulator system, responsible for RF link simulation (using Keysight SystemVue) and validation (on-site testing).
+- Participated in constructing the target simulator system, responsible for RF link simulation (using Keysight SystemVue) and validation (on-site testing).
 
 
 ------

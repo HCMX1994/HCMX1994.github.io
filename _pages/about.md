@@ -20,22 +20,24 @@ Outside of work, I love to explore the world, record my experiences, and enjoy r
 Professional Experience
 ======
 
-Research Associate (Full-time) -Lancaster University (Jun 2024-Present) 
+Research Associate (Full-time) -Lancaster University, UK (Jun 2024-Present) 
 ------
 
-- Investigate, design, fabricate and measure novel single/multibeam sub-THz antennas (Lens, Horns, and Transmitarray, etc.) 
-- Contribute to experimental setup for antenna/array measurements.
+•	Successfully designed 2-bit and 3-bit quad-beam transmitarrays utilizing a combination of CNC machining, PCB technology, and 3D printing. Achieved a sidelobe level reduction to below -20 dB. 
+•	A W-band communication system is currently under development.
+•	Successfully developed a range of single-beam and multi-beam dielectric lens antennas, compatible with both 3D printing and CNC machining technologies.
+•	Contribute to experimental setup for antenna/array measurements (W-band).
 
-Research Assistant (Part-time) -University of Hertfordshire (Apr 2024-Jun 2024)
+Research Assistant (Part-time) -University of Hertfordshire, UK (Apr 2024-Jun 2024)
 ------
 
-- Fabricate and measure antennas and conduct literature review on RIS (Reconfigurable Intelligent Surfaces).
-- Oversee project documentation, supporting grant application processes, and writing reports and articles. 
+•	Fabricate and measure antennas and conduct literature review on RIS (Reconfigurable Intelligent Surfaces).
+•	Oversee project documentation, supporting grant application processes, and writing reports and articles. 
 
-Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd (Full-time: Feb 2017-Aug 2017, Part-time: Sept 2017-Nov 2018)
+Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd, China (Full-time: Feb 2017-Aug 2017, Part-time: Sept 2017-Nov 2018)
 ------
 
-- Simulate the broadband radio frequency array at the system level and verify the performance of the practical RF link. 
+•	Participated in constructing the target simulator system, responsible for RF link simulation (using Keysight SystemVue) and validation (on-site testing).
 
 
 ------

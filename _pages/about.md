@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Xuekang Liu (Member, IEEE) received the M.S. degree (Hons.) in electromagnetic field and microwave technology from Xidian University (Xi’an, China， 2020), and the Ph.D. degree in engineering from the University of Kent (Canterbury, U.K.， 2024) under the supervision of [Prof. Steven Gao](https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang) and [Dr. Benito Sanz-Izquierdo](https://www.kent.ac.uk/engineering/people/730/sanz-izquierdo-benito). He was with the School of Engineering, Lancaster University, as a Postdoctoral Researcher from June 2024 to May 2025, and at Imperial College London from June 2025 as a Postdoctoral Researcher in the area of reconfigurable intelligent surfaces. His research interests include multiband arrays, transmitarrays, metasurfaces, filtering antennas, Sub-THz antennas, RF systems, and MIMO antennas.
+Xuekang Liu (Member, IEEE) received the M.S. degree (Hons.) in electromagnetic field and microwave technology from Xidian University (Xi’an, China， 2020), and the Ph.D. degree in engineering from the University of Kent (Canterbury, U.K.， 2024) under the supervision of [Prof. Steven Gao](https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang) and [Dr. Benito Sanz-Izquierdo](https://www.kent.ac.uk/engineering/people/730/sanz-izquierdo-benito). His research interests include multiband arrays, transmitarrays, metasurfaces, filtering antennas, sub-THz antennas, RF systems, and MIMO antennas.
 
 Dr. Liu was a recipient of the Best Student Paper Award at the 17th International Workshop on Antenna Technology (iWAT 2022), Dublin, and the Outstanding Academic Achievement for his M.S. program. He received the Young Scientist Award from the International Union of Radio Science (URSI) Member Committee, Germany, in 2022.
 
@@ -25,7 +25,7 @@ Postdoctoral Researcher (Full-time) -[Imperial College London](https://www.imper
 
 - Design and Prototyping of Reconfigurable Intelligent Surfaces and Metasurfaces.
 
-Postdoctoral Researcher (Full-time) -Lancaster University, UK (Jun 2024-May 2025) 
+Postdoctoral Researcher (Full-time) -[Lancaster University](https://www.lancaster.ac.uk/), UK (Jun 2024-May 2025) 
 ------
 
 - Successfully designed 2-bit and 3-bit quad-beam transmitarrays utilizing a combination of CNC machining, PCB technology, and 3D printing. Achieved a sidelobe level reduction to below -20 dB.
@@ -33,7 +33,7 @@ Postdoctoral Researcher (Full-time) -Lancaster University, UK (Jun 2024-May 2025
 - Successfully developed a range of single-beam and multi-beam dielectric lens antennas, compatible with both 3D printing and CNC machining technologies.
 - Contribute to experimental setup for antenna/array measurements (W-band).
 
-Research Fellow (Part-time) -University of Hertfordshire, UK (Apr 2024-Jun 2024)
+Research Fellow (Part-time) -[University of Hertfordshire](https://www.herts.ac.uk/), UK (Apr 2024-Jun 2024)
 ------
 
 - Fabricate and measure antennas and conduct literature review on RIS (Reconfigurable Intelligent Surfaces).
@@ -51,19 +51,19 @@ Signal Processing Engineer- Huaqing Ruida Technology Co.Ltd, China (Full-time: F
 Education
 ======
 
-PhD in Electronic Engineering - University of Kent, Canterbury, UK (Jan 2021-Jun 2024) 
+PhD in Electronic Engineering - [University of Kent](https://www.kent.ac.uk/), Canterbury, UK (Jan 2021-Jun 2024) 
 ------
 
 - Supervisors: Prof. [Steven Gao](https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang), [Google Scholar](https://scholar.google.co.uk/citations?user=R8mVLdoAAAAJ&hl=en), FIEEE, FRAeS, FIET, Editor-in-Chief of IEEE AWPL, and Dr. [Benito Sanz-Izquierdo](https://www.kent.ac.uk/engineering/people/730/sanz-izquierdo-benito), [Google Scholar](https://scholar.google.co.uk/citations?user=YRlPbC0AAAAJ&hl=en).
 
 
-MEng in Electromagnetic Field and Microwave Technology- Xidian University, Xi’an, China (Sept 2017-Jul 2020)
+MEng in Electromagnetic Field and Microwave Technology- [Xidian University](https://en.xidian.edu.cn/), Xi’an, China (Sept 2017-Jul 2020)
 ------
 
 - Supervisor: Prof. [Wei Hu](https://faculty.xidian.edu.cn/HW4/zh_CN/index/374539/list/index.htm), [Google Scholar](https://scholar.google.com/citations?user=fZO24w0AAAAJ&hl=en)
  
 
-BEng in Electronic Information Engineering- Xidian University, Xi’an, China (Sept 2012-Jul 2016) 
+BEng in Electronic Information Engineering- [Xidian University](https://en.xidian.edu.cn/), Xi’an, China (Sept 2012-Jul 2016) 
 ------
 
 

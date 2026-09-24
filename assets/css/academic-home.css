@@ -440,3 +440,40 @@
 .visitor-map-credit a{text-decoration:underline;text-underline-offset:2px}
 @media(max-width:900px){.collegiate-site .visitor-panel--umami{gap:30px;grid-template-columns:minmax(220px,.75fr) minmax(0,1.2fr)}.visitor-map-card{padding:20px 18px}}
 @media(max-width:760px){.collegiate-site .visitor-panel--umami{grid-template-columns:minmax(0,1fr);gap:28px}.visitor-total{margin:22px 0}.site-footer .visitor-total>strong{font-size:65px}.visitor-mini-stats{max-width:340px}.visitor-map-heading{font-size:10px}.visitor-map-card{padding:19px 15px 14px}.visitor-location-toolbar{gap:10px}.visitor-mini-stats span{font-size:12px}}
+
+/* A compact visitor card balances the contact copy without another full-width section. */
+.collegiate-site .contact-section--with-visitors{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(30px,4.5vw,68px);align-items:start;padding:44px}
+.contact-copy{min-width:0;align-self:center}
+.collegiate-site .contact-copy h2{font-size:clamp(30px,3.1vw,45px);line-height:1.18;letter-spacing:-1.1px;margin-bottom:22px}
+.collegiate-site .contact-copy>p:not(.eyebrow){color:#c9dde1;font-size:13px;line-height:1.8}
+.collegiate-site .contact-copy .eyebrow{margin-bottom:23px}
+.collegiate-site .contact-copy .contact-email{font-size:clamp(18px,2vw,25px);margin-top:26px;overflow-wrap:anywhere}
+.collegiate-site .contact-copy .review-email{margin-top:15px}
+.collegiate-site .contact-copy .contact-links{margin-top:27px;display:flex;flex-wrap:wrap;gap:12px 22px;font-size:11px}
+.collegiate-site .visitor-panel--compact{display:block;min-width:0;width:100%;max-width:480px;justify-self:end;background:#f4f6f2;color:var(--ink);padding:24px 25px 0;margin:0;border:1px solid #d6e1da;position:relative;z-index:1}
+.visitor-card-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.visitor-card-heading h3{font:500 22px/1.3 var(--display);letter-spacing:-.35px}
+.visitor-card-heading>span{font-size:10px;color:var(--muted)}
+.visitor-compact-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:21px}
+.visitor-compact-stats>div{display:flex;flex-direction:column}
+.visitor-compact-stats strong{font:500 31px/1.1 var(--display);letter-spacing:-1px;color:#21545d}
+.visitor-compact-stats span{font-size:10px;line-height:1.55;margin-top:5px;color:#526569}
+.visitor-panel--compact .visitor-world{margin:18px 0 5px}
+.visitor-panel--compact .visitor-compact-caption{font-size:9px;line-height:1.6;color:#617074;margin:0 0 17px}
+.visitor-location-disclosure{border-top:1px solid #d6e1da}
+.visitor-location-disclosure summary{display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;font-size:11px;font-weight:500;min-height:44px;color:#315960}
+.visitor-location-disclosure summary::-webkit-details-marker{display:none}
+.visitor-location-disclosure summary>span{font-size:17px;line-height:1;transition:transform .15s}
+.visitor-location-disclosure[open] summary>span{transform:rotate(45deg)}
+.visitor-location-disclosure summary:focus-visible{outline:2px solid #21545d;outline-offset:3px}
+.visitor-panel--compact .visitor-location-toolbar{margin-top:10px;padding-top:10px;font-size:10px}
+.visitor-panel--compact .visitor-location-toolbar select{min-height:36px;background:#fff}
+.visitor-panel--compact .visitor-map-note,.visitor-panel--compact .visitor-detail-title{font-size:10px;line-height:1.65;color:#586c70;margin:9px 0}
+.visitor-panel--compact .visitor-map-credit{font-size:9px;line-height:1.6;color:#617074;margin:12px 0 17px}
+.collegiate-site .visitor-panel--compact a:hover{color:#21545d}
+.collegiate-site .visitor-panel--compact a:focus-visible{outline-color:#21545d}
+.visitor-panel--compact .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:1050px){.collegiate-site .contact-section--with-visitors{padding:34px;gap:28px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.collegiate-site .contact-copy h2{font-size:35px}.collegiate-site .visitor-panel--compact{padding:20px 20px 0}.visitor-card-heading h3{font-size:20px}}
+@media(max-width:760px){.collegiate-site .contact-section--with-visitors{grid-template-columns:1fr;padding:30px 24px;gap:32px}.collegiate-site .contact-copy h2{font-size:35px}.collegiate-site .visitor-panel--compact{justify-self:stretch;max-width:none;padding:20px 18px 0}.visitor-card-heading h3{font-size:21px}.visitor-compact-stats{gap:12px}.visitor-compact-stats strong{font-size:30px}.visitor-compact-stats span{font-size:10px}.collegiate-site .contact-copy .contact-email{font-size:20px}}
+@media(max-width:380px){.collegiate-site .contact-section--with-visitors{padding:27px 18px}.collegiate-site .contact-copy h2{font-size:31px}.visitor-card-heading h3{font-size:19px}.visitor-compact-stats strong{font-size:28px}.visitor-compact-stats span{font-size:9px}}
+@media(max-width:760px){.collegiate-site .contact-copy h2{font-size:32px}.contact-copy h2 br{display:none}}

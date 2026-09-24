@@ -6,9 +6,17 @@ The initial snapshot (595 citations, h-index 12, i10-index 12) was read from the
 
 `.github/workflows/pages.yml` builds and publishes the default branch on changes, manual dispatch and daily at 06:23 UTC. It saves successful snapshots to the repository and builds with the updated values. The repository's Pages source is now **GitHub Actions**. Workflow token needs content-write access for its snapshot commit and the deployment job needs Pages permission. Protected-branch restrictions may require adapting the persistence step. The workflow and Pages deployment are enabled; the first production deployment completed successfully on 24 September 2026. GitHub may disable scheduled workflows on inactive public repositories; check Actions if the displayed date stops advancing.
 
-## Visitor statistics — MapMyVisitors
+## Current visitor setup — Umami only
 
-### Current setup: flat map, published and recording
+The owner selected Umami as the sole source on 24 September 2026 and explicitly excluded all old MapMyVisitors data. The shared footer now renders cumulative archived visits, current-month Visitors, and an interactive world map from `files/visitor-history.json`. Archived visits are additive across non-overlapping months; monthly Visitors are not presented as lifetime unique people. Missing current-month data is unavailable, not zero or the previous month.
+
+The map uses locally hosted land outlines and country reference points. Country markers support pointer and keyboard selection, also available through a dropdown. City counts and proportions appear below the map. Unknown/unmapped locations remain in the denominator and lists. All old provider scripts, images and links are removed from the rendered website. Umami's production-only tracking script remains unchanged.
+
+The homepage is a dated snapshot, updated on manual archive import and deployment. It does not request a paid API or claim live counts. `scripts/test_visitor_panel.py` covers aggregation, missing months, unknown geography, city/country keys and safe rendering. Map sources are in `VISITOR-MAP-SOURCES.md`.
+
+## Retired setup history — MapMyVisitors (no longer loaded)
+
+### Previous flat map setup
 
 The user approved replacing the globe with the flat map on 24 September 2026. Deployment **35963745985** completed successfully. The shared footer now uses the account's official `map.js` embed with element ID `mapmyvisitors`, identifier `XwNMjhMHKSoN6RwCxjzXxGJlTJ4YQIze-VrHNEC2PLs`, `cl=ffffff` and responsive `w=a`. The old globe script is removed. A `noscript` image uses the provider's official alternative; it is not loaded alongside the JavaScript widget. The map is 380px wide on desktop and fits mobile screens.
 
@@ -26,7 +34,7 @@ Follow-up at 07:09 on 24 September 2026: the provider dashboard still showed Tod
 
 ## Umami — parallel country/city analytics
 
-Activated on 24 September 2026 using the owner's Umami Cloud website `3000b10a-b4af-481b-ac2b-a6a611908de4` (dashboard name: Elton, domain: hcmx1994.github.io). The shared `_layouts/academic-home.html` head loads `https://cloud.umami.is/script.js` once per page with `defer`. `data-domains` restricts tracking to the production hostname; local previews are excluded. Query strings and fragments are excluded. MapMyVisitors remains the sole source of the public visitor map and pageview count. The providers' locations and counts are not merged.
+Activated on 24 September 2026 using the owner's Umami Cloud website `3000b10a-b4af-481b-ac2b-a6a611908de4` (dashboard name: Elton, domain: hcmx1994.github.io). The shared `_layouts/academic-home.html` head loads `https://cloud.umami.is/script.js` once per page with `defer`. `data-domains` restricts tracking to the production hostname; local previews are excluded. Query strings and fragments are excluded. The former parallel MapMyVisitors integration has since been removed; Umami is now the sole source.
 
 Published through PR #7, merge commit `a7e4a9790dea8a28b44f365628d0cce63c917f1e`, successful Pages deployment `36009192962`. Local build/check passed for 32 content pages and 757 internal links/assets. A separate output check confirmed exactly one Umami tracker and one MapMyVisitors widget on each of 33 rendered pages including 404. The live homepage contains the supplied Umami website ID. End-to-end verification: dashboard initially showed 0 visitors/views; after one deliberate public-homepage visit it showed 1 visitor, 1 visit, 1 view, country United Kingdom and city Wembley. This is a diagnostic visit, and the location is the provider's IP estimate, not proof of the visitor's physical location. No live browser console errors were observed. VPN-node accuracy and Chinese-network reachability remain unverified.
 

@@ -68,8 +68,6 @@ def render_panel(archive, now=None):
     <div class="visitor-total"><strong>{total:,}</strong><span>Total archived visits</span></div>
     <div class="visitor-mini-stats"><div><strong id="visitor-current-count">{current_visitors}</strong><span>Visitors · <span id="visitor-current-month">{month_label}</span></span><small id="visitor-current-note">{current_note}</small></div><div><strong>{known}</strong><span>Countries / regions</span><small>Across archived months</small></div></div>
     <p class="visitor-note">Since {esc(data['tracking_started'])}<br>Archived through {stamp}.<br>Monthly snapshots, updated after import.</p>
-    <p class="visitor-note">Visits count repeat visits; monthly visitors are not a lifetime unique-person count.</p>
-    <a class="text-link" href="/files/visitor-history.html">Full history &amp; locations <span aria-hidden="true">→</span></a>
   </div>
   <div class="visitor-map-card">
     <div class="visitor-map-heading"><span>Where visits come from</span><span>{known} countries / regions</span></div>

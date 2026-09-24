@@ -3,6 +3,24 @@
   'use strict';
   const ownScript = document.currentScript;
   const base = new URL('../data/', ownScript.src);
+  // Preserve the provider's SVG coordinate system when its host becomes narrower.
+  const visitorMap = document.querySelector('.visitor-map');
+  if (visitorMap) {
+    const fitVisitorMap = () => {
+      const svg = visitorMap.querySelector('.jvectormap-container svg');
+      if (!svg) return false;
+      const width = Number(svg.getAttribute('width'));
+      const height = Number(svg.getAttribute('height'));
+      if (!(width > 0 && height > 0)) return false;
+      svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
+      visitorMap.style.setProperty('--visitor-map-ratio', `${width} / ${height}`);
+      return true;
+    };
+    if (!fitVisitorMap()) {
+      const observer = new MutationObserver(() => { if (fitVisitorMap()) observer.disconnect(); });
+      observer.observe(visitorMap, {childList: true, subtree: true});
+    }
+  }
   async function json(name) {
     const response = await fetch(new URL(name, base), {cache: 'no-cache'});
     if (!response.ok) throw new Error('Data unavailable');

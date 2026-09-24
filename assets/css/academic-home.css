@@ -206,3 +206,185 @@
   .bd-wide .bd-illumination button{padding:5px 8px}
   .bd-wide .bd-plot-heading{font-size:10px;gap:7px}
 }
+
+/* Modern Collegiate: the complete site, with the same content and integrations. */
+.collegiate-site{--paper:#fbfaf7;--ink:#162b3a;--muted:#536675;--line:#d5dedf;--accent:#235b62;--soft:#edf1ef;--college-bar:#173a49;--college-light:#f3f6f7}
+.collegiate-site .site-header{max-width:none;min-height:82px;padding:20px max(32px,calc((100% - 1164px)/2));background:var(--college-bar);color:var(--college-light);border:0;flex-direction:row;gap:26px}
+.collegiate-site .wordmark{font-family:var(--display);font-size:23px;letter-spacing:-.75px;line-height:1.3;font-weight:400}
+.collegiate-site .wordmark span{color:#a8c5cb;margin:0 10px}
+.collegiate-site .site-header nav{font-size:12px;gap:24px;flex-wrap:wrap}
+.collegiate-site .site-header a:hover{color:#b9e2e4}
+.collegiate-site .site-header a:focus-visible{outline-color:#b9e2e4}
+.collegiate-site .hero{grid-template-columns:minmax(0,1.2fr) minmax(0,.86fr);gap:70px;padding:52px 0 42px}
+.collegiate-site .hero h1{font-size:clamp(48px,6.2vw,76px);letter-spacing:-2.8px;line-height:1.1;margin:20px 0 26px}
+.collegiate-site .hero .eyebrow{font-size:11px;letter-spacing:1.8px}
+.collegiate-site .hero-role{font-size:16px;line-height:1.65;margin-bottom:24px}
+.collegiate-site .hero-role strong{font-size:32px;line-height:1.4;margin-top:3px}
+.collegiate-site .hero-summary{max-width:450px;font-size:18px;line-height:1.75;color:var(--ink)}
+.collegiate-site .hero-actions{gap:25px;margin-top:29px}
+.collegiate-site .hero-actions .button-primary{background:var(--accent);color:#fff;border:0;border-radius:0;padding:12px 18px;gap:20px;font-size:13px}
+.collegiate-site .hero-actions .button-primary:hover{background:var(--college-bar);color:#fff}
+.collegiate-site .hero-actions>.text-link{border:0;font-size:13px;padding:6px 0}
+.collegiate-site .hero-meta{margin-top:27px}
+.collegiate-site .hero-profile{max-width:440px;border-bottom:3px solid var(--accent);padding-bottom:16px}
+.collegiate-site .hero-portrait img{aspect-ratio:1.02;object-position:center;background:var(--soft)}
+.collegiate-site .hero-portrait figcaption{font-size:10px;letter-spacing:1.5px;padding-top:16px}
+.collegiate-site .hero-profile>p{font-size:14px;line-height:1.7;margin:10px 0 12px}
+.collegiate-site .hero-profile>.text-link{font-size:12px;border:0;padding:0}
+.collegiate-site .academic-overview{background:var(--college-bar);color:var(--college-light);padding:27px 32px 31px;border:0}
+.collegiate-site .overview-heading{margin-bottom:22px}
+.collegiate-site .overview-heading .eyebrow{color:#c1d7dc;font-size:10px;letter-spacing:1.5px}
+.collegiate-site .overview-heading .text-link{color:#d5e3e6;font-size:11px}
+.collegiate-site .institution-strip{gap:28px}
+.collegiate-site .institution-strip strong{font-size:30px;line-height:1.17;letter-spacing:-.55px;margin:9px 0 11px;color:inherit}
+.collegiate-site .overview-date{font-size:11px;letter-spacing:0;color:#c1d7dc}
+.collegiate-site .overview-role{font-size:12px;color:#eef4f5}
+.collegiate-site .overview-role>span{font-size:11px;color:#c1d7dc}
+.collegiate-site .academic-overview a:hover{color:#aee3e5}
+.collegiate-site .academic-overview a:focus-visible{outline-color:#aee3e5}
+.collegiate-site .news-strip{padding:21px 0;font-size:12px;gap:22px}
+.collegiate-site .news-strip>.small-label{font-size:10px}
+.collegiate-site .section{padding:64px 0}
+.collegiate-site h2{font-size:clamp(32px,3.1vw,42px);line-height:1.22;letter-spacing:-.95px}
+.collegiate-site .section-top{margin-bottom:30px}
+.collegiate-site .research-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.collegiate-site .research-card,.collegiate-site .research-card:first-child{display:flex;flex-direction:column;grid-column:auto;gap:0;margin:0;background:transparent;border:0}
+.collegiate-site .research-image,.collegiate-site .research-card:first-child .research-image{height:215px;padding:21px;background:var(--soft);flex-shrink:0}
+.collegiate-site .research-image:has(img[src$="reconfigurable-circuit.jpg"]){padding:0}
+.collegiate-site .card-body,.collegiate-site .research-card:first-child .card-body{padding:21px 0 0;display:flex;flex-direction:column;flex:1;min-width:0}
+.collegiate-site .card-body .small-label{font-size:10px;letter-spacing:.8px;line-height:1.7}
+.collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:28px;line-height:1.24;margin:13px 0 15px}
+.collegiate-site .card-body p{font-size:14px;line-height:1.85;min-height:0}
+.collegiate-site .tags{margin-top:auto;padding-top:19px;gap:6px 12px}
+.collegiate-site .tags span{font-size:11px}
+.collegiate-site .tags span+span::before{margin-right:12px}
+.collegiate-site .about-section,.collegiate-site .experience-section{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:70px}
+.collegiate-site .about-copy p{font-size:15px;line-height:1.9}
+.collegiate-site .about-copy p.lead{font-size:20px;line-height:1.8}
+.collegiate-site .news-section>.news-list{gap:0 38px}
+.collegiate-site .news-item h3{font-size:25px;line-height:1.35}
+.collegiate-site .news-item time{font-size:11px}
+.collegiate-site .news-item p{font-size:14px}
+.collegiate-site .projects-grid{gap:22px}
+.collegiate-site .project-card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);padding:24px;border-radius:0}
+.collegiate-site .project-card h3{font-size:24px;line-height:1.4}
+.collegiate-site .project-card>.small-label{font-size:10px}
+.collegiate-site .project-summary{font-size:14px}
+.collegiate-site .project-meta{font-size:12px;gap:10px}
+.collegiate-site .project-meta dt{font-size:11px}
+.collegiate-site .project-meta>div{display:block}
+.collegiate-site .project-meta dd{margin-top:2px}
+.collegiate-site .project-archive-item .project-meta>div{display:block}
+.collegiate-site .scholar-panel{background:var(--soft);border:0;border-left:3px solid var(--accent);padding:26px 30px}
+.collegiate-site .scholar-metrics strong{color:var(--accent);font-size:42px;line-height:1.2}
+.collegiate-site .scholar-metrics span{margin-top:6px;font-size:12px}
+.collegiate-site #scholar-status{font-size:12px;margin-top:16px}
+.collegiate-site .publication h3{font-size:25px;line-height:1.4}
+.collegiate-site .publication-year{color:var(--accent)}
+.collegiate-site .timeline-item h3.institution{font-size:33px;line-height:1.25}
+.collegiate-site .timeline-item .small-label{font-size:10px}
+.collegiate-site .timeline-item .appointment-role{font-size:16px}
+.collegiate-site .timeline-item p:not(.small-label):not(.appointment-role){font-size:13px}
+.collegiate-site .appointment-location{font-size:11px}
+.collegiate-site .timeline-item .supervisor-credentials{border-left-color:#b8ced0}
+.collegiate-site .current-tag{background:#e0edeb}
+.collegiate-site .timeline-item.current:before{box-shadow:0 0 0 3px #e0edeb}
+.collegiate-site .recognition-section{gap:65px}
+.collegiate-site .recognition-section>div>p:not(.eyebrow){font-size:14px;line-height:1.85}
+.collegiate-site .awards h3{font-size:22px}
+.collegiate-site .awards p{font-size:12px}
+.collegiate-site .contact-section{background:var(--college-bar);padding:48px;margin:56px 0}
+.collegiate-site .contact-section .eyebrow{color:#b9d8dc}
+.collegiate-site .contact-section>p:not(.eyebrow){color:#c9dde1;font-size:14px}
+.collegiate-site .contact-links{color:#dce8eb;font-size:12px}
+.collegiate-site .contact-section a:hover{color:#b9e2e4}
+.collegiate-site .contact-section a:focus-visible{outline-color:#b9e2e4}
+.collegiate-site .contact-email{border-color:#87a9b2}
+.collegiate-site .visitor-panel{padding:15px 0 35px}
+.collegiate-site .visitor-panel h2{font-size:35px}
+.collegiate-site .portfolio-card{border-radius:0;background:#fff}
+.collegiate-site .portfolio-photo{background:var(--soft)}
+.collegiate-site .archive-entry h2,.collegiate-site .archive-entry h3{font-size:26px}
+.collegiate-site .bd-lab.bd-v3.bd-wide{background:var(--soft);border-left:3px solid var(--accent);border-radius:0}
+.collegiate-site .bd-wide h2{font-size:38px}
+.collegiate-site .bd-wide .bd-demo-notice{background:#e3e9e4;border-left-color:#829b94}
+.collegiate-site .bd-wide .bd-common-row,.collegiate-site .bd-wide .bd-panel-controls,.collegiate-site .bd-extra-controls{border-color:#cbd8d4}
+.collegiate-site .bd-wide .bd-compare-plot,.collegiate-site .bd-wide .bd-pair-plot{background:#e8eeea}
+.collegiate-site .bd-v3 :focus-visible{outline-color:var(--accent)}
+@media(max-width:1100px){
+  .collegiate-site .site-header{padding:22px 32px;flex-wrap:wrap;gap:18px 24px}
+  .collegiate-site .site-header nav{gap:18px}
+  .collegiate-site .hero{gap:40px}
+  .collegiate-site .hero h1{font-size:64px;letter-spacing:-2px}
+  .collegiate-site .hero-role strong{font-size:30px}
+  .collegiate-site .institution-strip strong{font-size:27px}
+  .collegiate-site .institution-strip{gap:22px}
+  .collegiate-site .academic-overview{padding:25px 27px}
+  .collegiate-site .research-grid{gap:22px}
+  .collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:26px}
+  .collegiate-site .card-body .small-label{font-size:9px}
+  .collegiate-site .research-image,.collegiate-site .research-card:first-child .research-image{height:190px}
+  .collegiate-site .about-section,.collegiate-site .experience-section,.collegiate-site .recognition-section{gap:44px}
+  .collegiate-site .project-card{padding:20px}
+  .collegiate-site .project-card h3{font-size:22px}
+}
+@media(max-width:760px){
+  .collegiate-site .site-header{padding:22px 24px;flex-direction:column;align-items:flex-start;gap:17px}
+  .collegiate-site .site-header nav{font-size:12px;gap:12px 20px}
+  .collegiate-site .hero{grid-template-columns:1fr;gap:32px;padding:36px 0 34px}
+  .collegiate-site .hero h1{font-size:clamp(48px,9vw,66px);letter-spacing:-2px;margin:18px 0 23px}
+  .collegiate-site .hero .eyebrow{font-size:10px;letter-spacing:1.4px}
+  .collegiate-site .hero-role{font-size:15px}
+  .collegiate-site .hero-role strong{font-size:30px}
+  .collegiate-site .hero-summary{font-size:17px}
+  .collegiate-site .hero-actions{gap:22px;flex-wrap:wrap}
+  .collegiate-site .hero-actions .button-primary{font-size:12px;padding:12px 16px}
+  .collegiate-site .hero-actions>.text-link{font-size:12px}
+  .collegiate-site .hero-profile{max-width:460px;justify-self:start}
+  .collegiate-site .hero-portrait img{aspect-ratio:1.18}
+  .collegiate-site .academic-overview{padding:25px 24px}
+  .collegiate-site .institution-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px}
+  .collegiate-site .institution-strip strong{font-size:26px}
+  .collegiate-site .overview-date{font-size:10px}
+  .collegiate-site .overview-role{font-size:12px}
+  .collegiate-site .news-strip{font-size:11px;gap:13px}
+  .collegiate-site .section{padding:46px 0}
+  .collegiate-site .research-grid,.collegiate-site .about-section,.collegiate-site .experience-section,.collegiate-site .recognition-section{grid-template-columns:1fr;gap:28px}
+  .collegiate-site .research-grid{gap:34px}
+  .collegiate-site .research-image,.collegiate-site .research-card:first-child .research-image{height:250px}
+  .collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:29px}
+  .collegiate-site .card-body .small-label{font-size:10px}
+  .collegiate-site .about-copy p.lead{font-size:19px}
+  .collegiate-site .news-item h3{font-size:24px}
+  .collegiate-site .project-card{padding:23px}
+  .collegiate-site .project-card h3{font-size:25px}
+  .collegiate-site .project-meta>div{display:grid;grid-template-columns:100px 1fr;gap:10px}
+  .collegiate-site .project-meta dd{margin:0}
+  .collegiate-site .scholar-panel{padding:22px}
+  .collegiate-site .scholar-metrics strong{font-size:36px}
+  .collegiate-site .scholar-metrics span{font-size:11px}
+  .collegiate-site #scholar-status{font-size:11px}
+  .collegiate-site .publication h3{font-size:23px}
+  .collegiate-site .timeline-item h3.institution{font-size:30px}
+  .collegiate-site .timeline-item .appointment-role{font-size:15px}
+  .collegiate-site .contact-section{padding:34px 26px;margin:42px 0}
+  .collegiate-site .contact-section h2{font-size:36px}
+  .collegiate-site .contact-section>p:not(.eyebrow){font-size:13px}
+  .collegiate-site .bd-wide h2{font-size:33px}
+  .collegiate-site .archive-entry h2,.collegiate-site .archive-entry h3{font-size:24px}
+}
+@media(max-width:380px){
+  .collegiate-site .site-header{padding-left:18px;padding-right:18px}
+  .collegiate-site .hero h1{font-size:48px;letter-spacing:-1.9px}
+  .collegiate-site .hero-role strong{font-size:28px}
+  .collegiate-site .academic-overview{padding:22px 18px}
+  .collegiate-site .institution-strip{gap:25px 15px}
+  .collegiate-site .institution-strip strong{font-size:23px}
+  .collegiate-site .overview-role{font-size:11px}
+  .collegiate-site .overview-role>span{font-size:10px}
+  .collegiate-site .project-card{padding:20px}
+  .collegiate-site .project-meta>div{grid-template-columns:88px 1fr}
+  .collegiate-site .scholar-panel{padding:20px 16px}
+  .collegiate-site .scholar-metrics{gap:12px}
+  .collegiate-site .scholar-metrics strong{font-size:33px}
+}

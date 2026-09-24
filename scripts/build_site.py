@@ -160,6 +160,12 @@ def render_layout(content, title, route, description=''):
 
 def main():
     OUT.mkdir(exist_ok=True)
+    # Rebuild the archive from its canonical aggregate data on every deployment.
+    visitor_archive = ROOT / 'files/visitor-history.json'
+    if visitor_archive.is_file():
+        from archive_visitors import render as render_visitor_archive
+        archive_data = json.loads(visitor_archive.read_text(encoding='utf-8'))
+        visitor_archive.with_suffix('.html').write_text(render_visitor_archive(archive_data), encoding='utf-8')
     # Publication records now live on Google Scholar. Remove only previously
     # generated HTML under this output directory; keep the source Markdown.
     retired = OUT / 'publications'

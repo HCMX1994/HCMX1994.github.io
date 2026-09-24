@@ -33,3 +33,11 @@ The old Jekyll templates remain in the source for reference, but the production 
 After reviewing the site, publish the source to the repository's default branch and set GitHub Pages **Source = GitHub Actions**. `.github/workflows/pages.yml` installs the pinned build packages, refreshes the Scholar snapshot, builds and validates the complete site, and deploys `_site`.
 
 Scholar refreshing is best effort: requests can be challenged, in which case the last verified snapshot and its original date remain. The page displays the last verified date. Check the workflow status in GitHub Actions after publishing; the site builder and link checker run before deployment.
+
+### Google Scholar automatic updates
+
+The updater supports the SerpApi Google Scholar Author API. Create a free account at https://serpapi.com/users/sign_up?plan=free, then add its API key as a repository Actions secret named `SERPAPI_API_KEY` (Settings > Secrets and variables > Actions > New repository secret). Never put the key in a source file, a commit, or browser JavaScript.
+
+With this secret present, the daily workflow requests the author profile once through SerpApi, validates the author ID and all three lifetime metrics, then saves the snapshot and deploys it. Without the secret it falls back to a direct public-profile request, which Google may block. Errors preserve the last successful numbers and their original date. A successful website deployment does not by itself mean that the metrics refreshed: check the `Refresh Scholar snapshot` log for its outcome. To verify setup immediately, run this workflow manually from Actions > Publish website and refresh Scholar metrics > Run workflow.
+
+The free plan currently includes 250 requests per month (checked 24 September 2026); daily requests use approximately 30–31, plus requests on website updates or manual runs. Check https://serpapi.com/pricing for current limits. No paid plan is required for this site's expected usage.

@@ -208,10 +208,15 @@ def main():
 
     home = (ROOT / '_includes/academic-home.html').read_text(encoding='utf-8-sig')
     from visitor_panel import render_panel
-    home = home.replace('<!-- UMAMI_VISITOR_PANEL -->', render_panel(archive_data))
+    from visitor_live import load_data
+    visitor_data = load_data()
+    home = home.replace('<!-- UMAMI_VISITOR_PANEL -->', render_panel(archive_data, data=visitor_data))
     header = re.search(r'<header\b.*?</header>', home, re.S)[0]
     header = header.replace('href="#', 'href="/#')
     footer = re.search(r'<footer\b.*?</footer>', home, re.S)[0]
+    # Homepage statistics share the contact block; article pages keep their footer.
+    home = home.replace(footer, re.sub(r'<section id="visitors".*?</section>', '', footer, flags=re.S))
+    home = home.replace('<!-- UMAMI_CONTACT_PANEL -->', render_panel(archive_data, compact=True, data=visitor_data))
     pages = []
     def save(route, title, inner, description='', bare=False):
         content = inner if bare else header + '<main id="main" class="content-main">' + inner + '</main>' + footer

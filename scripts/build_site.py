@@ -22,6 +22,8 @@ import yaml
 OUT = ROOT / '_site'
 ORIGIN = 'https://hcmx1994.github.io'
 SCHOLAR_URL = 'https://scholar.google.com/citations?user=vj_3bhQAAAAJ&hl=en'
+HOME_DESCRIPTION = ('Xuekang Liu, Lecturer (Assistant Professor) at Lancaster University. '
+                    'Research in antennas, reconfigurable circuits, metasurfaces and sub-THz communications.')
 COLLECTIONS = {'posts': ('News & milestones', '/year-archive/'),
                'portfolio': ('Research portfolio', '/portfolio/'),
                'teaching': ('Teaching', '/teaching/')}
@@ -88,12 +90,50 @@ def write_route(route, content):
 
 def render_layout(content, title, route, description=''):
     layout = (ROOT / '_layouts/academic-home.html').read_text(encoding='utf-8-sig')
+    seo_title = 'Xuekang Liu | Lecturer at Lancaster University' if route == '/' else f'{title} | Xuekang Liu'
+    layout = layout.replace('{{ page.title }} | {{ site.name }}', escape(seo_title))
     layout = layout.replace('{{ content }}', content)
     layout = layout.replace('{{ page.title }}', escape(title)).replace('{{ site.name }}', 'Xuekang Liu')
     layout = layout.replace("{{ page.url | absolute_url }}", ORIGIN + route)
     layout = re.sub(r"{{ '([^']+)' \| relative_url }}", r'\1', layout)
     if description:
         layout = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + escape(description) + '">', layout)
+    page_description = description or HOME_DESCRIPTION
+    metadata = [
+        '<meta name="author" content="Xuekang Liu">',
+        '<meta property="og:type" content="website">',
+        '<meta property="og:site_name" content="Xuekang Liu">',
+        f'<meta property="og:title" content="{escape(seo_title)}">',
+        f'<meta property="og:description" content="{escape(page_description)}">',
+        f'<meta property="og:url" content="{escape(ORIGIN + route)}">',
+        f'<meta property="og:image" content="{ORIGIN}/images/XuekangPhoto.png">',
+        '<meta property="og:image:alt" content="Xuekang Liu">',
+    ]
+    if route == '/':
+        person = {
+            '@type': 'Person', '@id': ORIGIN + '/#person',
+            'name': 'Xuekang Liu', 'url': ORIGIN + '/',
+            'image': ORIGIN + '/images/XuekangPhoto.png',
+            'jobTitle': 'Lecturer (Assistant Professor) in Electronics and Communication Engineering',
+            'worksFor': {'@type': 'CollegeOrUniversity', 'name': 'Lancaster University',
+                         'url': 'https://www.lancaster.ac.uk/'},
+            'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'University of Kent'},
+                        {'@type': 'CollegeOrUniversity', 'name': 'Xidian University'}],
+            'sameAs': [SCHOLAR_URL, 'https://orcid.org/0000-0002-3318-6812',
+                       'https://www.linkedin.com/in/xuekang-liu-7a383a1b0/',
+                       'https://www.researchgate.net/profile/Xuekang-Liu'],
+        }
+        structured = {'@context': 'https://schema.org', '@graph': [
+            {'@type': 'WebSite', '@id': ORIGIN + '/#website',
+             'url': ORIGIN + '/', 'name': 'Xuekang Liu'},
+            {'@type': 'ProfilePage', '@id': ORIGIN + '/#profile',
+             'url': ORIGIN + '/', 'name': seo_title, 'mainEntity': person},
+        ]}
+        metadata.append('<script type="application/ld+json">' +
+                        json.dumps(structured, ensure_ascii=False).replace('<', '\\u003c') + '</script>')
+    if route == '/404.html':
+        metadata.append('<meta name="robots" content="noindex">')
+    layout = layout.replace('</head>', '  ' + '\n  '.join(metadata) + '\n</head>')
     if '{{' in layout or '{%' in layout:
         raise ValueError('Unresolved template in ' + route)
     return layout
@@ -149,7 +189,7 @@ def main():
             items.sort(key=lambda i: str(i.get('date', '')), reverse=True)
         all_items[collection] = items
 
-    save('/', 'Research & profile', home, bare=True)
+    save('/', 'Xuekang Liu — Lancaster University', home, HOME_DESCRIPTION, bare=True)
 
     for collection, items in all_items.items():
         label, listing = COLLECTIONS[collection]

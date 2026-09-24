@@ -1,6 +1,7 @@
 """Build the complete site from the existing Markdown collections.
 
-The exact same output is used by the preview server and GitHub Pages.
+This public output is used by GitHub Pages and the preview server.
+The loopback preview may inject owner notes separately; they never enter _site.
 Only explicitly selected public content/assets are copied to _site.
 """
 from __future__ import annotations
@@ -18,6 +19,12 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 HOME_CSS = ROOT / 'assets/css/academic-home.css'
 HOME_CSS_NAME = f'academic-home.{hashlib.sha256(HOME_CSS.read_bytes()).hexdigest()[:12]}.css'
+BD_JS = ROOT / 'assets/js/bd-ris-demo.js'
+BD_JS_NAME = f'bd-ris-demo.{hashlib.sha256(BD_JS.read_bytes()).hexdigest()[:12]}.js'
+BD_MODEL_JS = ROOT / 'assets/js/bd-ris-model.js'
+BD_MODEL_JS_NAME = f'bd-ris-model.{hashlib.sha256(BD_MODEL_JS.read_bytes()).hexdigest()[:12]}.js'
+STATS_JS = ROOT / 'assets/js/profile-stats.js'
+STATS_JS_NAME = f'profile-stats.{hashlib.sha256(STATS_JS.read_bytes()).hexdigest()[:12]}.js'
 sys.path.insert(0, str(ROOT / '.build-deps'))
 import markdown
 import yaml
@@ -103,6 +110,12 @@ def render_layout(content, title, route, description=''):
     # A new stylesheet filename prevents returning visitors from using stale CSS.
     layout = layout.replace('href="/assets/css/academic-home.css"',
                             f'href="/assets/css/{HOME_CSS_NAME}"')
+    layout = layout.replace('src="/assets/js/bd-ris-demo.js"',
+                            f'src="/assets/js/{BD_JS_NAME}"')
+    layout = layout.replace('src="/assets/js/bd-ris-model.js"',
+                            f'src="/assets/js/{BD_MODEL_JS_NAME}"')
+    layout = layout.replace('src="/assets/js/profile-stats.js"',
+                            f'src="/assets/js/{STATS_JS_NAME}"')
     if description:
         layout = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + escape(description) + '">', layout)
     page_description = description or HOME_DESCRIPTION
@@ -178,7 +191,9 @@ def main():
                 shutil.copy2(file, target)
     shutil.copy2(HOME_CSS, OUT / 'assets/css' / HOME_CSS_NAME)
     (OUT / 'assets/js').mkdir(parents=True, exist_ok=True)
-    shutil.copy2(ROOT / 'assets/js/profile-stats.js', OUT / 'assets/js/profile-stats.js')
+    shutil.copy2(STATS_JS, OUT / 'assets/js' / STATS_JS_NAME)
+    shutil.copy2(BD_JS, OUT / 'assets/js' / BD_JS_NAME)
+    shutil.copy2(BD_MODEL_JS, OUT / 'assets/js' / BD_MODEL_JS_NAME)
 
     home = (ROOT / '_includes/academic-home.html').read_text(encoding='utf-8-sig')
     header = re.search(r'<header\b.*?</header>', home, re.S)[0]

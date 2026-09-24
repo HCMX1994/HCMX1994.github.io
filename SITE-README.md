@@ -30,6 +30,8 @@ The old Jekyll templates remain in the source for reference, but the production 
 
 ## Publish
 
+The root file `85d24de9d58fae23945a5d596cb929cc.txt` is the public WeChat website verification file. The builder explicitly copies it to the published root on every deployment, including daily Scholar updates. Keep its filename and contents unchanged while the verification is in use.
+
 After reviewing the site, publish the source to the repository's default branch and set GitHub Pages **Source = GitHub Actions**. `.github/workflows/pages.yml` installs the pinned build packages, refreshes the Scholar snapshot, builds and validates the complete site, and deploys `_site`.
 
 Scholar refreshing is best effort: requests can be challenged, in which case the last verified snapshot and its original date remain. The page displays the last verified date. Check the workflow status in GitHub Actions after publishing; the site builder and link checker run before deployment.

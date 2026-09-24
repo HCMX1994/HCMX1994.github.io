@@ -25,6 +25,7 @@ import yaml
 OUT = ROOT / '_site'
 ORIGIN = 'https://hcmx1994.github.io'
 SCHOLAR_URL = 'https://scholar.google.com/citations?user=vj_3bhQAAAAJ&hl=en'
+PUBLIC_ROOT_FILES = ('85d24de9d58fae23945a5d596cb929cc.txt',)
 HOME_DESCRIPTION = ('Xuekang Liu, Lecturer (Assistant Professor) at Lancaster University. '
                     'Research in antennas, reconfigurable circuits, metasurfaces and sub-THz communications.')
 COLLECTIONS = {'posts': ('News & milestones', '/year-archive/'),
@@ -158,6 +159,9 @@ def main():
             if not file.resolve().is_relative_to(retired.resolve()):
                 raise ValueError('Publication output file leaves its directory')
             file.unlink()
+    # Preserve the explicitly approved WeChat verification file on every deployment.
+    for name in PUBLIC_ROOT_FILES:
+        shutil.copy2(ROOT / name, OUT / name)
     # Copy public assets, never the input CV, scratch files or repository data.
     for dirname in ['images', 'files']:
         for file in (ROOT / dirname).rglob('*'):

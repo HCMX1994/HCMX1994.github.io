@@ -35,6 +35,8 @@ The opening section shows the portrait and a short introduction on the right. Th
 
 After changing the BD-RIS model or its assumptions, also run `node scripts/audit_bd_ris.cjs`. The current audit sweeps all 111 target-angle settings in every illumination / operation / objective combination, near-source distance steps and source-angle boundaries, and all suppression weights at centre/edge targets (1,194 comparison states), plus 666 paired states. Unit checks cover the spherical-to-plane-wave limit, analytic array factors and coherent bounds, phase-only optimisation, the Hermitian eigensolver, reciprocal synthesis, common objectives, and both-sided power conservation. Numerical consistency is not full-wave or hardware validation. Earlier four-port model files and tests are retained only as local backups under `tmp/bd-ris-before-near-far/`.
 
+The active visual theme is **Modern Collegiate**: a deep teal navigation bar and academic-journey strip, serif headings, a portrait on the right, and three research columns on desktop. The final `.collegiate-site` rules in `assets/css/academic-home.css` apply consistently to the homepage and the complete archive/detail pages. All content, the embedded BD-RIS lab, Scholar refresh and MapMyVisitors integration are retained; older news and projects remain expandable.
+
 ## Publish
 
 The root file `85d24de9d58fae23945a5d596cb929cc.txt` is the public WeChat website verification file. The builder explicitly copies it to the published root on every deployment, including daily Scholar updates. Keep its filename and contents unchanged while the verification is in use.

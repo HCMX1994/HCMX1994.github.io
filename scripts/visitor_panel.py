@@ -39,9 +39,9 @@ def summarize(archive, reference, now=None):
             'countries': sorted(countries, key=lambda row: (-row['visits'], row['name']))}
 
 
-def render_panel(archive, now=None):
+def render_panel(archive, now=None, compact=False, data=None):
     reference = json.loads((ROOT / 'assets/data/visitor-countries.json').read_text(encoding='utf-8'))['countries']
-    data = summarize(archive, reference, now)
+    data = data or summarize(archive, reference, now)
     esc = lambda value: html.escape(str(value), quote=True)
     total = data['visits']
     share = lambda count: f'{100 * count / total:.1f}%' if total else '0.0%'
@@ -63,7 +63,24 @@ def render_panel(archive, now=None):
     month_label = datetime.strptime(data['current_month'], '%Y-%m').strftime('%b %Y')
     current_note = 'Saved so far' if data['current_visitors'] is not None else 'Awaiting this month’s export'
     encoded = json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('<', '\\u003c')
-    return f'''<section id="visitors" class="visitor-panel visitor-panel--umami" aria-labelledby="visitor-title">
+    if compact:
+        # Keep dates visible: the layout preview does not turn saved data into live data.
+        panel = f'''<aside id="visitors" class="visitor-panel visitor-panel--compact" aria-labelledby="visitor-title">
+  <div class="visitor-card-heading"><h3 id="visitor-title">Visitors around the world</h3><span>Umami</span></div>
+  <div class="visitor-compact-stats"><div><strong>{total:,}</strong><span>Archived visits</span></div><div><strong id="visitor-current-count">{current_visitors}</strong><span>Visitors · <span id="visitor-current-month">{month_label}</span></span><small id="visitor-current-note" class="visually-hidden">{current_note}</small></div><div><strong>{known}</strong><span>Countries / regions</span></div></div>
+  <svg class="visitor-world" viewBox="0 0 720 310" role="group" aria-label="World map of archived Umami visits by country or region" aria-describedby="visitor-map-note"><image href="/images/visitor-world.svg" width="720" height="310" aria-hidden="true"/>{''.join(markers)}</svg>
+  <p class="visitor-compact-caption">Saved {stamp}</p>
+  <details class="visitor-location-disclosure"><summary>Explore locations <span aria-hidden="true">+</span></summary>
+    <p id="visitor-map-note" class="visitor-map-note">Markers show country/region reference points, not precise visitor locations.</p>
+    <div class="visitor-location-toolbar"><label for="visitor-country">Country / region</label><select id="visitor-country"><option value="all">All locations</option>{''.join(options)}</select></div>
+    <div id="visitor-location-detail" aria-live="polite"><table class="visitor-location-table"><thead><tr><th scope="col">Location</th><th scope="col">Visits</th><th scope="col">Share</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
+    <p class="visitor-map-note">{unmapped:,} visits without a map position remain included in totals. Setup / VPN test visits are included.</p>
+    <p class="visitor-map-credit">Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a> · Reference points: <a href="https://developers.google.com/public-data/docs/canonical/countries_csv">Google DSPL</a></p>
+  </details>
+  <script type="application/json" id="visitor-map-data">{encoded}</script>
+</aside>'''
+        return live_markup(panel, data)
+    panel = f'''<section id="visitors" class="visitor-panel visitor-panel--umami" aria-labelledby="visitor-title">
   <div class="visitor-copy"><p class="eyebrow">Around the world · Umami</p><h2 id="visitor-title">A world of visitors.</h2>
     <div class="visitor-total"><strong>{total:,}</strong><span>Total archived visits</span></div>
     <div class="visitor-mini-stats"><div><strong id="visitor-current-count">{current_visitors}</strong><span>Visitors · <span id="visitor-current-month">{month_label}</span></span><small id="visitor-current-note">{current_note}</small></div><div><strong>{known}</strong><span>Countries / regions</span><small>Across archived months</small></div></div>
@@ -83,3 +100,24 @@ def render_panel(archive, now=None):
   </div>
   <script type="application/json" id="visitor-map-data">{encoded}</script>
 </section>'''
+    return live_markup(panel, data)
+
+
+def live_markup(panel, data):
+    if 'service' not in data:
+        return panel
+    panel = panel.replace('archived Umami visits', 'Umami visits').replace('of archived visits', 'of all visits')
+    panel = panel.replace('archived visits', 'visits').replace('Archived visits', 'Total visits').replace('Total archived visits', 'Total visits')
+    total = f'{data["visits"]:,}'
+    panel = panel.replace(f'<strong>{total}</strong>', f'<strong id="visitor-total-count">{total}</strong>', 1)
+    known = sum(bool(r['code']) and r['visits'] > 0 for r in data['countries'])
+    panel = panel.replace(f'<strong>{known}</strong><span>Countries', f'<strong id="visitor-country-count">{known}</strong><span>Countries')
+    panel = panel.replace('<span>Visitors ·', f'<span><span id="visitor-current-label">{data["current_label"]}</span> ·')
+    panel = panel.replace('class="visitor-compact-caption"', 'class="visitor-compact-caption" id="visitor-refresh-status" role="status"')
+    panel = panel.replace('Awaiting this month’s export', 'Awaiting current statistics').replace('Saved so far', 'Saved backup; automatic refresh')
+    panel = panel.replace('Monthly snapshots, updated after import.', 'Automatically refreshed; daily aggregate backup.')
+    panel = panel.replace('Across archived months', 'All recorded visits')
+    panel = panel.replace('<p class="visitor-note">', '<p class="visitor-note" id="visitor-refresh-status" role="status">')
+    panel = panel.replace(' visits without a map position remain included in totals.', ' visits without a map position remain included in totals.')
+    panel = panel.replace('<p class="visitor-map-note">' + str(sum(r['visits'] for r in data['countries'] if not r['point'])), '<p class="visitor-map-note" id="visitor-coverage-note">' + str(sum(r['visits'] for r in data['countries'] if not r['point'])))
+    return panel

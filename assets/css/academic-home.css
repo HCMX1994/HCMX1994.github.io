@@ -231,17 +231,25 @@
 .collegiate-site .hero-portrait figcaption{font-size:10px;letter-spacing:1.5px;padding-top:16px}
 .collegiate-site .hero-profile>p{font-size:14px;line-height:1.7;margin:10px 0 12px}
 .collegiate-site .hero-profile>.text-link{font-size:12px;border:0;padding:0}
-.collegiate-site .academic-overview{background:var(--college-bar);color:var(--college-light);padding:27px 32px 31px;border:0}
+.collegiate-site .academic-overview{background:#f0f2ed;color:var(--ink);padding:27px 32px 31px;border:1px solid #e1e5df}
 .collegiate-site .overview-heading{margin-bottom:22px}
-.collegiate-site .overview-heading .eyebrow{color:#c1d7dc;font-size:10px;letter-spacing:1.5px}
-.collegiate-site .overview-heading .text-link{color:#d5e3e6;font-size:11px}
-.collegiate-site .institution-strip{gap:28px}
+.collegiate-site .overview-heading .eyebrow{color:var(--accent);font-size:10px;letter-spacing:1.5px}
+.collegiate-site .overview-heading .text-link{color:var(--muted);font-size:11px}
+.collegiate-site .institution-strip{gap:0}
+.collegiate-site .institution-strip li{min-width:0;padding:0 22px}
+.collegiate-site .institution-strip li:first-child{padding-left:0}
+.collegiate-site .institution-strip li:last-child{padding-right:0}
+.collegiate-site .institution-strip li+li{border-left:1px solid #d4dcd4}
+.collegiate-site .institution-logo{display:flex;height:64px;align-items:center;margin:0 0 18px}
+.collegiate-site .institution-logo img{display:block;width:100%;height:auto;max-width:182px;max-height:60px;object-fit:contain;object-position:left center}
+.collegiate-site .institution-logo--imperial img{max-width:174px}
+.collegiate-site .institution-logo--kent img{width:104px}
 .collegiate-site .institution-strip strong{font-size:30px;line-height:1.17;letter-spacing:-.55px;margin:9px 0 11px;color:inherit}
-.collegiate-site .overview-date{font-size:11px;letter-spacing:0;color:#c1d7dc}
-.collegiate-site .overview-role{font-size:12px;color:#eef4f5}
-.collegiate-site .overview-role>span{font-size:11px;color:#c1d7dc}
-.collegiate-site .academic-overview a:hover{color:#aee3e5}
-.collegiate-site .academic-overview a:focus-visible{outline-color:#aee3e5}
+.collegiate-site .overview-date{font-size:11px;letter-spacing:0;color:var(--muted)}
+.collegiate-site .overview-role{font-size:12px;color:var(--ink)}
+.collegiate-site .overview-role>span{font-size:11px;color:var(--muted)}
+.collegiate-site .academic-overview a:hover{color:var(--accent)}
+.collegiate-site .academic-overview a:focus-visible{outline-color:var(--accent)}
 .collegiate-site .news-strip{padding:21px 0;font-size:12px;gap:22px}
 .collegiate-site .news-strip>.small-label{font-size:10px}
 .collegiate-site .section{padding:64px 0}
@@ -318,7 +326,8 @@
   .collegiate-site .hero h1{font-size:64px;letter-spacing:-2px}
   .collegiate-site .hero-role strong{font-size:30px}
   .collegiate-site .institution-strip strong{font-size:27px}
-  .collegiate-site .institution-strip{gap:22px}
+  .collegiate-site .institution-strip{gap:0}
+  .collegiate-site .institution-strip li{padding:0 16px}
   .collegiate-site .academic-overview{padding:25px 27px}
   .collegiate-site .research-grid{gap:22px}
   .collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:26px}
@@ -343,7 +352,13 @@
   .collegiate-site .hero-profile{max-width:460px;justify-self:start}
   .collegiate-site .hero-portrait img{aspect-ratio:1.18}
   .collegiate-site .academic-overview{padding:25px 24px}
-  .collegiate-site .institution-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 22px}
+  .collegiate-site .institution-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 0}
+  .collegiate-site .institution-strip li{padding:0 0 0 20px}
+  .collegiate-site .institution-strip li:nth-child(odd){padding:0 20px 0 0;border-left:0}
+  .collegiate-site .institution-strip li:nth-child(n+3){padding-top:24px;border-top:1px solid #d4dcd4}
+  .collegiate-site .institution-logo{height:52px;margin-bottom:15px}
+  .collegiate-site .institution-logo img{max-height:50px}
+  .collegiate-site .institution-logo--kent img{width:90px}
   .collegiate-site .institution-strip strong{font-size:26px}
   .collegiate-site .overview-date{font-size:10px}
   .collegiate-site .overview-role{font-size:12px}
@@ -378,7 +393,9 @@
   .collegiate-site .hero h1{font-size:48px;letter-spacing:-1.9px}
   .collegiate-site .hero-role strong{font-size:28px}
   .collegiate-site .academic-overview{padding:22px 18px}
-  .collegiate-site .institution-strip{gap:25px 15px}
+  .collegiate-site .institution-strip{gap:25px 0}
+  .collegiate-site .institution-strip li{padding-left:12px}
+  .collegiate-site .institution-strip li:nth-child(odd){padding-right:12px}
   .collegiate-site .institution-strip strong{font-size:23px}
   .collegiate-site .overview-role{font-size:11px}
   .collegiate-site .overview-role>span{font-size:10px}

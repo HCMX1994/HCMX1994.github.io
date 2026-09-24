@@ -1,4 +1,4 @@
-name: Publish website and refresh Scholar metrics
+name: Publish website and preserve statistics
 on:
   push:
   workflow_dispatch:
@@ -28,6 +28,18 @@ jobs:
         run: python -m pip install -r scripts/requirements-site.txt
       - name: Validate Scholar updater
         run: python scripts/test_update_scholar.py
+      - name: Validate visitor backup and totals
+        run: |
+          python scripts/test_sync_umami.py
+          python scripts/test_visitor_live.py
+          node scripts/test_visitor_map.cjs
+      - name: Back up lifetime Umami aggregates
+        id: visitors
+        continue-on-error: true
+        run: python scripts/sync_umami.py --url https://homepage-umami.vercel.app/api/homepage-summary --website-id d8c1f3fa-cb3e-4753-9aba-a78aa9a99836 --output assets/data/umami-live.json
+      - name: Report unavailable visitor backup
+        if: steps.visitors.outcome == 'failure'
+        run: echo '::warning::Umami backup failed. The last verified lifetime totals and map remain available.'
       - name: Refresh Scholar snapshot
         id: scholar
         continue-on-error: true
@@ -37,14 +49,14 @@ jobs:
       - name: Report unavailable metrics
         if: steps.scholar.outcome == 'failure'
         run: echo '::warning::Scholar refresh failed. Publishing the last verified snapshot with its original date.'
-      - name: Preserve successful snapshot
-        if: steps.scholar.outcome == 'success'
+      - name: Preserve successful snapshots
+        if: steps.scholar.outcome == 'success' || steps.visitors.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets/data/scholar.json
+          git add assets/data/scholar.json assets/data/umami-live.json
           if ! git diff --cached --quiet; then
-            git commit -m 'Update Google Scholar metrics'
+            git commit -m 'Back up Umami aggregates and Scholar metrics'
             git push
           fi
       - uses: actions/configure-pages@v5

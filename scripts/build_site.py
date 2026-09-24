@@ -5,6 +5,7 @@ Only explicitly selected public content/assets are copied to _site.
 """
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -15,6 +16,8 @@ from pathlib import Path
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+HOME_CSS = ROOT / 'assets/css/academic-home.css'
+HOME_CSS_NAME = f'academic-home.{hashlib.sha256(HOME_CSS.read_bytes()).hexdigest()[:12]}.css'
 sys.path.insert(0, str(ROOT / '.build-deps'))
 import markdown
 import yaml
@@ -96,6 +99,9 @@ def render_layout(content, title, route, description=''):
     layout = layout.replace('{{ page.title }}', escape(title)).replace('{{ site.name }}', 'Xuekang Liu')
     layout = layout.replace("{{ page.url | absolute_url }}", ORIGIN + route)
     layout = re.sub(r"{{ '([^']+)' \| relative_url }}", r'\1', layout)
+    # A new stylesheet filename prevents returning visitors from using stale CSS.
+    layout = layout.replace('href="/assets/css/academic-home.css"',
+                            f'href="/assets/css/{HOME_CSS_NAME}"')
     if description:
         layout = re.sub(r'<meta name="description" content="[^"]*">', '<meta name="description" content="' + escape(description) + '">', layout)
     page_description = description or HOME_DESCRIPTION
@@ -166,6 +172,7 @@ def main():
                 target = OUT / file.relative_to(ROOT)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(file, target)
+    shutil.copy2(HOME_CSS, OUT / 'assets/css' / HOME_CSS_NAME)
     (OUT / 'assets/js').mkdir(parents=True, exist_ok=True)
     shutil.copy2(ROOT / 'assets/js/profile-stats.js', OUT / 'assets/js/profile-stats.js')
 

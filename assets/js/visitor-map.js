@@ -27,7 +27,7 @@
       const cell = document.createElement('th'); cell.scope = 'col'; cell.textContent = label; head.append(cell);
     }
     const body = table.createTBody();
-    for (const row of rows.slice(0, country ? 5 : 3)) {
+    for (const row of country ? rows : rows.slice(0, 3)) {
       const tr = body.insertRow();
       for (const value of [country ? row.name : regionName(row), format.format(row.visits), percent(row.visits)]) {
         tr.insertCell().textContent = value;
@@ -36,10 +36,6 @@
     detail.replaceChildren(title, table);
     if (!rows.length) {
       const empty = document.createElement('p'); empty.textContent = 'No archived locations yet.'; detail.append(empty);
-    }
-    if (country && rows.length > 5) {
-      const more = document.createElement('a'); more.href = '/files/visitor-history.html';
-      more.textContent = `View all ${rows.length} cities in the archive →`; detail.append(more);
     }
     for (const marker of panel.querySelectorAll('[data-country]')) {
       marker.setAttribute('aria-pressed', String(marker.dataset.country === select.value));

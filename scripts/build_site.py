@@ -207,6 +207,8 @@ def main():
     shutil.copy2(BD_MODEL_JS, OUT / 'assets/js' / BD_MODEL_JS_NAME)
 
     home = (ROOT / '_includes/academic-home.html').read_text(encoding='utf-8-sig')
+    from update_wos import render_panel as render_review_panel
+    home = home.replace('<!-- WOS_REVIEW_METRIC -->', render_review_panel())
     from visitor_panel import render_panel
     from visitor_live import load_data
     visitor_data = load_data()

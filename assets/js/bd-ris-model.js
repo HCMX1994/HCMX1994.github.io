@@ -4,7 +4,7 @@
  */
 (function (host) {
   'use strict';
-  const N=36, GROUP_SIZE=2, TAU=2*Math.PI, positions=Array.from({length:N},(_,i)=>(i-(N-1)/2)*.5);
+  const N=8, GROUP_SIZE=2, TAU=2*Math.PI, positions=Array.from({length:N},(_,i)=>(i-(N-1)/2)*.5);
   const c=(re=0,im=0)=>({re,im}), add=(a,b)=>c(a.re+b.re,a.im+b.im), sub=(a,b)=>c(a.re-b.re,a.im-b.im);
   const mul=(a,b)=>c(a.re*b.re-a.im*b.im,a.re*b.im+a.im*b.re), scale=(z,k)=>c(z.re*k,z.im*k), conj=z=>c(z.re,-z.im);
   const abs2=z=>z.re*z.re+z.im*z.im, exp=p=>c(Math.cos(p),Math.sin(p));
@@ -64,7 +64,7 @@
     const key=`${target}:${weight}`;if(objectiveCache.has(key))return objectiveCache.get(key);
     const u0=Math.sin(target*Math.PI/180),guard=2.24/N;
     // Same guard for both designs, set BEFORE optimisation. Uniform u=sin(theta) grid.
-    const us=Array.from({length:16*N+1},(_,i)=>-1+i/(8*N)).filter(u=>Math.abs(u-u0)>guard),angles=us.map(u=>Math.asin(u)*180/Math.PI);
+    const steps=Math.max(200,16*N),us=Array.from({length:steps+1},(_,i)=>-1+2*i/steps).filter(u=>Math.abs(u-u0)>guard),angles=us.map(u=>Math.asin(u)*180/Math.PI);
     // Uniform linear array: Q is Toeplitz; compute each separation once.
     const lags=Array.from({length:N},(_,d)=>sub(exp(-Math.PI*d*u0),scale(us.reduce((s,u)=>add(s,exp(-Math.PI*d*u)),c()),weight/us.length)));
     const Q=matrix(N,(i,j)=>i>=j?lags[i-j]:conj(lags[j-i])),obj={Q,angles,guard,weight,target};
@@ -96,7 +96,7 @@
     return v.map((z,i)=>scale(z,Math.sqrt((abs2(a[i-i%2])+abs2(a[i-i%2+1]))/2)));
   }
   function groupOptimise(a,obj,phase) {
-    // Product of 18 complex spheres, NOT one full-array power constraint.
+    // Product of N/2 complex spheres, NOT one full-array power constraint.
     // Block minorisation/ascent: shift each 2x2 block to PSD, maximise its
     // tangent minorant on that pair's sphere. Each step is non-decreasing.
     const radii=Array.from({length:N/2},(_,g)=>Math.sqrt(abs2(a[2*g])+abs2(a[2*g+1]))),aligned=groupPeak(a,obj.target);

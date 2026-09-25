@@ -1,4 +1,4 @@
-/* Independent invariants for the current 36-element near/far comparison. */
+/* Independent invariants for the current 8-element near/far comparison. */
 const assert=require('node:assert/strict'), M=require('../assets/js/bd-ris-model.js');
 const near=(a,b,tol=1e-9,message='Values differ')=>assert.ok(Math.abs(a-b)<tol,`${message}: ${a} / ${b}`);
 const complexNear=(a,b,tol=1e-9)=>near(Math.sqrt(M.abs2(M.sub(a,b))),0,tol,'Complex values differ');
@@ -47,7 +47,7 @@ const phaseCase=M.compare({field:'near',target:53,strength:1});
 assert.ok(phaseCase.phase.score-M.score(phaseCase.obj.Q,phaseCase.phase.aligned)>1e-8,'Nontrivial phase-only optimisation');
 // Exact complex target phase must be preserved across groups, including singular
 // equal-magnitude cases. A separate arbitrary phase for each pair spoils the beam.
-assert.equal(M.N,36);assert.equal(M.GROUP_SIZE,2);
+assert.equal(M.N,8);assert.equal(M.GROUP_SIZE,2);
 let maps=0;
 function checkMap(a,b) {const S=M.pairMap(a,b);valid(S,a);M.apply(S,a).forEach((z,i)=>complexNear(z,b[i]));valid(S,[M.c(.8,.2),M.c(-.6,.7)]);maps++;}
 for(let i=1;i<=160;i++) {
@@ -58,13 +58,13 @@ for(let i=1;i<=160;i++) {
 for(const a of [[M.c(1),M.c()],[M.c(),M.c(0,1)],[M.c(),M.c()]])checkMap(a,a.slice().reverse());
 for(const epsilon of [1e-4,1e-7,1e-10,1e-13])checkMap([M.c(.6),M.c(0,.8)],M.normalise([M.c(.6+epsilon),M.c(0,-.8)]));
 assert.throws(()=>M.pairMap([M.c(1),M.c()],[M.c(2),M.c()]),/power mismatch/);
-const unequal=M.normalise(Array.from({length:36},(_,i)=>M.c(i<2?4:1))),desired=M.groupPeak(unequal,17),net=M.groupNetwork(unequal,desired);
+const unequal=M.normalise(Array.from({length:8},(_,i)=>M.c(i<2?4:1))),desired=M.groupPeak(unequal,17),net=M.groupNetwork(unequal,desired);
 valid(net.S,unequal);net.b.forEach((z,i)=>complexNear(z,desired[i]));
 assert.ok(M.arrayPower(net.b,17)<.9,'Unequal group powers stay unequal');
 let pairs=0;
 for(const field of ['near','far'])for(const share of [0,.05,.5,.95,1])for(const reflected of [-55,0,55])for(const transmitted of [-55,0,55]) {
-  const r=M.paired({field,share,reflected,transmitted});assert.equal(r.S.length,72);assert.equal(r.blocks.length,36);
-  for(let i=0;i<72;i++)for(let j=0;j<72;j++)if(Math.floor(i/2)!==Math.floor(j/2))assert.equal(M.abs2(r.S[i][j]),0);
+  const r=M.paired({field,share,reflected,transmitted});assert.equal(r.S.length,16);assert.equal(r.blocks.length,8);
+  for(let i=0;i<16;i++)for(let j=0;j<16;j++)if(Math.floor(i/2)!==Math.floor(j/2))assert.equal(M.abs2(r.S[i][j]),0);
   valid(r.S,r.a);near(r.rPower,1-share);near(r.tPower,share);
   for(let m=0;m<M.N;m++)near(M.abs2(r.b[2*m])+M.abs2(r.b[2*m+1]),M.abs2(r.a[2*m]),1e-10,'Pair conserves its own power');
   if(share<1)near(r.rPattern.reduce((a,b)=>a.power>b.power?a:b).angle,reflected);
@@ -72,7 +72,7 @@ for(const field of ['near','far'])for(const share of [0,.05,.5,.95,1])for(const 
   valid(r.S,Array.from({length:2*M.N},(_,i)=>M.c(Math.sin(i*.9),Math.cos(i*.7))));pairs++;
 }
 const p=M.paired({field:'near',reflected:10}),q=M.paired({field:'near',reflected:40});p.t.forEach((z,i)=>complexNear(z,q.t[i]));
-console.log(`PASS: ${cases} 36-port near/far × reflection × objective comparisons; worst S-to-wave fit ${maxFit.toExponential(3)}.`);
-console.log(`PASS: ${pairs} 72-port paired-array states, including reverse/coherent excitation, group conservation and independent steering.`);
+console.log(`PASS: ${cases} 8-port near/far × reflection × objective comparisons; worst S-to-wave fit ${maxFit.toExponential(3)}.`);
+console.log(`PASS: ${pairs} 16-port paired-array states, including reverse/coherent excitation, group conservation and independent steering.`);
 console.log('PASS: spherical/plane-wave limit, analytic array factor and bounds, phase-only optimisation, group power constraints, exact phase mapping, common objective and block-diagonal topology.');
 console.log(`PASS: ${maps} arbitrary and degenerate two-port complex target mappings.`);

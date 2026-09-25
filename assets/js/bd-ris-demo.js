@@ -21,10 +21,10 @@
   function antennas(parent,transmission=false) {
     parent.replaceChildren();
     for(let i=0;i<M.N;i++) {
-      const spacing=190/(M.N-1),y=cy-95+i*spacing;
-      if(transmission) {element('line',{x1:228,y1:y,x2:252,y2:y,class:'bd-v3-link'},parent);element('rect',{x:248,y:y-1.7,width:5,height:3.4,class:'bd-v3-rear'},parent);}
+      const spacing=Math.min(13,190/(M.N-1)),height=Math.min(8,spacing*.65),y=cy-(M.N-1)*spacing/2+i*spacing;
+      if(transmission) {element('line',{x1:228,y1:y,x2:252,y2:y,class:'bd-v3-link'},parent);element('rect',{x:248,y:y-height/2,width:5,height,class:'bd-v3-rear'},parent);}
       else if(i%2===0)element('path',{d:`M243,${y} H250 V${y+spacing} H243`,class:'bd-v3-link',fill:'none'},parent);
-      element('rect',{x:transmission?227:237,y:y-1.7,width:6,height:3.4,class:'bd-v3-port'},parent);
+      element('rect',{x:transmission?227:237,y:y-height/2,width:6,height,class:'bd-v3-port'},parent);
     }
   }
   const matrixD=find('.bd-matrix-d'),matrixB=find('.bd-matrix-b');
@@ -42,8 +42,8 @@
   function updateMatrices() {
     if(!comparison||!find('.bd-comparison-details').open)return;
     matrixDisplay(matrixD,comparison.S_d);matrixDisplay(matrixB,comparison.S_b);
-    find('.bd-d-matrix-title').textContent='D-RIS · 36 × 36 R';find('.bd-b-matrix-title').textContent='BD-RIS · 18 two-port blocks';
-    find('.bd-matrix-values').textContent=`36 reflecting ports; adjacent groups [1,2], [3,4], …, [35,36]\n\nD-RIS:\n${formatMatrix(comparison.S_d)}\n\nBD-RIS:\n${formatMatrix(comparison.S_b)}`;
+    find('.bd-d-matrix-title').textContent=`D-RIS · ${M.N} × ${M.N} R`;find('.bd-b-matrix-title').textContent=`BD-RIS · ${M.N/2} two-port blocks`;
+    find('.bd-matrix-values').textContent=`${M.N} reflecting ports; adjacent groups [1,2], [3,4], …, [${M.N-1},${M.N}]\n\nD-RIS:\n${formatMatrix(comparison.S_d)}\n\nBD-RIS:\n${formatMatrix(comparison.S_b)}`;
   }
   function updateCompare() {
     comparison=M.compare(state);validate(comparison.S_d,comparison.input);validate(comparison.S_b,comparison.input);
@@ -56,17 +56,17 @@
     }
     const name='D-RIS';all('.bd-d-name').forEach(n=>n.textContent=name);
     find('.bd-mode-label').textContent='Reflection';
-    find('.bd-network-label').textContent='BD: 36 ports · 18 groups · group size 2';
+    find('.bd-network-label').textContent=`BD: ${M.N} ports · ${M.N/2} groups · group size 2`;
     find('.bd-suppression').hidden=state.goal!=='sidelobes';
     find('#bd-target-value').textContent=`${state.target}°`;find('#bd-strength-value').textContent=state.strength<.3?'Gentle':state.strength>.7?'Strong':'Balanced';
     const d=comparison.dMetrics,b=comparison.bMetrics;
     const targetTradeoff=b.target<d.target-1e-6?', with a trade-off in target power.':b.target>d.target+1e-6?'; target power also improves in this case.':', at similar target power.';
     find('.bd-brief').textContent=state.goal==='peak'?(Math.abs(b.target-d.target)<1e-7?'Equal target power here: phase alignment already reaches the common bound.':b.target/d.target<1.01?'Nearly equal target power: amplitudes within each adjacent pair differ only slightly. The small BD improvement is shown in the details.':'BD-RIS redistributes input power within each pair to increase power at the target.'):(b.meanSide<d.meanSide-1e-7?`BD-RIS lowers mean sidelobe-region power${targetTradeoff}`:'Compare the same target-power / sidelobe-region trade-off; extra freedom does not improve every metric.');
-    find('.bd-comparison-condition').textContent='Both designs use the same 36 reflecting ports in a half-wavelength-spaced linear array. D-RIS has 36 independent one-port loads. BD-RIS has 18 adjacent two-port groups: [1,2], [3,4], …, [35,36]. Each block is symmetric and unitary; no power transfers between groups.';
+    find('.bd-comparison-condition').textContent=`Both designs use the same ${M.N} reflecting ports in a half-wavelength-spaced linear array. D-RIS has ${M.N} independent one-port loads. BD-RIS has ${M.N/2} adjacent two-port groups: [1,2], [3,4], …, [${M.N-1},${M.N}]. Each block is symmetric and unitary; no power transfers between groups.`;
     for(const [key,values]of [['d',d],['b',b]]){find(`[data-result="${key}-target"]`).textContent=db(values.target,3);find(`[data-result="${key}-side"]`).textContent=db(values.sideToTarget);find(`[data-result="${key}-score"]`).textContent=values.score.toFixed(4);find(`[data-result="${key}-direction"]`).textContent=`${values.peak.angle.toFixed(2)}°`;}
     find('.bd-model-health').textContent='Reciprocity, lossless power conservation and S-to-output consistency checked for this state. Each two-port group preserves its own input power.';
     updateMatrices();
-    find('.bd-compare-plot').setAttribute('aria-label',`${state.field}-field illumination; reflection; 36 ports in 18 adjacent pairs; target ${state.target} degrees. Dashed ${name} and solid BD-RIS use a common power scale and objective.`);
+    find('.bd-compare-plot').setAttribute('aria-label',`${state.field}-field illumination; reflection; ${M.N} ports in ${M.N/2} adjacent pairs; target ${state.target} degrees. Dashed ${name} and solid BD-RIS use a common power scale and objective.`);
   }
   function updatePairs() {
     pair=M.paired(state);validate(pair.S,pair.a);

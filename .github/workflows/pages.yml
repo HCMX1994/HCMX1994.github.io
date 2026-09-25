@@ -27,7 +27,7 @@ jobs:
         run: python -m pip install -r scripts/requirements-site.txt
       - name: Validate Scholar updater
         run: python scripts/test_update_scholar.py
-      - name: Validate WoS daily snapshot
+      - name: Validate WoS snapshot
         run: python scripts/test_update_wos.py
       - name: Validate visitor backup and totals
         run: |

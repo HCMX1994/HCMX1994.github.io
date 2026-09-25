@@ -506,3 +506,43 @@
   .bd-wide .bd-extra-controls>summary,.bd-wide .bd-model>summary{min-height:44px}
   .collegiate-site .experience-columns .institution{font-size:28px}
 }
+
+/* A quieter introduction: identity, appointment, research, then navigation. */
+.collegiate-site .hero--refined{align-items:stretch;gap:clamp(44px,6vw,80px);padding:50px 0 46px}
+.collegiate-site .hero--refined .hero-copy{display:flex;flex-direction:column;min-width:0;max-width:520px}
+.collegiate-site .hero--refined .eyebrow{font-size:10px;line-height:1.8;letter-spacing:1.5px;margin:0}
+.collegiate-site .hero--refined h1{font-size:clamp(54px,5.7vw,74px);line-height:1.08;letter-spacing:-2.5px;margin:17px 0 27px}
+.collegiate-site .hero--refined .hero-role{margin:0;line-height:1.5}
+.collegiate-site .hero--refined .hero-role strong{font-family:var(--font);font-size:23px;line-height:1.4;font-weight:600;letter-spacing:-.4px;margin:0 0 5px}
+.collegiate-site .hero--refined .hero-position{font-size:16px;line-height:1.55;color:var(--ink);margin:0}
+.collegiate-site .hero--refined .hero-department{font-size:12px;line-height:1.7;margin:5px 0 0;color:var(--muted)}
+.collegiate-site .hero--refined .hero-summary{font-size:18px;line-height:1.75;max-width:470px;margin:24px 0 0;color:var(--muted)}
+.collegiate-site .hero--refined .hero-actions{margin:23px 0 0;gap:29px;flex-wrap:wrap}
+.collegiate-site .hero--refined .hero-actions a{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px;font:600 13px/1.4 var(--font);padding:8px 0;border:0;border-bottom:1px solid #9cb7b9;background:transparent;color:var(--accent);border-radius:0}
+.collegiate-site .hero--refined .hero-actions a:hover{background:transparent;color:var(--ink);border-bottom-color:var(--ink)}
+.collegiate-site .hero--refined .hero-meta{margin-top:auto;padding-top:25px;font-size:11px;line-height:1.6;letter-spacing:0;flex-wrap:wrap;row-gap:8px}
+.collegiate-site .hero--refined .hero-meta span+span{border-left:0;margin-left:16px;padding-left:0}
+.collegiate-site .hero--refined .hero-meta span+span::before{content:'·';margin-right:16px;color:var(--muted)}
+.collegiate-site .hero--refined .hero-profile{border-bottom:0;padding-bottom:0;align-self:start}
+.collegiate-site .hero--refined .hero-portrait figcaption{font-size:10px;letter-spacing:1.4px;padding-top:17px}
+.collegiate-site .hero--refined .hero-profile>p{font-size:14px;line-height:1.75;margin:9px 0 10px}
+.collegiate-site .hero--refined .hero-profile>.text-link{display:inline-flex;min-height:32px;align-items:center}
+@media(min-width:761px) and (max-width:1000px){
+  .collegiate-site .hero--refined{gap:40px}
+  .collegiate-site .hero--refined h1{font-size:60px}
+  .collegiate-site .hero--refined .hero-role strong{font-size:22px}
+  .collegiate-site .hero--refined .hero-position{font-size:15px}
+  .collegiate-site .hero--refined .hero-summary{font-size:17px}
+}
+@media(max-width:760px){
+  .collegiate-site .hero--refined{gap:30px;padding:34px 0 36px;grid-template-columns:1fr}
+  .collegiate-site .hero--refined .hero-copy{max-width:none}
+  .collegiate-site .hero--refined h1{font-size:clamp(48px,9vw,64px);margin:15px 0 23px;letter-spacing:-2px}
+  .collegiate-site .hero--refined .hero-role strong{font-size:22px}
+  .collegiate-site .hero--refined .hero-position{font-size:15px}
+  .collegiate-site .hero--refined .hero-summary{font-size:17px;margin-top:21px;max-width:480px}
+  .collegiate-site .hero--refined .hero-actions{gap:26px;margin-top:17px}
+  .collegiate-site .hero--refined .hero-actions a{font-size:12px;gap:12px}
+  .collegiate-site .hero--refined .hero-meta{margin-top:0;padding-top:22px}
+  .collegiate-site .hero--refined .hero-profile{justify-self:center;max-width:437px}
+}

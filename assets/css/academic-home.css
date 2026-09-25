@@ -555,3 +555,13 @@
 .collegiate-site .review-metric-source{display:block;font-size:11px;color:var(--muted)}
 .collegiate-site .review-metric-link:hover .review-metric-source{color:var(--accent)}
 .collegiate-site .review-metric>p{font-size:11px;color:var(--muted);margin:9px 0 0;line-height:1.4}
+
+/* Start awards alongside the review count, below the service heading. */
+.collegiate-site .recognition-section{row-gap:0}
+@media(min-width:761px){
+  .collegiate-site .recognition-heading,.collegiate-site .recognition-copy{grid-column:1}
+  .collegiate-site .recognition-section>.awards{grid-column:2;grid-row:2}
+}
+@media(max-width:760px){
+  .collegiate-site .recognition-section>.awards{margin-top:28px}
+}

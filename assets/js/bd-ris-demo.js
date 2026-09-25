@@ -4,7 +4,8 @@
   const root=document.getElementById('bd-lab');if(!root)return;
   const M=window.BDRISModel, find=s=>root.querySelector(s), all=s=>root.querySelectorAll(s), motion=matchMedia('(prefers-reduced-motion: reduce)');
   const state={example:'compare',field:'near',incidence:45,range:5,target:0,goal:'sidelobes',strength:.5,reflected:-25,transmitted:30,share:.5,playing:!motion.matches};
-  let comparison,pair,frame=0,queued=0,last=null,time=0,visible=true;
+  let comparison,pair,frame=0,queued=0,last=null,time=0,visible=true,worker=null,requestId=0,busy=false;
+  const modelScript=Array.from(document.scripts).find(script=>/bd-ris-model[.]/.test(script.src));
   const ns='http://www.w3.org/2000/svg', cy=147, radius=db=>138*Math.max(0,Math.min(1,(db+30)/30));
   const peak=plot=>plot.reduce((p,x)=>x.power>p.power?x:p,plot[0]);
   function element(tag,attrs,parent,text) {const node=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))node.setAttribute(k,v);if(text!==undefined)node.textContent=text;parent.appendChild(node);return node;}
@@ -40,13 +41,13 @@
   const db=(p,digits=1)=>{const value=10*Math.log10(Math.max(p,1e-12));return `${(Math.abs(value)<.5*10**(-digits)?0:value).toFixed(digits)} dB`;};
   function validate(S,a) {const d=M.diagnostics(S,a);if(Math.max(...Object.values(d))>1e-8)throw new Error('Scattering matrix failed the reciprocal/lossless checks');return d;}
   function updateMatrices() {
-    if(!comparison||!find('.bd-comparison-details').open)return;
+    if(busy||!comparison||!find('.bd-comparison-details').open)return;
     matrixDisplay(matrixD,comparison.S_d);matrixDisplay(matrixB,comparison.S_b);
     find('.bd-d-matrix-title').textContent=`D-RIS · ${M.N} × ${M.N} R`;find('.bd-b-matrix-title').textContent=`BD-RIS · ${M.N/2} two-port blocks`;
     find('.bd-matrix-values').textContent=`${M.N} reflecting ports; adjacent groups [1,2], [3,4], …, [${M.N-1},${M.N}]\n\nD-RIS:\n${formatMatrix(comparison.S_d)}\n\nBD-RIS:\n${formatMatrix(comparison.S_b)}`;
   }
-  function updateCompare() {
-    comparison=M.compare(state);validate(comparison.S_d,comparison.input);validate(comparison.S_b,comparison.input);
+  function updateCompare(result) {
+    comparison=result;validate(comparison.S_d,comparison.input);validate(comparison.S_b,comparison.input);
     const side=-1,g=find('.bd-grid');g.replaceChildren();grid(g,side);
     antennas(find('.bd-antenna-drawing'));
     find('.bd-main-b').setAttribute('d',lobe(comparison.bMetrics.plot,side));find('.bd-main-d').setAttribute('d',lobe(comparison.dMetrics.plot,side));
@@ -58,12 +59,13 @@
     find('.bd-mode-label').textContent='Reflection';
     find('.bd-network-label').textContent=`BD: ${M.N} ports · ${M.N/2} groups · group size 2`;
     find('.bd-suppression').hidden=state.goal!=='sidelobes';
-    find('#bd-target-value').textContent=`${state.target}°`;find('#bd-strength-value').textContent=state.strength<.3?'Gentle':state.strength>.7?'Strong':'Balanced';
+    find('#bd-target-value').textContent=`${state.target}°`;find('#bd-strength-value').textContent=`${(2*state.strength).toFixed(1)} dB`;
     const d=comparison.dMetrics,b=comparison.bMetrics;
-    const targetTradeoff=b.target<d.target-1e-6?', with a trade-off in target power.':b.target>d.target+1e-6?'; target power also improves in this case.':', at similar target power.';
-    find('.bd-brief').textContent=state.goal==='peak'?(Math.abs(b.target-d.target)<1e-7?'Equal target power here: phase alignment already reaches the common bound.':b.target/d.target<1.01?'Nearly equal target power: amplitudes within each adjacent pair differ only slightly. The small BD improvement is shown in the details.':'BD-RIS redistributes input power within each pair to increase power at the target.'):(b.meanSide<d.meanSide-1e-7?`BD-RIS lowers mean sidelobe-region power${targetTradeoff}`:'Compare the same target-power / sidelobe-region trade-off; extra freedom does not improve every metric.');
+    find('.bd-brief').textContent=state.goal==='peak'?(Math.abs(b.target-d.target)<1e-7?'Equal target power here: phase alignment already reaches the common bound.':b.target/d.target<1.01?'Nearly equal target power: amplitudes within each adjacent pair differ only slightly. The small BD improvement is shown in the details.':'BD-RIS redistributes input power within each pair to increase power at the target.'):(b.side<d.side-1e-7?'BD-RIS lowers the highest sidelobe using pairwise amplitude and phase control. Both designs meet the same main-beam constraints.':'The best feasible patterns are similar here. Both designs meet the same main-beam constraints.');
     find('.bd-comparison-condition').textContent=`Both designs use the same ${M.N} reflecting ports in a half-wavelength-spaced linear array. D-RIS has ${M.N} independent one-port loads. BD-RIS has ${M.N/2} adjacent two-port groups: [1,2], [3,4], …, [${M.N-1},${M.N}]. Each block is symmetric and unitary; no power transfers between groups.`;
-    for(const [key,values]of [['d',d],['b',b]]){find(`[data-result="${key}-target"]`).textContent=db(values.target,3);find(`[data-result="${key}-side"]`).textContent=db(values.sideToTarget);find(`[data-result="${key}-score"]`).textContent=values.score.toFixed(4);find(`[data-result="${key}-direction"]`).textContent=`${values.peak.angle.toFixed(2)}°`;}
+    for(const [key,values]of [['d',d],['b',b]]){find(`[data-result="${key}-target"]`).textContent=db(values.target,3);find(`[data-result="${key}-side"]`).textContent=db(values.sideToTarget,2);find(`[data-result="${key}-score"]`).textContent=db(values.side,2);find(`[data-result="${key}-direction"]`).textContent=`${values.peak.angle.toFixed(2)}°`;}
+    find('.bd-current-constraints').textContent=state.goal==='sidelobes'?`Same target ${state.target}°; same fixed main-beam sector; same minimum target power ${db(comparison.obj.powerFloor,2)} on the common scale (${(2*state.strength).toFixed(1)} dB below the phase-aligned D-RIS reference). Actual target powers may differ above this floor.`:'Target-power mode: the analytic optimum is used for each architecture; no sidelobe constraint is imposed.';
+    find('.bd-search-status').textContent=comparison.search?`Search: ${comparison.search.d.starts} starts per design, followed by off-grid peak refinement. ${comparison.search.d.converged&&comparison.search.b.converged?'Local convergence checks passed.':'A feasible candidate is shown; the local convergence tolerance was not reached for every selected solution.'} Global optimality is not certified.`:'';
     find('.bd-model-health').textContent='Reciprocity, lossless power conservation and S-to-output consistency checked for this state. Each two-port group preserves its own input power.';
     updateMatrices();
     find('.bd-compare-plot').setAttribute('aria-label',`${state.field}-field illumination; reflection; ${M.N} ports in ${M.N/2} adjacent pairs; target ${state.target} degrees. Dashed ${name} and solid BD-RIS use a common power scale and objective.`);
@@ -81,20 +83,38 @@
   }
   function update() {
     try {
+      if(queued){clearTimeout(queued);queued=0;}
+      const id=++requestId;
+      if(worker){worker.terminate();worker=null;}
       if(!M)throw new Error('The model script did not load');
       find('.bd-error').hidden=true;find('.bd-compare-panel').hidden=state.example!=='compare';find('.bd-pairs-panel').hidden=state.example!=='pairs';
       all('[data-field]').forEach(n=>n.setAttribute('aria-pressed',String(n.dataset.field===state.field)));all('[data-example]').forEach(n=>n.setAttribute('aria-pressed',String(n.dataset.example===state.example)));
       find('.bd-source-note').innerHTML=state.field==='near'?'<span aria-hidden="true">◔</span> Spherical illumination · amplitude + phase vary':'<span aria-hidden="true">≋</span> Plane-wave illumination · equal amplitudes';
       find('.bd-range-control').hidden=state.field!=='near';find('#bd-incidence-value').textContent=`${state.incidence}°`;find('#bd-range-value').textContent=`${state.range} λ`;
-      if(state.example==='compare')updateCompare();else updatePairs();
-      find('.bd-compare-plot').style.visibility='';find('.bd-pair-plot').style.visibility='';draw();
+      find('.bd-compare-plot').style.visibility='';find('.bd-pair-plot').style.visibility='';
+      if(state.example==='compare'){
+        find('.bd-suppression').hidden=state.goal!=='sidelobes';
+        find('#bd-target-value').textContent=`${state.target}°`;find('#bd-strength-value').textContent=`${(2*state.strength).toFixed(1)} dB`;
+        const complete=result=>{if(id!==requestId)return;setBusy(false);updateCompare(result);draw();};
+        if(state.goal==='peak'){complete(M.compare(state));return;}
+        setBusy(true);find('.bd-brief').textContent='Optimising both designs with the same main-beam constraints…';
+        all('[data-result]').forEach(node=>node.textContent='…');find('.bd-current-constraints').textContent='Calculating the shared constraints and refined sidelobe peaks…';find('.bd-search-status').textContent='';find('.bd-model-health').textContent='';
+        if(typeof Worker!=='undefined'&&modelScript){
+          worker=new Worker(modelScript.src);
+          worker.onmessage=event=>{if(event.data.id!==requestId)return;try{if(event.data.error)throw new Error(event.data.error);complete(event.data.result);}catch(error){showError(error);}};
+          worker.onerror=()=>{if(id===requestId)showError(new Error('Background optimisation could not finish'));};
+          worker.postMessage({id,state:{...state}});
+        }else setTimeout(()=>{if(id!==requestId)return;try{complete(M.compare(state));}catch(error){showError(error);}},0);
+      }else{setBusy(false);updatePairs();draw();}
     } catch(error) {
-      find('.bd-error').hidden=false;find('.bd-error').textContent='This setting could not be validated. Change a control or reload to retry.';find('.bd-compare-plot').style.visibility='hidden';find('.bd-pair-plot').style.visibility='hidden';console.error(error);
+      showError(error);
     }
   }
-  function requestUpdate(){if(queued)cancelAnimationFrame(queued);queued=requestAnimationFrame(()=>{queued=0;update();});}
+  function setBusy(value){busy=value;root.setAttribute('aria-busy',String(value));find('.bd-compare-plot').style.opacity=value?'.3':'1';find('.bd-matrix-pair').hidden=value;find('.bd-matrix-values').textContent=value?'Calculating…':find('.bd-matrix-values').textContent;}
+  function showError(error){setBusy(false);find('.bd-error').hidden=false;find('.bd-error').textContent='This setting could not be validated. Change a control or reload to retry.';find('.bd-compare-plot').style.visibility='hidden';find('.bd-pair-plot').style.visibility='hidden';console.error(error);}
+  function requestUpdate(){requestId++;if(worker){worker.terminate();worker=null;}if(queued)clearTimeout(queued);queued=setTimeout(()=>{queued=0;update();},120);}
   function dot(selector,plot,side,cx,offset=0){const p=peak(plot),xy=point(p.angle,radius(p.db)*((time*.3+offset)%1),side,cx),node=find(selector);node.setAttribute('cx',xy[0]);node.setAttribute('cy',xy[1]);}
-  function draw(){if(state.example==='compare'&&comparison){dot('.bd-flow-b',comparison.bMetrics.plot,-1,240);dot('.bd-flow-d',comparison.dMetrics.plot,-1,240,.4);}else if(pair){dot('.bd-flow-r',pair.rPattern,-1,226);dot('.bd-flow-t',pair.tPattern,1,254,.4);}}
+  function draw(){if(busy)return;if(state.example==='compare'&&comparison){dot('.bd-flow-b',comparison.bMetrics.plot,-1,240);dot('.bd-flow-d',comparison.dMetrics.plot,-1,240,.4);}else if(pair){dot('.bd-flow-r',pair.rPattern,-1,226);dot('.bd-flow-t',pair.tPattern,1,254,.4);}}
   function animate(now){frame=0;if(!state.playing||!visible||document.hidden){last=null;return;}if(last!==null)time+=Math.min((now-last)/1000,.1);last=now;draw();frame=requestAnimationFrame(animate);}
   function playback(){if(frame)cancelAnimationFrame(frame);last=null;frame=0;all('.bd-play').forEach(n=>{n.textContent=state.playing?'Pause':'Play';n.setAttribute('aria-label',`${state.playing?'Pause':'Play'} direction markers`);});if(state.playing&&visible&&!document.hidden)frame=requestAnimationFrame(animate);}
   all('[data-example]').forEach(n=>n.addEventListener('click',()=>{state.example=n.dataset.example;update();}));

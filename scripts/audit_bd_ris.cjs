@@ -7,6 +7,8 @@ function check(options) {
     const d=M.diagnostics(S,r.input);maxInvariant=Math.max(maxInvariant,...Object.values(d));
     assert.ok(Math.max(...Object.values(d))<1e-8,`Invalid network ${JSON.stringify(options)}`);
   }
+  for(let g=0;g<M.N;g+=2)assert.ok(Math.abs(M.power(r.b.slice(g,g+2))-M.power(r.a.slice(g,g+2)))<1e-9,'Each reflection group conserves its own power');
+  for(let i=0;i<M.N;i++)for(let j=0;j<M.N;j++)if(Math.floor(i/2)!==Math.floor(j/2))assert.equal(M.abs2(r.S_b[i][j]),0,'No inter-group links');
   assert.ok(r.bMetrics.score>=r.dMetrics.score-1e-8,'Common-objective feasible-set bound');
   assert.ok(r.phase.score>=M.score(r.obj.Q,r.phase.aligned)-1e-9,'Phase-only candidate retained');
   for(const metrics of [r.dMetrics,r.bMetrics]) {
@@ -16,10 +18,10 @@ function check(options) {
     if(options.goal==='peak')assert.ok(Math.abs(metrics.peak.angle-options.target)<.26,'Peak steering follows target');
   }
 }
-// Every one-degree target setting in all field / face / objective combinations.
-for(const field of ['near','far'])for(const operation of ['reflection','transmission'])for(const goal of ['peak','sidelobes'])for(let target=-55;target<=55;target++)check({field,operation,goal,target});
-// Every near-distance step and source-angle boundaries, for both faces.
-for(const operation of ['reflection','transmission'])for(const incidence of [-55,0,55])for(let range=5;range<=20;range+=.5)check({field:'near',operation,incidence,range,target:23});
+// Every one-degree target setting in all field / objective combinations.
+for(const field of ['near','far'])for(const goal of ['peak','sidelobes'])for(let target=-55;target<=55;target++)check({field,goal,target});
+// Every near-distance step and source-angle boundaries.
+for(const incidence of [-55,0,55])for(let range=5;range<=20;range+=.5)check({field:'near',incidence,range,target:23});
 // Every suppression preference at centre/edge beams under near/far incidence.
 for(const field of ['near','far'])for(const target of [-55,0,55])for(let step=1;step<=20;step++)check({field,target,strength:step/20});
 let pairs=0;

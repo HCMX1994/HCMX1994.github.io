@@ -26,13 +26,29 @@ for(const field of ['near','far'])for(const goal of ['peak','sidelobes'])for(con
   valid(r.S_d,r.input);valid(r.S_b,r.input);near(M.power(r.d),1);near(M.power(r.b),1);
   r.d.forEach((z,i)=>near(M.abs2(z),M.abs2(r.a[i]),1e-10,'Phase-only magnitudes'));
   assert.ok(r.bMetrics.score>=r.dMetrics.score-1e-9,'Enlarged feasible set cannot lower the common objective');
-  assert.ok(r.phase.score>=M.score(r.obj.Q,r.phase.aligned)-1e-10,'D-RIS optimisation retains target-aligned candidate');
-  near(r.dMetrics.score,r.dMetrics.target-r.obj.weight*r.dMetrics.meanSide,1e-9,'Objective independently reconstructed from angular powers');
-  near(r.bMetrics.score,r.bMetrics.target-r.obj.weight*r.bMetrics.meanSide,1e-9);
+  if(goal==='sidelobes') {
+    for(const [waves,m] of [[r.d,r.dMetrics],[r.b,r.bMetrics]]) {
+      assert.ok(m.target>=r.obj.powerFloor-1e-8,'Shared minimum target power');
+      near(m.peak.angle,target,.02,'Suppression must preserve pointing');
+      assert.ok(m.peak.power<=m.target+1e-7,'Target is the main-beam peak');
+      near(m.score,-m.side,1e-10,'Minimax objective is highest absolute outside-guard power');
+      let sampledSide=0;
+      // Independent Cartesian far-field sum on a much finer u grid, including edges.
+      const u0=Math.sin(target*Math.PI/180),us=Array.from({length:12001},(_,i)=>-1+i/6000);
+      us.push(u0-r.obj.guard,u0+r.obj.guard);
+      for(const u of us)if(u>=-1&&u<=1&&Math.abs(u-u0)>=r.obj.guard-1e-12){
+        let re=0,im=0;for(let i=0;i<M.N;i++){const phi=2*Math.PI*M.positions[i]*u,co=Math.cos(phi),si=Math.sin(phi);re+=waves[i].re*co-waves[i].im*si;im+=waves[i].re*si+waves[i].im*co;}
+        sampledSide=Math.max(sampledSide,(re*re+im*im)/M.N);
+      }
+      near(m.side,sampledSide,1e-6,'Refined sidelobe maximum agrees with independent dense grid');
+    }
+    const baseline=M.metrics(r.phase.aligned,r.obj);
+    assert.ok(r.dMetrics.side<=baseline.side+1e-8,'Optimised D retains its feasible coherent reference');
+  }
   if(goal==='peak') {
     near(r.dMetrics.target,r.a.reduce((s,z)=>s+Math.sqrt(M.abs2(z)),0)**2/M.N,1e-9,'Analytic phase-only bound');
     const groupSum=Array.from({length:M.N/2},(_,g)=>Math.sqrt(2*M.power(r.a.slice(2*g,2*g+2)))).reduce((s,x)=>s+x,0);
-    near(r.bMetrics.target,groupSum**2/M.N,1e-9,'Analytic group-connected bound');near(r.dMetrics.peak.angle,target);near(r.bMetrics.peak.angle,target);
+    near(r.bMetrics.target,groupSum**2/M.N,1e-9,'Analytic group-connected bound');near(r.dMetrics.peak.angle,target,1e-5);near(r.bMetrics.peak.angle,target,1e-5);
     if(field==='far')near(r.dMetrics.target,r.bMetrics.target,1e-9,'Uniform plane wave peak tie');
     else assert.ok(r.bMetrics.target>r.dMetrics.target+1e-7,'Spherical amplitude redistribution improves peak');
   }
@@ -43,8 +59,30 @@ for(const field of ['near','far'])for(const goal of ['peak','sidelobes'])for(con
   maxFit=Math.max(maxFit,r.joint.residual);cases++;
 }
 // The D-RIS solver actually changes phase when beneficial, instead of copying peak steering.
-const phaseCase=M.compare({field:'near',target:53,strength:1});
-assert.ok(phaseCase.phase.score-M.score(phaseCase.obj.Q,phaseCase.phase.aligned)>1e-8,'Nontrivial phase-only optimisation');
+const phaseCase=M.compare({field:'far',target:5,strength:.5});
+assert.ok(phaseCase.dMetrics.side<M.metrics(phaseCase.phase.aligned,phaseCase.obj).side-.005,'Nontrivial phase-only minimax optimisation');
+// Verify the solver's analytic gradient independently (phases, pair mixing and epigraph).
+for(const bd of [false,true]) {
+  const ctx=M.minimax.setup(M.illumination('near',45,5),17,.5,bd),x=ctx.initial(Array.from({length:8},(_,i)=>.3*Math.sin(i+1))),lambda=Array(ctx.rows.length+2).fill(.07);
+  if(bd)x[8]+=.21;
+  const analytic=ctx.evaluate(x,lambda,17).g;
+  for(let j=0;j<x.length;j++){
+    const lo=x.slice(),hi=x.slice(),h=1e-6;lo[j]-=h;hi[j]+=h;
+    near(analytic[j],(ctx.evaluate(hi,lambda,17).f-ctx.evaluate(lo,lambda,17).f)/(2*h),2e-6,'Augmented-Lagrangian gradient');
+  }
+}
+// Independent SciPy 1.18.1 SLSQP epigraph solves (12–24 random starts,
+// 401 u samples + exact guard edges, ftol=1e-11). These are numerical
+// reference solutions, not global bounds; allow 0.03 dB for grid/refinement differences.
+for(const ref of [
+  {field:'near',target:0,strength:.5,d:-13.9544889278,b:-15.1725329136},
+  {field:'near',target:55,strength:1,d:-11.3361163662,b:-11.8226262015},
+  {field:'far',target:5,strength:.5,d:-14.1380188295,b:-15.2972722117},
+  {field:'far',target:-55,strength:.05,d:-10.1619968005,b:-10.6503114984}
+]) {
+  const r=M.compare(ref);
+  for(const key of ['d','b'])assert.ok(10*Math.log10(r[`${key}Metrics`].side)<=ref[key]+.03,'Independent constrained-minimax reference');
+}
 // Exact complex target phase must be preserved across groups, including singular
 // equal-magnitude cases. A separate arbitrary phase for each pair spoils the beam.
 assert.equal(M.N,8);assert.equal(M.GROUP_SIZE,2);

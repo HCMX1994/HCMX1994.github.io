@@ -1,5 +1,6 @@
-"""Read the public WoS profile once daily; preserve the snapshot on failure.
+"""Render a dated WoS snapshot; public-profile collection is opt-in only.
 
+The homepage uses an owner-maintained snapshot; CI does not call the collector.
 Only the aggregate verified-review count is stored. No sign-in, private API,
 saved cookies, or review-level records are used.
 """
@@ -126,7 +127,7 @@ def render_panel(output=OUTPUT, now=None):
         data = validate_snapshot(json.loads(output.read_text(encoding='utf-8')))
         checked = datetime.fromisoformat(data['checked_at'].replace('Z', '+00:00'))
         now = now or datetime.now(timezone.utc)
-        pending = ' · Update pending' if (now - checked).total_seconds() > 3 * 86400 else ''
+        pending = ' · Update pending' if data['method'] == 'public-profile-browser' and (now - checked).total_seconds() > 3 * 86400 else ''
         label = checked.strftime('%d %b %Y').lstrip('0')
         return (f'<div class="review-metric" aria-label="Web of Science verified peer reviews">'
                 f'<a class="review-metric-link" href="{PROFILE_URL}">'

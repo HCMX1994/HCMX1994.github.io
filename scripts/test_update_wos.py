@@ -74,6 +74,10 @@ class ReviewSnapshotTests(unittest.TestCase):
             self.assertIn('Update pending', stale)
             self.assertIn('26 Sep 2026', stale)
             self.assertIn(PROFILE_URL, stale)
+            manual = json.loads(output.read_text(encoding='utf-8'))
+            manual['method'] = 'public-profile-manual-check'
+            output.write_text(json.dumps(manual), encoding='utf-8')
+            self.assertNotIn('Update pending', render_panel(output, datetime(2026, 10, 1, tzinfo=timezone.utc)))
             output.write_text('{}', encoding='utf-8')
             fallback = render_panel(output, NOW)
             self.assertIn('View peer reviews', fallback)

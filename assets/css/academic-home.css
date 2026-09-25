@@ -111,7 +111,7 @@
 .bd-matrix-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:12px 0}
 .bd-matrix-pair figure{margin:0;min-width:0}
 .bd-matrix-pair figcaption{font-size:10px;margin-bottom:7px}
-.bd-matrix-d,.bd-matrix-b{display:grid;grid-template-columns:repeat(36,1fr);gap:1px;padding:3px;background:#fafbf5;border:1px solid #d0d7c9}
+.bd-matrix-d,.bd-matrix-b{display:grid;grid-template-columns:repeat(8,1fr);gap:1px;padding:3px;background:#fafbf5;border:1px solid #d0d7c9}
 .bd-matrix-pair span{display:block;aspect-ratio:1;border:1px solid #d6dbce;border-radius:1px}
 .bd-v3 :focus-visible{outline:2px solid #87394d;outline-offset:2px}
 .bd-v3 .bd-matrix-values{white-space:pre;overflow:auto;max-width:100%;max-height:300px;font:9px/1.8 monospace;color:#40513b}

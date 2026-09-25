@@ -51,12 +51,15 @@ def fetch_count():
     from playwright.sync_api import sync_playwright
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
+        page = None
+        stage = 'open public profile'
         try:
             context = browser.new_context(locale='en-GB', timezone_id='UTC')
             page = context.new_page()
             response = page.goto(PROFILE_URL, wait_until='domcontentloaded', timeout=60000)
             if response is not None and response.status >= 400:
                 raise ValueError(f'Public profile returned HTTP {response.status}')
+            stage = 'wait for verified-review label'
             label = page.get_by_text('Verified peer reviews', exact=True)
             label.wait_for(state='visible', timeout=60000)
             rows = page.locator('p.summary-item').filter(has=label)
@@ -70,6 +73,19 @@ def fetch_count():
                 }))'''),
             }
             return parse_observation(observation)
+        except Exception:
+            # Public, signed-out page text helps distinguish loading failures from
+            # access challenges. Never log cookies, network payloads or URL queries.
+            diagnostic = {'stage': stage}
+            if page is not None:
+                try:
+                    diagnostic['title'] = page.title()[:200]
+                    text = page.locator('body').inner_text(timeout=5000)
+                    diagnostic['visible_text'] = re.sub(r'https?://\S+', '[URL]', text)[:1600]
+                except Exception:
+                    diagnostic['visible_text'] = 'Page text unavailable'
+            print('WoS public-page diagnostic: ' + json.dumps(diagnostic), file=sys.stderr)
+            raise
         finally:
             browser.close()
 

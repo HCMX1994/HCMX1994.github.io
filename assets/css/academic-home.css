@@ -611,13 +611,13 @@
 /* Concise supporting content with optional venue detail. */
 .collegiate-site .project-card h3:has(+.project-meta){margin-bottom:23px}
 .collegiate-site .review-journals{max-width:420px;border-bottom:1px solid var(--line);margin:0 0 22px;padding:0 0 18px}
-.collegiate-site .review-journals summary{cursor:pointer;font:600 14px/1.6 var(--font);color:var(--ink);padding:3px 0 7px}
+.collegiate-site .review-journals summary{cursor:pointer;font:600 17px/1.6 var(--font);color:var(--ink);padding:3px 0 7px}
 .collegiate-site .review-journals summary span{font-size:11px;font-weight:400;color:var(--muted);margin-left:9px;white-space:nowrap}
 .collegiate-site .review-journals summary:hover{color:var(--accent)}
 .collegiate-site .review-journals summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .collegiate-site .review-journals ul{padding-left:19px;margin:11px 0 0;font-size:13px;line-height:1.75;color:var(--muted)}
 .collegiate-site .review-journals li+li{margin-top:8px}
-.collegiate-site .conference-service h3{font:600 14px/1.6 var(--font);letter-spacing:0;margin:0 0 12px}
+.collegiate-site .conference-service h3{font:600 17px/1.6 var(--font);letter-spacing:0;margin:0 0 12px}
 .collegiate-site .conference-service ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.8;color:var(--muted)}
 .collegiate-site .conference-service li+li{margin-top:7px}
 .collegiate-site .conference-service abbr{text-decoration:none}

@@ -510,7 +510,7 @@
 /* A quieter introduction: identity, appointment, research, then navigation. */
 .collegiate-site .hero--refined{align-items:stretch;gap:clamp(44px,6vw,80px);padding:50px 0 46px}
 .collegiate-site .hero--refined .hero-copy{display:flex;flex-direction:column;min-width:0;max-width:520px}
-.collegiate-site .hero--refined .eyebrow{font-size:10px;line-height:1.8;letter-spacing:1.5px;margin:0}
+.collegiate-site .hero--refined .eyebrow{font-size:16px;font-weight:600;line-height:1.65;letter-spacing:.45px;text-transform:none;margin:0}
 .collegiate-site .hero--refined h1{font-size:clamp(54px,5.7vw,74px);line-height:1.08;letter-spacing:-2.5px;margin:17px 0 27px}
 .collegiate-site .hero--refined .hero-role{margin:0;line-height:1.5}
 .collegiate-site .hero--refined .hero-role strong{font-family:var(--font);font-size:23px;line-height:1.4;font-weight:600;letter-spacing:-.4px;margin:0 0 5px}
@@ -520,9 +520,6 @@
 .collegiate-site .hero--refined .hero-actions{margin:23px 0 0;gap:29px;flex-wrap:wrap}
 .collegiate-site .hero--refined .hero-actions a{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px;font:600 13px/1.4 var(--font);padding:8px 0;border:0;border-bottom:1px solid #9cb7b9;background:transparent;color:var(--accent);border-radius:0}
 .collegiate-site .hero--refined .hero-actions a:hover{background:transparent;color:var(--ink);border-bottom-color:var(--ink)}
-.collegiate-site .hero--refined .hero-meta{margin-top:auto;padding-top:25px;font-size:11px;line-height:1.6;letter-spacing:0;flex-wrap:wrap;row-gap:8px}
-.collegiate-site .hero--refined .hero-meta span+span{border-left:0;margin-left:16px;padding-left:0}
-.collegiate-site .hero--refined .hero-meta span+span::before{content:'·';margin-right:16px;color:var(--muted)}
 .collegiate-site .hero--refined .hero-profile{border-bottom:0;padding-bottom:0;align-self:start}
 .collegiate-site .hero--refined .hero-portrait figcaption{font-size:10px;letter-spacing:1.4px;padding-top:17px}
 .collegiate-site .hero--refined .hero-profile>p{font-size:14px;line-height:1.75;margin:9px 0 10px}
@@ -543,7 +540,6 @@
   .collegiate-site .hero--refined .hero-summary{font-size:17px;margin-top:21px;max-width:480px}
   .collegiate-site .hero--refined .hero-actions{gap:26px;margin-top:17px}
   .collegiate-site .hero--refined .hero-actions a{font-size:12px;gap:12px}
-  .collegiate-site .hero--refined .hero-meta{margin-top:0;padding-top:22px}
   .collegiate-site .hero--refined .hero-profile{justify-self:center;max-width:437px}
 }
 
@@ -565,3 +561,87 @@
 @media(max-width:760px){
   .collegiate-site .recognition-section>.awards{margin-top:28px}
 }
+
+/* IEEE TVT editorial appointment */
+.collegiate-site .news-item .news-category{display:block;font-size:11px;color:var(--accent);padding-top:4px;margin-bottom:9px}
+.collegiate-site .editorial-appointment{margin:0 0 25px;padding:0 0 23px;border-bottom:1px solid var(--line);max-width:420px;scroll-margin-top:30px}
+.collegiate-site .editorial-appointment .small-label{font-size:10px;letter-spacing:1.4px;line-height:1.6;color:var(--accent);margin:0 0 8px}
+.collegiate-site .editorial-appointment h3{font-family:var(--display);font-size:27px;font-weight:400;letter-spacing:-.4px;line-height:1.2;margin:0 0 7px}
+.collegiate-site .editorial-appointment>p:last-child{font-size:14px;line-height:1.65;margin:0;color:var(--muted)}
+.collegiate-site .editorial-appointment a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.collegiate-site .editorial-appointment a:hover{color:var(--accent);text-decoration-color:var(--accent)}
+
+
+/* A balanced identity block with a single editorial line and secondary credentials. */
+.collegiate-site .hero--refined{align-items:center}
+.collegiate-site .hero--refined .hero-copy{display:block}
+.collegiate-site .hero--refined .hero-profile{align-self:center}
+.collegiate-site .hero--refined .hero-department{font-size:13px}
+.collegiate-site .hero--refined .hero-affiliations{border-top:1px solid var(--line);margin-top:25px;padding-top:20px;max-width:455px}
+.collegiate-site .hero--refined .hero-editorial{font-size:19px;font-weight:500;line-height:1.5;margin:0;color:var(--accent)}
+.collegiate-site .hero--refined .hero-editorial a{text-underline-offset:5px}
+.collegiate-site .hero--refined .hero-editorial a:hover{text-decoration:underline}
+.collegiate-site .hero--refined .hero-editorial a>span{padding:0 8px;color:#91aaad}
+.collegiate-site .hero--refined .hero-qualifications{display:flex;flex-wrap:wrap;gap:6px 0;font-size:16px;font-weight:400;line-height:1.6;margin:10px 0 0;color:var(--muted)}
+.collegiate-site .hero--refined .hero-qualifications>span{white-space:nowrap}
+.collegiate-site .hero--refined .hero-qualifications>span+span::before{content:'·';margin:0 16px;color:#91aaad}
+.collegiate-site .hero--refined .hero-actions{margin:28px 0 0;padding:0;gap:26px;align-items:center}
+.collegiate-site .hero--refined .hero-actions .button-primary{background:var(--accent);color:#fff;border:1px solid var(--accent);padding:12px 18px;min-height:46px;gap:18px}
+.collegiate-site .hero--refined .hero-actions .button-primary:hover{background:var(--college-bar);border-color:var(--college-bar);color:#fff}
+.collegiate-site .hero--refined .hero-actions>.text-link{min-height:40px;padding:8px 0;border-bottom:1px solid #9cb7b9}
+@media(min-width:761px) and (max-width:1000px){
+  .collegiate-site .hero--refined .hero-qualifications{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span+span::before{content:none}
+}
+@media(max-width:760px){
+  .collegiate-site .hero--refined .hero-affiliations{margin-top:22px;padding-top:18px;max-width:none}
+  .collegiate-site .hero--refined .hero-editorial{font-size:18px}
+  .collegiate-site .hero--refined .hero-actions{margin-top:25px;gap:22px}
+  .collegiate-site .hero--refined .hero-actions .button-primary{padding:12px 15px;gap:15px}
+  .collegiate-site .hero--refined .hero-qualifications>span+span::before{margin:0 10px}
+}
+@media(max-width:380px){
+  .collegiate-site .hero--refined .hero-qualifications{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span+span{margin-top:4px}
+  .collegiate-site .hero--refined .hero-qualifications>span+span::before{content:none}
+}
+
+/* Concise supporting content with optional venue detail. */
+.collegiate-site .project-card h3:has(+.project-meta){margin-bottom:23px}
+.collegiate-site .review-journals{max-width:420px;border-bottom:1px solid var(--line);margin:0 0 22px;padding:0 0 18px}
+.collegiate-site .review-journals summary{cursor:pointer;font:600 14px/1.6 var(--font);color:var(--ink);padding:3px 0 7px}
+.collegiate-site .review-journals summary span{font-size:11px;font-weight:400;color:var(--muted);margin-left:9px;white-space:nowrap}
+.collegiate-site .review-journals summary:hover{color:var(--accent)}
+.collegiate-site .review-journals summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.collegiate-site .review-journals ul{padding-left:19px;margin:11px 0 0;font-size:13px;line-height:1.75;color:var(--muted)}
+.collegiate-site .review-journals li+li{margin-top:8px}
+.collegiate-site .conference-service h3{font:600 14px/1.6 var(--font);letter-spacing:0;margin:0 0 12px}
+.collegiate-site .conference-service ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.8;color:var(--muted)}
+.collegiate-site .conference-service li+li{margin-top:7px}
+.collegiate-site .conference-service abbr{text-decoration:none}
+
+/* Editorial appointment and the total review count share one compact row. */
+.collegiate-site .service-highlights{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px;align-items:center;padding:20px 0;margin-bottom:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.collegiate-site .service-highlights>.review-metric,.collegiate-site .service-highlights>.editorial-appointment{min-width:0;max-width:none;margin:0;padding:0;border:0}
+.collegiate-site .service-highlights>.editorial-appointment{border-left:1px solid var(--line);padding-left:22px}
+.collegiate-site .service-highlights .review-metric-link{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.collegiate-site .service-highlights .review-metric-link strong{font-size:42px}
+.collegiate-site .service-highlights .review-metric-link>span{font-size:14px}
+.collegiate-site .service-highlights .editorial-appointment h3{font-size:25px}
+.collegiate-site .service-highlights .editorial-appointment>p:last-child{font-size:13px}
+.collegiate-site .review-journals{max-width:none}
+.collegiate-site .review-journals .venue-group-title{font:600 13px/1.6 var(--font);letter-spacing:0;color:var(--accent);margin:19px 0 8px}
+.collegiate-site .review-journals .venue-list{columns:2 190px;column-gap:27px;margin:0;padding-left:17px}
+.collegiate-site .review-journals .venue-list li{break-inside:avoid;margin:0 0 9px;padding-left:2px}
+@media(min-width:761px) and (max-width:1000px),(max-width:460px){
+  .collegiate-site .service-highlights{grid-template-columns:1fr;gap:20px;align-items:start}
+  .collegiate-site .service-highlights>.editorial-appointment{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}
+  .collegiate-site .service-highlights .review-metric-link{flex-direction:row;align-items:center;gap:18px}
+}
+
+/* More legible navigation, with comfortable wrapping on narrow screens. */
+.collegiate-site .site-header nav{font-size:15px;line-height:1.6}
+.collegiate-site .site-header nav a{display:inline-flex;align-items:center;min-height:32px}
+@media(max-width:760px){.collegiate-site .site-header nav{font-size:14px;gap:8px 18px}}

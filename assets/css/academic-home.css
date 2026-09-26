@@ -652,3 +652,10 @@
 .collegiate-site .grant-service p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}
 .collegiate-site .grant-service a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
 .collegiate-site .grant-service a:hover{color:var(--accent);text-decoration-color:var(--accent)}
+
+/* Conference and grant service use the same native disclosure pattern as journals. */
+.collegiate-site details.conference-service,.collegiate-site details.grant-service{margin:0 0 22px;padding:0 0 18px;border:0;border-bottom:1px solid var(--line)}
+.collegiate-site .conference-service summary,.collegiate-site .grant-service summary{cursor:pointer;font:600 17px/1.6 var(--font);color:var(--ink);padding:3px 0 7px}
+.collegiate-site .conference-service summary:hover,.collegiate-site .grant-service summary:hover{color:var(--accent)}
+.collegiate-site .conference-service summary:focus-visible,.collegiate-site .grant-service summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.collegiate-site details.conference-service[open] ul,.collegiate-site details.grant-service[open] p{margin-top:11px}

@@ -3,31 +3,31 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-09-28T14:11:12.787+00:00",
+  "captured_at": "2026-09-29T13:06:55.71+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-09",
-  "current_month_visitors": 35,
+  "current_month_visitors": 45,
   "totals": {
-    "visits": 95,
-    "pageviews": 168
+    "visits": 106,
+    "pageviews": 179
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 73
+      "visits": 76
     },
     {
       "code": "SG",
-      "visits": 17
+      "visits": 21
     },
     {
       "code": "US",
-      "visits": 3
+      "visits": 5
     },
     {
       "code": "HK",
-      "visits": 1
+      "visits": 3
     },
     {
       "code": "VN",
@@ -43,7 +43,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 16
+      "visits": 20
     },
     {
       "country": "GB",
@@ -53,7 +53,7 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 7
+      "visits": 9
     },
     {
       "country": "GB",
@@ -61,9 +61,19 @@
       "visits": 2
     },
     {
+      "country": "HK",
+      "name": "Tung Chung",
+      "visits": 2
+    },
+    {
       "country": "US",
       "name": "Council Bluffs",
       "visits": 2
+    },
+    {
+      "country": "GB",
+      "name": "Galgate",
+      "visits": 1
     },
     {
       "country": "GB",
@@ -83,6 +93,16 @@
     {
       "country": "SG",
       "name": null,
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Ashburn",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Moses Lake",
       "visits": 1
     },
     {

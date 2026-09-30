@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Layout preview | Xuekang Liu</title>
+  <meta name="description" content="Xuekang Liu, Lecturer (Assistant Professor) at Lancaster University. Research in antennas, reconfigurable circuits, metasurfaces and sub-THz communications.">
+  <link rel="canonical" href="https://hcmx1994.github.io/">
+  <link rel="icon" href="/images/favicon.ico">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--paper:#faf9f6;--ink:#202d3c;--muted:#596571;--line:#dfdfd9;--accent:#8d303f;--soft:#f0eee9;--white:#fff;--font:'DM Sans',Arial,sans-serif;--display:'Manrope',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:35px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.75}a{color:inherit;text-decoration:none}a:hover{color:var(--accent)}a:focus-visible{outline:3px solid var(--accent);outline-offset:5px}img{max-width:100%;display:block}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.22}h2{font-size:clamp(30px,3.1vw,42px);letter-spacing:-1.4px}h3{font-size:21px;letter-spacing:-.5px}main,.site-header,.site-footer{max-width:1180px;margin:auto;padding-left:38px;padding-right:38px}.site-header{min-height:104px;display:flex;align-items:center;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line)}.wordmark{font-family:var(--display);font-size:17px;font-weight:800;white-space:nowrap}.wordmark span{color:var(--accent);margin:0 14px;font-weight:400}.site-header nav{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:500}.nav-contact{border:1px solid var(--line);border-radius:5px;padding:9px 14px}.nav-contact span{margin-left:12px}.hero{padding:78px 0 64px;display:grid;grid-template-columns:1.55fr 1fr;align-items:center;gap:70px}.eyebrow,.small-label{font-size:11px;text-transform:uppercase;letter-spacing:1.7px;font-weight:700}.eyebrow{color:var(--accent);margin-bottom:22px}.status-dot{display:inline-block;width:6px;height:6px;background:var(--accent);border-radius:50%;margin:0 9px 2px 0}h1{font-size:clamp(54px,5.9vw,78px);letter-spacing:-4px;font-weight:600;margin-bottom:20px}.name-period{color:var(--accent)}.hero-role{font-size:23px;line-height:1.5;margin-bottom:21px}.hero-summary{font-size:17px;max-width:450px;color:var(--muted)}.hero-actions{display:flex;align-items:center;gap:27px;margin-top:30px}.button{display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:13px 19px;border-radius:4px;font-size:13px;font-weight:500}.button-primary{background:var(--ink);color:white}.button-primary:hover{background:var(--accent);color:white}.text-link{font-size:13px;font-weight:600;border-bottom:1px solid #b6b8b6;padding-bottom:5px}.hero-meta{display:flex;gap:0;font-size:11px;color:var(--muted);margin-top:39px;letter-spacing:.2px}.hero-meta span+span{border-left:1px solid #c7cac8;padding-left:18px;margin-left:18px}.portrait-card{position:relative;align-self:center;margin:0 13px 0 0}.portrait-frame{height:375px;overflow:hidden;background:#e4e6e4;border-radius:5px 5px 0 0}.portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:center 25%}.portrait-card figcaption{display:flex;justify-content:space-between;gap:15px;background:#eeeae4;font-size:10px;padding:16px 18px;letter-spacing:.5px}.portrait-card figcaption span:first-child{font-weight:700}.portrait-accent{position:absolute;width:80px;height:90px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);right:-13px;bottom:-13px;z-index:-1}.news-strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:26px;padding:21px 0;font-size:12px;color:var(--muted)}.news-strip>.small-label{color:var(--accent);background:#f0e5e5;padding:3px 10px;font-size:9px;letter-spacing:1.4px}.news-strip strong{font-weight:600;color:var(--ink)}.news-strip>a{margin-left:auto;font-size:22px}.section{padding:80px 0;border-bottom:1px solid var(--line)}.about-section,.experience-section{display:grid;grid-template-columns:1fr 1.6fr;gap:80px}.section-heading .eyebrow{margin-bottom:20px}.about-copy p{margin-bottom:19px;font-size:15px;color:var(--muted)}.about-copy p.lead{font-size:19px;color:var(--ink);line-height:1.7}.about-copy p a{border-bottom:1px solid #a7abae}.about-copy p.personal-note{font-size:13px}.section-top{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;margin-bottom:36px}.section-aside{font-size:12px;color:var(--muted)}.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.research-card{border:1px solid var(--line);border-radius:5px;background:var(--white);overflow:hidden}.research-image{height:174px;padding:22px;background:#f0f0ed;border-bottom:1px solid var(--line)}.research-image img{height:100%;width:100%;object-fit:contain;mix-blend-mode:multiply}.card-body{padding:25px 23px}.card-body .small-label{font-size:9px;letter-spacing:1px;color:var(--accent)}.card-body h3{margin:14px 0}.card-body p{color:var(--muted);font-size:13px;line-height:1.85;min-height:96px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}.tags span{font-size:9px;border:1px solid #e1e3e1;padding:3px 7px;border-radius:3px;color:var(--muted)}.publication{display:grid;grid-template-columns:95px 1fr;gap:30px;border-top:1px solid var(--line);padding:30px 0}.publication-year{font-size:21px;font-family:var(--display);font-weight:500}.publication-year span{display:block;font-size:10px;color:var(--muted);font-family:var(--font);font-weight:400}.publication .small-label{font-size:9px;letter-spacing:1.3px;color:var(--accent);margin-bottom:9px}.publication h3{font-size:20px;max-width:820px;line-height:1.45;margin-bottom:10px}.publication h3 span{color:var(--accent)}.publication p{font-size:12px;color:var(--muted)}.publication .venue{font-size:11px;margin-top:3px}.archive-link{display:inline-block;margin-left:125px;margin-top:7px}.muted{color:var(--muted);font-size:13px;margin-top:22px}.timeline{border-left:1px solid #d6d5d0;padding-left:29px}.timeline-item{position:relative;margin-bottom:38px}.timeline-item:last-child{margin-bottom:0}.timeline-item:before{content:'';position:absolute;left:-34px;top:7px;width:9px;height:9px;border:2px solid var(--paper);background:#b4babd;border-radius:50%}.timeline-item.current:before{background:var(--accent);box-shadow:0 0 0 3px #eee0e1}.timeline-item .small-label{font-size:9px;letter-spacing:1px;color:var(--muted);margin-bottom:8px}.current-tag{color:var(--accent);background:#f0e5e5;padding:3px 6px;margin-left:6px}.appointment-heading{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px}.timeline-item h3.institution{font-size:clamp(24px,2.35vw,30px);font-weight:650;line-height:1.25;letter-spacing:-.75px;color:var(--ink);margin:0}.appointment-location{font-size:11px;color:var(--muted);white-space:nowrap}.timeline-item .appointment-role{font-size:16px;font-weight:500;line-height:1.5;color:var(--ink);margin:8px 0 13px}.timeline-item p:not(.small-label):not(.appointment-role){font-size:12px;color:var(--muted);line-height:1.8}.recognition-section{display:grid;grid-template-columns:1fr 1.15fr;gap:90px}.recognition-section h2{margin-bottom:25px}.recognition-section>div>p:not(.eyebrow){font-size:13px;color:var(--muted);margin-top:17px}.awards article{display:flex;gap:28px;padding:23px 0;border-bottom:1px solid var(--line)}.awards article:first-child{padding-top:0}.awards article:last-child{border-bottom:0}.awards article>span{font-size:12px;color:var(--accent);min-width:34px;padding-top:2px}.awards h3{font-size:17px;line-height:1.5}.awards p{font-size:11px;color:var(--muted);margin-top:5px}.contact-section{background:#233140;color:#fff;padding:56px 58px;margin:65px 0;border-radius:5px;position:relative;overflow:hidden}.contact-section:after{content:'';position:absolute;width:360px;height:360px;border:1px solid #ffffff12;border-radius:50%;right:-70px;top:-65px;box-shadow:0 0 0 45px #ffffff05,0 0 0 90px #ffffff03;pointer-events:none}.contact-section .eyebrow{color:#ddb9bc}.contact-section h2{font-size:42px;margin-bottom:18px}.contact-section>p:not(.eyebrow){color:#c3ccd5;font-size:13px}.contact-email{display:inline-block;font-size:24px;margin-top:23px;padding-bottom:6px;border-bottom:1px solid #84909d;position:relative;z-index:1}.contact-section a:hover{color:#edc8ce}.contact-links{display:flex;gap:24px;font-size:11px;color:#d1d7df;margin-top:30px}.site-footer{border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:25px;padding-bottom:30px;font-size:10px;color:var(--muted)}.site-footer strong{display:block;font-size:13px;color:var(--ink)}.site-footer nav{display:flex;gap:17px}.site-footer p{font-size:9px}.skip-link{position:absolute;top:-100px;left:20px;background:white;padding:10px;z-index:10}.skip-link:focus{top:10px}
+@media(min-width:1500px){.hero{padding-top:95px;padding-bottom:80px}}
+@media(max-width:1000px){.site-header nav{gap:17px}.hero{gap:35px}.hero-role{font-size:20px}.hero-actions{gap:18px}.portrait-frame{height:350px}.about-section,.experience-section{gap:45px}.recognition-section{gap:45px}.card-body{padding:21px 17px}.card-body h3{font-size:19px}.card-body p{min-height:125px}.site-footer{flex-wrap:wrap}}
+@media(max-width:760px){main,.site-header,.site-footer{padding-left:24px;padding-right:24px}.site-header{padding-top:23px;padding-bottom:18px;flex-direction:column;align-items:flex-start;gap:17px;min-height:0}.site-header nav{width:100%;gap:19px;flex-wrap:wrap;font-size:11px}.nav-contact{border:0;padding:0}.nav-contact span{margin-left:1px}.hero{padding:42px 0;gap:32px;grid-template-columns:1fr}.hero-copy{max-width:560px}h1{font-size:59px;letter-spacing:-3px}.hero-role{font-size:20px}.hero-summary{font-size:15px}.hero-actions{gap:20px;flex-wrap:wrap}.hero-meta{margin-top:27px}.portrait-card{max-width:380px;width:calc(100% - 13px);margin-top:9px}.portrait-frame{height:330px}.news-strip{gap:13px;align-items:flex-start;font-size:11px}.news-strip>a{font-size:18px}.news-strip>.small-label{margin-top:2px}.section{padding:48px 0}.about-section,.experience-section,.recognition-section{grid-template-columns:1fr;gap:28px}.about-copy p.lead{font-size:17px}.about-copy p{font-size:14px}.section-top{display:block;margin-bottom:27px}.section-top>.text-link{display:inline-block;margin-top:19px}.section-aside{margin-top:14px}.research-grid{grid-template-columns:1fr}.research-card{display:grid;grid-template-columns:1fr}.research-image{height:200px}.card-body{padding:25px}.card-body p{min-height:0;font-size:14px}.card-body h3{font-size:24px}.publication{grid-template-columns:45px 1fr;gap:18px;padding:23px 0}.publication-year{font-size:18px}.publication h3{font-size:17px}.publication p{font-size:11px}.archive-link{margin-left:63px;font-size:12px}.timeline{margin-left:5px}.contact-section{margin:40px 0;padding:35px 26px}.contact-section h2{font-size:32px}.contact-email{font-size:20px}.contact-links{flex-wrap:wrap;gap:12px 22px}.site-footer{align-items:flex-start;gap:18px}.site-footer nav{flex-wrap:wrap}.site-footer p{width:100%}.eyebrow{font-size:10px;margin-bottom:18px}.desktop-break{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.scholar-panel{background:#f0eee9;border:1px solid var(--line);border-radius:5px;padding:25px 30px;margin-bottom:30px}.scholar-metrics{display:flex;gap:60px}.scholar-metrics>div{display:flex;flex-direction:column}.scholar-metrics strong{font-family:var(--display);font-size:34px;line-height:1.3;font-weight:600}.scholar-metrics span{font-size:12px;color:var(--muted)}#scholar-status{font-size:11px;color:var(--muted);margin-top:13px}.research-image:has(img[src$="reconfigurable-circuit.jpg"]){padding:0}.research-image img[src$="reconfigurable-circuit.jpg"]{object-fit:cover;object-position:center 58%;mix-blend-mode:normal}@media(max-width:760px){.scholar-panel{padding:22px}.scholar-metrics{justify-content:space-between;gap:15px}.scholar-metrics strong{font-size:30px}}
+.timeline-item .supervisor-credentials{margin-top:10px;padding-left:12px;border-left:2px solid #d9c2c5}.timeline-item a{color:#1764a0;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px}.timeline-item a:hover,.timeline-item a:focus-visible{color:#104875}
+
+.contact-section .review-email{margin-top:16px}.review-email a{text-decoration:underline;text-underline-offset:3px}.contact-email{overflow-wrap:anywhere;max-width:100%}
+
+.news-item{display:grid;grid-template-columns:95px 1fr;gap:30px;padding:24px 0;border-top:1px solid var(--line)}.news-item time{font-size:12px;color:var(--accent);padding-top:4px}.news-item h3{font-size:18px;line-height:1.5}.news-item p{font-size:13px;color:var(--muted);margin-top:7px;max-width:780px}.news-history{border-top:1px solid var(--line);margin-top:5px}.news-history summary{cursor:pointer;padding:20px 0;font-size:14px;font-weight:600}.news-history summary span{font-size:11px;color:var(--muted);font-weight:400;margin-left:15px}.news-history summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.news-history[open] summary{color:var(--accent)}@media(max-width:760px){.news-item{grid-template-columns:64px 1fr;gap:15px}.news-item h3{font-size:16px}.news-item p{font-size:12px}.news-history summary span{display:block;margin-left:17px}}
+
+.projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.project-card{padding:29px;border:1px solid var(--line);background:var(--white);border-radius:5px;display:flex;flex-direction:column}.project-card>.small-label,.project-archive-item>.small-label{font-size:10px;letter-spacing:1px;color:var(--accent);margin-bottom:13px}.project-card h3{font-size:20px;line-height:1.5}.project-summary{font-size:13px;line-height:1.8;color:var(--muted);margin-top:14px;margin-bottom:23px}.project-meta{display:grid;grid-template-columns:1fr;gap:9px;margin:0;padding:18px 0 0;border-top:1px solid var(--line);font-size:12px}.project-card .project-meta{margin-top:auto}.project-meta>div{display:grid;grid-template-columns:110px 1fr;gap:10px}.project-meta dt{color:var(--muted)}.project-meta dd{margin:0;font-weight:500}.project-history{margin-top:25px;border-top:1px solid var(--line)}.project-history summary{cursor:pointer;padding:20px 0;font-size:14px;font-weight:600}.project-history summary span{font-size:11px;color:var(--muted);font-weight:400;margin-left:15px}.project-history summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}.project-history[open] summary{color:var(--accent)}.project-archive-item{padding:23px 0;border-top:1px solid var(--line)}.project-archive-item h3{font-size:18px;line-height:1.5}.project-archive-item .project-meta{border:0;padding-top:14px;grid-template-columns:2fr 1fr 1.3fr;gap:20px}.project-archive-item .project-meta>div{display:block}.project-archive-item dt{font-size:10px;margin-bottom:3px}@media(min-width:761px) and (max-width:1000px){.site-header{flex-direction:column;align-items:flex-start;gap:15px;padding-top:22px;padding-bottom:22px;min-height:0}.site-header nav{flex-wrap:wrap}}@media(max-width:760px){.projects-grid{grid-template-columns:1fr}.project-card{padding:23px}.project-card h3{font-size:18px}.project-meta>div{grid-template-columns:92px 1fr}.project-archive-item .project-meta{grid-template-columns:1fr;gap:10px}.project-archive-item .project-meta>div{display:grid;grid-template-columns:92px 1fr;gap:10px}.project-history summary span{display:block;margin-left:17px}.project-archive-item h3{font-size:16px}}
+/* Every archive and detail page shares the homepage typography and colours. */
+.content-main{padding-top:45px;padding-bottom:70px;min-height:65vh}.page-intro{padding:15px 0 33px;max-width:920px}.page-intro h1{font-size:clamp(32px,4.1vw,54px);letter-spacing:-1.9px;line-height:1.23;margin-bottom:18px;overflow-wrap:anywhere}.page-description{font-size:16px;line-height:1.8;color:var(--muted);max-width:780px}.back-link{display:inline-block;font-size:13px;color:var(--accent);margin-bottom:22px}.entry-meta{font-size:12px;color:var(--muted);margin:0 0 14px}.entry-actions{display:flex;align-items:center;flex-wrap:wrap;gap:22px;margin:24px 0 32px}.article-body{max-width:880px;border-top:1px solid var(--line);padding-top:32px;font-size:16px;line-height:1.9;overflow-wrap:anywhere}.article-body p{margin:0 0 24px}.article-body a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.article-body h2,.article-body h3{margin:30px 0 18px;font-size:26px}.article-body img{max-width:100%;height:auto;max-height:740px;object-fit:contain;margin:26px auto;border-radius:4px}.article-body ul,.article-body ol{padding-left:24px}.entry-bottom{margin-top:42px;padding-top:25px;border-top:1px solid var(--line)}.archive-year{margin-bottom:42px}.archive-year>h2{font-size:23px;color:var(--accent);margin-bottom:14px}.archive-entry{padding:27px 0;border-top:1px solid var(--line);max-width:960px}.archive-entry h2,.archive-entry h3{font-size:22px;line-height:1.5;letter-spacing:-.55px;margin-bottom:12px}.archive-entry>p:not(.entry-meta){font-size:14px;color:var(--muted);margin-bottom:15px;max-width:860px}.archive-entry .text-link{display:inline-block;font-size:12px}.archive-profile-link{margin-bottom:30px}.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.portfolio-card{background:#fff;border:1px solid var(--line);border-radius:5px;overflow:hidden}.portfolio-photo{height:215px;padding:20px;background:#f0f0ed}.portfolio-photo img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}.portfolio-card h2{font-size:17px;line-height:1.6;letter-spacing:-.3px;padding:21px}.portfolio-card h2 span{color:var(--accent)}.sitemap-list{line-height:2;list-style:none;padding:0}.sitemap-list li{padding:9px 0;border-top:1px solid var(--line)}.content-main>.experience-section{border-top:1px solid var(--line)}@media(max-width:1000px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.content-main{padding-top:30px;padding-bottom:45px}.page-intro h1{font-size:32px;letter-spacing:-1px}.page-description{font-size:14px}.article-body{font-size:15px}.archive-entry h2,.archive-entry h3{font-size:19px}.portfolio-grid{grid-template-columns:1fr}.portfolio-photo{height:230px}.page-intro{padding-bottom:20px}}
+
+.projects-grid > .project-card:last-child:nth-child(odd){grid-column:1 / -1}
+
+.timeline-item a.journal-link{color:inherit;text-decoration:none}
+.about-copy a.person-link{color:#1764a0;border-bottom:0;text-decoration:underline;text-decoration-color:currentColor;text-underline-offset:3px}.about-copy a.person-link:hover,.about-copy a.person-link:focus-visible{color:#104875}
+
+.publication-note{font-size:12px;color:var(--muted);margin:0 0 16px}.publication .corresponding-author{font-size:.75em;line-height:0;vertical-align:super;margin-left:1px}
+
+.site-footer{flex-wrap:wrap}.visitor-panel{flex:0 0 100%;display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:45px;align-items:center;padding:14px 0 32px;margin-bottom:8px;border-bottom:1px solid var(--line)}.visitor-panel h2{font-size:30px;letter-spacing:-.8px;color:var(--ink);margin-bottom:13px}.site-footer .visitor-panel p{font-size:13px;line-height:1.8;max-width:440px}.site-footer .visitor-panel .eyebrow{font-size:10px;margin-bottom:14px}.site-footer .visitor-panel .visitor-note{font-size:11px;margin-top:13px}.visitor-map{width:380px;max-width:100%;min-width:0;min-height:210px;justify-self:center}.visitor-map a:focus-visible{outline:3px solid var(--accent);outline-offset:6px}@media(max-width:760px){.visitor-panel{grid-template-columns:minmax(0,1fr);gap:24px;padding-top:12px}.visitor-panel h2{font-size:26px}.visitor-map{justify-self:center}}
+
+/* Editorial edition: complete content, with a quieter typographic hierarchy. */
+.editorial-site{--paper:#f8f6f2;--ink:#20313b;--muted:#58646a;--line:#dcdad4;--accent:#833b4d;--soft:#eeebe5;--display:Georgia,'Times New Roman',serif;--font:'DM Sans',Arial,sans-serif}
+.editorial-site main,.editorial-site .site-header,.editorial-site .site-footer{max-width:1260px;padding-left:48px;padding-right:48px}
+.editorial-site .site-header{min-height:93px;gap:30px}.editorial-site .wordmark{font-size:18px;font-weight:400}.editorial-site .wordmark span{margin:0 12px}.editorial-site .site-header nav{font-size:12px;gap:23px}.editorial-site .nav-contact{border:0;border-radius:0;padding:0}
+.editorial-site h2{font-weight:400;letter-spacing:-1.1px;font-size:clamp(32px,3.3vw,44px);line-height:1.17}.editorial-site h3{font-weight:400;letter-spacing:-.4px}
+.editorial-site .hero{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:66px;padding:65px 0 56px;align-items:center}.editorial-site .hero .eyebrow{font-size:10px;letter-spacing:1.8px}.editorial-site .hero h1{font-size:clamp(76px,7.8vw,108px);line-height:.95;letter-spacing:-5px;font-weight:400;margin:24px 0 29px}.editorial-site .hero-role{font-size:16px;line-height:1.65;color:var(--muted);margin-bottom:21px}.editorial-site .hero-role strong{display:block;font-family:var(--display);font-weight:400;font-size:32px;line-height:1.4;color:var(--ink)}.editorial-site .hero-role>span{display:block;font-size:12px;margin-top:3px}.editorial-site .hero-summary{max-width:405px;font-size:17px;line-height:1.85}.editorial-site .hero-actions{margin-top:27px;gap:25px}.editorial-site .hero-actions .button{background:none;color:var(--ink);border:0;border-bottom:1px solid var(--accent);border-radius:0;padding:0 0 6px;gap:12px}.editorial-site .hero-actions .button:hover{color:var(--accent)}.editorial-site .hero-meta{margin-top:25px;font-size:11px}
+.academic-overview{padding:27px 0 29px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.overview-heading{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:22px}.overview-heading .eyebrow{margin:0;font-size:9px}.overview-heading .text-link{font-size:11px;border:0;padding:0;color:var(--muted)}.institution-strip{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:27px}.institution-strip a{display:block}.institution-strip strong{font-family:var(--display);font-size:28px;line-height:1.12;font-weight:400;display:block;margin:10px 0 12px;letter-spacing:-.65px}.overview-date{font-size:10px;letter-spacing:.3px;color:var(--muted)}.overview-role{font-size:12px;display:block;line-height:1.6}.overview-role>span{display:block;font-size:10px;color:var(--muted)}
+.editorial-site .news-strip{border-top:0;padding:18px 0;font-size:11px}.editorial-site .news-strip>.small-label{background:transparent;padding:0;font-size:9px}
+.editorial-site .section{padding:65px 0}.editorial-site .section-heading .eyebrow,.editorial-site .section-top .eyebrow{font-size:10px;letter-spacing:2px;margin-bottom:16px}.editorial-site .section-aside{font-size:12px}.editorial-site .section-top{margin-bottom:30px}
+.editorial-site .research-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}.editorial-site .research-card{background:none;border:0;border-radius:0}.editorial-site .research-image{height:235px;border:0;padding:23px;background:#eeefeb}.editorial-site .research-image:has(img[src$="reconfigurable-circuit.jpg"]){padding:0}.editorial-site .card-body{padding:22px 0 0}.editorial-site .card-body .small-label{font-size:9px}.editorial-site .card-body h3{font-size:29px;margin:12px 0 15px;line-height:1.2}.editorial-site .card-body p{min-height:0;font-size:14px;line-height:1.85;max-width:470px}.editorial-site .tags{margin-top:17px;gap:8px 16px}.editorial-site .tags span{border:0;border-radius:0;padding:0;font-size:10px}.editorial-site .tags span+span::before{content:'·';margin-right:16px}.editorial-site .research-card:first-child{grid-column:1/-1;display:grid;grid-template-columns:1.15fr 1fr;gap:42px;align-items:center;margin-bottom:4px}.editorial-site .research-card:first-child .research-image{height:325px}.editorial-site .research-card:first-child .card-body{padding:0 25px 0 0}.editorial-site .research-card:first-child h3{font-size:40px}
+.editorial-site .about-section{grid-template-columns:minmax(0,1fr) minmax(0,1.65fr);gap:78px;align-items:start}.editorial-site .about-copy p{font-size:15px;line-height:1.9}.editorial-site .about-copy p.lead{font-size:20px;line-height:1.8}.editorial-site .portrait-card{margin:30px 0 0;max-width:280px;width:100%}.editorial-site .portrait-frame{height:300px;border-radius:0}.editorial-site .portrait-frame img{object-position:center 25%}.editorial-site .portrait-card figcaption{background:transparent;padding:11px 0;font-size:10px;color:var(--muted)}
+.editorial-site .news-section>.news-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}.editorial-site .news-section>.news-list>.news-item{display:block;padding:25px 0}.editorial-site .news-item time{font-size:10px;display:block;margin-bottom:9px}.editorial-site .news-item h3{font-size:25px;line-height:1.3}.editorial-site .news-item p{font-size:13px;line-height:1.8}.editorial-site .news-history .news-item h3{font-size:22px}.editorial-site .news-history summary,.editorial-site .project-history summary{font-size:13px}
+.editorial-site .projects-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}.editorial-site .projects-grid>.project-card:last-child:nth-child(odd){grid-column:auto}.editorial-site .project-card{background:transparent;border:0;border-top:2px solid var(--ink);border-radius:0;padding:23px 0 0}.editorial-site .project-card h3{font-size:25px;line-height:1.32}.editorial-site .project-summary{font-size:13px;margin-top:16px}.editorial-site .project-meta{font-size:11px;padding-top:17px}.editorial-site .project-meta>div{grid-template-columns:95px 1fr;gap:8px}.editorial-site .project-meta dt{font-size:10px}.editorial-site .project-card>.small-label{font-size:9px}.editorial-site .project-archive-item h3{font-size:22px}
+.editorial-site .scholar-panel{background:var(--soft);border:0;border-radius:0;padding:26px 30px}.editorial-site .scholar-metrics{gap:75px}.editorial-site .scholar-metrics strong{font-size:40px;font-weight:400}.editorial-site .publication{grid-template-columns:95px 1fr;gap:35px}.editorial-site .publication h3{font-size:26px;line-height:1.35;max-width:900px}.editorial-site .publication p{font-size:13px}.editorial-site .publication .venue{font-size:11px}.editorial-site .publication-year{font-size:27px;font-weight:400}.editorial-site .publication .small-label{font-size:9px}
+.editorial-site .experience-section{grid-template-columns:minmax(0,.85fr) minmax(0,1.65fr);gap:75px}.editorial-site .timeline-item{margin-bottom:42px}.editorial-site .timeline-item h3.institution{font-size:32px;letter-spacing:-.6px;font-weight:400}.editorial-site .timeline-item .appointment-role{font-size:15px;margin:8px 0 14px}.editorial-site .timeline-item p:not(.small-label):not(.appointment-role){font-size:12px}.editorial-site .timeline-item .small-label{font-size:9px}.editorial-site .appointment-location{font-size:10px}.editorial-site .recognition-section{gap:75px}.editorial-site .awards h3{font-size:22px}.editorial-site .awards article{padding:23px 0}
+.editorial-site .contact-section{border-radius:0;background:var(--ink);padding:50px;margin:58px 0}.editorial-site .contact-section h2{font-size:46px}.editorial-site .contact-section::after{display:none}.editorial-site .contact-email{font-size:23px}.editorial-site .site-footer{padding-top:25px;padding-bottom:30px}.editorial-site .visitor-panel h2{font-size:35px}.editorial-site .portfolio-card{border-radius:0}.editorial-site .archive-entry h2,.editorial-site .archive-entry h3{font-size:27px}
+/* Locally rendered BD-RIS demo; native controls and reduced-motion support. */
+.bd-lab{background:#eeefeb;padding:27px 27px 20px;min-width:0;border-radius:2px;align-self:center}.bd-lab-heading{display:flex;align-items:center;justify-content:space-between;gap:10px}.editorial-site .bd-lab-heading .eyebrow{font-size:8px;letter-spacing:1.3px;margin:0}.bd-live-label{font-size:8px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}.editorial-site .bd-lab h2{font-size:34px;margin:16px 0 10px;letter-spacing:-1px}.bd-intro{font-size:12px;line-height:1.75;color:var(--muted);max-width:330px}.bd-modes{display:flex;gap:2px;border-bottom:1px solid #cfD3cf;margin-top:20px}.bd-lab button{font-family:var(--font);font-size:10px;background:transparent;border:0;color:var(--muted);cursor:pointer;line-height:1.4}.bd-modes button{padding:10px 9px 11px;flex:1;border-bottom:2px solid transparent}.bd-modes button[aria-pressed="true"]{border-bottom-color:var(--accent);color:var(--accent);font-weight:700}.bd-lab button:focus-visible,.bd-lab input:focus-visible,.bd-model summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.bd-scene-heading{display:flex;justify-content:space-between;gap:15px;font-size:9px;color:var(--muted);margin-top:18px}.bd-scene{display:block;width:100%;height:auto;overflow:visible;margin:9px 0 11px}.bd-network-surface{fill:#e1e5de}.bd-connection{stroke:#c7cec4;fill:none;stroke-width:1;opacity:.55}.bd-connection.is-active{stroke:var(--accent);opacity:.78}.bd-node{fill:#d2d7cf;stroke:#eeefeb;stroke-width:3}.bd-node.is-active{fill:var(--accent)}.bd-wave{fill:none;stroke:var(--accent);stroke-width:1.8}.bd-wave-in{stroke:#315e72}.bd-particle{fill:var(--accent);stroke:#eeefeb;stroke-width:1.5}.bd-power-label{fill:var(--ink);font-family:var(--font);font-size:13px;font-variant-numeric:tabular-nums}.bd-port-label{fill:var(--muted);font-family:var(--font);font-size:12px}.bd-port-controls{display:flex;align-items:center;gap:12px;padding-top:8px;border-top:1px solid #d4d8d1}.bd-port-controls>span{font-size:10px;color:var(--muted)}.bd-port-controls>div{display:flex;gap:4px}.bd-port-controls [data-bd-port]{min-width:28px;min-height:28px;border:1px solid #cdd2ca;border-radius:50%;font-size:11px}.bd-port-controls [aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:white}.bd-port-controls .bd-play{margin-left:auto;min-height:30px;min-width:42px;text-decoration:underline;text-underline-offset:4px}.bd-slider-label{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin-top:17px}.bd-slider-label output{font-variant-numeric:tabular-nums;color:var(--accent)}#bd-coupling{display:block;width:100%;margin:9px 0 0;accent-color:var(--accent);height:18px;cursor:pointer}#bd-coupling:disabled{cursor:default;opacity:.45}.bd-status{font-size:11px;line-height:1.6;color:var(--ink);min-height:36px;margin-top:8px}.bd-model{margin-top:9px;padding-top:11px;border-top:1px solid #d4d8d1;font-size:10px;line-height:1.7;color:var(--muted)}.bd-model summary{cursor:pointer;font-size:10px}.bd-model p{margin-top:12px}.bd-model a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}.bd-caption{font-size:9px;color:var(--muted);margin-top:11px}.bd-fallback{font-size:12px;line-height:1.8;margin-top:22px}
+@media(min-width:1500px){.editorial-site .hero{padding-top:80px;padding-bottom:65px}}
+@media(max-width:1100px){.editorial-site main,.editorial-site .site-header,.editorial-site .site-footer{padding-left:32px;padding-right:32px}.editorial-site .site-header{flex-wrap:wrap;padding-top:22px;padding-bottom:22px;gap:14px;min-height:0}.editorial-site .site-header nav{gap:20px;flex-wrap:wrap}.editorial-site .hero{gap:36px}.editorial-site .hero-role strong{font-size:28px}.bd-lab{padding:23px 21px 18px}.editorial-site .bd-lab h2{font-size:31px}.institution-strip{gap:20px}.institution-strip strong{font-size:25px}.overview-role{font-size:11px}.editorial-site .about-section,.editorial-site .experience-section,.editorial-site .recognition-section{gap:45px}.editorial-site .project-card h3{font-size:22px}.editorial-site .project-meta>div{display:block}.editorial-site .project-meta dt{margin-bottom:2px}.editorial-site .research-card:first-child{gap:30px}.editorial-site .research-card:first-child h3{font-size:35px}}
+@media(max-width:760px){.editorial-site main,.editorial-site .site-header,.editorial-site .site-footer{padding-left:24px;padding-right:24px}.editorial-site .site-header{align-items:flex-start}.editorial-site .site-header nav{font-size:11px;gap:12px 20px}.editorial-site .hero{grid-template-columns:1fr;gap:35px;padding:40px 0 35px}.editorial-site .hero h1{font-size:80px;letter-spacing:-4px;margin:18px 0 24px}.editorial-site .hero-role{font-size:15px}.editorial-site .hero-role strong{font-size:31px}.editorial-site .hero-summary{max-width:500px;font-size:16px}.editorial-site .hero-actions{gap:23px;margin-top:22px}.editorial-site .hero-meta{margin-top:23px}.bd-lab{max-width:560px;width:100%;padding:25px 23px 19px}.editorial-site .bd-lab h2{font-size:35px}.bd-intro{max-width:430px;font-size:13px}.bd-modes button{font-size:11px;min-height:44px}.bd-scene-heading{font-size:10px}.bd-port-controls [data-bd-port]{min-width:32px;min-height:32px}.bd-port-controls .bd-play{min-height:44px}.bd-slider-label,.bd-port-controls>span,.bd-status,.bd-model,.bd-model summary{font-size:11px}#bd-coupling{height:30px;margin-top:4px}.bd-model summary{padding:8px 0}.bd-caption{font-size:10px}.academic-overview{padding:22px 0 27px}.overview-heading{display:block;margin-bottom:22px}.overview-heading .text-link{display:inline-block;margin-top:12px}.institution-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px}.institution-strip strong{font-size:25px}.overview-date{font-size:9px}.overview-role{font-size:11px}.overview-role>span{font-size:9px}.editorial-site .news-strip{font-size:11px;padding:17px 0}.editorial-site .section{padding:45px 0}.editorial-site .research-grid{grid-template-columns:1fr;gap:34px}.editorial-site .research-card:first-child{grid-template-columns:1fr;gap:0}.editorial-site .research-card:first-child .research-image{height:260px}.editorial-site .research-card:first-child .card-body{padding:22px 0 0}.editorial-site .research-card:first-child h3{font-size:34px}.editorial-site .research-image{height:230px}.editorial-site .card-body{padding:20px 0 0}.editorial-site .card-body h3{font-size:29px}.editorial-site .about-section,.editorial-site .experience-section,.editorial-site .recognition-section{grid-template-columns:1fr;gap:27px}.editorial-site .portrait-card{max-width:260px;margin-top:24px}.editorial-site .portrait-frame{height:280px}.editorial-site .about-copy p.lead{font-size:19px}.editorial-site .about-copy p{font-size:14px}.editorial-site .news-section>.news-list{grid-template-columns:1fr;gap:0}.editorial-site .news-item h3{font-size:24px}.editorial-site .news-history .news-item{grid-template-columns:58px 1fr;gap:15px}.editorial-site .news-history .news-item h3{font-size:20px}.editorial-site .projects-grid{grid-template-columns:1fr;gap:28px}.editorial-site .project-card{padding-top:20px}.editorial-site .project-card h3{font-size:25px}.editorial-site .project-meta>div{display:grid;grid-template-columns:100px 1fr}.editorial-site .project-meta{font-size:12px}.editorial-site .scholar-panel{padding:23px}.editorial-site .scholar-metrics{gap:16px;justify-content:space-between}.editorial-site .scholar-metrics strong{font-size:36px}.editorial-site .publication{grid-template-columns:45px 1fr;gap:20px}.editorial-site .publication h3{font-size:23px}.editorial-site .publication p{font-size:12px}.editorial-site .publication-year{font-size:22px}.editorial-site .archive-link{margin-left:65px}.editorial-site .timeline-item h3.institution{font-size:30px}.editorial-site .timeline-item .appointment-role{font-size:14px}.editorial-site .timeline-item{margin-bottom:34px}.editorial-site .contact-section{padding:35px 26px;margin:40px 0}.editorial-site .contact-section h2{font-size:37px}.editorial-site .contact-email{font-size:19px}.editorial-site .archive-entry h2,.editorial-site .archive-entry h3{font-size:24px}}
+@media(max-width:380px){.editorial-site main,.editorial-site .site-header,.editorial-site .site-footer{padding-left:18px;padding-right:18px}.editorial-site .hero h1{font-size:72px}.bd-lab{padding:23px 16px 18px}.bd-port-controls{gap:8px}.bd-port-controls>div{gap:3px}.bd-port-controls [data-bd-port]{min-width:29px;min-height:32px}.bd-lab-heading{flex-wrap:wrap;gap:4px}.bd-live-label{font-size:8px}.institution-strip strong{font-size:22px}.editorial-site .hero-actions{gap:19px}.editorial-site .hero-actions a{font-size:12px}}
+/* Keep the opening spread compact while leaving comfortable controls. */
+.editorial-site .hero{padding-top:48px;padding-bottom:43px}.bd-lab{padding-top:23px;padding-bottom:18px}.editorial-site .bd-lab h2{margin-top:12px;margin-bottom:8px}.bd-modes{margin-top:14px}.bd-scene-heading{margin-top:12px}.bd-scene{margin-top:6px;margin-bottom:8px}.bd-slider-label{margin-top:12px}.bd-status{min-height:34px;margin-top:5px}.bd-model{margin-top:5px;padding-top:8px}.bd-caption{margin-top:8px}@media(max-width:760px){.editorial-site .hero{padding-top:38px;padding-bottom:34px}.bd-lab{padding-top:24px}.bd-scene-heading{margin-top:15px}.bd-slider-label{margin-top:15px}}
+@media(pointer:coarse){.bd-port-controls{flex-wrap:wrap;gap:6px 10px}.bd-port-controls>span{flex-basis:100%}.bd-port-controls [data-bd-port]{min-width:44px;min-height:44px}.bd-port-controls .bd-play{min-width:44px;min-height:44px}.bd-model summary{min-height:44px;display:list-item}}
+/* The provider fixes its map width on load; retain all locations on resize. */
+
+/* Circuit-derived BD-RIS: linked field, port and scattering-matrix views. */
+.bd-lab .bd-intro{max-width:none}.bd-lab .bd-modes button{font-size:12px;min-height:40px;padding:9px 5px}.bd2-view-controls{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}.bd2-view-controls>div{display:flex;gap:14px}.bd-lab .bd2-view-controls button{font-size:11px;min-height:36px;padding:2px 0}.bd2-view-controls [aria-pressed="true"]{color:var(--ink);font-weight:700}.bd2-view-controls [aria-pressed="false"]{text-decoration:underline;text-decoration-color:#adb5ac;text-underline-offset:4px}.bd-lab .bd-play{min-width:38px;color:var(--accent)}.bd2-visual{position:relative;width:100%;aspect-ratio:480/280;margin-top:5px;background:#e9ece5;border-radius:3px;overflow:hidden}.bd2-wave-view,.bd2-network-view{position:absolute;inset:0}.bd2-visual [hidden]{display:none}.bd-field{position:absolute;top:0;left:0;width:100%;height:auto}.bd2-surface,.bd-network{display:block;position:absolute;inset:0;width:100%;height:100%;overflow:visible}.bd2-svg-label,.bd2-port-number,.bd2-index{font:12px var(--font);fill:#4c5b53}.bd2-port-number{font-weight:700;fill:var(--ink)}.bd2-index{fill:#59625a}.bd2-normal{stroke:#b9c4b8;stroke-width:1;stroke-dasharray:3 6}.bd2-incident-arrow{stroke:#31677b;stroke-width:2;fill:none}.bd2-incident-fronts{stroke:#31677b;stroke-width:1.4;opacity:.65}.bd2-surface-line{stroke:#7d897c;stroke-width:1}.bd2-antenna{stroke:#617461;fill:var(--accent);stroke-width:1.3}.bd2-wave-edges path{fill:none;stroke:var(--accent);stroke-width:1.3}.bd2-wire{stroke:#879787;stroke-width:1.5;fill:none}.bd2-reactance{fill:#eeefeb;stroke:#7b4554;stroke-width:1.4}.bd2-tune{stroke:#7b4554;stroke-width:1.2}.bd2-shunt{fill:none;stroke:#879787;stroke-width:1.1}.bd2-port{fill:#eeefeb;stroke:#c5cec1;stroke-width:1}.bd2-port-reference{fill:none;stroke:#ccd4c9;stroke-width:.7;stroke-dasharray:2 2}.bd2-phasor-a{stroke:#31677b;stroke-width:3;stroke-linecap:round}.bd2-phasor-b{stroke:var(--accent);stroke-width:2;stroke-linecap:round}.bd2-cell{stroke:#c9cfc5;stroke-width:.6}.bd2-cell-phase{stroke:#fff;stroke-width:1.3}.bd2-legend{display:flex;flex-wrap:wrap;gap:5px 14px;font-size:10px;line-height:1.7;color:#546057;margin-top:9px}.bd2-legend>span{display:inline-flex;align-items:center;gap:5px}.bd2-legend i{display:inline-block;width:7px;height:7px;border-radius:50%}.bd2-blue{background:#31677b}.bd2-wine{background:var(--accent)}.bd2-legend .bd2-components{margin-left:auto;font-size:9px}.bd2-adjustments{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:7px}.bd-lab .bd-slider-label{font-size:11px;gap:4px;flex-wrap:wrap;margin-top:9px}.bd-lab input[type="range"]{display:block;width:100%;height:24px;margin:3px 0 0;accent-color:var(--accent);cursor:pointer}.bd-lab input[type="range"]:disabled{opacity:.35;cursor:default}.bd-lab .bd-status{font-size:12px;min-height:39px;margin:10px 0 9px;line-height:1.6}.bd2-port-readout{border-top:1px solid #d3d9cf;padding-top:9px;color:#657060;font-size:10px;line-height:1.6}.bd2-port-values{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;color:var(--ink);font-size:11px;margin-top:5px;font-variant-numeric:tabular-nums}.bd2-port-values b{display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:500;width:14px;height:14px;border-radius:50%;background:#dae0d5;margin-right:2px}.bd2-conservation{font-size:10px;color:#53634e;margin:7px 0 0}.bd-lab .bd-model,.bd-lab .bd-model summary{font-size:11px}.bd-lab .bd-model{margin-top:10px}.bd-model .bd2-equation{font-family:Georgia,serif;font-size:17px;line-height:1.8;color:var(--ink);text-align:center}.bd2-numbers{margin-top:16px}.bd2-matrix-values{font:9px/2 monospace;white-space:pre;overflow:auto;max-width:100%;padding:10px 0}.bd-lab .bd-caption{font-size:10px;margin-top:8px}
+@media(max-width:1100px){.bd2-adjustments{gap:13px}.bd2-port-values{font-size:10px}.bd2-port-values b{display:block;margin-bottom:3px}.bd2-legend .bd2-components{flex-basis:100%;margin-left:0}}
+@media(max-width:760px){.bd2-port-values{font-size:12px}.bd2-port-values b{display:inline-flex}.bd-lab .bd-modes button,.bd-lab .bd2-view-controls button{min-height:44px}.bd2-adjustments{gap:16px}.bd-lab .bd-slider-label{font-size:12px}.bd-lab input[type="range"]{height:32px}.bd-lab .bd-model summary{padding:8px 0}.bd2-view-controls>div{gap:17px}}
+@media(max-width:420px){.bd2-port-values{font-size:10px}.bd2-port-values b{display:block}.bd2-adjustments .bd-slider-label{display:block}.bd2-adjustments output{display:block;margin-top:3px}.bd2-view-controls>div{gap:13px}.bd-lab .bd2-view-controls button{font-size:10px}}
+@media(pointer:coarse){.bd-lab button{min-height:44px}.bd-lab .bd-play{min-width:44px}.bd-lab input[type="range"]{height:44px}}
+.bd2-reading-guide{font-size:10px;line-height:1.6;color:#546057;margin:7px 0 0}.bd2-legend{margin-top:5px}
+/* Prescribed aperture shaping keeps its objective separate from peak power. */
+.bd-objective-label{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px;font-size:10px;color:#52604e}.bd-objective-label select{font:11px var(--font);max-width:70%;min-width:0;min-height:36px;color:#334638;background:#f5f5f0;border:1px solid #cbd2c6;border-radius:3px;padding:5px 24px 5px 7px}.bd-objective-label select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.bd-lab button:disabled{cursor:default;opacity:.45}.bd-shape-controls[hidden],.bd-shape-results[hidden],.bd-comparison[hidden]{display:none}.bd-shape-controls>p{font-size:10px;color:#586252;margin:10px 0 0}.bd-shape-controls{margin-top:7px;padding-top:2px;border-top:1px solid #d3d9cf}.bd-shape-results{border-top:1px solid #cdd4c7;padding-top:10px;margin-top:8px}.bd-shape-chart-label{font-size:10px;margin:0 0 8px;color:#4c5b45}.bd-shape-chart-label>span{color:#747e70}.bd-shape-chart-label>strong{color:#87394d;font-weight:500}.bd-amplitude-bars{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.bd-amplitude-bars>div{text-align:center;font-size:9px;color:#586252}.bd-amplitude-track{display:flex;align-items:flex-end;justify-content:center;gap:4px;height:38px;border-bottom:1px solid #bac5b3;margin-bottom:5px}.bd-amplitude-track i,.bd-amplitude-track b{display:block;width:12px;background:#909b86}.bd-amplitude-track b{background:#87394d}.bd-amplitude-bars strong{display:block;color:#87394d;font-size:11px;font-weight:500;margin-top:2px;font-variant-numeric:tabular-nums}.bd-shape-conservation{font-size:9px;line-height:1.6;color:#586252;margin:7px 0 11px}.bd-lab .bd-shape-table{border-collapse:collapse;table-layout:fixed;width:100%;font-size:10px;margin:0}.bd-shape-table caption{text-align:left;font-size:10px;color:#586252;margin:0 0 7px}.bd-shape-table th,.bd-shape-table td{border:0;border-bottom:1px solid #d3d9cf;padding:6px 4px;text-align:right;font-variant-numeric:tabular-nums;overflow-wrap:break-word}.bd-shape-table th:first-child{width:44%;text-align:left;padding-left:0}.bd-shape-table thead th{font-weight:600;color:#40513b}.bd-shape-table tbody th{font-weight:400;color:#586252}.bd-shape-table td:last-child{color:#87394d}.bd-shape-message{font-size:11px;line-height:1.7;color:#40513b;margin:10px 0 6px}.bd-shape-footnote{font-size:9px;line-height:1.7;color:#65705e;margin:0 0 5px}@media(max-width:420px){.bd-objective-label{display:block}.bd-objective-label select{display:block;max-width:100%;width:100%;margin-top:5px}.bd-lab .bd-shape-table{font-size:9px}.bd-amplitude-bars{gap:7px}}@media(pointer:coarse){.bd-objective-label select{min-height:44px}}
+/* Two bounded teaching examples: steering and paired front/rear antenna ports. */
+.bd-lab .bd-demo-notice{font-size:10px;line-height:1.6;color:#615248;border-left:2px solid #b28e73;padding:7px 10px;margin:12px 0;background:#e8e7df}.bd-demo-notice strong{display:block;color:#504334}.bd-examples{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin-top:16px}.bd-lab .bd-examples button{font-size:11px;min-height:40px;background:#e1e5dc;color:#475447;padding:8px 5px}.bd-lab .bd-examples [aria-pressed="true"]{background:#374b42;color:#fff}.bd-reflect-panel[hidden],.bd-star-panel[hidden]{display:none}.bd-profile-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0 0;font-size:10px;color:#586252}.bd-profile-controls>div{display:flex;gap:3px}.bd-lab .bd-profile-controls button{font-size:10px;min-height:30px;padding:3px 11px;border:1px solid #ccd3c6;border-radius:20px}.bd-lab .bd-profile-controls [aria-pressed="true"]{color:#87394d;border-color:#ad8290;background:#e9dfe0}.bd-reference-pattern{stroke:#6b756d;stroke-width:1.5;stroke-dasharray:4 4;fill:none}.bd-target-ray{stroke:#247e60;stroke-width:1.6;stroke-dasharray:3 4;fill:none}.bd-comparison{padding:12px 0 8px;border-top:1px solid #cdd4c7}.bd-comparison>p:first-child{font-size:10px;color:#586252;margin:0 0 10px}.bd-compare-row{display:grid;grid-template-columns:118px minmax(20px,1fr) 55px;gap:10px;align-items:center;font-size:10px;margin:7px 0}.bd-compare-row>i{height:6px;background:#d9ded3;overflow:hidden}.bd-compare-row b{display:block;height:100%;background:#7c857b}.bd-compare-row b.bd-compare-bd-fill{background:#87394d}.bd-compare-row strong{text-align:right;font-size:11px;font-weight:500;font-variant-numeric:tabular-nums}.bd-lab .bd-compare-gain{font-size:12px;font-weight:600;color:#87394d;margin:12px 0 5px}.bd-lab .bd-compare-explanation{font-size:10px;line-height:1.65;margin:0;color:#586252}.bd-port-details{font-size:10px;line-height:1.7;margin:7px 0}.bd-port-details summary{cursor:pointer;padding:6px 0}.bd-port-details>p{font-size:10px;margin:8px 0}.bd-lab .bd2-numbers pre{font:9px/1.8 monospace;white-space:pre;overflow:auto;max-width:100%;padding:10px 0}.bd-star-intro{font-size:11px;color:#586252;line-height:1.8;margin:14px 0 0}.bd-star-intro strong{font-weight:500;color:#334638}.bd-star-heading{display:flex;align-items:center;gap:14px;justify-content:space-between;font-size:9px;color:#586252;margin-top:10px}.bd-star-heading>span:first-child{color:#87394d}.bd-star-heading>span:nth-child(2){color:#287c78}.bd-star-heading .bd-play{margin-left:auto;min-height:36px}.bd-star-visual{width:100%;aspect-ratio:480/320;background:#e9ece5;margin-top:5px;border-radius:3px;overflow:hidden}.bd-star-scene{display:block;width:100%;height:100%}.bd-star-grid path{stroke:#adb9a8;fill:none;stroke-width:.8;stroke-dasharray:3 5}.bd-star-body{fill:#dce2d6;stroke:#c6d0be;stroke-width:.8}.bd-star-beam-r{fill:#87394d44;stroke:#87394d;stroke-width:1.5}.bd-star-beam-t{fill:#29858144;stroke:#287c78;stroke-width:1.5}.bd-star-dot-r{fill:#fff3d9;stroke:#87394d;stroke-width:1}.bd-star-dot-t{fill:#fff3d9;stroke:#287c78;stroke-width:1}.bd-star-link{fill:none;stroke:#6f7d65;stroke-width:2}.bd-star-front{fill:#87394d}.bd-star-rear{fill:#287c78}.bd-star-pair{fill:#edf0e8;stroke:#73816a;stroke-width:1}.bd-star-number{fill:#3d4d3c;font:10px var(--font);text-anchor:middle}.bd-star-peaks{display:flex;justify-content:space-between;gap:10px;font-size:10px;margin:11px 0 0;color:#586252}.bd-star-peaks strong{display:block;font:17px Georgia,serif;color:#87394d;margin-top:5px}.bd-star-peaks>span:last-child{text-align:right}.bd-star-peaks>span:last-child strong{color:#287c78}.bd-star-scale{font-size:9px;line-height:1.7;color:#65705e;margin:9px 0 14px}.bd-star-power{display:flex;flex-wrap:wrap;justify-content:space-between;font-size:11px;gap:8px}.bd-star-r-power{color:#87394d}.bd-star-t-power{color:#287c78}.bd-star-power>div{width:100%;height:7px;background:#287c78;border-radius:2px;overflow:hidden}.bd-star-power-fill{display:block;height:100%;width:50%;background:#87394d}.bd-star-status{font-size:10px;color:#586252;margin:10px 0}.bd-star-benefit{border-top:1px solid #cdd4c7;padding-top:12px;font-size:11px;line-height:1.7;color:#586252;margin:10px 0}.bd-star-benefit strong{display:block;color:#334638;margin-bottom:4px}
+@media(max-width:420px){.bd-compare-row{grid-template-columns:93px minmax(15px,1fr) 47px;gap:7px;font-size:9px}.bd-compare-row strong{font-size:10px}.bd-star-heading{gap:7px;flex-wrap:wrap;font-size:9px}.bd-star-heading .bd-play{min-width:28px}.bd-star-peaks strong{font-size:16px}.bd-lab .bd-demo-notice{font-size:10px}.bd-star-intro{font-size:10px}}
+@media(pointer:coarse){.bd-lab .bd-profile-controls button,.bd-lab .bd-examples button,.bd-star-heading .bd-play{min-height:44px}.bd-port-details summary{min-height:44px}}
+.bd2-polar-ring,.bd2-polar-axis{fill:none;stroke:#afbdaa;stroke-width:.8;stroke-dasharray:2 4}.bd2-polar-ring:last-of-type{stroke-dasharray:none}.bd2-angle-label,.bd2-db-label{font:11px var(--font);fill:#61705c;paint-order:stroke;stroke:#e9ece5;stroke-width:3px;stroke-linejoin:round}.bd2-beam-outline{fill:none;stroke:#87394d;stroke-width:1.8;stroke-linejoin:round}.bd2-beam-direction{fill:none;stroke:#ffe6b5;stroke-width:1;stroke-dasharray:3 5;opacity:.8}.bd2-beam-dot{fill:#fff1d1;stroke:#9c604b;stroke-width:.7}.bd2-beam-key{padding:9px 0 2px;border-bottom:1px solid #d3d9cf}.bd2-beam-key[hidden]{display:none}.bd2-beam-metrics{display:flex;justify-content:space-between;gap:12px;font-size:10px;color:#5a6753}.bd2-beam-metrics strong{display:inline-block;font:18px Georgia,serif;color:var(--accent);margin-left:8px;font-variant-numeric:tabular-nums}.bd2-power-scale{display:flex;align-items:center;gap:10px;font-size:9px;color:#65705e;margin-top:9px}.bd2-power-scale i{height:5px;flex:1;border-radius:3px;background:linear-gradient(90deg,rgba(226,199,151,.43),rgba(177,125,112,.69),rgba(127,50,72,.94))}.bd2-beam-key>p{font-size:9px;line-height:1.6;color:#65705e;margin:5px 0 7px}@media(max-width:420px){.bd2-beam-metrics strong{display:block;margin:4px 0 0;font-size:20px}.bd2-beam-metrics{font-size:11px}.bd2-power-scale{font-size:10px}}
+.bd-profile-controls[hidden]{display:none}
+/* Compact homepage illustration; detailed readouts remain opt-in. */
+.bd-lab{padding:21px 24px 15px}.editorial-site .bd-lab h2{font-size:31px;margin:9px 0 7px}.bd-lab .bd-demo-notice{margin:8px 0 10px;padding:6px 8px;line-height:1.55}.bd-lab .bd-demo-notice strong{display:inline}.bd-lab .bd-examples{margin-top:9px}.bd-lab .bd-examples button{min-height:36px;font-size:10px}.bd-lab .bd-objective-label{margin-top:9px}.bd-lab .bd-objective-label select{min-height:32px}.bd-lab .bd-modes{margin-top:9px}.bd-lab .bd-modes button{min-height:36px}.bd-lab .bd2-view-controls{margin-top:4px}.bd-lab .bd2-view-controls button{min-height:30px}.bd-lab .bd2-visual{max-width:360px;margin:3px auto 0}.bd-lab .bd-star-visual{max-width:340px;margin:3px auto 0}.bd-lab .bd2-db-label{display:none}.bd-lab .bd2-reading-guide{font-size:9px;line-height:1.5;margin-top:5px}.bd-lab .bd-shape-controls{margin-top:7px;padding-top:0;border:0}.bd-lab .bd-slider-label{margin-top:7px}.bd-lab .bd-main-target[hidden]{display:none}.bd-lab .bd-brief{font-size:10px;line-height:1.6;color:#52604e;margin:7px 0 8px}.bd-extra-controls{font-size:10px;line-height:1.65;color:#586252;border-top:1px solid #d4d8d1;margin-top:7px}.bd-extra-controls>summary{cursor:pointer;padding:8px 0;font-size:10px}.bd-extra-controls>summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}.bd-lab .bd-model{margin-top:0;padding-top:0}.bd-lab .bd-model>summary{font-size:10px;padding:8px 0}.bd-extra-angle{margin:5px 0 12px}.bd-lab .bd-star-intro{font-size:10px;margin-top:10px;line-height:1.6}.bd-lab .bd-star-heading{margin-top:4px}.bd-lab .bd-star-heading .bd-play{min-height:28px}.bd-lab .bd-star-power{margin-top:8px}.bd-extra-controls .bd-shape-results{margin-top:10px}.bd-extra-controls .bd2-beam-key{margin:9px 0}.bd-extra-controls .bd2-legend{margin-top:9px}
+@media(max-width:420px){.bd-lab{padding:20px 16px 12px}.bd-lab .bd-objective-label{display:flex;font-size:9px;gap:8px}.bd-lab .bd-objective-label select{width:auto;max-width:70%;font-size:10px;margin:0}.bd-lab .bd2-reading-guide{font-size:9px}.bd-lab .bd-brief{font-size:10px}}
+@media(pointer:coarse){.bd-lab .bd-examples button,.bd-lab .bd-modes button,.bd-lab .bd2-view-controls button,.bd-lab .bd-objective-label select,.bd-lab .bd-star-heading .bd-play{min-height:44px}.bd-lab .bd-extra-controls>summary,.bd-lab .bd-model>summary{min-height:44px}}
+
+/* Shared-configuration near/far comparison, with details kept off the main view. */
+.bd-v3 [hidden]{display:none!important}
+.bd-v3 .bd-examples button{font-size:10px}
+.bd-illumination{display:flex;align-items:center;gap:5px;margin-top:10px;font-size:10px;color:#53604e}
+.bd-illumination>span{margin-right:auto}
+.bd-v3 .bd-illumination button{font:11px var(--font);min-height:32px;padding:5px 10px;border:1px solid #cbd1c6;border-radius:3px}
+.bd-illumination button[aria-pressed=true]{color:#77384a;background:#e7dedf;border-color:#aa8490}
+.bd-v3 .bd-source-note{font-size:10px;color:#376778;margin:7px 0 10px;line-height:1.5}
+.bd-source-note>span{font-size:17px;vertical-align:middle;margin-right:4px}
+.bd-select-row{display:grid;grid-template-columns:.85fr 1.15fr;gap:12px;margin:7px 0}
+.bd-select-row label{min-width:0;display:grid;gap:5px;font-size:10px;color:#56604f}
+.bd-fixed-operation{display:grid;gap:5px;align-content:start;color:#56604f;font-size:12px}
+.bd-fixed-operation strong{display:flex;align-items:center;min-height:40px;font-size:14px;font-weight:500;color:var(--ink)}
+.bd-select-row select{width:100%;min-width:0;min-height:32px;border:1px solid #cbd1c6;border-radius:3px;background:#f5f5ef;color:#334537;font:11px var(--font);padding:5px}
+.bd-plot-heading{display:flex;align-items:center;gap:10px;font-size:10px;margin:7px 0 3px}
+.bd-plot-heading b{font-weight:500}
+.bd-d-label{color:#5e696e}.bd-b-label{color:#87394d}.bd-t-label{color:#287c78}
+.bd-v3 .bd-plot-heading .bd-play{margin-left:auto;min-height:26px;padding:0;font-size:10px}
+.bd-compare-plot,.bd-pair-plot{display:block;width:100%;max-width:375px;aspect-ratio:480/300;margin:auto;background:#e9ece5;border-radius:3px;overflow:visible}
+.bd-v3-ring,.bd-v3-axis{stroke:#bbc5b6;stroke-width:.7;stroke-dasharray:2 4;fill:none}
+.bd-main-b,.bd-pair-r{fill:#87394d24;stroke:#87394d;stroke-width:1.8}
+.bd-main-d{fill:none;stroke:#59666d;stroke-width:1.7;stroke-dasharray:4 3}
+.bd-pair-t{fill:#29858124;stroke:#287c78;stroke-width:1.8}
+.bd-compare-plot .bd-main-target{fill:none;stroke:#358773;stroke-width:1;stroke-dasharray:3 4}
+.bd-guard-left,.bd-guard-right{fill:none;stroke:#b49978;stroke-width:1;stroke-dasharray:2 5}
+.bd-v3-port{fill:#87394d}.bd-v3-rear{fill:#287c78}.bd-v3-link{stroke:#87937d;stroke-width:1.1}
+.bd-flow-b,.bd-flow-r{fill:#fff6da;stroke:#87394d;stroke-width:1}.bd-flow-d{fill:#e7eceb;stroke:#59666d;stroke-width:1}.bd-flow-t{fill:#fff6da;stroke:#287c78;stroke-width:1}
+.bd-v3-svg-label,.bd-v3-angle{fill:#546350;font:12px var(--font)}
+.bd-v3 .bd-pair-intro{font-size:10px;line-height:1.6;margin:8px 0;color:#56604f}
+.bd-v3 .bd-brief{margin:7px 0 8px;min-height:32px}
+.bd-v3 .bd-extra-controls p{font-size:11px;line-height:1.7;margin:9px 0}
+.bd-v3 .bd-result-table{border-collapse:collapse;width:100%;table-layout:fixed;font-size:10px;margin:10px 0}
+.bd-result-table caption{text-align:left;font-size:10px;color:#596652;margin-bottom:8px}
+.bd-result-table th,.bd-result-table td{padding:6px 3px;text-align:right;border:0;border-bottom:1px solid #d2d8cb;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.bd-result-table th:first-child{width:46%;text-align:left;font-weight:400}
+.bd-result-table td:last-child{color:#87394d}
+.bd-matrix-pair{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:12px 0}
+.bd-matrix-pair figure{margin:0;min-width:0}
+.bd-matrix-pair figcaption{font-size:10px;margin-bottom:7px}
+.bd-matrix-d,.bd-matrix-b{display:grid;grid-template-columns:repeat(8,1fr);gap:1px;padding:3px;background:#fafbf5;border:1px solid #d0d7c9}
+.bd-matrix-pair span{display:block;aspect-ratio:1;border:1px solid #d6dbce;border-radius:1px}
+.bd-v3 :focus-visible{outline:2px solid #87394d;outline-offset:2px}
+.bd-v3 .bd-matrix-values{white-space:pre;overflow:auto;max-width:100%;max-height:300px;font:9px/1.8 monospace;color:#40513b}
+.bd-error{font-size:11px;line-height:1.6;color:#8d3041}
+@media(max-width:420px){.bd-select-row{gap:8px}.bd-select-row select{font-size:10px}.bd-v3-svg-label{font-size:14px}.bd-v3-angle{font-size:15px}.bd-matrix-pair{gap:10px}.bd-plot-heading{font-size:9px;gap:5px}.bd-v3 .bd-source-note{font-size:9px}}
+@media(pointer:coarse){.bd-v3 .bd-illumination button,.bd-select-row select{min-height:44px}}
+.bd-lab.bd-v3{padding:18px 22px 12px}.bd-v3 .bd-compare-plot,.bd-v3 .bd-pair-plot{max-width:340px}.bd-v3 .bd-source-note{margin:4px 0 7px}.bd-v3 .bd-extra-controls>summary,.bd-v3 .bd-model>summary{padding:6px 0}
+
+/* Portrait-led opening; the interactive lab follows the research overview. */
+.editorial-site .hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:90px;padding:54px 0 48px}
+.hero-profile{width:100%;max-width:440px;justify-self:end;min-width:0}
+.hero-portrait{margin:0}
+.hero-portrait img{display:block;width:100%;height:auto;aspect-ratio:1.12;object-fit:cover;object-position:center 65%;background:#e4e6e4}
+.hero-portrait figcaption{font-size:10px;text-transform:uppercase;letter-spacing:1.7px;color:var(--accent);padding:15px 0 0}
+.hero-profile>p{font-size:15px;line-height:1.8;color:var(--muted);margin:10px 0 14px;max-width:390px}
+.hero-profile>.text-link{font-size:12px}
+.bd-lab.bd-v3.bd-wide{width:100%;max-width:none;margin:0 0 12px;padding:22px 34px 10px;scroll-margin-top:28px}
+.bd-wide-header{display:flex;align-items:center;justify-content:space-between;gap:38px;margin-bottom:16px}
+.bd-wide-title{flex:1;min-width:0}
+.bd-wide .bd-lab-heading{justify-content:flex-start;gap:20px}
+.editorial-site .bd-wide h2{font-size:38px;margin:8px 0 0}
+.bd-wide .bd-demo-notice{flex:0 1 380px;margin:0;font-size:11px;line-height:1.7;padding:10px 14px}
+.bd-wide .bd-common-row{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.4fr);gap:38px;padding-bottom:12px;border-bottom:1px solid #cdd4c7;margin-bottom:14px;align-items:center}
+.bd-wide .bd-examples{margin:0}
+.bd-wide .bd-examples button{min-height:42px;font-size:11px}
+.bd-wide .bd-field-setup{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.bd-wide .bd-illumination{margin:0;font-size:12px;gap:6px}
+.bd-wide .bd-illumination>span{margin-right:8px}
+.bd-wide .bd-source-note{margin:0;font-size:10px}
+.bd-wide .bd-compare-panel,.bd-wide .bd-pairs-panel{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.4fr);gap:0 38px;align-items:start}
+.bd-wide .bd-panel-controls{min-width:0;grid-column:1;grid-row:1;padding-right:25px;border-right:1px solid #cdd4c7}
+.bd-wide .bd-panel-visual{min-width:0;grid-column:2;grid-row:1}
+.bd-wide .bd-select-row{margin:0 0 14px}
+.bd-wide .bd-select-row label{font-size:12px}
+.bd-wide .bd-select-row select{font-size:12px;min-height:40px;padding:6px}
+.bd-wide .bd-slider-label{font-size:12px;margin-top:10px}
+.bd-wide input[type=range]{height:30px}
+.bd-wide .bd-plot-heading{margin:0 0 4px;font-size:11px}
+.bd-wide .bd-plot-heading .bd-play{font-size:11px;min-height:30px}
+.bd-wide .bd-compare-plot,.bd-wide .bd-pair-plot{max-width:440px;width:100%;height:auto}
+.bd-wide .bd-brief{font-size:12px;line-height:1.8;margin:10px 0 4px;min-height:0}
+.bd-wide .bd-pair-intro{font-size:12px;margin:0 0 13px}
+.bd-wide .bd-modes{margin:0 0 16px}
+.bd-wide .bd-modes button{font-size:11px;min-height:40px}
+.bd-wide .bd2-adjustments{gap:16px}
+.bd-wide .bd-comparison-details{grid-column:1/-1;margin-top:12px}
+.bd-wide .bd-extra-controls>summary,.bd-wide .bd-model>summary{font-size:12px;padding:8px 0;min-height:36px}
+.bd-wide .bd-result-table{max-width:720px;font-size:12px}
+.bd-wide .bd-matrix-pair{max-width:630px}
+.bd-wide .bd-source-controls[open]{padding-bottom:14px}
+.bd-wide .bd-source-controls input[type=range]{max-width:480px}
+.bd-wide .bd-source-controls .bd-slider-label{max-width:480px}
+.bd-wide .bd-model p{font-size:12px;line-height:1.8}
+@media(max-width:1000px){
+  .editorial-site .hero{gap:45px}
+  .hero-profile{max-width:390px}
+  .bd-lab.bd-v3.bd-wide{padding:22px 26px 10px}
+  .bd-wide-header{gap:24px}
+  .bd-wide .bd-common-row,.bd-wide .bd-compare-panel,.bd-wide .bd-pairs-panel{gap:0 25px;grid-template-columns:minmax(250px,.95fr) minmax(0,1.2fr)}
+  .bd-wide .bd-field-setup{gap:5px}
+  .bd-wide .bd-panel-controls{padding-right:20px}
+}
+@media(max-width:850px){
+  .bd-wide-header{display:block;margin-bottom:16px}
+  .bd-wide .bd-demo-notice{margin-top:12px;max-width:650px}
+  .bd-wide .bd-common-row{grid-template-columns:1fr;gap:15px}
+  .bd-wide .bd-examples{max-width:460px}
+  .bd-wide .bd-field-setup{gap:10px 20px}
+  .bd-wide .bd-compare-panel,.bd-wide .bd-pairs-panel{grid-template-columns:1fr;gap:14px}
+  .bd-wide .bd-panel-visual{grid-column:1;grid-row:1}
+  .bd-wide .bd-panel-controls{grid-column:1;grid-row:2;border:0;padding:0}
+  .bd-wide .bd-compare-plot,.bd-wide .bd-pair-plot{max-width:440px}
+  .bd-wide .bd-comparison-details{margin-top:0}
+  .bd-wide .bd-select-row{margin-bottom:16px}
+}
+@media(max-width:760px){
+  .editorial-site .hero{grid-template-columns:1fr;gap:34px;padding:38px 0 36px}
+  .hero-profile{justify-self:start;max-width:460px}
+  .hero-portrait img{aspect-ratio:1.2}
+  .hero-profile>p{font-size:14px}
+  .bd-lab.bd-v3.bd-wide{padding:23px 20px 12px;margin-bottom:0}
+  .editorial-site .bd-wide h2{font-size:33px}
+  .bd-wide .bd-lab-heading{gap:7px 15px}
+  .bd-wide .bd-source-note{font-size:10px}
+  .bd-wide .bd-select-row select{min-height:44px}
+  .bd-wide input[type=range]{height:44px}
+}
+@media(max-width:380px){
+  .bd-lab.bd-v3.bd-wide{padding-left:14px;padding-right:14px}
+  .bd-wide .bd-examples button{font-size:10px}
+  .bd-wide .bd-illumination{font-size:11px}
+  .bd-wide .bd-illumination>span{margin-right:1px}
+  .bd-wide .bd-illumination button{padding:5px 8px}
+  .bd-wide .bd-plot-heading{font-size:10px;gap:7px}
+}
+
+/* Modern Collegiate: the complete site, with the same content and integrations. */
+.collegiate-site{--paper:#fbfaf7;--ink:#162b3a;--muted:#536675;--line:#d5dedf;--accent:#235b62;--soft:#edf1ef;--college-bar:#173a49;--college-light:#f3f6f7}
+.collegiate-site .site-header{max-width:none;min-height:82px;padding:20px max(32px,calc((100% - 1164px)/2));background:var(--college-bar);color:var(--college-light);border:0;flex-direction:row;gap:26px}
+.collegiate-site .wordmark{font-family:var(--display);font-size:23px;letter-spacing:-.75px;line-height:1.3;font-weight:400}
+.collegiate-site .wordmark span{color:#a8c5cb;margin:0 10px}
+.collegiate-site .site-header nav{font-size:12px;gap:24px;flex-wrap:wrap}
+.collegiate-site .site-header a:hover{color:#b9e2e4}
+.collegiate-site .site-header a:focus-visible{outline-color:#b9e2e4}
+.collegiate-site .hero{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:64px;padding:52px 0 42px}
+.collegiate-site .hero h1{font-size:clamp(48px,6.2vw,76px);letter-spacing:-2.8px;line-height:1.1;margin:20px 0 26px}
+.collegiate-site .hero .eyebrow{font-size:11px;letter-spacing:1.8px}
+.collegiate-site .hero-role{font-size:16px;line-height:1.65;margin-bottom:24px}
+.collegiate-site .hero-role strong{font-size:32px;line-height:1.4;margin-top:3px}
+.collegiate-site .hero-summary{max-width:450px;font-size:18px;line-height:1.75;color:var(--ink)}
+.collegiate-site .hero-actions{gap:25px;margin-top:29px}
+.collegiate-site .hero-actions .button-primary{background:var(--accent);color:#fff;border:0;border-radius:0;padding:12px 18px;gap:20px;font-size:13px}
+.collegiate-site .hero-actions .button-primary:hover{background:var(--college-bar);color:#fff}
+.collegiate-site .hero-actions>.text-link{border:0;font-size:13px;padding:6px 0}
+.collegiate-site .hero-meta{margin-top:27px}
+.collegiate-site .hero-profile{width:100%;max-width:437px;justify-self:end;border-bottom:3px solid var(--accent);padding-bottom:16px}
+/* Preserve the original photograph within a landscape half-body crop. */
+.collegiate-site .hero-portrait-window{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--soft)}
+.collegiate-site .hero-portrait img{position:absolute;display:block;width:133.3333333333%;max-width:none;height:auto;aspect-ratio:auto;left:-20.8333333333%;top:-7.4074074074%;object-fit:initial;background:var(--soft)}
+.collegiate-site .hero-portrait figcaption{font-size:10px;letter-spacing:1.5px;padding-top:16px}
+.collegiate-site .hero-profile>p{font-size:14px;line-height:1.7;margin:10px 0 12px}
+.collegiate-site .hero-profile>.text-link{font-size:12px;border:0;padding:0}
+.collegiate-site .academic-overview{background:#f0f2ed;color:var(--ink);padding:27px 32px 31px;border:1px solid #e1e5df}
+.collegiate-site .overview-heading{margin-bottom:22px}
+.collegiate-site .overview-heading .eyebrow{color:var(--accent);font-size:10px;letter-spacing:1.5px}
+.collegiate-site .overview-heading .text-link{color:var(--muted);font-size:11px}
+.collegiate-site .institution-strip{gap:0}
+.collegiate-site .institution-strip li{min-width:0;padding:0 22px}
+.collegiate-site .institution-strip li:first-child{padding-left:0}
+.collegiate-site .institution-strip li:last-child{padding-right:0}
+.collegiate-site .institution-strip li+li{border-left:1px solid #d4dcd4}
+.collegiate-site .institution-logo{display:flex;height:64px;align-items:center;margin:0 0 18px}
+.collegiate-site .institution-logo img{display:block;width:100%;height:auto;max-width:182px;max-height:60px;object-fit:contain;object-position:left center}
+.collegiate-site .institution-logo--imperial img{max-width:174px}
+.collegiate-site .institution-logo--kent img{width:104px}
+.collegiate-site .institution-strip strong{font-size:30px;line-height:1.17;letter-spacing:-.55px;margin:9px 0 11px;color:inherit}
+.collegiate-site .overview-date{font-size:11px;letter-spacing:0;color:var(--muted)}
+.collegiate-site .overview-role{font-size:12px;color:var(--ink)}
+.collegiate-site .overview-role>span{font-size:11px;color:var(--muted)}
+.collegiate-site .academic-overview a:hover{color:var(--accent)}
+.collegiate-site .academic-overview a:focus-visible{outline-color:var(--accent)}
+.collegiate-site .news-strip{padding:21px 0;font-size:12px;gap:22px}
+.collegiate-site .news-strip>.small-label{font-size:10px}
+.collegiate-site .section{padding:64px 0}
+.collegiate-site h2{font-size:clamp(32px,3.1vw,42px);line-height:1.22;letter-spacing:-.95px}
+.collegiate-site .section-top{margin-bottom:30px}
+.collegiate-site .research-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.collegiate-site .research-card,.collegiate-site .research-card:first-child{display:flex;flex-direction:column;grid-column:auto;gap:0;margin:0;background:transparent;border:0}
+.collegiate-site .research-image,.collegiate-site .research-card:first-child .research-image{height:215px;padding:21px;background:var(--soft);flex-shrink:0}
+.collegiate-site .research-image:has(img[src$="reconfigurable-circuit.jpg"]){padding:0}
+.collegiate-site .card-body,.collegiate-site .research-card:first-child .card-body{padding:21px 0 0;display:flex;flex-direction:column;flex:1;min-width:0}
+.collegiate-site .card-body .small-label{font-size:10px;letter-spacing:.8px;line-height:1.7}
+.collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:28px;line-height:1.24;margin:13px 0 15px}
+.collegiate-site .card-body p{font-size:14px;line-height:1.85;min-height:0}
+.collegiate-site .tags{margin-top:auto;padding-top:19px;gap:6px 12px}
+.collegiate-site .tags span{font-size:11px}
+.collegiate-site .tags span+span::before{margin-right:12px}
+.collegiate-site .about-section,.collegiate-site .experience-section{grid-template-columns:minmax(0,.9fr) minmax(0,1.6fr);gap:70px}
+.collegiate-site .about-copy p{font-size:15px;line-height:1.9}
+.collegiate-site .about-copy p.lead{font-size:20px;line-height:1.8}
+.collegiate-site .news-section>.news-list{gap:0 38px}
+.collegiate-site .news-item h3{font-size:25px;line-height:1.35}
+.collegiate-site .news-item time{font-size:11px}
+.collegiate-site .news-item p{font-size:14px}
+.collegiate-site .projects-grid{gap:22px}
+.collegiate-site .project-card{background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);padding:24px;border-radius:0}
+.collegiate-site .project-card h3{font-size:24px;line-height:1.4}
+.collegiate-site .project-card>.small-label{font-size:10px}
+.collegiate-site .project-summary{font-size:14px}
+.collegiate-site .project-meta{font-size:12px;gap:10px}
+.collegiate-site .project-meta dt{font-size:11px}
+.collegiate-site .project-meta>div{display:block}
+.collegiate-site .project-meta dd{margin-top:2px}
+.collegiate-site .project-archive-item .project-meta>div{display:block}
+.collegiate-site .scholar-panel{background:var(--soft);border:0;border-left:3px solid var(--accent);padding:26px 30px}
+.collegiate-site .scholar-metrics strong{color:var(--accent);font-size:42px;line-height:1.2}
+.collegiate-site .scholar-metrics span{margin-top:6px;font-size:12px}
+.collegiate-site #scholar-status{font-size:12px;margin-top:16px}
+.collegiate-site .publication h3{font-size:25px;line-height:1.4}
+.collegiate-site .publication-year{color:var(--accent)}
+.collegiate-site .timeline-item h3.institution{font-size:33px;line-height:1.25}
+.collegiate-site .timeline-item .small-label{font-size:10px}
+.collegiate-site .timeline-item .appointment-role{font-size:16px}
+.collegiate-site .timeline-item p:not(.small-label):not(.appointment-role){font-size:13px}
+.collegiate-site .appointment-location{font-size:11px}
+.collegiate-site .timeline-item .supervisor-credentials{border-left-color:#b8ced0}
+.collegiate-site .current-tag{background:#e0edeb}
+.collegiate-site .timeline-item.current:before{box-shadow:0 0 0 3px #e0edeb}
+.collegiate-site .recognition-section{gap:65px}
+.collegiate-site .recognition-section>div>p:not(.eyebrow){font-size:14px;line-height:1.85}
+.collegiate-site .awards h3{font-size:22px}
+.collegiate-site .awards p{font-size:12px}
+.collegiate-site .contact-section{background:var(--college-bar);padding:48px;margin:56px 0}
+.collegiate-site .contact-section .eyebrow{color:#b9d8dc}
+.collegiate-site .contact-section>p:not(.eyebrow){color:#c9dde1;font-size:14px}
+.collegiate-site .contact-links{color:#dce8eb;font-size:12px}
+.collegiate-site .contact-section a:hover{color:#b9e2e4}
+.collegiate-site .contact-section a:focus-visible{outline-color:#b9e2e4}
+.collegiate-site .contact-email{border-color:#87a9b2}
+.collegiate-site .visitor-panel{padding:15px 0 35px}
+.collegiate-site .visitor-panel h2{font-size:35px}
+.collegiate-site .portfolio-card{border-radius:0;background:#fff}
+.collegiate-site .portfolio-photo{background:var(--soft)}
+.collegiate-site .archive-entry h2,.collegiate-site .archive-entry h3{font-size:26px}
+.collegiate-site .bd-lab.bd-v3.bd-wide{background:var(--soft);border-left:3px solid var(--accent);border-radius:0}
+.collegiate-site .bd-wide h2{font-size:38px}
+.collegiate-site .bd-wide .bd-demo-notice{background:#e3e9e4;border-left-color:#829b94}
+.collegiate-site .bd-wide .bd-common-row,.collegiate-site .bd-wide .bd-panel-controls,.collegiate-site .bd-extra-controls{border-color:#cbd8d4}
+.collegiate-site .bd-wide .bd-compare-plot,.collegiate-site .bd-wide .bd-pair-plot{background:#e8eeea}
+.collegiate-site .bd-v3 :focus-visible{outline-color:var(--accent)}
+@media(max-width:1100px){
+  .collegiate-site .site-header{padding:22px 32px;flex-wrap:wrap;gap:18px 24px}
+  .collegiate-site .site-header nav{gap:18px}
+  .collegiate-site .hero{gap:40px}
+  .collegiate-site .hero h1{font-size:64px;letter-spacing:-2px}
+  .collegiate-site .hero-role strong{font-size:30px}
+  .collegiate-site .institution-strip strong{font-size:27px}
+  .collegiate-site .institution-strip{gap:0}
+  .collegiate-site .institution-strip li{padding:0 16px}
+  .collegiate-site .academic-overview{padding:25px 27px}
+  .collegiate-site .research-grid{gap:22px}
+  .collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:26px}
+  .collegiate-site .card-body .small-label{font-size:9px}
+  .collegiate-site .research-image,.collegiate-site .research-card:first-child .research-image{height:190px}
+  .collegiate-site .about-section,.collegiate-site .experience-section,.collegiate-site .recognition-section{gap:44px}
+  .collegiate-site .project-card{padding:20px}
+  .collegiate-site .project-card h3{font-size:22px}
+}
+@media(max-width:760px){
+  .collegiate-site .site-header{padding:22px 24px;flex-direction:column;align-items:flex-start;gap:17px}
+  .collegiate-site .site-header nav{font-size:12px;gap:12px 20px}
+  .collegiate-site .hero{grid-template-columns:1fr;gap:32px;padding:36px 0 34px}
+  .collegiate-site .hero h1{font-size:clamp(48px,9vw,66px);letter-spacing:-2px;margin:18px 0 23px}
+  .collegiate-site .hero .eyebrow{font-size:10px;letter-spacing:1.4px}
+  .collegiate-site .hero-role{font-size:15px}
+  .collegiate-site .hero-role strong{font-size:30px}
+  .collegiate-site .hero-summary{font-size:17px}
+  .collegiate-site .hero-actions{gap:22px;flex-wrap:wrap}
+  .collegiate-site .hero-actions .button-primary{font-size:12px;padding:12px 16px}
+  .collegiate-site .hero-actions>.text-link{font-size:12px}
+  .collegiate-site .hero-profile{max-width:437px;justify-self:center}
+  .collegiate-site .academic-overview{padding:25px 24px}
+  .collegiate-site .institution-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 0}
+  .collegiate-site .institution-strip li{padding:0 0 0 20px}
+  .collegiate-site .institution-strip li:nth-child(odd){padding:0 20px 0 0;border-left:0}
+  .collegiate-site .institution-strip li:nth-child(n+3){padding-top:24px;border-top:1px solid #d4dcd4}
+  .collegiate-site .institution-logo{height:52px;margin-bottom:15px}
+  .collegiate-site .institution-logo img{max-height:50px}
+  .collegiate-site .institution-logo--kent img{width:90px}
+  .collegiate-site .institution-strip strong{font-size:26px}
+  .collegiate-site .overview-date{font-size:10px}
+  .collegiate-site .overview-role{font-size:12px}
+  .collegiate-site .news-strip{font-size:11px;gap:13px}
+  .collegiate-site .section{padding:46px 0}
+  .collegiate-site .research-grid,.collegiate-site .about-section,.collegiate-site .experience-section,.collegiate-site .recognition-section{grid-template-columns:1fr;gap:28px}
+  .collegiate-site .research-grid{gap:34px}
+  .collegiate-site .research-image,.collegiate-site .research-card:first-child .research-image{height:250px}
+  .collegiate-site .card-body h3,.collegiate-site .research-card:first-child h3{font-size:29px}
+  .collegiate-site .card-body .small-label{font-size:10px}
+  .collegiate-site .about-copy p.lead{font-size:19px}
+  .collegiate-site .news-item h3{font-size:24px}
+  .collegiate-site .project-card{padding:23px}
+  .collegiate-site .project-card h3{font-size:25px}
+  .collegiate-site .project-meta>div{display:grid;grid-template-columns:100px 1fr;gap:10px}
+  .collegiate-site .project-meta dd{margin:0}
+  .collegiate-site .scholar-panel{padding:22px}
+  .collegiate-site .scholar-metrics strong{font-size:36px}
+  .collegiate-site .scholar-metrics span{font-size:11px}
+  .collegiate-site #scholar-status{font-size:11px}
+  .collegiate-site .publication h3{font-size:23px}
+  .collegiate-site .timeline-item h3.institution{font-size:30px}
+  .collegiate-site .timeline-item .appointment-role{font-size:15px}
+  .collegiate-site .contact-section{padding:34px 26px;margin:42px 0}
+  .collegiate-site .contact-section h2{font-size:36px}
+  .collegiate-site .contact-section>p:not(.eyebrow){font-size:13px}
+  .collegiate-site .bd-wide h2{font-size:33px}
+  .collegiate-site .archive-entry h2,.collegiate-site .archive-entry h3{font-size:24px}
+}
+@media(max-width:380px){
+  .collegiate-site .site-header{padding-left:18px;padding-right:18px}
+  .collegiate-site .hero h1{font-size:48px;letter-spacing:-1.9px}
+  .collegiate-site .hero-role strong{font-size:28px}
+  .collegiate-site .academic-overview{padding:22px 18px}
+  .collegiate-site .institution-strip{gap:25px 0}
+  .collegiate-site .institution-strip li{padding-left:12px}
+  .collegiate-site .institution-strip li:nth-child(odd){padding-right:12px}
+  .collegiate-site .institution-strip strong{font-size:23px}
+  .collegiate-site .overview-role{font-size:11px}
+  .collegiate-site .overview-role>span{font-size:10px}
+  .collegiate-site .project-card{padding:20px}
+  .collegiate-site .project-meta>div{grid-template-columns:88px 1fr}
+  .collegiate-site .scholar-panel{padding:20px 16px}
+  .collegiate-site .scholar-metrics{gap:12px}
+  .collegiate-site .scholar-metrics strong{font-size:33px}
+}
+
+/* Umami snapshots: an offline map and explicitly dated aggregate counts. */
+.collegiate-site .visitor-panel--umami{grid-template-columns:minmax(240px,.8fr) minmax(0,1.5fr);gap:55px;align-items:center;padding:30px 0 44px}
+.visitor-total{display:flex;flex-direction:column;margin:24px 0;color:var(--accent)}
+.site-footer .visitor-total>strong{font-family:var(--display);font-size:76px;line-height:1;letter-spacing:-3px;font-weight:500}
+.visitor-total>span{font-size:13px;margin-top:12px;color:var(--ink)}
+.visitor-mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:0 0 23px}
+.visitor-mini-stats>div{display:flex;flex-direction:column}
+.site-footer .visitor-mini-stats strong{font-size:28px;font-family:var(--font);line-height:1.4}
+.visitor-mini-stats span{font-size:11px;line-height:1.6;color:var(--ink)}
+.visitor-mini-stats small{font-size:10px;line-height:1.5;color:var(--muted)}
+.visitor-copy>.text-link{margin-top:16px;font-size:12px}
+.visitor-map-card{min-width:0;padding:23px 25px 17px;background:#f1f5f2;border:1px solid #dce5df}
+.visitor-map-heading{display:flex;justify-content:space-between;gap:16px;font-size:11px;line-height:1.6;color:var(--muted)}
+.visitor-map-heading>span:first-child{color:var(--ink);font-weight:600}
+.visitor-world{display:block;width:100%;height:auto;margin:17px 0 8px;overflow:visible}
+.visitor-marker{cursor:pointer;outline:none}
+.visitor-marker-halo{fill:#235b6230}
+.visitor-marker-dot{fill:#2b737a;stroke:#fff;stroke-width:1.4}
+.visitor-marker:hover .visitor-marker-dot,.visitor-marker:focus .visitor-marker-dot,.visitor-marker[aria-pressed=true] .visitor-marker-dot{fill:#a5683c;stroke:#543016;stroke-width:2}
+.visitor-marker:focus .visitor-marker-halo{stroke:var(--ink);stroke-width:1.5}
+.site-footer .visitor-panel p.visitor-map-note{font-size:10px;line-height:1.6;max-width:none;margin:10px 0;color:var(--muted)}
+.visitor-location-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:13px;margin-top:12px;border-top:1px solid #d3ded7;font-size:11px}
+.visitor-location-toolbar select{width:min(64%,250px);min-width:0;max-width:100%;padding:7px 9px;background:var(--paper);border:1px solid #c5d2cd;color:var(--ink);font:inherit;border-radius:0}
+.visitor-location-toolbar select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.site-footer .visitor-panel p.visitor-detail-title{font-size:10px;max-width:none;margin:12px 0 7px}
+.visitor-location-table{width:100%;border-collapse:collapse;font-size:11px;line-height:1.6;table-layout:fixed}
+.visitor-location-table th{text-align:left;font-weight:500;color:var(--muted);font-size:10px}
+.visitor-location-table td,.visitor-location-table th{padding:5px 0;border-bottom:1px solid #dce5df;overflow-wrap:anywhere}
+.visitor-location-table td:first-child,.visitor-location-table th:first-child{width:60%;padding-right:12px}
+.visitor-location-table td:not(:first-child),.visitor-location-table th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.site-footer .visitor-panel p.visitor-map-credit{font-size:9px;margin:9px 0 0;max-width:none;color:var(--muted)}
+.visitor-map-credit a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:900px){.collegiate-site .visitor-panel--umami{gap:30px;grid-template-columns:minmax(220px,.75fr) minmax(0,1.2fr)}.visitor-map-card{padding:20px 18px}}
+@media(max-width:760px){.collegiate-site .visitor-panel--umami{grid-template-columns:minmax(0,1fr);gap:28px}.visitor-total{margin:22px 0}.site-footer .visitor-total>strong{font-size:65px}.visitor-mini-stats{max-width:340px}.visitor-map-heading{font-size:10px}.visitor-map-card{padding:19px 15px 14px}.visitor-location-toolbar{gap:10px}.visitor-mini-stats span{font-size:12px}}
+
+/* A compact visitor card balances the contact copy without another full-width section. */
+.collegiate-site .contact-section--with-visitors{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(30px,4.5vw,68px);align-items:start;padding:44px}
+.contact-copy{min-width:0;align-self:center}
+.collegiate-site .contact-copy h2{font-size:clamp(30px,3.1vw,45px);line-height:1.18;letter-spacing:-1.1px;margin-bottom:22px}
+.collegiate-site .contact-copy>p:not(.eyebrow){color:#c9dde1;font-size:13px;line-height:1.8}
+.collegiate-site .contact-copy .eyebrow{margin-bottom:23px}
+.collegiate-site .contact-copy .contact-email{font-size:clamp(18px,2vw,25px);margin-top:26px;overflow-wrap:anywhere}
+.collegiate-site .contact-copy .review-email{margin-top:15px}
+.collegiate-site .contact-copy .contact-links{margin-top:27px;display:flex;flex-wrap:wrap;gap:12px 22px;font-size:11px}
+.collegiate-site .visitor-panel--compact{display:block;min-width:0;width:100%;max-width:480px;justify-self:end;background:#f4f6f2;color:var(--ink);padding:24px 25px 0;margin:0;border:1px solid #d6e1da;position:relative;z-index:1}
+.visitor-card-heading{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.visitor-card-heading h3{font:500 22px/1.3 var(--display);letter-spacing:-.35px}
+.visitor-card-heading>span{font-size:10px;color:var(--muted)}
+.visitor-compact-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:21px}
+.visitor-compact-stats>div{display:flex;flex-direction:column}
+.visitor-compact-stats>div:nth-child(2){display:none}
+.visitor-compact-stats strong{font:500 31px/1.1 var(--display);letter-spacing:-1px;color:#21545d}
+.visitor-compact-stats span{font-size:10px;line-height:1.55;margin-top:5px;color:#526569}
+.visitor-panel--compact .visitor-world{margin:18px 0 5px}
+.visitor-panel--compact .visitor-compact-caption{font-size:9px;line-height:1.6;color:#617074;margin:0 0 17px}
+.visitor-location-disclosure{border-top:1px solid #d6e1da}
+.visitor-location-disclosure summary{display:flex;justify-content:space-between;align-items:center;cursor:pointer;list-style:none;font-size:11px;font-weight:500;min-height:44px;color:#315960}
+.visitor-location-disclosure summary::-webkit-details-marker{display:none}
+.visitor-location-disclosure summary>span{font-size:17px;line-height:1;transition:transform .15s}
+.visitor-location-disclosure[open] summary>span{transform:rotate(45deg)}
+.visitor-location-disclosure summary:focus-visible{outline:2px solid #21545d;outline-offset:3px}
+.visitor-panel--compact .visitor-location-toolbar{margin-top:10px;padding-top:10px;font-size:10px}
+.visitor-panel--compact .visitor-location-toolbar select{min-height:36px;background:#fff}
+.visitor-panel--compact .visitor-map-note,.visitor-panel--compact .visitor-detail-title{font-size:10px;line-height:1.65;color:#586c70;margin:9px 0}
+.visitor-panel--compact .visitor-map-credit{font-size:9px;line-height:1.6;color:#617074;margin:12px 0 17px}
+.collegiate-site .visitor-panel--compact a:hover{color:#21545d}
+.collegiate-site .visitor-panel--compact a:focus-visible{outline-color:#21545d}
+.visitor-panel--compact .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:1050px){.collegiate-site .contact-section--with-visitors{padding:34px;gap:28px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.collegiate-site .contact-copy h2{font-size:35px}.collegiate-site .visitor-panel--compact{padding:20px 20px 0}.visitor-card-heading h3{font-size:20px}}
+@media(max-width:760px){.collegiate-site .contact-section--with-visitors{grid-template-columns:1fr;padding:30px 24px;gap:32px}.collegiate-site .contact-copy h2{font-size:35px}.collegiate-site .visitor-panel--compact{justify-self:stretch;max-width:none;padding:20px 18px 0}.visitor-card-heading h3{font-size:21px}.visitor-compact-stats{gap:12px}.visitor-compact-stats strong{font-size:30px}.visitor-compact-stats span{font-size:10px}.collegiate-site .contact-copy .contact-email{font-size:20px}}
+@media(max-width:380px){.collegiate-site .contact-section--with-visitors{padding:27px 18px}.collegiate-site .contact-copy h2{font-size:31px}.visitor-card-heading h3{font-size:19px}.visitor-compact-stats strong{font-size:28px}.visitor-compact-stats span{font-size:9px}}
+@media(max-width:760px){.collegiate-site .contact-copy h2{font-size:32px}.contact-copy h2 br{display:none}}
+
+/* Parallel timelines keep education and work easy to scan. */
+.collegiate-site .experience-section{display:block}
+.collegiate-site .experience-section>.section-heading{margin-bottom:32px}
+.collegiate-site .experience-section>.section-heading h2{margin-bottom:12px}
+.experience-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(36px,5vw,70px);align-items:start}
+.experience-column{min-width:0}
+.collegiate-site .experience-column-title{font:600 15px/1.4 var(--font);color:var(--accent);letter-spacing:.5px;padding-bottom:14px;margin:0 0 24px;border-bottom:1px solid var(--line)}
+.experience-columns .timeline{padding-left:23px}
+.experience-columns .timeline-item{margin-bottom:28px}
+.experience-columns .timeline-item:last-child{margin-bottom:0}
+.experience-columns .timeline-item:before{left:-28px}
+.collegiate-site .experience-columns .institution{font:500 clamp(26px,2.35vw,33px)/1.2 var(--display);letter-spacing:-.7px;margin:0}
+.experience-columns .appointment-heading{gap:4px 12px}
+.experience-columns .appointment-role{margin:8px 0 10px}
+.collegiate-site .contact-copy .contact-email{font-weight:400;line-height:1.5;color:#fff;text-decoration:none}
+.collegiate-site .contact-copy .review-email .contact-email{margin-top:6px}
+@media(max-width:850px){
+  .experience-columns{grid-template-columns:minmax(0,1fr);gap:36px}
+  .collegiate-site .experience-section>.section-heading{margin-bottom:26px}
+  .collegiate-site .experience-column-title{margin-bottom:20px}
+}
+@media(max-width:760px){
+  .bd-wide .bd-extra-controls>summary,.bd-wide .bd-model>summary{min-height:44px}
+  .collegiate-site .experience-columns .institution{font-size:28px}
+}
+
+/* A compact introduction focused on identity, appointment and research. */
+.collegiate-site .hero--refined{grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;gap:64px;max-width:1104px;margin-inline:auto;padding:44px 0 40px}
+.collegiate-site .hero--refined .hero-copy{min-width:0;max-width:none}
+.collegiate-site .hero--refined .eyebrow{font-size:17px;font-weight:600;line-height:1.65;letter-spacing:.45px;text-transform:none;margin:0}
+.collegiate-site .hero--refined h1{font-size:clamp(60px,6.7vw,84px);line-height:1.08;letter-spacing:-2.8px;margin:18px 0 30px}
+.collegiate-site .hero--refined .hero-role{margin:0;line-height:1.5}
+.collegiate-site .hero--refined .hero-role strong{font-family:var(--font);font-size:25px;line-height:1.4;font-weight:600;letter-spacing:-.4px;margin:0 0 5px}
+.collegiate-site .hero--refined .hero-position{font-size:17px;line-height:1.55;color:var(--ink);margin:0}
+.collegiate-site .hero--refined .hero-department{font-size:12px;line-height:1.7;margin:5px 0 0;color:var(--muted)}
+.collegiate-site .hero--refined .hero-summary{font-size:18px;line-height:1.75;max-width:470px;margin:24px 0 0;color:var(--muted)}
+.collegiate-site .hero--refined .hero-profile{max-width:none;justify-self:stretch;border-bottom:0;padding-bottom:0;align-self:center}
+.collegiate-site .hero--refined .hero-portrait figcaption{font-size:10px;letter-spacing:1.4px;padding-top:17px}
+.collegiate-site .hero--refined .hero-profile>p{max-width:none;font-size:15px;line-height:1.75;margin:9px 0 0}
+@media(min-width:761px) and (max-width:1000px){
+  .collegiate-site .hero--refined{gap:36px}
+  .collegiate-site .hero--refined h1{font-size:clamp(48px,6vw,60px);letter-spacing:-2px}
+  .collegiate-site .hero--refined .hero-role strong{font-size:22px}
+  .collegiate-site .hero--refined .hero-position{font-size:15px}
+  .collegiate-site .hero--refined .hero-summary{font-size:17px}
+}
+@media(max-width:760px){
+  .collegiate-site .hero--refined{gap:28px;padding:30px 0 32px;grid-template-columns:1fr}
+  .collegiate-site .hero--refined .hero-copy{max-width:none}
+  .collegiate-site .hero--refined .eyebrow{font-size:16px}
+  .collegiate-site .hero--refined .hero-profile>p{font-size:14px}
+  .collegiate-site .hero--refined h1{font-size:clamp(48px,9vw,64px);margin:15px 0 23px;letter-spacing:-2px}
+  .collegiate-site .hero--refined .hero-role strong{font-size:22px}
+  .collegiate-site .hero--refined .hero-position{font-size:15px}
+  .collegiate-site .hero--refined .hero-summary{font-size:17px;margin-top:21px;max-width:480px}
+  .collegiate-site .hero--refined .hero-profile{justify-self:center;max-width:437px}
+}
+
+/* Compact, dated Web of Science aggregate in the service introduction. */
+.collegiate-site .review-metric{margin:0 0 24px;padding:16px 0 15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:420px}
+.collegiate-site .review-metric-link{display:inline-flex;align-items:center;gap:18px;color:var(--ink)}
+.collegiate-site .review-metric-link strong{font-family:var(--display);font-size:40px;font-weight:400;line-height:1;color:var(--accent)}
+.collegiate-site .review-metric-link>span{font-size:14px;line-height:1.5}
+.collegiate-site .review-metric-source{display:block;font-size:11px;color:var(--muted)}
+.collegiate-site .review-metric-link:hover .review-metric-source{color:var(--accent)}
+.collegiate-site .review-metric>p{font-size:11px;color:var(--muted);margin:9px 0 0;line-height:1.4}
+
+/* Start awards alongside the review count, below the service heading. */
+.collegiate-site .recognition-section{row-gap:0}
+@media(min-width:761px){
+  .collegiate-site .recognition-heading,.collegiate-site .recognition-copy{grid-column:1}
+  .collegiate-site .recognition-section>.awards{grid-column:2;grid-row:2}
+}
+@media(max-width:760px){
+  .collegiate-site .recognition-section>.awards{margin-top:28px}
+}
+
+/* IEEE TVT editorial appointment */
+.collegiate-site .news-item .news-category{display:block;font-size:11px;color:var(--accent);padding-top:4px;margin-bottom:9px}
+.collegiate-site .editorial-appointment{margin:0 0 25px;padding:0 0 23px;border-bottom:1px solid var(--line);max-width:420px;scroll-margin-top:30px}
+.collegiate-site .editorial-appointment .small-label{font-size:10px;letter-spacing:1.4px;line-height:1.6;color:var(--accent);margin:0 0 8px}
+.collegiate-site .editorial-appointment h3{font-family:var(--display);font-size:27px;font-weight:400;letter-spacing:-.4px;line-height:1.2;margin:0 0 7px}
+.collegiate-site .editorial-appointment>p:last-child{font-size:14px;line-height:1.65;margin:0;color:var(--muted)}
+.collegiate-site .editorial-appointment a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.collegiate-site .editorial-appointment a:hover{color:var(--accent);text-decoration-color:var(--accent)}
+
+
+/* A balanced identity block with a single editorial line and secondary credentials. */
+.collegiate-site .hero--refined{align-items:center}
+.collegiate-site .hero--refined .hero-copy{display:block}
+.collegiate-site .hero--refined .hero-profile{align-self:center}
+.collegiate-site .hero--refined .hero-department{font-size:13px}
+.collegiate-site .hero--refined .hero-affiliations{border-top:1px solid var(--line);margin-top:30px;padding-top:22px;max-width:none}
+.collegiate-site .hero--refined .hero-editorial{font-size:20px;font-weight:500;line-height:1.5;margin:0;color:var(--accent)}
+.collegiate-site .hero--refined .hero-editorial a{text-underline-offset:5px}
+.collegiate-site .hero--refined .hero-editorial a:hover{text-decoration:underline}
+.collegiate-site .hero--refined .hero-editorial a>span{padding:0 8px;color:#91aaad}
+.collegiate-site .hero--refined .hero-qualifications{display:flex;flex-wrap:wrap;gap:6px 0;font-size:16px;font-weight:400;line-height:1.6;margin:10px 0 0;color:var(--muted)}
+.collegiate-site .hero--refined .hero-qualifications>span{white-space:nowrap}
+.collegiate-site .hero--refined .hero-qualifications>span+span::before{content:'·';margin:0 16px;color:#91aaad}
+@media(min-width:761px) and (max-width:1000px){
+  .collegiate-site .hero--refined .hero-qualifications{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span+span::before{content:none}
+}
+@media(max-width:760px){
+  .collegiate-site .hero--refined .hero-affiliations{margin-top:22px;padding-top:18px;max-width:none}
+  .collegiate-site .hero--refined .hero-editorial{font-size:18px}
+  .collegiate-site .hero--refined .hero-qualifications>span+span::before{margin:0 10px}
+}
+@media(max-width:380px){
+  .collegiate-site .hero--refined .hero-qualifications{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span{display:block}
+  .collegiate-site .hero--refined .hero-qualifications>span+span{margin-top:4px}
+  .collegiate-site .hero--refined .hero-qualifications>span+span::before{content:none}
+}
+
+/* Concise supporting content with optional venue detail. */
+.collegiate-site .project-card h3:has(+.project-meta){margin-bottom:23px}
+.collegiate-site .review-journals{max-width:420px;border-bottom:1px solid var(--line);margin:0 0 22px;padding:0 0 18px}
+.collegiate-site .review-journals summary{cursor:pointer;font:600 17px/1.6 var(--font);color:var(--ink);padding:3px 0 7px}
+.collegiate-site .review-journals summary span{font-size:11px;font-weight:400;color:var(--muted);margin-left:9px;white-space:nowrap}
+.collegiate-site .review-journals summary:hover{color:var(--accent)}
+.collegiate-site .review-journals summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.collegiate-site .review-journals ul{padding-left:19px;margin:11px 0 0;font-size:13px;line-height:1.75;color:var(--muted)}
+.collegiate-site .review-journals li+li{margin-top:8px}
+.collegiate-site .conference-service h3{font:600 17px/1.6 var(--font);letter-spacing:0;margin:0 0 12px}
+.collegiate-site .conference-service ul{list-style:none;margin:0;padding:0;font-size:14px;line-height:1.8;color:var(--muted)}
+.collegiate-site .conference-service li+li{margin-top:7px}
+.collegiate-site .conference-service abbr{text-decoration:none}
+
+/* Editorial appointment and the total review count share one compact row. */
+.collegiate-site .service-highlights{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:22px;align-items:center;padding:20px 0;margin-bottom:22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.collegiate-site .service-highlights>.review-metric,.collegiate-site .service-highlights>.editorial-appointment{min-width:0;max-width:none;margin:0;padding:0;border:0}
+.collegiate-site .service-highlights>.editorial-appointment{border-left:1px solid var(--line);padding-left:22px}
+.collegiate-site .service-highlights .review-metric-link{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.collegiate-site .service-highlights .review-metric-link strong{font-size:42px}
+.collegiate-site .service-highlights .review-metric-link>span{font-size:14px}
+.collegiate-site .service-highlights .editorial-appointment h3{font-size:25px}
+.collegiate-site .service-highlights .editorial-appointment>p:last-child{font-size:13px}
+.collegiate-site .review-journals{max-width:none}
+.collegiate-site .review-journals .venue-group-title{font:600 13px/1.6 var(--font);letter-spacing:0;color:var(--accent);margin:19px 0 8px}
+.collegiate-site .review-journals .venue-list{columns:2 190px;column-gap:27px;margin:0;padding-left:17px}
+.collegiate-site .review-journals .venue-list li{break-inside:avoid;margin:0 0 9px;padding-left:2px}
+@media(min-width:761px) and (max-width:1000px),(max-width:460px){
+  .collegiate-site .service-highlights{grid-template-columns:1fr;gap:20px;align-items:start}
+  .collegiate-site .service-highlights>.editorial-appointment{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}
+  .collegiate-site .service-highlights .review-metric-link{flex-direction:row;align-items:center;gap:18px}
+}
+
+/* More legible navigation, with comfortable wrapping on narrow screens. */
+.collegiate-site .site-header nav{font-size:15px;line-height:1.6}
+.collegiate-site .site-header nav a{display:inline-flex;align-items:center;min-height:32px}
+@media(max-width:760px){.collegiate-site .site-header nav{font-size:14px;gap:8px 18px}}
+
+/* Grant reviewing complements journal and conference service. */
+.collegiate-site .grant-service{margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.collegiate-site .grant-service h3{font:600 17px/1.6 var(--font);letter-spacing:0;margin:0 0 12px}
+.collegiate-site .grant-service p{font-size:14px;line-height:1.8;color:var(--muted);margin:0}
+.collegiate-site .grant-service a,.collegiate-site .review-journals .venue-list a{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:4px}
+.collegiate-site .grant-service a:hover,.collegiate-site .review-journals .venue-list a:hover{color:var(--accent);text-decoration-color:var(--accent)}
+
+/* Conference and grant service use the same native disclosure pattern as journals. */
+.collegiate-site details.conference-service,.collegiate-site details.grant-service{margin:0 0 22px;padding:0 0 18px;border:0;border-bottom:1px solid var(--line)}
+.collegiate-site .conference-service summary,.collegiate-site .grant-service summary{cursor:pointer;font:600 17px/1.6 var(--font);color:var(--ink);padding:3px 0 7px}
+.collegiate-site .conference-service summary:hover,.collegiate-site .grant-service summary:hover{color:var(--accent)}
+.collegiate-site .conference-service summary:focus-visible,.collegiate-site .grant-service summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.collegiate-site details.conference-service[open] ul,.collegiate-site details.grant-service[open] p{margin-top:11px}
+
+/* One type scale for the page. Component typography belongs here; use these
+   five roles instead of adding individual font sizes to component rules.
+   Scientific SVG labels, matrix notation and superscripts retain their scale. */
+body.collegiate-site{
+  --type-name:72px;
+  --type-section:36px;
+  --type-title:24px;
+  --type-body:16px;
+  --type-meta:13px;
+  font-size:var(--type-body);
+}
+@media(max-width:1000px){body.collegiate-site{--type-name:48px}}
+@media(max-width:760px){
+  body.collegiate-site{--type-section:30px;--type-title:20px}
+}
+
+body.collegiate-site #main :where(h1,h2,h3,h4){
+  font-family:var(--display);
+  font-weight:400;
+  letter-spacing:-.025em;
+}
+body.collegiate-site #main :where(h1){
+  font-size:var(--type-name);
+  line-height:1.1;
+}
+body.collegiate-site #main :where(h2,.page-intro h1){
+  font-size:var(--type-section);
+  line-height:1.25;
+}
+body.collegiate-site #main :where(h3,h4,.archive-entry h2,.archive-year>h2,.portfolio-card h2,.institution-strip strong,.publication-year,.contact-email){
+  font-size:var(--type-title);
+  line-height:1.4;
+}
+body.collegiate-site #main :where(p,li,.hero-role,.hero-position,.hero-qualifications,.hero-profile>p,.about-copy .lead,.appointment-role,.text-link,.muted,.page-description,.article-body,.contact-links,.review-metric-link>span){
+  font-size:var(--type-body);
+  line-height:1.75;
+}
+body.collegiate-site #main .hero-role strong{
+  font-family:var(--font);
+  font-size:var(--type-title);
+  font-weight:600;
+  line-height:1.4;
+}
+body.collegiate-site #main .hero-editorial{
+  font-size:var(--type-title);
+  line-height:1.4;
+}
+body.collegiate-site #main .about-copy .lead{font-weight:500}
+body.collegiate-site #main :where(summary,.experience-column-title){
+  font-family:var(--font);
+  font-size:var(--type-body);
+  font-weight:600;
+  line-height:1.5;
+  letter-spacing:0;
+}
+body.collegiate-site #main :where(
+  .eyebrow,.small-label,.hero-department,.hero-portrait figcaption,
+  .overview-date,.overview-role,.overview-role>span,.overview-heading .text-link,
+  .news-item time,.news-category,.news-history summary span,.project-history summary span,
+  .project-meta,.project-meta dt,.project-meta dd,.tags span,
+  .publication p,.publication .venue,.publication-year>span,.publication-note,
+  .appointment-location,.supervisor-credentials,.awards article>span,.awards p,
+  .scholar-metrics span,#scholar-status,.review-metric-source,.review-metric>p,
+  .entry-meta,.back-link,.section-aside,.review-journals .venue-group-title,
+  .visitor-card-heading>span,.visitor-compact-stats span,.visitor-compact-caption,
+  .visitor-location-disclosure summary>span,
+  .visitor-location-toolbar,.visitor-location-toolbar select,
+  .visitor-location-table,.visitor-location-table th,.visitor-location-table td,
+  .visitor-map-note,.visitor-detail-title,.visitor-map-credit
+){
+  font-size:var(--type-meta);
+  line-height:1.6;
+}
+body.collegiate-site #main :where(.eyebrow,.small-label,.hero-portrait figcaption){
+  letter-spacing:.07em;
+  font-weight:600;
+}
+body.collegiate-site #main .hero-copy>.eyebrow{
+  font-size:var(--type-body);
+  letter-spacing:.02em;
+}
+body.collegiate-site #main :where(.scholar-metrics strong,.review-metric-link strong,.visitor-compact-stats strong){
+  font-family:var(--display);
+  font-size:var(--type-section);
+  font-weight:400;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+body.collegiate-site #main .publication .corresponding-author{
+  font-size:.75em;
+  line-height:0;
+}
+body.collegiate-site #main :where(.bd-controls button,.bd-controls select,.bd-controls label,.bd-fixed-operation,.bd-illumination){
+  font-family:var(--font);
+  font-size:var(--type-body);
+  line-height:1.5;
+}
+body.collegiate-site #main :where(.bd-demo-notice,.bd-source-note,.bd-plot-heading,.bd-extra-controls p,.bd-result-table,.bd-result-table caption,.bd-slider-label output){
+  font-size:var(--type-meta);
+  line-height:1.6;
+}
+body.collegiate-site .site-header .wordmark{
+  font-size:var(--type-title);
+  line-height:1.4;
+}
+body.collegiate-site .site-header nav{
+  font-size:var(--type-body);
+  line-height:1.5;
+}
+body.collegiate-site .site-footer,
+body.collegiate-site .site-footer :where(p,strong,nav){
+  font-size:var(--type-meta);
+  line-height:1.6;
+}
+/* Let enlarged supporting labels wrap without breaking their containers. */
+body.collegiate-site #main .overview-heading{flex-wrap:wrap;gap:8px 20px}
+body.collegiate-site #main .visitor-card-heading{flex-wrap:wrap}
+body.collegiate-site #main .institution-strip strong{overflow-wrap:normal}
+
+/* A continuous reading column for the full biography. */
+body.collegiate-site #main .about-section{
+  grid-template-columns:minmax(0,1fr);
+  gap:28px;
+}
+body.collegiate-site #main .about-section>div{
+  width:100%;
+  max-width:760px;
+  margin-inline:auto;
+}
+body.collegiate-site #main .about-copy p{margin-bottom:20px}
+body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-top:4px}
+
+@media(max-width:760px){
+  /* Keep all four institutions and their metadata readable in narrow views. */
+  body.collegiate-site #main .academic-overview{padding:24px 20px}
+  body.collegiate-site #main .overview-heading{gap:8px;margin-bottom:20px}
+  body.collegiate-site #main .institution-strip{grid-template-columns:1fr;gap:0}
+  body.collegiate-site #main .institution-strip li{padding:18px 0;border:0}
+  body.collegiate-site #main .institution-strip li:first-child{padding-top:0}
+  body.collegiate-site #main .institution-strip li:last-child{padding-bottom:0}
+  body.collegiate-site #main .institution-strip li+li{border-top:1px solid #d4dcd4}
+  body.collegiate-site #main .institution-strip a{
+    display:grid;
+    grid-template-columns:clamp(56px,17vw,88px) minmax(0,1fr);
+    grid-template-rows:auto auto auto;
+    column-gap:18px;
+    row-gap:4px;
+    align-items:start;
+  }
+  body.collegiate-site #main .institution-logo{
+    grid-column:1;
+    grid-row:1/4;
+    align-self:center;
+    height:auto;
+    margin:0;
+  }
+  body.collegiate-site #main .institution-logo img{
+    width:100%;
+    max-width:100%;
+    max-height:48px;
+    object-position:center;
+  }
+  body.collegiate-site #main :where(.overview-date,.institution-strip strong,.overview-role){grid-column:2}
+  body.collegiate-site #main .institution-strip strong{margin:0;line-height:1.3}
+  body.collegiate-site #main .institution-strip strong br{display:none}
+  body.collegiate-site #main .about-section{gap:24px}
+
+  /* Put the metadata above each paper so its title uses the full width. */
+  body.collegiate-site #main .publication{display:flex;flex-wrap:wrap;gap:0 12px;padding:24px 0}
+  body.collegiate-site #main .publication>div:last-child{display:contents}
+  body.collegiate-site #main .publication-year{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    font-family:var(--font);
+    font-size:var(--type-meta);
+    font-weight:600;
+    line-height:1.6;
+  }
+  body.collegiate-site #main .publication-year>span{display:inline}
+  body.collegiate-site #main .publication-year>span::before{content:'·';margin-right:8px}
+  body.collegiate-site #main .publication .small-label{flex:1 1 160px;margin:0}
+  body.collegiate-site #main .publication h3{flex:0 0 100%;max-width:none;margin:10px 0}
+  body.collegiate-site #main .publication p:not(.small-label){flex:0 0 100%;min-width:0}
+  body.collegiate-site #main .publication .venue{margin-top:4px}
+}
+
+</style>
+  <!-- Record production visits only; local previews must not enter Umami statistics. -->
+  
+  <meta name="author" content="Xuekang Liu">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Xuekang Liu">
+  <meta property="og:title" content="Xuekang Liu | Lecturer at Lancaster University">
+  <meta property="og:description" content="Xuekang Liu, Lecturer (Assistant Professor) at Lancaster University. Research in antennas, reconfigurable circuits, metasurfaces and sub-THz communications.">
+  <meta property="og:url" content="https://hcmx1994.github.io/">
+  <meta property="og:image" content="https://hcmx1994.github.io/images/XuekangPhoto.png">
+  <meta property="og:image:alt" content="Xuekang Liu">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://hcmx1994.github.io/#website", "url": "https://hcmx1994.github.io/", "name": "Xuekang Liu"}, {"@type": "ProfilePage", "@id": "https://hcmx1994.github.io/#profile", "url": "https://hcmx1994.github.io/", "name": "Xuekang Liu | Lecturer at Lancaster University", "mainEntity": {"@type": "Person", "@id": "https://hcmx1994.github.io/#person", "name": "Xuekang Liu", "url": "https://hcmx1994.github.io/", "image": "https://hcmx1994.github.io/images/XuekangPhoto.png", "jobTitle": "Lecturer (Assistant Professor) in Electronics and Communication Engineering", "worksFor": {"@type": "CollegeOrUniversity", "name": "Lancaster University", "url": "https://www.lancaster.ac.uk/"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "University of Kent"}, {"@type": "CollegeOrUniversity", "name": "Xidian University"}], "sameAs": ["https://scholar.google.com/citations?user=vj_3bhQAAAAJ&hl=en", "https://orcid.org/0000-0002-3318-6812", "https://www.linkedin.com/in/xuekang-liu-7a383a1b0/", "https://www.researchgate.net/profile/Xuekang-Liu"]}}]}</script>
+<meta name="robots" content="noindex,nofollow,noarchive">
+</head>
+<body class="editorial-site collegiate-site">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+  <a class="wordmark" href="/" aria-label="Xuekang Liu, home">XL<span> / </span>Xuekang Liu</a>
+  <nav aria-label="Main navigation"><a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></nav>
+</header>
+<main id="main">
+  <section class="hero hero--refined" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow">Antennas · Circuits · Electromagnetics</p>
+      <h1 id="hero-title">Xuekang Liu</h1>
+      <p class="hero-role"><strong>Lancaster University</strong><span class="hero-position">Lecturer (Assistant Professor)</span><span class="hero-department">Electronics and Communication Engineering</span></p>
+      <div class="hero-affiliations">
+        <p class="hero-editorial"><a href="#editorial-service">Associate Editor <span aria-hidden="true">·</span> IEEE TVT</a></p>
+        <p class="hero-qualifications"><span>PhD, University of Kent</span><span>Member, IEEE</span></p>
+      </div>
+    </div>
+    <aside class="hero-profile" aria-label="Portrait and research introduction">
+      <figure class="hero-portrait"><div class="hero-portrait-window"><img src="/images/xuekang-liu-airport.jpg?v=20260924-hq" alt="Xuekang Liu at an airport" width="5273" height="3515" fetchpriority="high"></div><figcaption>Researcher · Educator</figcaption></figure>
+      <p>My work connects electromagnetic design with fabrication and experimental validation.</p>
+    </aside>
+  </section>
+  <section id="academic-journey" class="academic-overview" aria-label="Academic appointments and education">
+    <div class="overview-heading"><p class="eyebrow">Academic journey, at a glance</p><a class="text-link" href="#experience">Full experience &amp; education ↓</a></div>
+    <ol class="institution-strip">
+      <li><a href="#lancaster-lecturer"><span class="institution-logo institution-logo--lancaster" aria-hidden="true"><img src="/images/institutions/lancaster.svg" alt="Lancaster University logo" width="420" height="135" loading="lazy" decoding="async"></span><span class="overview-date">Sep 2026 – present</span><strong>Lancaster<br> University</strong><span class="overview-role">Lecturer <span>(Assistant Professor)</span></span></a></li>
+      <li><a href="#imperial-postdoc"><span class="institution-logo institution-logo--imperial" aria-hidden="true"><img src="/images/institutions/imperial.svg" alt="Imperial College London logo" width="727" height="80" loading="lazy" decoding="async"></span><span class="overview-date">Jun 2025 – Sep 2026</span><strong>Imperial<br> College London</strong><span class="overview-role">Postdoctoral Researcher</span></a></li>
+      <li><a href="#kent-phd"><span class="institution-logo institution-logo--kent" aria-hidden="true"><img src="/images/institutions/kent.svg" alt="University of Kent logo" width="1888" height="1024" loading="lazy" decoding="async"></span><span class="overview-date">2021 – 2024</span><strong>University<br> of Kent</strong><span class="overview-role">PhD in Engineering</span></a></li>
+      <li><a href="#xidian-masters"><span class="institution-logo institution-logo--xidian" aria-hidden="true"><img src="/images/institutions/xidian.png" alt="Xidian University logo" width="230" height="62" loading="lazy" decoding="async"></span><span class="overview-date">2012–2016 · 2017–2020</span><strong>Xidian<br> University</strong><span class="overview-role">Master's &amp; BEng <span>With honours (Master's)</span></span></a></li>
+    </ol>
+  </section>
+  <section id="about" class="section about-section">
+    <div class="section-heading"><h2>Connecting ideas. Advancing wireless.</h2></div>
+    <div class="about-copy"><p class="lead">I am a Lecturer (Assistant Professor) in Electronics and Communication Engineering at <a href="https://www.lancaster.ac.uk/">Lancaster University</a>, working on antennas, reconfigurable circuits and electromagnetic surfaces for wireless communications.</p>
+      <p>My research spans multiband and MIMO arrays, filtering antennas, transmitarrays, metasurfaces, and millimetre-wave and sub-THz RF systems. I am interested in the journey from electromagnetic design to fabrication and experimental validation.</p>
+      <p>Before joining Lancaster as a Lecturer (Assistant Professor) in September 2026, I held postdoctoral research positions at Imperial College London, working with <a class="person-link" href="https://profiles.imperial.ac.uk/b.clerckx">Prof. Bruno Clerckx</a> (IEEE Fellow), and at Lancaster University, working with <a class="person-link" href="https://www.lancaster.ac.uk/engineering/about/people/claudio-paoloni">Prof. Claudio Paoloni</a> and <a class="person-link" href="https://www.lancaster.ac.uk/engineering/about/people/lei-wang2">Dr. Lei Wang</a>.</p>
+      <p>I received my PhD in Engineering from the University of Kent in 2024, supervised by <a class="person-link" href="https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang">Prof. Steven Gao</a> (IEEE Fellow) and <a class="person-link" href="https://www.kent.ac.uk/engineering-and-digital-design/people/730/sanz-izquierdo-benito">Dr. Benito Sanz-Izquierdo</a>, and my master's degree with honours in Electromagnetic Field and Microwave Technology from Xidian University in 2020, supervised by <a class="person-link" href="https://faculty.xidian.edu.cn/HW4/zh_CN/index/374539/list/index.htm">Prof. Wei Hu</a>.</p>
+      <p class="personal-note">Beyond research, I enjoy exploring new places, running and hiking.</p><a class="text-link" href="https://www.linkedin.com/in/xuekang-liu-7a383a1b0/">Connect on LinkedIn <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+  <section id="news" class="section news-section" aria-labelledby="news-title">
+    <div class="section-top"><div><h2 id="news-title">Notes along the way.</h2></div><a class="text-link" href="/year-archive/">View all news →</a></div>
+    <div class="news-list"><article class="news-item"><time datetime="2026-09">Sep 2026</time><div><h3><a href="#editorial-service">Appointed Associate Editor of IEEE TVT</a></h3><p>Serving on the editorial board of IEEE Transactions on Vehicular Technology.</p></div></article>
+<article class="news-item"><time datetime="2026-09">Sep 2026</time><div><h3><a href="/posts/2026/09/lancaster-lecturer/">Joined Lancaster University as a Lecturer (Assistant Professor)</a></h3><p>Electronics and Communication Engineering.</p></div></article>
+<article class="news-item"><time datetime="2026-06">Jun 2026</time><div><h3><a href="/posts/2026/06/fth-patent-funding/">Awarded FTH funding for reconfigurable circuit patent filing</a></h3><p>£8,000 from the Federated Telecoms Hubs (FTH), as lead inventor and applicant.</p></div></article>
+<article class="news-item"><time datetime="2026">2026</time><div><h3><a href="/posts/2026/awpl-outstanding-reviewer/">IEEE AWPL Outstanding Reviewer Award</a></h3><p>Recognised for contributions to peer review in IEEE Antennas and Wireless Propagation Letters.</p></div></article>
+</div>
+    <details class="news-history"><summary>Earlier updates <span>2019–2025 · 8 entries</span></summary><div class="news-list"><article class="news-item"><time datetime="2025-06">Jun 2025</time><div><h3><a href="/posts/2025/06/imperial-postdoc/">Joined Imperial College London as a Postdoctoral Researcher</a></h3><p>Joined Prof. Bruno Clerckx’s group to work on reconfigurable intelligent surfaces and metasurfaces for next-generation wireless communications.</p></div></article><article class="news-item"><time datetime="2024-07-01">Jul 2024</time><div><h3><a href="/posts/2024/07/blog-post-2/">Paper selected for the IEEE TAP 5G/6G collection</a></h3><p>My work on wideband dual-polarized antennas was selected for the special article collection on antennas and propagation for emerging 5G/6G communications.</p></div></article><article class="news-item"><time datetime="2023-12-01">Dec 2023</time><div><h3><a href="/posts/2023/12/blog-post-2/">Among the 23 most-read IEEE TAP articles</a></h3><p>My paper on a mutual-coupling-suppressed dual-band dual-polarized base station antenna was recognised among the journal’s 23 most-read articles for 2023.</p></div></article><article class="news-item"><time datetime="2022-09-29">Sep 2022</time><div><h3><a href="/posts/2022/09/blog-post-2/">URSI Young Scientist Award</a></h3><p>Received the Young Scientist Award from the URSI Germany Member Committee.</p></div></article><article class="news-item"><time datetime="2022-05-17">May 2022</time><div><h3><a href="/posts/2022/05/blog-post-4/">iWAT Best Student Paper Award — second prize</a></h3><p>Received second prize in the Best Student Paper Award at iWAT 2022 in Dublin.</p></div></article><article class="news-item"><time datetime="2020-10-02">Oct 2020</time><div><h3><a href="/posts/2020/10/blog-post-3/">Full PhD scholarship at the University of Kent</a></h3><p>Awarded a full PhD scholarship to work with Prof. Steven Gao.</p></div></article><article class="news-item"><time datetime="2020-09-20">Sep 2020</time><div><h3><a href="/posts/2013/08/blog-post-2/">Outstanding Master’s Thesis Award</a></h3><p>My master’s thesis at Xidian University was recognised among the top 2% of 2,998 theses.</p></div></article><article class="news-item"><time datetime="2019-11-20">Nov 2019</time><div><h3><a href="/posts/2019-11-20-blog-post-1/">Best Paper Award — third prize</a></h3><p>Received third prize for Best Paper from the National Key Laboratory of Antenna and Microwave Technology.</p></div></article></div></details>
+  </section>
+  <section id="research" class="section research-section">
+    <div class="section-top"><div><h2>From electromagnetic concepts<br>to working hardware.</h2></div></div>
+    <div class="research-grid">
+      <article class="research-card"><div class="research-image"><img src="/images/reconfigurable-circuit.jpg" alt="Experimental control electronics for reconfigurable microwave circuits" loading="lazy"></div><div class="card-body"><span class="small-label">01 / Reconfigurable electromagnetics</span><h3>Shaping how<br>waves interact.</h3><p>Reconfigurable intelligent surfaces, metasurfaces and microwave circuits that control electromagnetic propagation.</p></div></article>
+      <article class="research-card"><div class="research-image"><img src="/images/DualBandDualPolarizedArrayfor5G.png" alt="Dual-band dual-polarized antenna array research" loading="lazy"></div><div class="card-body"><span class="small-label">02 / Antennas & arrays</span><h3>More capability.<br>Smaller footprints.</h3><p>Multiband, dual-polarized and MIMO antennas, with integrated filtering and mutual-coupling suppression for wireless systems.</p></div></article>
+      <article class="research-card"><div class="research-image"><img src="/images/w-band-transmitarray-detail.svg" alt="W-band transmitarray prototype with a microscope photograph of its unit-cell detail" loading="lazy"></div><div class="card-body"><span class="small-label">03 / High-frequency systems</span><h3>Reaching into<br>the sub-THz spectrum.</h3><p>Transmitarrays, dielectric lens antennas and W-band communication systems, combining design with prototyping and measurements.</p></div></article>
+    </div>
+  </section>
+  <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+    <div class="section-top"><div><h2 id="projects-title">Research put into practice.</h2></div></div>
+    <div class="projects-grid"><article class="project-card"><p class="small-label">June 2026</p><h3>Patent Filing Support for “A Reconfigurable Circuit Architecture for Electromagnetic Systems”</h3><dl class="project-meta"><div><dt>Funder</dt><dd>Federated Telecoms Hubs (FTH)</dd></div><div><dt>Project funding</dt><dd>£8K</dd></div><div><dt>My role</dt><dd>Lead Inventor &amp; Applicant</dd></div></dl></article><article class="project-card"><p class="small-label">June 2025 – present</p><h3>Reconfigurable Intelligent Surfaces 2.0 for 6G: Beyond Diagonal Phase Shift Matrices</h3><p class="project-summary">Hardware architecture, functional prototypes and experimental characterisation of beyond-diagonal reconfigurable intelligent surfaces (BD-RIS).</p><dl class="project-meta"><div><dt>Funder</dt><dd>EPSRC</dd></div><div><dt>Project funding</dt><dd>£891K</dd></div><div><dt>My role</dt><dd>Prototyping Lead</dd></div></dl></article><article class="project-card"><p class="small-label">June 2024 – May 2025</p><h3>Multibeam W-Band Fixed Wireless Access Enabled by Traveling Wave Tubes</h3><p class="project-summary">High-gain multi-beam transmitarrays and W-band hardware for high-capacity wireless links.</p><dl class="project-meta"><div><dt>Funder</dt><dd>Innovate UK</dd></div><div><dt>Project funding</dt><dd>£925K</dd></div><div><dt>My role</dt><dd>Chief Antenna Engineer</dd></div></dl></article></div>
+    <details class="project-history"><summary>Earlier projects <span>2017–2024 · 4 projects</span></summary><div><article class="project-archive-item"><p class="small-label">January 2021 – January 2024</p><h3>Shared-Aperture Array with Innovation on Antenna Element/Array Architecture</h3><dl class="project-meta"><div><dt>Funder</dt><dd>Industry</dd></div><div><dt>Project funding</dt><dd>£160K</dd></div><div><dt>My role</dt><dd>Lead Contributor</dd></div></dl></article><article class="project-archive-item"><p class="small-label">February 2019 – June 2020</p><h3>Design of Broadband Antenna with Low-Loss Matching Network</h3><dl class="project-meta"><div><dt>Funder</dt><dd>Industry</dd></div><div><dt>Project funding</dt><dd>£20K</dd></div><div><dt>My role</dt><dd>Lead Contributor</dd></div></dl></article><article class="project-archive-item"><p class="small-label">April – July 2018</p><h3>Design of Dual-Polarized Array Antenna</h3><dl class="project-meta"><div><dt>Funder</dt><dd>Industry</dd></div><div><dt>Project funding</dt><dd>£24K</dd></div><div><dt>My role</dt><dd>Lead Contributor</dd></div></dl></article><article class="project-archive-item"><p class="small-label">October 2017 – August 2018</p><h3>Research on Terminal MIMO Antenna Technology</h3><dl class="project-meta"><div><dt>Funder</dt><dd>National Natural Science Foundation of China (NSFC)</dd></div><div><dt>Project funding</dt><dd>£23K</dd></div><div><dt>My role</dt><dd>Co-contributor</dd></div></dl></article></div></details>
+  </section>
+  <section id="publications" class="section publications-section">
+    <div class="section-top"><div><h2>A selection of my work.</h2></div><a class="text-link" href="https://scholar.google.com/citations?user=vj_3bhQAAAAJ&amp;hl=en">Full list on Google Scholar ↗</a></div>
+    <div class="scholar-panel" aria-label="Google Scholar citation metrics">
+      <div class="scholar-metrics"><div><strong data-scholar="citations">—</strong><span>Citations</span></div><div><strong data-scholar="h_index">—</strong><span>h-index</span></div><div><strong data-scholar="i10_index">—</strong><span>i10-index</span></div></div>
+      <p id="scholar-status" aria-live="polite">Loading Google Scholar metrics…</p>
+      <noscript><p>View current citation metrics on <a href="https://scholar.google.com/citations?user=vj_3bhQAAAAJ&amp;hl=en">Google Scholar</a>.</p></noscript>
+    </div>
+    <p class="publication-note"><sup>*</sup> Corresponding author</p>
+    <div class="publication-list">
+      <article class="publication"><div class="publication-year">2026<span>Preprint</span></div><div><p class="small-label">Analog computing</p><h3><a href="https://arxiv.org/abs/2603.24604">Analog computing with hybrid couplers and phase shifters</a></h3><p>M. Nerini, <strong>X. Liu<sup class="corresponding-author" aria-label="Corresponding author">*</sup></strong> and B. Clerckx</p><p class="venue">arXiv preprint · arXiv:2603.24604</p></div></article>
+      <article class="publication"><div class="publication-year">2025<span>Journal</span></div><div><p class="small-label">Filtering antennas</p><h3><a href="https://ieeexplore.ieee.org/abstract/document/10930551">Broadband Dual-Polarized Filtering Antenna for Base Station Systems</a></h3><p><strong>X. Liu<sup class="corresponding-author" aria-label="Corresponding author">*</sup></strong>, B. Sanz-Izquierdo, L. Wang, L. Zhang, X. X. Yang and S. Gao</p><p class="venue">IEEE Transactions on Antennas and Propagation</p></div></article>
+      <article class="publication"><div class="publication-year">2025<span>Journal</span></div><div><p class="small-label">Shared-aperture arrays</p><h3><a href="https://ieeexplore.ieee.org/abstract/document/10897934">Dual-Band Dual-Polarized Array Based on Electromagnetic Transparent Antenna for Vehicle-Mounted Base Station Systems</a></h3><p><strong>X. Liu<sup class="corresponding-author" aria-label="Corresponding author">*</sup></strong> et al.</p><p class="venue">IEEE Transactions on Vehicular Technology</p></div></article>
+      <article class="publication"><div class="publication-year">2024<span>Journal</span></div><div><p class="small-label">Multimode antennas</p><h3><a href="https://ieeexplore.ieee.org/abstract/document/10280717">Differentially Fed Dual-Band Base Station Antenna With Multimode Resonance and High Selectivity for 5G Applications</a></h3><p><strong>X. Liu<sup class="corresponding-author" aria-label="Corresponding author">*</sup></strong>, B. Sanz-Izquierdo, H. Zhang, S. Gao, W. Hu, X. X. Yang and J. T. S. Sumantyo</p><p class="venue">IEEE Transactions on Antennas and Propagation</p></div></article>
+      <article class="publication"><div class="publication-year">2024<span>Journal</span></div><div><p class="small-label">Filtering antennas</p><h3><a href="https://ieeexplore.ieee.org/abstract/document/10313244">Wideband Dual-Polarized Antenna With High Selectivity for 5G Sub-6-GHz Base Station Applications</a></h3><p><strong>X. Liu<sup class="corresponding-author" aria-label="Corresponding author">*</sup></strong>, B. Sanz-Izquierdo, S. Gao, H. Zhang, W. Hu, X. X. Yang and J. T. S. Sumantyo</p><p class="venue">IEEE Transactions on Antennas and Propagation</p></div></article>
+    </div>
+  </section>
+    <section class="section recognition-section" aria-labelledby="recognition-title"><div class="recognition-heading"><h2 id="recognition-title">Contributing to<br>the community.</h2></div><div class="recognition-copy"><div class="service-highlights"><div class="review-metric" aria-label="Web of Science verified peer reviews"><a class="review-metric-link" href="https://www.webofscience.com/wos/author/record/GLN-3431-2022"><strong>212</strong><span>Verified peer reviews<span class="review-metric-source">Web of Science <span aria-hidden="true">↗</span></span></span></a><p>Last verified <time datetime="2026-09-25T16:19:05Z">25 Sep 2026</time></p></div><section id="editorial-service" class="editorial-appointment" aria-labelledby="editorial-service-title"><p class="small-label">Editorial service</p><h3 id="editorial-service-title">Associate Editor</h3><p><a href="https://vtsociety.org/publication/ieee-transactions-vehicular-technology/tvt-editorial-board">IEEE Transactions on Vehicular Technology <span aria-hidden="true">↗</span></a></p></section>
+      </div>
+      <details class="review-journals">
+        <summary>Peer-review journals</summary>
+        <ul class="venue-list">
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8">IEEE Transactions on Antennas and Propagation</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046">IEEE Transactions on Multimedia</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19">IEEE Transactions on Instrumentation and Measurement</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=30">IEEE Transactions on Consumer Electronics</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE Transactions on Vehicular Technology</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/results-in-engineering">Results in Engineering</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907">IEEE Internet of Things Journal</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=35">IEEE Communications Magazine</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/materials-and-design">Materials &amp; Design</a></li>
+            <li><a href="https://www.nature.com/srep/">Scientific Reports</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7727">IEEE Antennas and Wireless Propagation Letters</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639">IEEE Access</a></li>
+            <li><a href="https://www.sciencedirect.com/journal/aeu-international-journal-of-electronics-and-communications">AEU – International Journal of Electronics and Communications</a></li>
+            <li><a href="https://link.springer.com/journal/10762">Journal of Infrared, Millimeter, and Terahertz Waves</a></li>
+            <li><a href="https://link.springer.com/journal/11276">Wireless Networks</a></li>
+            <li><a href="https://onlinelibrary.wiley.com/journal/22337326">ETRI Journal</a></li>
+            <li><a href="https://link.springer.com/journal/11277">Wireless Personal Communications</a></li>
+            <li><a href="https://onlinelibrary.wiley.com/journal/8039">International Journal of Antennas and Propagation</a></li>
+            <li><a href="https://ietresearch.onlinelibrary.wiley.com/journal/17518733">IET Microwaves, Antennas and Propagation</a></li>
+            <li><a href="https://onlinelibrary.wiley.com/journal/10982760">Microwave and Optical Technology Letters</a></li>
+            <li><a href="https://ietresearch.onlinelibrary.wiley.com/journal/1350911x">Electronics Letters</a></li>
+            <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10918858">IEEE Journal of Selected Topics in Electromagnetics, Antennas and Propagation</a></li>
+          </ul>
+      </details>
+      <details class="conference-service">
+        <summary>TPC member</summary>
+        <ul>
+          <li><abbr title="European Conference on Antennas and Propagation">EuCAP</abbr> · 2025, 2026 &amp; 2027</li>
+          <li>International Conference on AI in Healthcare · 2024</li>
+          <li>UCMMT · 2024</li>
+          <li>FNWF · 2026</li>
+        </ul>
+      </details>
+      <details class="grant-service">
+        <summary>Grant review</summary>
+        <p><a href="https://www.euraap.org/wg-ecap-ticra-grants">ECAP–TICRA Grant</a></p>
+      </details>
+    </div><div class="awards"><article><span>2026</span><div><h3><a href="https://awpl.ee.cuhk.edu.hk/">Outstanding Reviewer Award</a></h3><p>IEEE Antennas and Wireless Propagation Letters</p></div></article><article><span>2022</span><div><h3><a href="https://www.kent.ac.uk/engineering-and-digital-design/news/3340/school-of-engineering-phd-student-xuekang-liu-wins-international-award">Young Scientist Award</a></h3><p>URSI Member Committee, Germany</p></div></article><article><span>2022</span><div><h3><a href="https://www.kent.ac.uk/engineering-and-digital-design/news/3305/best-student-paper-prizes">Best Student Paper Award</a></h3><p>17th International Workshop on Antenna Technology, Dublin</p></div></article><article><span>2020</span><div><h3>Outstanding Academic Achievement</h3><p>Xidian University</p></div></article></div></section>
+  <section id="experience" class="section experience-section" aria-labelledby="experience-title">
+    <div class="section-heading"><h2 id="experience-title">Experience &amp; education.</h2><p class="muted">Research across institutions. A continuing curiosity.</p></div>
+    <div class="experience-columns">
+      <section class="experience-column" aria-labelledby="work-experience-title">
+        <h3 class="experience-column-title" id="work-experience-title">Work experience</h3>
+        <div class="timeline">
+          <article id="lancaster-lecturer" class="timeline-item current"><p class="small-label">September 2026 – present <span class="current-tag">Current</span></p><div class="appointment-heading"><h4 class="institution">Lancaster University</h4><span class="appointment-location">United Kingdom</span></div><p class="appointment-role">Lecturer (Assistant Professor) in Electronics and Communication Engineering</p></article>
+          <article id="imperial-postdoc" class="timeline-item"><p class="small-label">June 2025 – September 2026</p><div class="appointment-heading"><h4 class="institution">Imperial College London</h4><span class="appointment-location">United Kingdom</span></div><p class="appointment-role">Postdoctoral Researcher</p><p>Line manager: <a href="https://profiles.imperial.ac.uk/b.clerckx">Prof. Bruno Clerckx</a>.</p><p class="supervisor-credentials"><strong>Prof. Bruno Clerckx:</strong> IEEE Fellow; Professor of Wireless Communications and Signal Processing.</p><p>Design and prototyping of reconfigurable intelligent surfaces and metasurfaces.</p></article>
+          <article id="lancaster-postdoc" class="timeline-item"><p class="small-label">June 2024 – May 2025</p><div class="appointment-heading"><h4 class="institution">Lancaster University</h4><span class="appointment-location">United Kingdom</span></div><p class="appointment-role">Postdoctoral Researcher</p><p>Line managers: <a href="https://www.lancaster.ac.uk/engineering/about/people/claudio-paoloni">Prof. Claudio Paoloni</a> and <a href="https://www.lancaster.ac.uk/engineering/about/people/lei-wang2">Dr. Lei Wang</a>.</p><p class="supervisor-credentials"><strong>Prof. Claudio Paoloni:</strong> Cockcroft Chair; IEEE Senior Member; IEEE Electron Devices Society Distinguished Lecturer; Associate Editor of IEEE Transactions on Microwave Theory and Techniques.</p><p class="supervisor-credentials"><strong>Dr. Lei Wang:</strong> Associate Professor / Senior Lecturer in Electronics (THz technology); IEEE Senior Member.</p><p>Multi-beam transmitarrays, dielectric lens antennas and W-band communication systems using CNC machining, PCB fabrication and 3D printing.</p></article>
+          <article class="timeline-item"><p class="small-label">2017 – 2018 · Full-time, then part-time</p><div class="appointment-heading"><h4 class="institution">Huaqing Ruida Technology Co. Ltd</h4><span class="appointment-location">China</span></div><p class="appointment-role">Signal Processing Engineer</p><p>RF link simulation and on-site validation for target simulator systems.</p></article>
+        </div>
+      </section>
+      <section class="experience-column" aria-labelledby="education-title">
+        <h3 class="experience-column-title" id="education-title">Education</h3>
+        <div class="timeline">
+          <article id="kent-phd" class="timeline-item"><p class="small-label">2021 – 2024</p><div class="appointment-heading"><h4 class="institution">University of Kent</h4><span class="appointment-location">United Kingdom</span></div><p class="appointment-role">PhD in Engineering</p><p>Supervisors: <a href="https://www.ee.cuhk.edu.hk/en-gb/people/academic-staff/professors/prof-gao-shichang">Prof. Steven Gao</a> and <a href="https://www.kent.ac.uk/engineering-and-digital-design/people/730/sanz-izquierdo-benito">Dr. Benito Sanz-Izquierdo</a>.</p><p class="supervisor-credentials"><strong>Prof. Steven Gao:</strong> IEEE Fellow; Fellow of the IET and the Royal Aeronautical Society; Editor-in-Chief of <a class="journal-link" href="https://awpl.ee.cuhk.edu.hk/">IEEE Antennas and Wireless Propagation Letters</a>.</p></article>
+          <article id="xidian-masters" class="timeline-item"><p class="small-label">2017 – 2020</p><div class="appointment-heading"><h4 class="institution">Xidian University</h4><span class="appointment-location">China</span></div><p class="appointment-role">Master's in Electromagnetic Field and Microwave Technology</p><p>With honours · Supervised by <a class="person-link" href="https://faculty.xidian.edu.cn/HW4/zh_CN/index/374539/list/index.htm">Prof. Wei Hu</a>.</p></article>
+          <article class="timeline-item"><p class="small-label">2012 – 2016</p><div class="appointment-heading"><h4 class="institution">Xidian University</h4><span class="appointment-location">China</span></div><p class="appointment-role">BEng in Electronic Information Engineering</p></article>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="bd-lab bd-v3 bd-wide" id="bd-lab" aria-labelledby="bd-title">
+      <div class="bd-wide-header"><div class="bd-wide-title">
+      <h2 id="bd-title">Beyond the diagonal.</h2>
+      </div>
+      <p class="bd-demo-notice"><strong>Concept illustration only.</strong> Lossless port-network and scalar wave model; not full-wave simulation or measured hardware performance.</p>
+      </div>
+      <div class="bd-controls" hidden>
+        <div class="bd-common-row">
+        <div class="bd-examples" role="group" aria-label="BD-RIS example"><button type="button" data-example="compare" aria-pressed="true">01 / D vs BD</button><button type="button" data-example="pairs" aria-pressed="false">02 / Back-to-back pairs</button></div>
+        <div class="bd-field-setup">
+        <div class="bd-illumination" role="group" aria-label="Source illumination"><span>Illumination</span><button type="button" data-field="near" aria-pressed="true">Near field</button><button type="button" data-field="far" aria-pressed="false">Far field</button></div>
+        <p class="bd-source-note"></p>
+        </div></div>
+        <div class="bd-compare-panel">
+          <div class="bd-panel-controls">
+<div class="bd-select-row"><div class="bd-fixed-operation"><span>Operation</span><strong>Reflection</strong></div><label for="bd-goal">Common objective<select id="bd-goal"><option value="peak">Target power</option><option value="sidelobes" selected>Sidelobe suppression</option></select></label></div>
+
+          <label class="bd-slider-label" for="bd-target"><span>Target beam angle</span><output id="bd-target-value">0°</output></label><input id="bd-target" type="range" min="-55" max="55" step="1" value="0">
+          <div class="bd-suppression"><label class="bd-slider-label" for="bd-strength"><span>Allowed target-power drop</span><output id="bd-strength-value">1.0 dB</output></label><input id="bd-strength" type="range" min="0.05" max="1" step="0.05" value="0.5"></div>
+          <p class="bd-brief" aria-live="polite"></p>
+          </div>
+          <div class="bd-panel-visual">
+          <div class="bd-plot-heading"><span class="bd-d-label">Dashed: <b class="bd-d-name">D-RIS</b></span><span class="bd-b-label">Solid: BD-RIS</span><button type="button" class="bd-play">Pause</button></div>
+          <svg class="bd-compare-plot" viewBox="0 0 480 300" role="img" aria-labelledby="bd-plot-title bd-plot-desc"><title id="bd-plot-title">Optimised diagonal and beyond-diagonal responses</title><desc id="bd-plot-desc">Both curves use the same input, array, objective and fixed relative-power scale. Radius is logarithmic array-factor power, not range. Both outgoing beams are evaluated in the far field, even when the illumination is near field.</desc><g class="bd-grid"></g><path class="bd-main-b"></path><path class="bd-main-d"></path><path class="bd-guard-left"></path><path class="bd-guard-right"></path><path class="bd-main-target"></path><g class="bd-antenna-drawing"></g><circle class="bd-flow-b" r="3"></circle><circle class="bd-flow-d" r="2.5"></circle><text x="16" y="22" class="bd-v3-svg-label">Relative array-factor power</text><text x="464" y="22" text-anchor="end" class="bd-mode-label bd-v3-svg-label"></text><text x="240" y="289" text-anchor="middle" class="bd-network-label bd-v3-svg-label">BD: 8 ports · 4 groups · group size 2</text></svg>
+          </div>
+          <details class="bd-extra-controls bd-comparison-details"><summary>Comparison details &amp; S parameters</summary>
+            <p class="bd-comparison-condition"></p><p>Suppression directly minimises the highest power outside a shared main-beam sector, subject to the same target direction and minimum target power. D-RIS optimises all eight phases; BD-RIS also varies amplitudes within each lossless pair. The optimised D-RIS solution remains a feasible BD-RIS candidate.</p><p class="bd-current-constraints"></p>
+            <table class="bd-result-table"><caption>Same reference; values are model diagnostics only</caption><thead><tr><th>Metric</th><th class="bd-d-name">D-RIS</th><th>BD-RIS</th></tr></thead><tbody><tr><th>At target</th><td data-result="d-target"></td><td data-result="b-target"></td></tr><tr><th>Actual peak angle</th><td data-result="d-direction"></td><td data-result="b-direction"></td></tr><tr><th>Highest sidelobe / target</th><td data-result="d-side"></td><td data-result="b-side"></td></tr><tr><th>Highest sidelobe · common scale ↓</th><td data-result="d-score"></td><td data-result="b-score"></td></tr></tbody></table>
+            <p>The main-beam sector is fixed before optimisation: |sin θ − sin θ₀| &lt; 2.24/8 = 0.28 for both designs. Its boundaries and the refined peaks outside it are included in the maximum-power check. This is a fixed-sector sidelobe metric, not a first-null SLL estimate; equal sectors do not imply identical half-power beamwidths. Curves share one power reference and are not separately peak-normalised.</p><p class="bd-search-status"></p>
+            <p class="bd-model-health"></p><div class="bd-matrix-pair"><figure><figcaption class="bd-d-matrix-title"></figcaption><div class="bd-matrix-d"></div></figure><figure><figcaption class="bd-b-matrix-title"></figcaption><div class="bd-matrix-b"></div></figure></div><p>Matrix brightness = magnitude. Hover or focus a cell for complex S. Each reflection matrix R maps the same incident vector a to b. Full-network port ordering is listed below.</p><details><summary>Complex full S matrices</summary><pre class="bd-matrix-values"></pre></details>
+          </details>
+        </div>
+        <div class="bd-pairs-panel" hidden>
+          <div class="bd-panel-controls">
+<p class="bd-pair-intro">8 independent pairs · 8 front + 8 rear ports · group size 2.</p>
+          <div class="bd-modes" role="group" aria-label="Paired operating mode"><button type="button" data-pair-mode="reflection">Reflection</button><button type="button" data-pair-mode="transmission">Transmission</button><button type="button" data-pair-mode="hybrid" aria-pressed="true">Hybrid</button></div>
+
+          <label class="bd-slider-label" for="bd-share"><span>Input port power sent to rear</span><output id="bd-share-value">50%</output></label><input id="bd-share" type="range" min="0" max="1" step="0.05" value="0.5">
+          <div class="bd2-adjustments"><div><label class="bd-slider-label" for="bd-reflected"><span>Reflection angle</span><output id="bd-reflected-value">−25°</output></label><input id="bd-reflected" type="range" min="-55" max="55" step="1" value="-25"></div><div><label class="bd-slider-label" for="bd-transmitted"><span>Transmission angle</span><output id="bd-transmitted-value">30°</output></label><input id="bd-transmitted" type="range" min="-55" max="55" step="1" value="30"></div></div>
+          <p class="bd-pair-brief bd-brief" aria-live="polite"></p>
+          </div>
+          <div class="bd-panel-visual">
+          <div class="bd-plot-heading"><span class="bd-b-label">Front: receive / reflect</span><span class="bd-t-label">Rear: transmit</span><button type="button" class="bd-play">Pause</button></div>
+          <svg class="bd-pair-plot" viewBox="0 0 480 300" role="img" aria-label="8 back-to-back two-port groups with independently steered reflection and transmission"><g class="bd-pair-grid"></g><path class="bd-pair-r"></path><path class="bd-pair-t"></path><g class="bd-pair-antennas"></g><circle class="bd-flow-r" r="3"></circle><circle class="bd-flow-t" r="3"></circle><text x="16" y="22" class="bd-v3-svg-label">Reflected</text><text x="464" y="22" text-anchor="end" class="bd-v3-svg-label">Transmitted</text><text x="240" y="289" text-anchor="middle" class="bd-v3-svg-label">8 pairs · group size 2 · no inter-group transfer</text></svg>
+          </div>
+        </div>
+        <details class="bd-extra-controls bd-source-controls"><summary>Source position</summary><label class="bd-slider-label" for="bd-incidence"><span>Source angle</span><output id="bd-incidence-value">45°</output></label><input id="bd-incidence" type="range" min="-55" max="55" step="1" value="45"><div class="bd-range-control"><label class="bd-slider-label" for="bd-range"><span>Source distance / wavelength</span><output id="bd-range-value">5 λ</output></label><input id="bd-range" type="range" min="5" max="20" step="0.5" value="5"></div><p>Shared by both tabs. Near/far selects the <em>illumination</em>; outgoing plots remain far-field angular patterns. Source distance is measured from the array centre.</p></details>
+      </div>
+      <p class="bd-fallback">Enable JavaScript to compare lossless diagonal and beyond-diagonal S-parameter responses.</p>
+      <p class="bd-error" hidden role="alert"></p>
+      <!-- LOCAL_BD_NOTES -->
+    </section>
+  <section id="contact" class="contact-section contact-section--with-visitors">
+    <div class="contact-copy"><h2>Good research starts<br> with a conversation.</h2><p>For research enquiries and academic collaboration, get in touch.</p><a class="contact-email" href="mailto:xuekangliu@outlook.com">xuekangliu@outlook.com <span aria-hidden="true">↗</span></a><p class="review-email">For peer-review correspondence:<br><a class="contact-email" href="mailto:xuekangliu@ieee.org">xuekangliu@ieee.org <span aria-hidden="true">↗</span></a></p><div class="contact-links"><a href="https://scholar.google.com/citations?user=vj_3bhQAAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://www.linkedin.com/in/xuekang-liu-7a383a1b0/">LinkedIn ↗</a><a href="https://orcid.org/0000-0002-3318-6812">ORCID ↗</a><a href="https://www.researchgate.net/profile/Xuekang-Liu">ResearchGate ↗</a></div></div>
+    <aside id="visitors" class="visitor-panel visitor-panel--compact" aria-labelledby="visitor-title">
+  <div class="visitor-card-heading"><h3 id="visitor-title">Visitors around the world</h3><span>Umami</span></div>
+  <div class="visitor-compact-stats"><div><strong id="visitor-total-count">127</strong><span>Total visits</span></div><div><strong id="visitor-current-count">45</strong><span><span id="visitor-current-label">Visitors since 24 Sep</span> · <span id="visitor-current-month">Sep 2026</span></span><small id="visitor-current-note" class="visually-hidden">Saved backup; automatic refresh</small></div><div><strong id="visitor-country-count">13</strong><span>Countries / regions</span></div></div>
+  <svg class="visitor-world" viewBox="0 0 720 310" role="group" aria-label="World map of Umami visits by country or region" aria-describedby="visitor-map-note"><image href="/images/visitor-world.svg" width="720" height="310" aria-hidden="true"/><g class="visitor-marker" role="button" tabindex="0" aria-label="United Kingdom: 83 visits, 65.4% of all visits" aria-pressed="false" data-country="GB" transform="translate(353.13 69.24)"><title>United Kingdom: 83 visits, 65.4% of all visits</title><circle class="visitor-marker-halo" r="17.0"/><circle class="visitor-marker-dot" r="14.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="Singapore: 23 visits, 18.1% of all visits" aria-pressed="false" data-country="SG" transform="translate(567.64 177.3)"><title>Singapore: 23 visits, 18.1% of all visits</title><circle class="visitor-marker-halo" r="16.6"/><circle class="visitor-marker-dot" r="13.6"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="United States: 6 visits, 4.7% of all visits" aria-pressed="false" data-country="US" transform="translate(168.57 105.82)"><title>United States: 6 visits, 4.7% of all visits</title><circle class="visitor-marker-halo" r="11.9"/><circle class="visitor-marker-dot" r="8.9"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="Hong Kong: 4 visits, 3.1% of all visits" aria-pressed="false" data-country="HK" transform="translate(588.22 135.21)"><title>Hong Kong: 4 visits, 3.1% of all visits</title><circle class="visitor-marker-halo" r="11.0"/><circle class="visitor-marker-dot" r="8.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="China: 2 visits, 1.6% of all visits" aria-pressed="false" data-country="CN" transform="translate(568.39 108.28)"><title>China: 2 visits, 1.6% of all visits</title><circle class="visitor-marker-halo" r="9.8"/><circle class="visitor-marker-dot" r="6.8"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="Vietnam: 2 visits, 1.6% of all visits" aria-pressed="false" data-country="VN" transform="translate(576.55 151.88)"><title>Vietnam: 2 visits, 1.6% of all visits</title><circle class="visitor-marker-halo" r="9.8"/><circle class="visitor-marker-dot" r="6.8"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="Australia: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="AU" transform="translate(627.55 230.55)"><title>Australia: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="France: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="FR" transform="translate(364.43 87.54)"><title>France: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="Germany: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="DE" transform="translate(380.9 77.67)"><title>Germany: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="India: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="IN" transform="translate(517.93 138.81)"><title>India: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="Netherlands: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="NL" transform="translate(370.58 75.73)"><title>Netherlands: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="South Korea: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="KR" transform="translate(615.53 108.18)"><title>South Korea: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g><g class="visitor-marker" role="button" tabindex="0" aria-label="United Arab Emirates: 1 visits, 0.8% of all visits" aria-pressed="false" data-country="AE" transform="translate(467.7 133.15)"><title>United Arab Emirates: 1 visits, 0.8% of all visits</title><circle class="visitor-marker-halo" r="9.0"/><circle class="visitor-marker-dot" r="6.0"/></g></svg>
+  <p class="visitor-compact-caption" id="visitor-refresh-status" role="status">Saved 29 Sep 2026, 13:06 UTC</p>
+  <details class="visitor-location-disclosure"><summary>Explore locations <span aria-hidden="true">+</span></summary>
+    <p id="visitor-map-note" class="visitor-map-note">Markers show country/region reference points, not precise visitor locations.</p>
+    <div class="visitor-location-toolbar"><label for="visitor-country">Country / region</label><select id="visitor-country"><option value="all">All locations</option><option value="GB">United Kingdom · 83</option><option value="SG">Singapore · 23</option><option value="US">United States · 6</option><option value="HK">Hong Kong · 4</option><option value="CN">China · 2</option><option value="VN">Vietnam · 2</option><option value="AU">Australia · 1</option><option value="FR">France · 1</option><option value="DE">Germany · 1</option><option value="IN">India · 1</option><option value="NL">Netherlands · 1</option><option value="KR">South Korea · 1</option><option value="AE">United Arab Emirates · 1</option></select></div>
+    <div id="visitor-location-detail" aria-live="polite"><table class="visitor-location-table"><thead><tr><th scope="col">Location</th><th scope="col">Visits</th><th scope="col">Share</th></tr></thead><tbody><tr><td>United Kingdom</td><td>83</td><td>65.4%</td></tr><tr><td>Singapore</td><td>23</td><td>18.1%</td></tr><tr><td>United States</td><td>6</td><td>4.7%</td></tr></tbody></table></div>
+    <p class="visitor-map-note" id="visitor-coverage-note">0 visits without a map position remain included in totals. Setup / VPN test visits are included.</p>
+    <p class="visitor-map-credit">Map: <a href="https://www.naturalearthdata.com/">Natural Earth</a> · Reference points: <a href="https://developers.google.com/public-data/docs/canonical/countries_csv">Google DSPL</a></p>
+  </details>
+  <script type="application/json" id="visitor-map-data">{"visits":127,"current_month":"2026-09","current_visitors":45,"current_label":"Visitors since 24 Sep","timezone":"Europe/London","tracking_started":"2026-09-24","captured_at":"2026-09-29T13:06:55.71+00:00","months":[],"countries":[{"code":"GB","name":"United Kingdom","visits":83,"point":[353.13,69.24],"cities":[{"name":"Wembley","visits":54},{"name":"Islington","visits":15},{"name":"London","visits":9},{"name":"Southampton","visits":2},{"name":"Galgate","visits":1},{"name":"Kensington","visits":1},{"name":"Rochdale","visits":1}]},{"code":"SG","name":"Singapore","visits":23,"point":[567.64,177.3],"cities":[{"name":"Singapore","visits":22},{"name":"Unknown city","visits":1}]},{"code":"US","name":"United States","visits":6,"point":[168.57,105.82],"cities":[{"name":"Council Bluffs","visits":2},{"name":"Ashburn","visits":1},{"name":"Los Angeles","visits":1},{"name":"Moses Lake","visits":1},{"name":"Unknown city","visits":1}]},{"code":"HK","name":"Hong Kong","visits":4,"point":[588.22,135.21],"cities":[{"name":"Tung Chung","visits":2},{"name":"Hong Kong","visits":1},{"name":"Sha Tin","visits":1}]},{"code":"CN","name":"China","visits":2,"point":[568.39,108.28],"cities":[{"name":"Unknown city","visits":2}]},{"code":"VN","name":"Vietnam","visits":2,"point":[576.55,151.88],"cities":[{"name":"Hanoi","visits":1},{"name":"Unknown city","visits":1}]},{"code":"AU","name":"Australia","visits":1,"point":[627.55,230.55],"cities":[{"name":"Bungarribee","visits":1}]},{"code":"FR","name":"France","visits":1,"point":[364.43,87.54],"cities":[{"name":"Marseille","visits":1}]},{"code":"DE","name":"Germany","visits":1,"point":[380.9,77.67],"cities":[{"name":"Frankfurt am Main","visits":1}]},{"code":"IN","name":"India","visits":1,"point":[517.93,138.81],"cities":[{"name":"Mumbai","visits":1}]},{"code":"NL","name":"Netherlands","visits":1,"point":[370.58,75.73],"cities":[{"name":"Amsterdam","visits":1}]},{"code":"KR","name":"South Korea","visits":1,"point":[615.53,108.18],"cities":[{"name":"Seoul","visits":1}]},{"code":"AE","name":"United Arab Emirates","visits":1,"point":[467.7,133.15],"cities":[{"name":"Dubai","visits":1}]}],"service":{"url":"https://homepage-umami.vercel.app/api/homepage-summary","website_id":"d8c1f3fa-cb3e-4753-9aba-a78aa9a99836","baseline":{"schema_version":1,"source":"Umami","website_id":"3000b10a-b4af-481b-ac2b-a6a611908de4","domain":"hcmx1994.github.io","captured_at":"2026-09-24T17:19:55.079478+00:00","started_at":"2026-09-24T00:00:00Z","timezone":"Europe/London","current_month":"2026-09","current_month_visitors":15,"totals":{"visits":21,"pageviews":44},"countries":[{"code":"GB","visits":7},{"code":"IN","visits":1},{"code":"KR","visits":1},{"code":"HK","visits":1},{"code":"NL","visits":1},{"code":"SG","visits":2},{"code":"AU","visits":1},{"code":"VN","visits":1},{"code":"AE","visits":1},{"code":"US","visits":1},{"code":"DE","visits":1},{"code":"FR","visits":1},{"code":"CN","visits":2}],"cities":[{"country":"GB","name":"Wembley","visits":7},{"country":"HK","name":"Hong Kong","visits":1},{"country":"VN","name":"Hanoi","visits":1},{"country":"NL","name":"Amsterdam","visits":1},{"country":"KR","name":"Seoul","visits":1},{"country":"AE","name":"Dubai","visits":1},{"country":"SG","name":"Singapore","visits":2},{"country":"FR","name":"Marseille","visits":1},{"country":"IN","name":"Mumbai","visits":1},{"country":"US","name":"Los Angeles","visits":1},{"country":"AU","name":"Bungarribee","visits":1},{"country":"DE","name":"Frankfurt am Main","visits":1},{"country":"CN","name":null,"visits":2}]},"snapshot":{"schema_version":1,"source":"Umami","website_id":"d8c1f3fa-cb3e-4753-9aba-a78aa9a99836","domain":"hcmx1994.github.io","captured_at":"2026-09-29T13:06:55.71+00:00","started_at":"2026-09-24T17:17:56.509+00:00","timezone":"Europe/London","current_month":"2026-09","current_month_visitors":45,"totals":{"visits":106,"pageviews":179},"countries":[{"code":"GB","visits":76},{"code":"SG","visits":21},{"code":"US","visits":5},{"code":"HK","visits":3},{"code":"VN","visits":1}],"cities":[{"country":"GB","name":"Wembley","visits":47},{"country":"SG","name":"Singapore","visits":20},{"country":"GB","name":"Islington","visits":15},{"country":"GB","name":"London","visits":9},{"country":"GB","name":"Southampton","visits":2},{"country":"HK","name":"Tung Chung","visits":2},{"country":"US","name":"Council Bluffs","visits":2},{"country":"GB","name":"Galgate","visits":1},{"country":"GB","name":"Kensington","visits":1},{"country":"GB","name":"Rochdale","visits":1},{"country":"HK","name":"Sha Tin","visits":1},{"country":"SG","name":null,"visits":1},{"country":"US","name":"Ashburn","visits":1},{"country":"US","name":"Moses Lake","visits":1},{"country":"US","name":null,"visits":1},{"country":"VN","name":null,"visits":1}]}},"reference":{"AD":{"name":"Andorra","x":363.2,"y":94.91},"AE":{"name":"United Arab Emirates","x":467.7,"y":133.15},"AF":{"name":"Afghanistan","x":495.42,"y":112.12},"AG":{"name":"Antigua and Barbuda","x":236.41,"y":145.88},"AI":{"name":"Anguilla","x":233.86,"y":143.56},"AL":{"name":"Albania","x":400.34,"y":97.69},"AM":{"name":"Armenia","x":450.08,"y":99.86},"AN":{"name":"Netherlands Antilles","x":221.88,"y":155.55},"AO":{"name":"Angola","x":395.75,"y":202.41},"AQ":{"name":"Antarctica","x":359.86,"y":330.5},"AR":{"name":"Argentina","x":232.77,"y":256.83},"AS":{"name":"American Samoa","x":19.74,"y":208.54},"AT":{"name":"Austria","x":389.1,"y":84.97},"AU":{"name":"Australia","x":627.55,"y":230.55},"AW":{"name":"Aruba","x":220.06,"y":154.96},"AZ":{"name":"Azerbaijan","x":455.15,"y":99.71},"BA":{"name":"Bosnia and Herzegovina","x":395.36,"y":92.17},"BB":{"name":"Barbados","x":240.91,"y":153.61},"BD":{"name":"Bangladesh","x":540.71,"y":132.63},"BE":{"name":"Belgium","x":368.94,"y":78.99},"BF":{"name":"Burkina Faso","x":356.88,"y":155.52},"BG":{"name":"Bulgaria","x":410.97,"y":94.53},"BH":{"name":"Bahrain","x":461.28,"y":128.14},"BI":{"name":"Burundi","x":419.84,"y":186.75},"BJ":{"name":"Benin","x":364.63,"y":161.38},"BM":{"name":"Bermuda","x":230.49,"y":115.36},"BN":{"name":"Brunei","x":589.46,"y":170.93},"BO":{"name":"Bolivia","x":232.82,"y":212.58},"BR":{"name":"Brazil","x":256.15,"y":208.47},"BS":{"name":"Bahamas","x":205.21,"y":129.93},"BT":{"name":"Bhutan","x":540.87,"y":124.97},"BV":{"name":"Bouvet Island","x":366.83,"y":288.85},"BW":{"name":"Botswana","x":409.37,"y":224.66},"BY":{"name":"Belarus","x":415.91,"y":72.58},"BZ":{"name":"Belize","x":183.0,"y":145.62},"CA":{"name":"Canada","x":147.31,"y":67.74},"CC":{"name":"Cocos [Keeling] Islands","x":553.74,"y":204.33},"CD":{"name":"Congo [DRC]","x":403.52,"y":188.08},"CF":{"name":"Central African Republic","x":401.88,"y":166.78},"CG":{"name":"Congo [Republic]","x":391.66,"y":180.46},"CH":{"name":"Switzerland","x":376.46,"y":86.36},"CI":{"name":"Côte d'Ivoire","x":348.91,"y":164.92},"CK":{"name":"Cook Islands","x":40.44,"y":222.47},"CL":{"name":"Chile","x":216.91,"y":251.35},"CM":{"name":"Cameroon","x":384.71,"y":165.26},"CN":{"name":"China","x":568.39,"y":108.28},"CO":{"name":"Colombia","x":211.41,"y":170.86},"CR":{"name":"Costa Rica","x":192.49,"y":160.5},"CU":{"name":"Cuba","x":204.44,"y":136.96},"CV":{"name":"Cape Verde","x":311.97,"y":148.0},"CX":{"name":"Christmas Island","x":571.38,"y":200.9},"CY":{"name":"Cyprus","x":426.86,"y":109.75},"CZ":{"name":"Czech Republic","x":390.95,"y":80.37},"DE":{"name":"Germany","x":380.9,"y":77.67},"DJ":{"name":"Djibouti","x":445.18,"y":156.35},"DK":{"name":"Denmark","x":379.0,"y":67.47},"DM":{"name":"Dominica","x":237.26,"y":149.17},"DO":{"name":"Dominican Republic","x":219.67,"y":142.53},"DZ":{"name":"Algeria","x":363.32,"y":123.93},"EC":{"name":"Ecuador","x":203.63,"y":183.66},"EE":{"name":"Estonia","x":410.03,"y":62.81},"EG":{"name":"Egypt","x":421.6,"y":126.36},"EH":{"name":"Western Sahara","x":334.23,"y":131.57},"ER":{"name":"Eritrea","x":439.56,"y":149.64},"ES":{"name":"Spain","x":352.5,"y":99.07},"ET":{"name":"Ethiopia","x":440.98,"y":161.71},"FI":{"name":"Finland","x":411.5,"y":56.15},"FJ":{"name":"Fiji","x":718.83,"y":213.16},"FK":{"name":"Falkland Islands [Islas Malvinas]","x":240.95,"y":283.59},"FM":{"name":"Micronesia","x":661.1,"y":165.15},"FO":{"name":"Faroe Islands","x":346.18,"y":56.21},"FR":{"name":"France","x":364.43,"y":87.54},"GA":{"name":"Gabon","x":383.22,"y":181.61},"GB":{"name":"United Kingdom","x":353.13,"y":69.24},"GD":{"name":"Grenada","x":236.79,"y":155.47},"GE":{"name":"Georgia","x":446.71,"y":95.37},"GF":{"name":"French Guiana","x":253.75,"y":172.13},"GG":{"name":"Guernsey","x":354.83,"y":81.07},"GH":{"name":"Ghana","x":357.95,"y":164.11},"GI":{"name":"Gibraltar","x":349.31,"y":107.72},"GL":{"name":"Greenland","x":274.79,"y":36.59},"GM":{"name":"Gambia","x":329.38,"y":153.11},"GN":{"name":"Guinea","x":340.61,"y":160.11},"GP":{"name":"Guadeloupe","x":235.86,"y":146.01},"GQ":{"name":"Equatorial Guinea","x":380.54,"y":176.7},"GR":{"name":"Greece","x":403.65,"y":101.85},"GS":{"name":"South Georgia and the South Sandwich Islands","x":286.82,"y":288.86},"GT":{"name":"Guatemala","x":179.54,"y":148.43},"GU":{"name":"Guam","x":649.59,"y":153.11},"GW":{"name":"Guinea-Bissau","x":329.64,"y":156.39},"GY":{"name":"Guyana","x":242.14,"y":170.28},"GZ":{"name":"Gaza Strip","x":428.62,"y":117.29},"HK":{"name":"Hong Kong","x":588.22,"y":135.21},"HM":{"name":"Heard Island and McDonald Islands","x":507.01,"y":286.16},"HN":{"name":"Honduras","x":187.52,"y":149.6},"HR":{"name":"Croatia","x":390.4,"y":89.8},"HT":{"name":"Haiti","x":215.43,"y":142.06},"HU":{"name":"Hungary","x":399.01,"y":85.68},"ID":{"name":"Indonesia","x":587.84,"y":181.58},"IE":{"name":"Ireland","x":343.51,"y":73.17},"IL":{"name":"Israel","x":429.7,"y":117.91},"IM":{"name":"Isle of Man","x":350.9,"y":71.53},"IN":{"name":"India","x":517.93,"y":138.81},"IO":{"name":"British Indian Ocean Territory","x":503.75,"y":192.69},"IQ":{"name":"Iraq","x":447.36,"y":113.55},"IR":{"name":"Iran","x":467.38,"y":115.14},"IS":{"name":"Iceland","x":321.96,"y":50.07},"IT":{"name":"Italy","x":385.13,"y":96.26},"JE":{"name":"Jersey","x":355.74,"y":81.57},"JM":{"name":"Jamaica","x":205.4,"y":143.78},"JO":{"name":"Jordan","x":432.48,"y":118.83},"JP":{"name":"Japan","x":636.51,"y":107.59},"KE":{"name":"Kenya","x":435.81,"y":180.05},"KG":{"name":"Kyrgyzstan","x":509.53,"y":97.59},"KH":{"name":"Cambodia","x":569.98,"y":154.87},"KI":{"name":"Kiribati","x":22.53,"y":186.74},"KM":{"name":"Comoros","x":447.74,"y":203.75},"KN":{"name":"Saint Kitts and Nevis","x":234.43,"y":145.28},"KP":{"name":"North Korea","x":615.02,"y":99.32},"KR":{"name":"South Korea","x":615.53,"y":108.18},"KW":{"name":"Kuwait","x":454.96,"y":121.38},"KY":{"name":"Cayman Islands","x":198.87,"y":140.97},"KZ":{"name":"Kazakhstan","x":493.85,"y":83.96},"LA":{"name":"Laos","x":564.99,"y":140.29},"LB":{"name":"Lebanon","x":431.72,"y":112.29},"LC":{"name":"Saint Lucia","x":238.04,"y":152.18},"LI":{"name":"Liechtenstein","x":379.11,"y":85.67},"LK":{"name":"Sri Lanka","x":521.54,"y":164.25},"LR":{"name":"Liberia","x":341.14,"y":167.14},"LS":{"name":"Lesotho","x":416.47,"y":239.22},"LT":{"name":"Lithuania","x":407.76,"y":69.66},"LU":{"name":"Luxembourg","x":372.26,"y":80.37},"LV":{"name":"Latvia","x":409.21,"y":66.24},"LY":{"name":"Libya","x":394.46,"y":127.33},"MA":{"name":"Morocco","x":345.81,"y":116.42},"MC":{"name":"Monaco","x":374.83,"y":92.5},"MD":{"name":"Moldova","x":416.74,"y":85.18},"ME":{"name":"Montenegro","x":398.75,"y":94.58},"MG":{"name":"Madagascar","x":453.74,"y":217.53},"MH":{"name":"Marshall Islands","x":702.37,"y":165.74},"MK":{"name":"Macedonia [FYROM]","x":403.49,"y":96.78},"ML":{"name":"Mali","x":352.01,"y":144.86},"MM":{"name":"Myanmar [Burma]","x":551.91,"y":136.17},"MN":{"name":"Mongolia","x":567.69,"y":86.28},"MO":{"name":"Macau","x":587.09,"y":135.6},"MP":{"name":"Northern Mariana Islands","x":650.77,"y":145.34},"MQ":{"name":"Martinique","x":237.95,"y":150.72},"MR":{"name":"Mauritania","x":338.12,"y":137.98},"MS":{"name":"Montserrat","x":235.63,"y":146.52},"MT":{"name":"Malta","x":388.75,"y":108.13},"MU":{"name":"Mauritius","x":475.1,"y":220.7},"MV":{"name":"Maldives","x":506.44,"y":173.59},"MW":{"name":"Malawi","x":428.6,"y":206.51},"MX":{"name":"Mexico","x":154.89,"y":132.73},"MY":{"name":"Malaysia","x":563.95,"y":171.58},"MZ":{"name":"Mozambique","x":431.06,"y":217.33},"NA":{"name":"Namibia","x":396.98,"y":225.92},"NC":{"name":"New Caledonia","x":691.24,"y":221.81},"NE":{"name":"Niger","x":376.16,"y":144.78},"NF":{"name":"Norfolk Island","x":695.91,"y":238.08},"NG":{"name":"Nigeria","x":377.35,"y":161.84},"NI":{"name":"Nicaragua","x":189.59,"y":154.27},"NL":{"name":"Netherlands","x":370.58,"y":75.73},"NO":{"name":"Norway","x":376.94,"y":59.06},"NP":{"name":"Nepal","x":528.25,"y":123.21},"NR":{"name":"Nauru","x":693.86,"y":181.05},"NU":{"name":"Niue","x":20.27,"y":218.11},"NZ":{"name":"New Zealand","x":709.77,"y":261.8},"OM":{"name":"Oman","x":471.85,"y":136.97},"PA":{"name":"Panama","x":198.44,"y":162.92},"PE":{"name":"Peru","x":209.97,"y":198.38},"PF":{"name":"French Polynesia","x":61.19,"y":215.36},"PG":{"name":"Papua New Guinea","x":647.91,"y":192.63},"PH":{"name":"Philippines","x":603.55,"y":154.24},"PK":{"name":"Pakistan","x":498.69,"y":119.25},"PL":{"name":"Poland","x":398.29,"y":76.16},"PM":{"name":"Saint Pierre and Miquelon","x":247.46,"y":86.12},"PN":{"name":"Pitcairn Islands","x":105.12,"y":229.41},"PR":{"name":"Puerto Rico","x":226.82,"y":143.56},"PS":{"name":"Palestinian Territories","x":430.47,"y":116.1},"PT":{"name":"Portugal","x":343.55,"y":101.2},"PW":{"name":"Palau","x":629.17,"y":164.97},"PY":{"name":"Paraguay","x":243.11,"y":226.89},"QA":{"name":"Qatar","x":462.37,"y":129.29},"RE":{"name":"Réunion","x":471.07,"y":222.23},"RO":{"name":"Romania","x":409.93,"y":88.11},"RS":{"name":"Serbia","x":402.01,"y":91.97},"RU":{"name":"Russia","x":570.64,"y":56.95},"RW":{"name":"Rwanda","x":419.75,"y":183.88},"SA":{"name":"Saudi Arabia","x":450.16,"y":132.23},"SB":{"name":"Solomon Islands","x":680.31,"y":199.29},"SC":{"name":"Seychelles","x":470.98,"y":189.36},"SD":{"name":"Sudan","x":420.44,"y":154.27},"SE":{"name":"Sweden","x":397.29,"y":59.74},"SG":{"name":"Singapore","x":567.64,"y":177.3},"SH":{"name":"Saint Helena","x":339.94,"y":228.29},"SI":{"name":"Slovenia","x":389.99,"y":87.7},"SJ":{"name":"Svalbard and Jan Mayen","x":407.34,"y":24.89},"SK":{"name":"Slovakia","x":399.4,"y":82.66},"SL":{"name":"Sierra Leone","x":336.44,"y":163.08},"SM":{"name":"San Marino","x":384.92,"y":92.12},"SN":{"name":"Senegal","x":331.1,"y":151.01},"SO":{"name":"Somalia","x":452.4,"y":169.7},"SR":{"name":"Suriname","x":247.94,"y":172.16},"ST":{"name":"São Tomé and Príncipe","x":373.23,"y":179.63},"SV":{"name":"El Salvador","x":182.21,"y":152.41},"SY":{"name":"Syria","x":437.99,"y":110.4},"SZ":{"name":"Swaziland","x":422.93,"y":233.05},"TC":{"name":"Turks and Caicos Islands","x":216.4,"y":136.61},"TD":{"name":"Chad","x":397.46,"y":149.09},"TF":{"name":"French Southern Territories","x":498.7,"y":278.56},"TG":{"name":"Togo","x":361.65,"y":162.76},"TH":{"name":"Thailand","x":561.99,"y":148.26},"TJ":{"name":"Tajikistan","x":502.55,"y":102.28},"TK":{"name":"Tokelau","x":16.29,"y":197.93},"TL":{"name":"Timor-Leste","x":611.46,"y":197.75},"TM":{"name":"Turkmenistan","x":479.11,"y":102.06},"TN":{"name":"Tunisia","x":379.07,"y":112.23},"TO":{"name":"Tonga","x":9.6,"y":222.36},"TR":{"name":"Turkey","x":430.49,"y":102.07},"TT":{"name":"Trinidad and Tobago","x":237.55,"y":158.62},"TV":{"name":"Tuvalu","x":715.3,"y":194.22},"TW":{"name":"Taiwan","x":601.92,"y":132.6},"TZ":{"name":"Tanzania","x":429.78,"y":192.74},"UA":{"name":"Ukraine","x":422.33,"y":83.24},"UG":{"name":"Uganda","x":424.58,"y":177.25},"US":{"name":"United States","x":168.57,"y":105.82},"UY":{"name":"Uruguay","x":248.47,"y":245.05},"UZ":{"name":"Uzbekistan","x":489.17,"y":97.25},"VA":{"name":"Vatican City","x":384.91,"y":96.19},"VC":{"name":"Saint Vincent and the Grenadines","x":237.43,"y":154.03},"VE":{"name":"Venezuela","x":226.82,"y":167.15},"VG":{"name":"British Virgin Islands","x":230.72,"y":143.16},"VI":{"name":"U.S. Virgin Islands","x":230.21,"y":143.33},"VN":{"name":"Vietnam","x":576.55,"y":151.88},"VU":{"name":"Vanuatu","x":693.92,"y":210.75},"WF":{"name":"Wallis and Futuna","x":5.69,"y":207.54},"WS":{"name":"Samoa","x":15.79,"y":207.52},"XK":{"name":"Kosovo","x":401.81,"y":94.79},"YE":{"name":"Yemen","x":457.03,"y":148.89},"YT":{"name":"Mayotte","x":450.33,"y":205.66},"ZA":{"name":"South Africa","x":405.88,"y":241.12},"ZM":{"name":"Zambia","x":415.7,"y":206.27},"ZW":{"name":"Zimbabwe","x":418.31,"y":218.03}}}</script>
+</aside>
+  </section>
+</main>
+<footer class="site-footer">
+  
+  <div><strong>Xuekang Liu</strong><span>Lancaster University</span></div><nav aria-label="More pages"><a href="/#projects">Projects</a><a href="https://scholar.google.com/citations?user=vj_3bhQAAAAJ&amp;hl=en">Publications ↗</a><a href="/teaching/">Teaching</a><a href="/portfolio/">Portfolio</a><a href="/year-archive/">News archive</a></nav><p>© 2026 Xuekang Liu · Updated September 2026</p></footer>
+
+
+
+
+
+
+
+  <script src="/assets/js/profile-stats.dd3e49ba9b8c.js" defer></script>
+  <script src="/assets/js/visitor-map.2314db0da98d.js" defer></script>
+  <script src="/assets/js/bd-ris-model.76be17eab2e2.js" defer></script>
+  <script src="/assets/js/bd-ris-demo.4470202e56d6.js" defer></script>
+</body>
+</html>
+

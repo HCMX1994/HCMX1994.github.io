@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-09-30T09:26:17.175+00:00",
+  "captured_at": "2026-09-30T12:46:54.937+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-09",
-  "current_month_visitors": 52,
+  "current_month_visitors": 55,
   "totals": {
-    "visits": 116,
-    "pageviews": 191
+    "visits": 121,
+    "pageviews": 196
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 82
+      "visits": 84
     },
     {
       "code": "SG",
-      "visits": 25
+      "visits": 27
     },
     {
       "code": "US",
@@ -31,7 +31,7 @@
     },
     {
       "code": "VN",
-      "visits": 1
+      "visits": 2
     }
   ],
   "cities": [
@@ -43,16 +43,16 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 24
-    },
-    {
-      "country": "GB",
-      "name": "Islington",
-      "visits": 15
+      "visits": 26
     },
     {
       "country": "GB",
       "name": "London",
+      "visits": 17
+    },
+    {
+      "country": "GB",
+      "name": "Islington",
       "visits": 15
     },
     {
@@ -108,6 +108,11 @@
     {
       "country": "US",
       "name": null,
+      "visits": 1
+    },
+    {
+      "country": "VN",
+      "name": "Haiphong",
       "visits": 1
     },
     {

@@ -699,7 +699,7 @@ body.collegiate-site #main .hero-editorial{
   font-size:var(--type-title);
   line-height:1.4;
 }
-body.collegiate-site #main .about-copy .lead{font-weight:500}
+body.collegiate-site #main .about-copy .lead{font-weight:400;color:var(--muted)}
 body.collegiate-site #main :where(summary,.experience-column-title){
   font-family:var(--font);
   font-size:var(--type-body);

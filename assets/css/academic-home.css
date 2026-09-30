@@ -771,7 +771,7 @@ body.collegiate-site #main .overview-heading{flex-wrap:wrap;gap:8px 20px}
 body.collegiate-site #main .visitor-card-heading{flex-wrap:wrap}
 body.collegiate-site #main .institution-strip strong{overflow-wrap:normal}
 
-/* Group the biography across two equal columns, with a quiet closing note. */
+/* Group the biography across two equal columns. */
 body.collegiate-site #main .about-section{
   grid-template-columns:minmax(0,1fr);
   gap:28px;
@@ -798,12 +798,6 @@ body.collegiate-site #main .about-background::before{
   left:-22px;
   width:1px;
   background:var(--line);
-}
-body.collegiate-site #main .about-copy .personal-note{
-  grid-column:1 / -1;
-  border-top:1px solid var(--line);
-  padding-top:20px;
-  margin-bottom:0;
 }
 body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-top:4px}
 

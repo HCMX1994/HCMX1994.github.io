@@ -649,3 +649,190 @@
 .collegiate-site .conference-service summary:hover,.collegiate-site .grant-service summary:hover{color:var(--accent)}
 .collegiate-site .conference-service summary:focus-visible,.collegiate-site .grant-service summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
 .collegiate-site details.conference-service[open] ul,.collegiate-site details.grant-service[open] p{margin-top:11px}
+
+/* One type scale for the page. Component typography belongs here; use these
+   five roles instead of adding individual font sizes to component rules.
+   Scientific SVG labels, matrix notation and superscripts retain their scale. */
+body.collegiate-site{
+  --type-name:72px;
+  --type-section:36px;
+  --type-title:24px;
+  --type-body:16px;
+  --type-meta:13px;
+  font-size:var(--type-body);
+}
+@media(max-width:1000px){body.collegiate-site{--type-name:48px}}
+@media(max-width:760px){
+  body.collegiate-site{--type-section:30px;--type-title:20px}
+}
+
+body.collegiate-site #main :where(h1,h2,h3,h4){
+  font-family:var(--display);
+  font-weight:400;
+  letter-spacing:-.025em;
+}
+body.collegiate-site #main :where(h1){
+  font-size:var(--type-name);
+  line-height:1.1;
+}
+body.collegiate-site #main :where(h2,.page-intro h1){
+  font-size:var(--type-section);
+  line-height:1.25;
+}
+body.collegiate-site #main :where(h3,h4,.archive-entry h2,.archive-year>h2,.portfolio-card h2,.institution-strip strong,.publication-year,.contact-email){
+  font-size:var(--type-title);
+  line-height:1.4;
+}
+body.collegiate-site #main :where(p,li,.hero-role,.hero-position,.hero-qualifications,.hero-profile>p,.about-copy .lead,.appointment-role,.text-link,.muted,.page-description,.article-body,.contact-links,.review-metric-link>span){
+  font-size:var(--type-body);
+  line-height:1.75;
+}
+body.collegiate-site #main .hero-role strong{
+  font-family:var(--font);
+  font-size:var(--type-title);
+  font-weight:600;
+  line-height:1.4;
+}
+body.collegiate-site #main .hero-editorial{
+  font-size:var(--type-title);
+  line-height:1.4;
+}
+body.collegiate-site #main .about-copy .lead{font-weight:500}
+body.collegiate-site #main :where(summary,.experience-column-title){
+  font-family:var(--font);
+  font-size:var(--type-body);
+  font-weight:600;
+  line-height:1.5;
+  letter-spacing:0;
+}
+body.collegiate-site #main :where(
+  .eyebrow,.small-label,.hero-department,.hero-portrait figcaption,
+  .overview-date,.overview-role,.overview-role>span,.overview-heading .text-link,
+  .news-item time,.news-category,.news-history summary span,.project-history summary span,
+  .project-meta,.project-meta dt,.project-meta dd,.tags span,
+  .publication p,.publication .venue,.publication-year>span,.publication-note,
+  .appointment-location,.supervisor-credentials,.awards article>span,.awards p,
+  .scholar-metrics span,#scholar-status,.review-metric-source,.review-metric>p,
+  .entry-meta,.back-link,.section-aside,.review-journals .venue-group-title,
+  .visitor-card-heading>span,.visitor-compact-stats span,.visitor-compact-caption,
+  .visitor-location-disclosure summary>span,
+  .visitor-location-toolbar,.visitor-location-toolbar select,
+  .visitor-location-table,.visitor-location-table th,.visitor-location-table td,
+  .visitor-map-note,.visitor-detail-title,.visitor-map-credit
+){
+  font-size:var(--type-meta);
+  line-height:1.6;
+}
+body.collegiate-site #main :where(.eyebrow,.small-label,.hero-portrait figcaption){
+  letter-spacing:.07em;
+  font-weight:600;
+}
+body.collegiate-site #main .hero-copy>.eyebrow{
+  font-size:var(--type-body);
+  letter-spacing:.02em;
+}
+body.collegiate-site #main :where(.scholar-metrics strong,.review-metric-link strong,.visitor-compact-stats strong){
+  font-family:var(--display);
+  font-size:var(--type-section);
+  font-weight:400;
+  line-height:1.2;
+  letter-spacing:-.025em;
+}
+body.collegiate-site #main .publication .corresponding-author{
+  font-size:.75em;
+  line-height:0;
+}
+body.collegiate-site #main :where(.bd-controls button,.bd-controls select,.bd-controls label,.bd-fixed-operation,.bd-illumination){
+  font-family:var(--font);
+  font-size:var(--type-body);
+  line-height:1.5;
+}
+body.collegiate-site #main :where(.bd-demo-notice,.bd-source-note,.bd-plot-heading,.bd-extra-controls p,.bd-result-table,.bd-result-table caption,.bd-slider-label output){
+  font-size:var(--type-meta);
+  line-height:1.6;
+}
+body.collegiate-site .site-header .wordmark{
+  font-size:var(--type-title);
+  line-height:1.4;
+}
+body.collegiate-site .site-header nav{
+  font-size:var(--type-body);
+  line-height:1.5;
+}
+body.collegiate-site .site-footer,
+body.collegiate-site .site-footer :where(p,strong,nav){
+  font-size:var(--type-meta);
+  line-height:1.6;
+}
+/* Let enlarged supporting labels wrap without breaking their containers. */
+body.collegiate-site #main .overview-heading{flex-wrap:wrap;gap:8px 20px}
+body.collegiate-site #main .visitor-card-heading{flex-wrap:wrap}
+body.collegiate-site #main .institution-strip strong{overflow-wrap:normal}
+
+/* A continuous reading column for the full biography. */
+body.collegiate-site #main .about-section{
+  grid-template-columns:minmax(0,1fr);
+  gap:28px;
+}
+body.collegiate-site #main .about-section>div{
+  width:100%;
+  max-width:760px;
+  margin-inline:auto;
+}
+body.collegiate-site #main .about-copy p{margin-bottom:20px}
+body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-top:4px}
+
+@media(max-width:760px){
+  /* Keep all four institutions and their metadata readable in narrow views. */
+  body.collegiate-site #main .academic-overview{padding:24px 20px}
+  body.collegiate-site #main .overview-heading{gap:8px;margin-bottom:20px}
+  body.collegiate-site #main .institution-strip{grid-template-columns:1fr;gap:0}
+  body.collegiate-site #main .institution-strip li{padding:18px 0;border:0}
+  body.collegiate-site #main .institution-strip li:first-child{padding-top:0}
+  body.collegiate-site #main .institution-strip li:last-child{padding-bottom:0}
+  body.collegiate-site #main .institution-strip li+li{border-top:1px solid #d4dcd4}
+  body.collegiate-site #main .institution-strip a{
+    display:grid;
+    grid-template-columns:clamp(56px,17vw,88px) minmax(0,1fr);
+    grid-template-rows:auto auto auto;
+    column-gap:18px;
+    row-gap:4px;
+    align-items:start;
+  }
+  body.collegiate-site #main .institution-logo{
+    grid-column:1;
+    grid-row:1/4;
+    align-self:center;
+    height:auto;
+    margin:0;
+  }
+  body.collegiate-site #main .institution-logo img{
+    width:100%;
+    max-width:100%;
+    max-height:48px;
+    object-position:center;
+  }
+  body.collegiate-site #main :where(.overview-date,.institution-strip strong,.overview-role){grid-column:2}
+  body.collegiate-site #main .institution-strip strong{margin:0;line-height:1.3}
+  body.collegiate-site #main .institution-strip strong br{display:none}
+  body.collegiate-site #main .about-section{gap:24px}
+
+  /* Put the metadata above each paper so its title uses the full width. */
+  body.collegiate-site #main .publication{display:flex;flex-wrap:wrap;gap:0 12px;padding:24px 0}
+  body.collegiate-site #main .publication>div:last-child{display:contents}
+  body.collegiate-site #main .publication-year{
+    display:flex;
+    align-items:baseline;
+    gap:8px;
+    font-family:var(--font);
+    font-size:var(--type-meta);
+    font-weight:600;
+    line-height:1.6;
+  }
+  body.collegiate-site #main .publication-year>span{display:inline}
+  body.collegiate-site #main .publication-year>span::before{content:'·';margin-right:8px}
+  body.collegiate-site #main .publication .small-label{flex:1 1 160px;margin:0}
+  body.collegiate-site #main .publication h3{flex:0 0 100%;max-width:none;margin:10px 0}
+  body.collegiate-site #main .publication p:not(.small-label){flex:0 0 100%;min-width:0}
+  body.collegiate-site #main .publication .venue{margin-top:4px}
+}

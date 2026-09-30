@@ -771,17 +771,23 @@ body.collegiate-site #main .overview-heading{flex-wrap:wrap;gap:8px 20px}
 body.collegiate-site #main .visitor-card-heading{flex-wrap:wrap}
 body.collegiate-site #main .institution-strip strong{overflow-wrap:normal}
 
-/* A left-aligned reading column for the full biography. */
+/* Use the section width for a balanced biography, with its introduction above. */
 body.collegiate-site #main .about-section{
   grid-template-columns:minmax(0,1fr);
   gap:28px;
 }
 body.collegiate-site #main .about-section>div{
   width:100%;
-  max-width:760px;
+  max-width:none;
   margin-inline:0;
 }
-body.collegiate-site #main .about-copy p{margin-bottom:20px}
+body.collegiate-site #main .about-copy{
+  column-count:2;
+  column-gap:44px;
+}
+body.collegiate-site #main .about-copy p{margin-bottom:20px;break-inside:avoid}
+body.collegiate-site #main .about-copy .lead{column-span:all;margin-bottom:24px}
+body.collegiate-site #main .about-copy p:last-child{margin-bottom:0}
 body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-top:4px}
 
 @media(max-width:760px){
@@ -818,6 +824,7 @@ body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-to
   body.collegiate-site #main .institution-strip strong{margin:0;line-height:1.3}
   body.collegiate-site #main .institution-strip strong br{display:none}
   body.collegiate-site #main .about-section{gap:24px}
+  body.collegiate-site #main .about-copy{column-count:1}
 
   /* Put the metadata above each paper so its title uses the full width. */
   body.collegiate-site #main .publication{display:flex;flex-wrap:wrap;gap:0 12px;padding:24px 0}

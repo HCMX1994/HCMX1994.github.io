@@ -582,6 +582,7 @@
 .collegiate-site .hero--refined .hero-qualifications{display:flex;flex-wrap:wrap;gap:6px 0;font-size:16px;font-weight:400;line-height:1.6;margin:10px 0 0;color:var(--muted)}
 .collegiate-site .hero--refined .hero-qualifications>span{white-space:nowrap}
 .collegiate-site .hero--refined .hero-qualifications>span+span::before{content:'·';margin:0 16px;color:#91aaad}
+.collegiate-site .hero--refined .hero-linkedin{display:inline-block;margin-top:20px}
 @media(min-width:761px) and (max-width:1000px){
   .collegiate-site .hero--refined .hero-qualifications{display:block}
   .collegiate-site .hero--refined .hero-qualifications>span{display:block}

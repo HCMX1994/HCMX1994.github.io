@@ -771,7 +771,7 @@ body.collegiate-site #main .overview-heading{flex-wrap:wrap;gap:8px 20px}
 body.collegiate-site #main .visitor-card-heading{flex-wrap:wrap}
 body.collegiate-site #main .institution-strip strong{overflow-wrap:normal}
 
-/* A continuous reading column for the full biography. */
+/* A left-aligned reading column for the full biography. */
 body.collegiate-site #main .about-section{
   grid-template-columns:minmax(0,1fr);
   gap:28px;
@@ -779,7 +779,7 @@ body.collegiate-site #main .about-section{
 body.collegiate-site #main .about-section>div{
   width:100%;
   max-width:760px;
-  margin-inline:auto;
+  margin-inline:0;
 }
 body.collegiate-site #main .about-copy p{margin-bottom:20px}
 body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-top:4px}

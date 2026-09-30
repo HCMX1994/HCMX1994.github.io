@@ -551,7 +551,8 @@
 /* Start awards alongside the review count, below the service heading. */
 .collegiate-site .recognition-section{row-gap:0}
 @media(min-width:761px){
-  .collegiate-site .recognition-heading,.collegiate-site .recognition-copy{grid-column:1}
+  .collegiate-site .recognition-heading{grid-column:1 / -1}
+  .collegiate-site .recognition-copy{grid-column:1}
   .collegiate-site .recognition-section>.awards{grid-column:2;grid-row:2}
 }
 @media(max-width:760px){

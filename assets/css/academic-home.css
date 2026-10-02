@@ -769,6 +769,11 @@ body.collegiate-site #main .overview-heading{flex-wrap:wrap;gap:8px 20px}
 body.collegiate-site #main .visitor-card-heading{flex-wrap:wrap}
 body.collegiate-site #main .institution-strip strong{overflow-wrap:normal}
 
+/* Keep the four featured projects in balanced pairs on wider screens. */
+@media(min-width:761px){
+  .collegiate-site .projects-grid--four{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
 /* Group the biography across two equal columns. */
 body.collegiate-site #main .about-section{
   grid-template-columns:minmax(0,1fr);

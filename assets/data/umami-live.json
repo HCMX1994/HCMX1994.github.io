@@ -3,27 +3,27 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-02T15:43:37.365+00:00",
+  "captured_at": "2026-10-03T11:49:25.455+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 13,
+  "current_month_visitors": 20,
   "totals": {
-    "visits": 163,
-    "pageviews": 262
+    "visits": 171,
+    "pageviews": 274
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 114
+      "visits": 116
     },
     {
       "code": "SG",
-      "visits": 36
+      "visits": 41
     },
     {
       "code": "US",
-      "visits": 7
+      "visits": 8
     },
     {
       "code": "HK",
@@ -47,12 +47,12 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 39
+      "visits": 40
     },
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 35
+      "visits": 40
     },
     {
       "country": "GB",
@@ -75,6 +75,11 @@
       "visits": 2
     },
     {
+      "country": "US",
+      "name": "Fort Worth",
+      "visits": 2
+    },
+    {
       "country": "GB",
       "name": "Galgate",
       "visits": 1
@@ -87,6 +92,11 @@
     {
       "country": "GB",
       "name": "Loughborough",
+      "visits": 1
+    },
+    {
+      "country": "GB",
+      "name": "Morecambe",
       "visits": 1
     },
     {
@@ -112,11 +122,6 @@
     {
       "country": "US",
       "name": "Ashburn",
-      "visits": 1
-    },
-    {
-      "country": "US",
-      "name": "Fort Worth",
       "visits": 1
     },
     {

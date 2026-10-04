@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-03T11:49:25.455+00:00",
+  "captured_at": "2026-10-04T00:37:39.76+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 20,
+  "current_month_visitors": 30,
   "totals": {
-    "visits": 171,
-    "pageviews": 274
+    "visits": 184,
+    "pageviews": 289
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 116
+      "visits": 120
     },
     {
       "code": "SG",
-      "visits": 41
+      "visits": 45
     },
     {
       "code": "US",
@@ -30,11 +30,27 @@
       "visits": 3
     },
     {
+      "code": "SA",
+      "visits": 2
+    },
+    {
       "code": "VN",
       "visits": 2
     },
     {
-      "code": "SA",
+      "code": "CH",
+      "visits": 1
+    },
+    {
+      "code": "IN",
+      "visits": 1
+    },
+    {
+      "code": "JP",
+      "visits": 1
+    },
+    {
+      "code": "SE",
       "visits": 1
     }
   ],
@@ -47,12 +63,12 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 40
+      "visits": 44
     },
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 40
+      "visits": 44
     },
     {
       "country": "GB",
@@ -75,9 +91,19 @@
       "visits": 2
     },
     {
+      "country": "SA",
+      "name": "Thuwal",
+      "visits": 2
+    },
+    {
       "country": "US",
       "name": "Fort Worth",
       "visits": 2
+    },
+    {
+      "country": "CH",
+      "name": "Bern",
+      "visits": 1
     },
     {
       "country": "GB",
@@ -110,8 +136,18 @@
       "visits": 1
     },
     {
-      "country": "SA",
-      "name": "Thuwal",
+      "country": "IN",
+      "name": "Mandi",
+      "visits": 1
+    },
+    {
+      "country": "JP",
+      "name": "Tokyo",
+      "visits": 1
+    },
+    {
+      "country": "SE",
+      "name": "Stockholm",
       "visits": 1
     },
     {

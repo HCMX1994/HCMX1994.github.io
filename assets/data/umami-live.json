@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-04T01:46:08.677+00:00",
+  "captured_at": "2026-10-04T12:33:02.012+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 30,
+  "current_month_visitors": 33,
   "totals": {
-    "visits": 185,
-    "pageviews": 299
+    "visits": 194,
+    "pageviews": 310
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 121
+      "visits": 126
     },
     {
       "code": "SG",
-      "visits": 45
+      "visits": 49
     },
     {
       "code": "US",
@@ -58,17 +58,17 @@
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 54
+      "visits": 55
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 45
+      "visits": 48
     },
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 44
+      "visits": 48
     },
     {
       "country": "GB",
@@ -79,6 +79,11 @@
       "country": "US",
       "name": "Council Bluffs",
       "visits": 3
+    },
+    {
+      "country": "GB",
+      "name": "Loughborough",
+      "visits": 2
     },
     {
       "country": "GB",
@@ -113,11 +118,6 @@
     {
       "country": "GB",
       "name": "Kensington",
-      "visits": 1
-    },
-    {
-      "country": "GB",
-      "name": "Loughborough",
       "visits": 1
     },
     {

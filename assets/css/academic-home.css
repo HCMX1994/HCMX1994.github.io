@@ -862,41 +862,34 @@ body.collegiate-site #main .about-copy>.text-link{display:inline-block;margin-to
 }
 
 
-/* Keep the opening identity concise, with one level for appointments. */
+/* Match both appointments in a single, aligned definition list. */
 body.collegiate-site #main .hero--identity .hero-copy{
   display:flex;
   flex-direction:column;
   align-items:flex-start;
 }
-body.collegiate-site #main .hero--identity h1{margin:18px 0 28px}
-body.collegiate-site #main .hero--identity .hero-role strong{
-  display:block;
-  font-size:var(--type-title);
-  font-weight:600;
-  line-height:1.4;
-  letter-spacing:-.2px;
-  margin:0;
+body.collegiate-site #main .hero--identity h1{margin:18px 0 24px}
+body.collegiate-site #main .hero--identity .hero-appointments{width:100%;margin:0}
+body.collegiate-site #main .hero--identity .hero-appointment{
+  padding:16px 0;
+  border-top:1px solid var(--line);
 }
-body.collegiate-site #main .hero--identity .hero-university{
-  display:block;
-  font-size:var(--type-body);
-  line-height:1.75;
-  margin-top:6px;
-  color:var(--muted);
-}
-body.collegiate-site #main .hero--identity .hero-affiliations{
-  width:100%;
-  margin-top:28px;
-  padding-top:20px;
-}
-body.collegiate-site #main .hero--identity .hero-editorial{
+body.collegiate-site #main .hero--identity .hero-appointment dt{
+  font-family:var(--font);
   font-size:var(--type-title);
   font-weight:500;
   line-height:1.4;
+  letter-spacing:-.2px;
+  color:var(--ink);
 }
-body.collegiate-site #main .hero--identity .hero-linkedin{margin-top:24px}
+body.collegiate-site #main .hero--identity .hero-appointment dd{
+  margin:5px 0 0;
+  font-size:var(--type-body);
+  line-height:1.6;
+  color:var(--muted);
+}
+body.collegiate-site #main .hero--identity .hero-linkedin{margin-top:12px}
 @media(max-width:760px){
   body.collegiate-site #main .hero--identity h1{margin:16px 0 24px}
-  body.collegiate-site #main .hero--identity .hero-affiliations{margin-top:24px;padding-top:18px}
-  body.collegiate-site #main .hero--identity .hero-linkedin{margin-top:20px}
+  body.collegiate-site #main .hero--identity .hero-appointment{padding:14px 0}
 }

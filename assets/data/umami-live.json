@@ -3,30 +3,34 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-05T14:58:03.308+00:00",
+  "captured_at": "2026-10-06T09:19:26.352+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 42,
+  "current_month_visitors": 51,
   "totals": {
-    "visits": 212,
-    "pageviews": 330
+    "visits": 232,
+    "pageviews": 352
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 136
+      "visits": 149
     },
     {
       "code": "SG",
-      "visits": 54
+      "visits": 58
     },
     {
       "code": "US",
-      "visits": 10
+      "visits": 12
     },
     {
       "code": "HK",
+      "visits": 3
+    },
+    {
+      "code": "VN",
       "visits": 3
     },
     {
@@ -35,10 +39,6 @@
     },
     {
       "code": "SA",
-      "visits": 2
-    },
-    {
-      "code": "VN",
       "visits": 2
     },
     {
@@ -57,18 +57,18 @@
   "cities": [
     {
       "country": "GB",
-      "name": "Wembley",
-      "visits": 57
+      "name": "London",
+      "visits": 64
     },
     {
       "country": "GB",
-      "name": "London",
-      "visits": 55
+      "name": "Wembley",
+      "visits": 59
     },
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 53
+      "visits": 57
     },
     {
       "country": "GB",
@@ -78,7 +78,12 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 4
+      "visits": 6
+    },
+    {
+      "country": "GB",
+      "name": "Brenchley",
+      "visits": 2
     },
     {
       "country": "GB",
@@ -183,6 +188,11 @@
     {
       "country": "VN",
       "name": "Haiphong",
+      "visits": 1
+    },
+    {
+      "country": "VN",
+      "name": "Hanoi",
       "visits": 1
     },
     {

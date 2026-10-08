@@ -3,27 +3,27 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-07T21:23:09.207+00:00",
+  "captured_at": "2026-10-08T06:18:58.265+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 59,
+  "current_month_visitors": 64,
   "totals": {
-    "visits": 241,
-    "pageviews": 362
+    "visits": 248,
+    "pageviews": 369
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 152
+      "visits": 154
     },
     {
       "code": "SG",
-      "visits": 64
+      "visits": 67
     },
     {
       "code": "US",
-      "visits": 12
+      "visits": 13
     },
     {
       "code": "HK",
@@ -42,6 +42,10 @@
       "visits": 2
     },
     {
+      "code": "CA",
+      "visits": 1
+    },
+    {
       "code": "IN",
       "visits": 1
     },
@@ -58,12 +62,12 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 67
+      "visits": 69
     },
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 63
+      "visits": 66
     },
     {
       "country": "GB",
@@ -114,6 +118,11 @@
       "country": "US",
       "name": "Fort Worth",
       "visits": 2
+    },
+    {
+      "country": "CA",
+      "name": "Calgary",
+      "visits": 1
     },
     {
       "country": "CH",
@@ -173,6 +182,11 @@
     {
       "country": "US",
       "name": "Moses Lake",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "New York City",
       "visits": 1
     },
     {

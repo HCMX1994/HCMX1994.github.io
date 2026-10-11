@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-11T06:00:50.989+00:00",
+  "captured_at": "2026-10-11T14:58:05.102+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 83,
+  "current_month_visitors": 87,
   "totals": {
-    "visits": 271,
-    "pageviews": 392
+    "visits": 275,
+    "pageviews": 396
   },
   "countries": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "code": "SG",
-      "visits": 81
+      "visits": 84
     },
     {
       "code": "US",
@@ -60,13 +60,17 @@
     {
       "code": "SE",
       "visits": 1
+    },
+    {
+      "code": "TR",
+      "visits": 1
     }
   ],
   "cities": [
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 80
+      "visits": 83
     },
     {
       "country": "GB",
@@ -181,6 +185,11 @@
     {
       "country": "SG",
       "name": null,
+      "visits": 1
+    },
+    {
+      "country": "TR",
+      "name": "Antalya",
       "visits": 1
     },
     {

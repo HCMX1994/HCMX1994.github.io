@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-13T11:56:38.148+00:00",
+  "captured_at": "2026-10-13T19:22:51.871+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 96,
+  "current_month_visitors": 99,
   "totals": {
-    "visits": 290,
-    "pageviews": 411
+    "visits": 293,
+    "pageviews": 414
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 165
+      "visits": 166
     },
     {
       "code": "SG",
@@ -23,7 +23,7 @@
     },
     {
       "code": "US",
-      "visits": 15
+      "visits": 17
     },
     {
       "code": "VN",
@@ -90,16 +90,16 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 6
-    },
-    {
-      "country": "GB",
-      "name": "Brenchley",
-      "visits": 2
+      "visits": 7
     },
     {
       "country": "GB",
       "name": "Galgate",
+      "visits": 3
+    },
+    {
+      "country": "GB",
+      "name": "Brenchley",
       "visits": 2
     },
     {
@@ -195,6 +195,11 @@
     {
       "country": "US",
       "name": "Ashburn",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Dallas",
       "visits": 1
     },
     {

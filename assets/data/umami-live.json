@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-14T05:04:13.826+00:00",
+  "captured_at": "2026-10-14T13:51:39.566+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 99,
+  "current_month_visitors": 104,
   "totals": {
-    "visits": 293,
-    "pageviews": 414
+    "visits": 298,
+    "pageviews": 419
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 166
+      "visits": 167
     },
     {
       "code": "SG",
-      "visits": 93
+      "visits": 95
     },
     {
       "code": "US",
@@ -42,6 +42,10 @@
       "visits": 2
     },
     {
+      "code": "AR",
+      "visits": 1
+    },
+    {
       "code": "CA",
       "visits": 1
     },
@@ -58,6 +62,10 @@
       "visits": 1
     },
     {
+      "code": "MY",
+      "visits": 1
+    },
+    {
       "code": "SE",
       "visits": 1
     },
@@ -70,12 +78,12 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 92
+      "visits": 94
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 78
+      "visits": 79
     },
     {
       "country": "GB",
@@ -128,6 +136,11 @@
       "visits": 2
     },
     {
+      "country": "AR",
+      "name": "San Miguel",
+      "visits": 1
+    },
+    {
       "country": "CA",
       "name": "Calgary",
       "visits": 1
@@ -175,6 +188,11 @@
     {
       "country": "JP",
       "name": "Tokyo",
+      "visits": 1
+    },
+    {
+      "country": "MY",
+      "name": "Bidur",
       "visits": 1
     },
     {

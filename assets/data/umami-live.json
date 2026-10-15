@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-14T23:19:14.102+00:00",
+  "captured_at": "2026-10-15T04:53:02.687+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 104,
+  "current_month_visitors": 105,
   "totals": {
-    "visits": 298,
-    "pageviews": 419
+    "visits": 300,
+    "pageviews": 421
   },
   "countries": [
     {
@@ -19,11 +19,11 @@
     },
     {
       "code": "SG",
-      "visits": 95
+      "visits": 96
     },
     {
       "code": "US",
-      "visits": 17
+      "visits": 18
     },
     {
       "code": "VN",
@@ -78,7 +78,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 94
+      "visits": 95
     },
     {
       "country": "GB",
@@ -98,7 +98,7 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 7
+      "visits": 8
     },
     {
       "country": "GB",

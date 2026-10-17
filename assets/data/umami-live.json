@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-17T12:16:07.816+00:00",
+  "captured_at": "2026-10-17T15:43:56.562+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 114,
+  "current_month_visitors": 118,
   "totals": {
-    "visits": 311,
-    "pageviews": 433
+    "visits": 315,
+    "pageviews": 437
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 171
+      "visits": 173
     },
     {
       "code": "SG",
@@ -23,7 +23,7 @@
     },
     {
       "code": "US",
-      "visits": 19
+      "visits": 20
     },
     {
       "code": "VN",
@@ -76,6 +76,10 @@
     {
       "code": "TR",
       "visits": 1
+    },
+    {
+      "code": "TT",
+      "visits": 1
     }
   ],
   "cities": [
@@ -87,7 +91,7 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 81
+      "visits": 82
     },
     {
       "country": "GB",
@@ -136,6 +140,11 @@
     },
     {
       "country": "US",
+      "name": "Ashburn",
+      "visits": 2
+    },
+    {
+      "country": "US",
       "name": "Dallas",
       "visits": 2
     },
@@ -177,6 +186,11 @@
     {
       "country": "FR",
       "name": "Rennes",
+      "visits": 1
+    },
+    {
+      "country": "GB",
+      "name": "Edinburgh",
       "visits": 1
     },
     {
@@ -240,8 +254,8 @@
       "visits": 1
     },
     {
-      "country": "US",
-      "name": "Ashburn",
+      "country": "TT",
+      "name": "Princes Town",
       "visits": 1
     },
     {

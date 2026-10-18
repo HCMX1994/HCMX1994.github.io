@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-17T22:27:25.097+00:00",
+  "captured_at": "2026-10-18T04:46:54.431+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 118,
+  "current_month_visitors": 120,
   "totals": {
-    "visits": 315,
-    "pageviews": 437
+    "visits": 317,
+    "pageviews": 439
   },
   "countries": [
     {
@@ -27,7 +27,7 @@
     },
     {
       "code": "VN",
-      "visits": 5
+      "visits": 6
     },
     {
       "code": "HK",
@@ -55,6 +55,10 @@
     },
     {
       "code": "FR",
+      "visits": 1
+    },
+    {
+      "code": "ID",
       "visits": 1
     },
     {
@@ -114,6 +118,11 @@
       "visits": 3
     },
     {
+      "country": "VN",
+      "name": "Hanoi",
+      "visits": 3
+    },
+    {
       "country": "GB",
       "name": "Brenchley",
       "visits": 2
@@ -151,11 +160,6 @@
     {
       "country": "US",
       "name": "Fort Worth",
-      "visits": 2
-    },
-    {
-      "country": "VN",
-      "name": "Hanoi",
       "visits": 2
     },
     {
@@ -221,6 +225,11 @@
     {
       "country": "HK",
       "name": "Sha Tin",
+      "visits": 1
+    },
+    {
+      "country": "ID",
+      "name": "Denpasar",
       "visits": 1
     },
     {

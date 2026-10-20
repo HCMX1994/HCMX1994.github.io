@@ -921,3 +921,42 @@ body.collegiate-site #main .hero--compact .hero-linkedin{display:inline-block;ma
   body.collegiate-site #main .hero--compact .hero-appointments{grid-template-columns:1fr;gap:22px;padding-top:20px}
   body.collegiate-site #main .hero--compact .hero-appointment dt{font-size:20px}
 }
+
+
+
+/* Approved masthead: full-width edges and equal-height portrait and appointments. */
+body.collegiate-site #main{container-type:inline-size}
+body.collegiate-site #main .hero--masthead{
+  --portrait-width:clamp(288px,calc((100cqw - 64px)*.35),360px);
+  width:100%;max-width:none;display:grid;
+  grid-template-columns:var(--portrait-width) minmax(0,max-content);
+  justify-content:space-between;column-gap:72px;row-gap:28px;
+  align-items:start;padding:38px 0 40px;
+}
+body.collegiate-site #main .hero--masthead .hero-intro{grid-column:1/-1;grid-row:1;min-width:0}
+body.collegiate-site #main .hero--masthead .hero-profile{
+  grid-column:1;grid-row:2;width:100%;max-width:none;justify-self:stretch;align-self:start;
+}
+body.collegiate-site #main .hero--masthead .hero-professional{
+  grid-column:2;grid-row:2;align-self:stretch;justify-self:end;width:100%;min-width:0;
+  text-align:left;display:flex;flex-direction:column;justify-content:space-between;gap:16px;
+}
+body.collegiate-site #main .hero--masthead .hero-appointment{margin:0;padding:0;border:0;min-width:0}
+body.collegiate-site #main .hero--masthead .hero-appointment dt{font-size:20px;line-height:1.4}
+body.collegiate-site #main .hero--masthead .hero-appointment dd{margin:6px 0 0;font-size:16px;line-height:1.6}
+body.collegiate-site #main .hero--masthead .hero-linkedin{
+  display:inline-block;align-self:flex-start;margin:0;padding:0;border:0;text-decoration:none;
+}
+@media(max-width:1100px){
+  body.collegiate-site #main .hero--masthead{
+    --portrait-width:clamp(288px,calc((100cqw - 36px)*.35),360px);
+    max-width:none;column-gap:64px;
+  }
+  body.collegiate-site #main .hero--masthead .eyebrow{font-size:14px}
+}
+@media(max-width:760px){
+  body.collegiate-site #main .hero--masthead{grid-template-columns:minmax(0,1fr);padding:28px 0 30px;row-gap:24px}
+  body.collegiate-site #main .hero--masthead .hero-profile{grid-column:1;grid-row:2;width:72%;max-width:300px;justify-self:start}
+  body.collegiate-site #main .hero--masthead .hero-professional{grid-column:1;grid-row:3;gap:22px}
+  body.collegiate-site #main .hero--masthead .hero-linkedin{margin-top:2px}
+}

@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-21T05:01:25.189+00:00",
+  "captured_at": "2026-10-21T13:56:56.659+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 135,
+  "current_month_visitors": 140,
   "totals": {
-    "visits": 338,
-    "pageviews": 469
+    "visits": 345,
+    "pageviews": 476
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 183
+      "visits": 185
     },
     {
       "code": "SG",
-      "visits": 103
+      "visits": 104
     },
     {
       "code": "US",
@@ -32,6 +32,10 @@
     {
       "code": "VN",
       "visits": 6
+    },
+    {
+      "code": "JP",
+      "visits": 4
     },
     {
       "code": "CH",
@@ -66,10 +70,6 @@
       "visits": 1
     },
     {
-      "code": "JP",
-      "visits": 1
-    },
-    {
       "code": "MX",
       "visits": 1
     },
@@ -88,23 +88,27 @@
     {
       "code": "TT",
       "visits": 1
+    },
+    {
+      "code": "ZA",
+      "visits": 1
     }
   ],
   "cities": [
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 102
+      "visits": 103
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 89
+      "visits": 90
     },
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 65
+      "visits": 66
     },
     {
       "country": "GB",
@@ -120,6 +124,11 @@
       "country": "US",
       "name": "Santa Clara",
       "visits": 5
+    },
+    {
+      "country": "JP",
+      "name": "Tokyo",
+      "visits": 4
     },
     {
       "country": "GB",
@@ -247,11 +256,6 @@
       "visits": 1
     },
     {
-      "country": "JP",
-      "name": "Tokyo",
-      "visits": 1
-    },
-    {
       "country": "MX",
       "name": "Mexico City",
       "visits": 1
@@ -319,6 +323,11 @@
     {
       "country": "VN",
       "name": null,
+      "visits": 1
+    },
+    {
+      "country": "ZA",
+      "name": "Johannesburg",
       "visits": 1
     }
   ]

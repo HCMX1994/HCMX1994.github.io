@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-22T05:03:37.647+00:00",
+  "captured_at": "2026-10-22T13:55:12.297+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 140,
+  "current_month_visitors": 142,
   "totals": {
-    "visits": 345,
-    "pageviews": 476
+    "visits": 349,
+    "pageviews": 480
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 185
+      "visits": 187
     },
     {
       "code": "SG",
@@ -23,11 +23,11 @@
     },
     {
       "code": "US",
-      "visits": 24
+      "visits": 25
     },
     {
       "code": "HK",
-      "visits": 6
+      "visits": 7
     },
     {
       "code": "VN",
@@ -103,7 +103,7 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 90
+      "visits": 91
     },
     {
       "country": "GB",
@@ -118,12 +118,17 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 8
+      "visits": 9
     },
     {
       "country": "US",
       "name": "Santa Clara",
       "visits": 5
+    },
+    {
+      "country": "HK",
+      "name": "Hong Kong",
+      "visits": 4
     },
     {
       "country": "JP",
@@ -136,11 +141,6 @@
       "visits": 3
     },
     {
-      "country": "HK",
-      "name": "Hong Kong",
-      "visits": 3
-    },
-    {
       "country": "VN",
       "name": "Hanoi",
       "visits": 3
@@ -148,6 +148,11 @@
     {
       "country": "GB",
       "name": "Brenchley",
+      "visits": 2
+    },
+    {
+      "country": "GB",
+      "name": "Lancaster",
       "visits": 2
     },
     {
@@ -223,11 +228,6 @@
     {
       "country": "GB",
       "name": "Kensington",
-      "visits": 1
-    },
-    {
-      "country": "GB",
-      "name": "Lancaster",
       "visits": 1
     },
     {

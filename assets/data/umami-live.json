@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-27T14:40:44.939+00:00",
+  "captured_at": "2026-10-27T20:48:05.023+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 170,
+  "current_month_visitors": 174,
   "totals": {
-    "visits": 395,
-    "pageviews": 532
+    "visits": 399,
+    "pageviews": 536
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 205
+      "visits": 206
     },
     {
       "code": "SG",
@@ -42,6 +42,14 @@
       "visits": 4
     },
     {
+      "code": "PK",
+      "visits": 3
+    },
+    {
+      "code": "BR",
+      "visits": 2
+    },
+    {
       "code": "CH",
       "visits": 2
     },
@@ -50,15 +58,11 @@
       "visits": 2
     },
     {
-      "code": "PK",
-      "visits": 2
-    },
-    {
-      "code": "AR",
+      "code": "AE",
       "visits": 1
     },
     {
-      "code": "BR",
+      "code": "AR",
       "visits": 1
     },
     {
@@ -131,7 +135,7 @@
     {
       "country": "GB",
       "name": "Galgate",
-      "visits": 5
+      "visits": 6
     },
     {
       "country": "US",
@@ -209,8 +213,18 @@
       "visits": 2
     },
     {
+      "country": "AE",
+      "name": "Dubai",
+      "visits": 1
+    },
+    {
       "country": "AR",
       "name": "San Miguel",
+      "visits": 1
+    },
+    {
+      "country": "BR",
+      "name": "Belo Horizonte",
       "visits": 1
     },
     {
@@ -311,6 +325,11 @@
     {
       "country": "PK",
       "name": "Kundian",
+      "visits": 1
+    },
+    {
+      "country": "PK",
+      "name": "Sialkot",
       "visits": 1
     },
     {

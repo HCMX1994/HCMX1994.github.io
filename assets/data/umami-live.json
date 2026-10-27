@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-26T21:05:31.117+00:00",
+  "captured_at": "2026-10-27T05:17:29.262+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 161,
+  "current_month_visitors": 163,
   "totals": {
-    "visits": 383,
-    "pageviews": 519
+    "visits": 387,
+    "pageviews": 523
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 201
+      "visits": 203
     },
     {
       "code": "SG",
@@ -23,7 +23,7 @@
     },
     {
       "code": "US",
-      "visits": 32
+      "visits": 34
     },
     {
       "code": "HK",
@@ -116,7 +116,7 @@
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 71
+      "visits": 72
     },
     {
       "country": "GB",
@@ -126,12 +126,22 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 13
+      "visits": 14
+    },
+    {
+      "country": "US",
+      "name": "Dallas",
+      "visits": 5
     },
     {
       "country": "US",
       "name": "Santa Clara",
       "visits": 5
+    },
+    {
+      "country": "GB",
+      "name": "Galgate",
+      "visits": 4
     },
     {
       "country": "HK",
@@ -142,16 +152,6 @@
       "country": "JP",
       "name": "Tokyo",
       "visits": 4
-    },
-    {
-      "country": "US",
-      "name": "Dallas",
-      "visits": 4
-    },
-    {
-      "country": "GB",
-      "name": "Galgate",
-      "visits": 3
     },
     {
       "country": "SA",

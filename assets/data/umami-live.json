@@ -3,27 +3,27 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-27T05:17:29.262+00:00",
+  "captured_at": "2026-10-27T14:40:44.939+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 163,
+  "current_month_visitors": 170,
   "totals": {
-    "visits": 387,
-    "pageviews": 523
+    "visits": 395,
+    "pageviews": 532
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 203
+      "visits": 205
     },
     {
       "code": "SG",
-      "visits": 110
+      "visits": 112
     },
     {
       "code": "US",
-      "visits": 34
+      "visits": 36
     },
     {
       "code": "HK",
@@ -46,6 +46,14 @@
       "visits": 2
     },
     {
+      "code": "FR",
+      "visits": 2
+    },
+    {
+      "code": "PK",
+      "visits": 2
+    },
+    {
       "code": "AR",
       "visits": 1
     },
@@ -55,10 +63,6 @@
     },
     {
       "code": "CA",
-      "visits": 1
-    },
-    {
-      "code": "FR",
       "visits": 1
     },
     {
@@ -82,10 +86,6 @@
       "visits": 1
     },
     {
-      "code": "PK",
-      "visits": 1
-    },
-    {
       "code": "SE",
       "visits": 1
     },
@@ -106,12 +106,12 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 109
+      "visits": 111
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 98
+      "visits": 99
     },
     {
       "country": "GB",
@@ -129,6 +129,11 @@
       "visits": 14
     },
     {
+      "country": "GB",
+      "name": "Galgate",
+      "visits": 5
+    },
+    {
       "country": "US",
       "name": "Dallas",
       "visits": 5
@@ -137,11 +142,6 @@
       "country": "US",
       "name": "Santa Clara",
       "visits": 5
-    },
-    {
-      "country": "GB",
-      "name": "Galgate",
-      "visits": 4
     },
     {
       "country": "HK",
@@ -156,6 +156,11 @@
     {
       "country": "SA",
       "name": "‘Uqlat aş Şuqūr",
+      "visits": 3
+    },
+    {
+      "country": "US",
+      "name": "Ashburn",
       "visits": 3
     },
     {
@@ -195,11 +200,6 @@
     },
     {
       "country": "US",
-      "name": "Ashburn",
-      "visits": 2
-    },
-    {
-      "country": "US",
       "name": "Fort Worth",
       "visits": 2
     },
@@ -231,6 +231,11 @@
     {
       "country": "CH",
       "name": "Zürich",
+      "visits": 1
+    },
+    {
+      "country": "FR",
+      "name": "Champigny-sur-Marne",
       "visits": 1
     },
     {
@@ -300,6 +305,11 @@
     },
     {
       "country": "PK",
+      "name": "Hafizabad",
+      "visits": 1
+    },
+    {
+      "country": "PK",
       "name": "Kundian",
       "visits": 1
     },
@@ -346,6 +356,11 @@
     {
       "country": "US",
       "name": "Saginaw",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Washington",
       "visits": 1
     },
     {

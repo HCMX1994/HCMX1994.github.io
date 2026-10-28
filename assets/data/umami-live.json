@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-27T20:48:05.023+00:00",
+  "captured_at": "2026-10-28T05:56:20.159+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 174,
+  "current_month_visitors": 175,
   "totals": {
-    "visits": 399,
-    "pageviews": 536
+    "visits": 402,
+    "pageviews": 539
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 206
+      "visits": 208
     },
     {
       "code": "SG",
-      "visits": 112
+      "visits": 113
     },
     {
       "code": "US",
@@ -110,12 +110,12 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 111
+      "visits": 112
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 99
+      "visits": 100
     },
     {
       "country": "GB",
@@ -135,7 +135,7 @@
     {
       "country": "GB",
       "name": "Galgate",
-      "visits": 6
+      "visits": 7
     },
     {
       "country": "US",

@@ -1000,3 +1000,47 @@ body.collegiate-site #main .hero--masthead .hero-name-roles>span+span::before{co
   body.collegiate-site #main .hero--masthead .hero-name-roles{margin-top:10px;font-size:14px;column-gap:12px}
   body.collegiate-site #main .hero--masthead .hero-name-roles>span{gap:12px}
 }
+/* Current teaching uses the same open, two-column rhythm as news and projects. */
+body.collegiate-site #main .teaching-intro{max-width:900px;margin:-10px 0 30px;color:var(--muted);font-size:16px;line-height:1.8}
+body.collegiate-site #main .teaching-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+body.collegiate-site #main .teaching-card{display:grid;grid-template-rows:auto 1fr auto;min-width:0;border-top:1px solid var(--line);padding:22px 0 4px}
+body.collegiate-site #main .teaching-card .small-label{color:var(--accent)}
+body.collegiate-site #main .teaching-card h3{font-size:clamp(24px,2.3vw,29px);line-height:1.35;margin:12px 0}
+body.collegiate-site #main .teaching-institution{font-size:16px;line-height:1.6;color:var(--muted)}
+@media(max-width:760px){
+  body.collegiate-site #main .teaching-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+}
+
+/* One identity block beside the portrait, with four aligned appointment groups. */
+body.collegiate-site #main .hero--profile-summary{
+  --portrait-width:clamp(288px,28cqw,340px);
+  grid-template-columns:var(--portrait-width) minmax(0,1fr);grid-template-rows:auto auto;
+  justify-content:normal;align-items:center;gap:26px 64px;padding:40px 0 36px;
+}
+body.collegiate-site #main .hero--profile-summary .hero-intro{grid-column:2;grid-row:1;align-self:end}
+body.collegiate-site #main .hero--profile-summary .hero-profile{grid-column:1;grid-row:1/3;width:100%;max-width:none;justify-self:stretch;align-self:center}
+body.collegiate-site #main .hero--profile-summary .hero-professional{grid-column:2;grid-row:2;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 32px;align-content:start;align-self:start;justify-self:stretch}
+body.collegiate-site #main .hero--profile-summary .eyebrow{font-size:14px;line-height:1.6;letter-spacing:.9px;margin:0 0 8px}
+body.collegiate-site #main .hero--profile-summary .hero-name-row{display:block}
+body.collegiate-site #main .hero--profile-summary h1{font-size:clamp(48px,4.8vw,64px);line-height:1.08;letter-spacing:-1.8px;margin:8px 0 0}
+body.collegiate-site #main .hero--profile-summary .hero-name-roles{font-size:14px;line-height:1.5;margin-top:14px;gap:6px 14px}
+body.collegiate-site #main .hero--profile-summary .hero-name-roles>span{gap:14px}
+body.collegiate-site #main .hero--profile-summary .hero-appointment dt{font-size:18px;line-height:1.4}
+body.collegiate-site #main .hero--profile-summary .hero-appointment dd{font-size:15px;line-height:1.6;margin-top:5px}
+@media(max-width:1000px){
+  body.collegiate-site #main .hero--profile-summary{--portrait-width:224px;gap:28px 36px}
+  body.collegiate-site #main .hero--profile-summary .hero-profile{grid-column:1;grid-row:1}
+  body.collegiate-site #main .hero--profile-summary .hero-intro{grid-column:2;grid-row:1;align-self:center}
+  body.collegiate-site #main .hero--profile-summary .hero-professional{grid-column:1/-1;grid-row:2}
+  body.collegiate-site #main .hero--profile-summary h1{font-size:clamp(44px,5.8vw,56px)}
+}
+@media(max-width:620px){
+  body.collegiate-site #main .hero--profile-summary{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto;padding:28px 0 30px;gap:26px}
+  body.collegiate-site #main .hero--profile-summary .hero-intro{grid-column:1;grid-row:1;align-self:start}
+  body.collegiate-site #main .hero--profile-summary .hero-profile{grid-column:1;grid-row:2;width:72%;max-width:280px;justify-self:start}
+  body.collegiate-site #main .hero--profile-summary .hero-professional{grid-column:1;grid-row:3;grid-template-columns:minmax(0,1fr);gap:22px}
+  body.collegiate-site #main .hero--profile-summary h1{font-size:clamp(44px,12vw,58px)}
+  body.collegiate-site #main .hero--profile-summary .hero-name-roles{display:grid;grid-template-columns:max-content max-content;font-size:clamp(13px,3.6vw,14px);gap:6px 16px}
+  body.collegiate-site #main .hero--profile-summary .hero-name-roles>span:last-child{grid-column:1/-1}
+  body.collegiate-site #main .hero--profile-summary .hero-name-roles>span:last-child::before{content:none}
+}

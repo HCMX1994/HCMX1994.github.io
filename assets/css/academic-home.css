@@ -1044,3 +1044,8 @@ body.collegiate-site #main .hero--profile-summary .hero-appointment dd{font-size
   body.collegiate-site #main .hero--profile-summary .hero-name-roles>span:last-child{grid-column:1/-1}
   body.collegiate-site #main .hero--profile-summary .hero-name-roles>span:last-child::before{content:none}
 }
+/* Editorial roles share a single label and consistent stacked spacing. */
+body.collegiate-site #main .editorial-roles{display:grid;gap:18px}
+body.collegiate-site #main .editorial-roles article{min-width:0}
+body.collegiate-site #main .editorial-roles h3{font-size:22px;line-height:1.3;margin:0 0 6px}
+body.collegiate-site #main .editorial-roles p{font-size:14px;line-height:1.65;margin:0;color:var(--muted)}

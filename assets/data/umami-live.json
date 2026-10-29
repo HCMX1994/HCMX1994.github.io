@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-10-29T06:01:31.406+00:00",
+  "captured_at": "2026-10-29T11:49:42.578+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-10",
-  "current_month_visitors": 183,
+  "current_month_visitors": 186,
   "totals": {
-    "visits": 414,
-    "pageviews": 565
+    "visits": 417,
+    "pageviews": 568
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 212
+      "visits": 213
     },
     {
       "code": "SG",
-      "visits": 117
+      "visits": 118
     },
     {
       "code": "US",
@@ -27,7 +27,7 @@
     },
     {
       "code": "HK",
-      "visits": 7
+      "visits": 8
     },
     {
       "code": "SA",
@@ -114,7 +114,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 116
+      "visits": 117
     },
     {
       "country": "GB",
@@ -139,7 +139,7 @@
     {
       "country": "GB",
       "name": "Galgate",
-      "visits": 10
+      "visits": 11
     },
     {
       "country": "US",
@@ -147,14 +147,14 @@
       "visits": 6
     },
     {
-      "country": "US",
-      "name": "Santa Clara",
+      "country": "HK",
+      "name": "Hong Kong",
       "visits": 5
     },
     {
-      "country": "HK",
-      "name": "Hong Kong",
-      "visits": 4
+      "country": "US",
+      "name": "Santa Clara",
+      "visits": 5
     },
     {
       "country": "JP",

@@ -987,3 +987,6 @@ body.collegiate-site #main .hero--with-honorary .hero-membership{font-family:var
 @media(max-width:560px){
   body.collegiate-site #main .hero--with-honorary .hero-professional{grid-template-columns:minmax(0,1fr);row-gap:22px}
 }
+/* Keep the two editorial appointments together, followed by IEEE membership. */
+body.collegiate-site #main .hero--with-editorial-board .hero-professional{row-gap:20px}
+body.collegiate-site #main .hero--with-editorial-board .hero-membership{grid-column:1/-1}

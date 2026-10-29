@@ -279,8 +279,8 @@ def main():
                 content += f'<article class="portfolio-card"><a href="{item["url"]}"><div class="portfolio-photo">{photo}</div><h2>{escape(item["title"])} <span aria-hidden="true">→</span></h2></a></article>'
             content += '</div>'
         else:
-            description = 'Past teaching as a Sessional Demonstrator at the University of Kent (2021–2022), in the years indicated below.'
-            content = page_head(label, 'Past teaching experience', description)
+            description = 'Teaching at Lancaster University in 2026–27, with earlier teaching experience at the University of Kent.'
+            content = page_head(label, 'Teaching experience', description)
             for item in items:
                 meta = date_label(item.get('date')) + (' · ' + str(item['venue']) if item.get('venue') else '')
                 content += f'<article class="archive-entry"><p class="entry-meta">{escape(meta)}</p><h2><a href="{item["url"]}">{escape(item["title"])}</a></h2><p>{escape(plain_excerpt(item))}</p><a class="text-link" href="{item["url"]}">Read course details</a></article>'

@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-04T00:42:19.879+00:00",
+  "captured_at": "2026-11-04T12:18:36.321+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 12,
+  "current_month_visitors": 21,
   "totals": {
-    "visits": 444,
-    "pageviews": 599
+    "visits": 455,
+    "pageviews": 610
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 228
+      "visits": 231
     },
     {
       "code": "SG",
@@ -23,11 +23,11 @@
     },
     {
       "code": "US",
-      "visits": 41
+      "visits": 46
     },
     {
       "code": "HK",
-      "visits": 8
+      "visits": 9
     },
     {
       "code": "SA",
@@ -78,7 +78,15 @@
       "visits": 1
     },
     {
+      "code": "DE",
+      "visits": 1
+    },
+    {
       "code": "EG",
+      "visits": 1
+    },
+    {
+      "code": "ES",
       "visits": 1
     },
     {
@@ -133,12 +141,12 @@
     {
       "country": "GB",
       "name": "Galgate",
-      "visits": 20
+      "visits": 22
     },
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 16
+      "visits": 17
     },
     {
       "country": "GB",
@@ -148,12 +156,12 @@
     {
       "country": "US",
       "name": "Dallas",
-      "visits": 7
+      "visits": 8
     },
     {
       "country": "HK",
       "name": "Hong Kong",
-      "visits": 5
+      "visits": 6
     },
     {
       "country": "US",
@@ -266,8 +274,18 @@
       "visits": 1
     },
     {
+      "country": "DE",
+      "name": "Schiltach",
+      "visits": 1
+    },
+    {
       "country": "EG",
       "name": "Giza",
+      "visits": 1
+    },
+    {
+      "country": "ES",
+      "name": "Zaragoza",
       "visits": 1
     },
     {
@@ -283,6 +301,11 @@
     {
       "country": "GB",
       "name": "Cardiff",
+      "visits": 1
+    },
+    {
+      "country": "GB",
+      "name": "Haddenham",
       "visits": 1
     },
     {
@@ -388,6 +411,21 @@
     {
       "country": "UA",
       "name": "Vinnytsya",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Allentown",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Marco Island",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Miami",
       "visits": 1
     },
     {

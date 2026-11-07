@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-07T20:18:45.198+00:00",
+  "captured_at": "2026-11-07T23:42:43.749+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 37,
+  "current_month_visitors": 39,
   "totals": {
-    "visits": 478,
-    "pageviews": 634
+    "visits": 480,
+    "pageviews": 636
   },
   "countries": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "code": "SG",
-      "visits": 131
+      "visits": 132
     },
     {
       "code": "US",
@@ -31,7 +31,7 @@
     },
     {
       "code": "SA",
-      "visits": 7
+      "visits": 8
     },
     {
       "code": "VN",
@@ -126,7 +126,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 130
+      "visits": 131
     },
     {
       "country": "GB",
@@ -216,6 +216,11 @@
     {
       "country": "HK",
       "name": "Tung Chung",
+      "visits": 2
+    },
+    {
+      "country": "SA",
+      "name": "Riyadh",
       "visits": 2
     },
     {
@@ -396,11 +401,6 @@
     {
       "country": "SA",
       "name": "Dammam",
-      "visits": 1
-    },
-    {
-      "country": "SA",
-      "name": "Riyadh",
       "visits": 1
     },
     {

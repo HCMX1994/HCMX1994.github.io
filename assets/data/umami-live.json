@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-07T06:13:57.686+00:00",
+  "captured_at": "2026-11-07T14:57:24.553+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 29,
+  "current_month_visitors": 34,
   "totals": {
-    "visits": 468,
-    "pageviews": 624
+    "visits": 475,
+    "pageviews": 631
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 238
+      "visits": 241
     },
     {
       "code": "SG",
-      "visits": 127
+      "visits": 129
     },
     {
       "code": "US",
@@ -38,16 +38,16 @@
       "visits": 6
     },
     {
+      "code": "BR",
+      "visits": 4
+    },
+    {
       "code": "JP",
       "visits": 4
     },
     {
       "code": "PK",
       "visits": 3
-    },
-    {
-      "code": "BR",
-      "visits": 2
     },
     {
       "code": "CH",
@@ -126,17 +126,17 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 126
+      "visits": 128
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 106
+      "visits": 107
     },
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 73
+      "visits": 75
     },
     {
       "country": "GB",
@@ -250,12 +250,22 @@
     },
     {
       "country": "BR",
+      "name": "Barueri",
+      "visits": 1
+    },
+    {
+      "country": "BR",
       "name": "Belo Horizonte",
       "visits": 1
     },
     {
       "country": "BR",
       "name": "Montes Claros",
+      "visits": 1
+    },
+    {
+      "country": "BR",
+      "name": "Nova Iguaçu",
       "visits": 1
     },
     {

@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-08T15:23:24.473+00:00",
+  "captured_at": "2026-11-08T20:37:11.765+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 56,
+  "current_month_visitors": 60,
   "totals": {
-    "visits": 497,
-    "pageviews": 655
+    "visits": 501,
+    "pageviews": 659
   },
   "countries": [
     {
@@ -19,11 +19,11 @@
     },
     {
       "code": "SG",
-      "visits": 140
+      "visits": 142
     },
     {
       "code": "US",
-      "visits": 50
+      "visits": 51
     },
     {
       "code": "HK",
@@ -128,13 +128,17 @@
     {
       "code": "UA",
       "visits": 1
+    },
+    {
+      "code": "UY",
+      "visits": 1
     }
   ],
   "cities": [
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 139
+      "visits": 141
     },
     {
       "country": "GB",
@@ -197,6 +201,11 @@
       "visits": 3
     },
     {
+      "country": "US",
+      "name": "Los Angeles",
+      "visits": 3
+    },
+    {
       "country": "VN",
       "name": "Hanoi",
       "visits": 3
@@ -244,11 +253,6 @@
     {
       "country": "US",
       "name": "Fort Worth",
-      "visits": 2
-    },
-    {
-      "country": "US",
-      "name": "Los Angeles",
       "visits": 2
     },
     {
@@ -494,6 +498,11 @@
     {
       "country": "US",
       "name": null,
+      "visits": 1
+    },
+    {
+      "country": "UY",
+      "name": "Montevideo",
       "visits": 1
     },
     {

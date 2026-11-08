@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-08T06:19:53.544+00:00",
+  "captured_at": "2026-11-08T15:23:24.473+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 46,
+  "current_month_visitors": 56,
   "totals": {
-    "visits": 487,
-    "pageviews": 645
+    "visits": 497,
+    "pageviews": 655
   },
   "countries": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "code": "SG",
-      "visits": 133
+      "visits": 140
     },
     {
       "code": "US",
@@ -50,6 +50,10 @@
       "visits": 3
     },
     {
+      "code": "AE",
+      "visits": 2
+    },
+    {
       "code": "CH",
       "visits": 2
     },
@@ -70,11 +74,11 @@
       "visits": 2
     },
     {
-      "code": "AE",
+      "code": "AR",
       "visits": 1
     },
     {
-      "code": "AR",
+      "code": "BD",
       "visits": 1
     },
     {
@@ -95,6 +99,10 @@
     },
     {
       "code": "IN",
+      "visits": 1
+    },
+    {
+      "code": "MA",
       "visits": 1
     },
     {
@@ -126,7 +134,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 132
+      "visits": 139
     },
     {
       "country": "GB",
@@ -250,12 +258,22 @@
     },
     {
       "country": "AE",
+      "name": "Abu Dhabi",
+      "visits": 1
+    },
+    {
+      "country": "AE",
       "name": "Dubai",
       "visits": 1
     },
     {
       "country": "AR",
       "name": "San Miguel",
+      "visits": 1
+    },
+    {
+      "country": "BD",
+      "name": "Dhaka",
       "visits": 1
     },
     {
@@ -371,6 +389,11 @@
     {
       "country": "IN",
       "name": "Mandi",
+      "visits": 1
+    },
+    {
+      "country": "MA",
+      "name": "Casablanca",
       "visits": 1
     },
     {

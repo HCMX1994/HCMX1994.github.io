@@ -3,43 +3,43 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-09T06:53:38.52+00:00",
+  "captured_at": "2026-11-09T18:55:52.597+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 67,
+  "current_month_visitors": 83,
   "totals": {
-    "visits": 508,
-    "pageviews": 666
+    "visits": 525,
+    "pageviews": 693
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 244
+      "visits": 247
     },
     {
       "code": "SG",
-      "visits": 144
+      "visits": 150
     },
     {
       "code": "US",
-      "visits": 51
+      "visits": 55
     },
     {
       "code": "HK",
       "visits": 11
     },
     {
+      "code": "BR",
+      "visits": 8
+    },
+    {
       "code": "SA",
       "visits": 8
     },
     {
-      "code": "BR",
-      "visits": 7
-    },
-    {
       "code": "VN",
-      "visits": 7
+      "visits": 8
     },
     {
       "code": "JP",
@@ -54,7 +54,15 @@
       "visits": 3
     },
     {
+      "code": "ZA",
+      "visits": 3
+    },
+    {
       "code": "AE",
+      "visits": 2
+    },
+    {
+      "code": "AR",
       "visits": 2
     },
     {
@@ -68,14 +76,6 @@
     {
       "code": "ID",
       "visits": 2
-    },
-    {
-      "code": "ZA",
-      "visits": 2
-    },
-    {
-      "code": "AR",
-      "visits": 1
     },
     {
       "code": "BD",
@@ -142,17 +142,17 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 143
+      "visits": 149
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 107
+      "visits": 108
     },
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 78
+      "visits": 80
     },
     {
       "country": "GB",
@@ -182,7 +182,7 @@
     {
       "country": "US",
       "name": "Santa Clara",
-      "visits": 6
+      "visits": 7
     },
     {
       "country": "JP",
@@ -192,6 +192,11 @@
     {
       "country": "US",
       "name": "Ashburn",
+      "visits": 4
+    },
+    {
+      "country": "US",
+      "name": "Los Angeles",
       "visits": 4
     },
     {
@@ -210,13 +215,13 @@
       "visits": 3
     },
     {
-      "country": "US",
-      "name": "Los Angeles",
+      "country": "VN",
+      "name": "Hanoi",
       "visits": 3
     },
     {
-      "country": "VN",
-      "name": "Hanoi",
+      "country": "ZA",
+      "name": "Johannesburg",
       "visits": 3
     },
     {
@@ -260,8 +265,8 @@
       "visits": 2
     },
     {
-      "country": "ZA",
-      "name": "Johannesburg",
+      "country": "US",
+      "name": "San Jose",
       "visits": 2
     },
     {
@@ -272,6 +277,11 @@
     {
       "country": "AE",
       "name": "Dubai",
+      "visits": 1
+    },
+    {
+      "country": "AR",
+      "name": "Chascomús",
       "visits": 1
     },
     {
@@ -317,6 +327,11 @@
     {
       "country": "BR",
       "name": "Santo André",
+      "visits": 1
+    },
+    {
+      "country": "BR",
+      "name": "Sumaré",
       "visits": 1
     },
     {
@@ -537,6 +552,11 @@
     {
       "country": "VN",
       "name": "Ho Chi Minh City",
+      "visits": 1
+    },
+    {
+      "country": "VN",
+      "name": "Thái Nguyên",
       "visits": 1
     },
     {

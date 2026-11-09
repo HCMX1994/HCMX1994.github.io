@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-08T20:37:11.765+00:00",
+  "captured_at": "2026-11-09T06:53:38.52+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 60,
+  "current_month_visitors": 67,
   "totals": {
-    "visits": 501,
-    "pageviews": 659
+    "visits": 508,
+    "pageviews": 666
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 243
+      "visits": 244
     },
     {
       "code": "SG",
-      "visits": 142
+      "visits": 144
     },
     {
       "code": "US",
@@ -34,16 +34,20 @@
       "visits": 8
     },
     {
+      "code": "BR",
+      "visits": 7
+    },
+    {
       "code": "VN",
       "visits": 7
     },
     {
-      "code": "BR",
-      "visits": 5
-    },
-    {
       "code": "JP",
       "visits": 4
+    },
+    {
+      "code": "MX",
+      "visits": 3
     },
     {
       "code": "PK",
@@ -63,10 +67,6 @@
     },
     {
       "code": "ID",
-      "visits": 2
-    },
-    {
-      "code": "MX",
       "visits": 2
     },
     {
@@ -99,6 +99,10 @@
     },
     {
       "code": "IN",
+      "visits": 1
+    },
+    {
+      "code": "KZ",
       "visits": 1
     },
     {
@@ -138,7 +142,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 141
+      "visits": 143
     },
     {
       "country": "GB",
@@ -148,7 +152,7 @@
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 77
+      "visits": 78
     },
     {
       "country": "GB",
@@ -196,6 +200,11 @@
       "visits": 3
     },
     {
+      "country": "MX",
+      "name": "Mexico City",
+      "visits": 3
+    },
+    {
       "country": "SA",
       "name": "‘Uqlat aş Şuqūr",
       "visits": 3
@@ -233,11 +242,6 @@
     {
       "country": "HK",
       "name": "Tung Chung",
-      "visits": 2
-    },
-    {
-      "country": "MX",
-      "name": "Mexico City",
       "visits": 2
     },
     {
@@ -297,12 +301,22 @@
     },
     {
       "country": "BR",
+      "name": "Cuiabá",
+      "visits": 1
+    },
+    {
+      "country": "BR",
       "name": "Montes Claros",
       "visits": 1
     },
     {
       "country": "BR",
       "name": "Nova Iguaçu",
+      "visits": 1
+    },
+    {
+      "country": "BR",
+      "name": "Santo André",
       "visits": 1
     },
     {
@@ -393,6 +407,11 @@
     {
       "country": "IN",
       "name": "Mandi",
+      "visits": 1
+    },
+    {
+      "country": "KZ",
+      "name": "Almaty",
       "visits": 1
     },
     {

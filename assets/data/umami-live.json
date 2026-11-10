@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-10T12:47:16.956+00:00",
+  "captured_at": "2026-11-10T21:50:58.76+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 88,
+  "current_month_visitors": 91,
   "totals": {
-    "visits": 531,
-    "pageviews": 699
+    "visits": 534,
+    "pageviews": 702
   },
   "countries": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "code": "SG",
-      "visits": 153
+      "visits": 154
     },
     {
       "code": "US",
@@ -31,7 +31,7 @@
     },
     {
       "code": "BR",
-      "visits": 9
+      "visits": 10
     },
     {
       "code": "SA",
@@ -43,7 +43,7 @@
     },
     {
       "code": "JP",
-      "visits": 4
+      "visits": 5
     },
     {
       "code": "MX",
@@ -146,7 +146,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 152
+      "visits": 153
     },
     {
       "country": "GB",
@@ -191,7 +191,7 @@
     {
       "country": "JP",
       "name": "Tokyo",
-      "visits": 4
+      "visits": 5
     },
     {
       "country": "US",
@@ -316,6 +316,11 @@
     {
       "country": "BR",
       "name": "Cuiabá",
+      "visits": 1
+    },
+    {
+      "country": "BR",
+      "name": "Itajaí",
       "visits": 1
     },
     {

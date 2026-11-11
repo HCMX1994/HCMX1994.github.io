@@ -3,35 +3,35 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-10T21:50:58.76+00:00",
+  "captured_at": "2026-11-11T06:47:19.753+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 91,
+  "current_month_visitors": 95,
   "totals": {
-    "visits": 534,
-    "pageviews": 702
+    "visits": 539,
+    "pageviews": 707
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 248
+      "visits": 249
     },
     {
       "code": "SG",
-      "visits": 154
+      "visits": 156
     },
     {
       "code": "US",
       "visits": 55
     },
     {
-      "code": "HK",
+      "code": "BR",
       "visits": 11
     },
     {
-      "code": "BR",
-      "visits": 10
+      "code": "HK",
+      "visits": 11
     },
     {
       "code": "SA",
@@ -44,6 +44,10 @@
     {
       "code": "JP",
       "visits": 5
+    },
+    {
+      "code": "AR",
+      "visits": 3
     },
     {
       "code": "MX",
@@ -59,10 +63,6 @@
     },
     {
       "code": "AE",
-      "visits": 2
-    },
-    {
-      "code": "AR",
       "visits": 2
     },
     {
@@ -146,7 +146,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 153
+      "visits": 155
     },
     {
       "country": "GB",
@@ -156,7 +156,7 @@
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 81
+      "visits": 82
     },
     {
       "country": "GB",
@@ -290,6 +290,11 @@
     },
     {
       "country": "AR",
+      "name": "Lomas de Zamora",
+      "visits": 1
+    },
+    {
+      "country": "AR",
       "name": "San Miguel",
       "visits": 1
     },
@@ -346,6 +351,11 @@
     {
       "country": "BR",
       "name": "São José",
+      "visits": 1
+    },
+    {
+      "country": "BR",
+      "name": "São Paulo",
       "visits": 1
     },
     {

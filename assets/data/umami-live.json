@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-11T22:51:11.075+00:00",
+  "captured_at": "2026-11-12T07:25:47.319+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 96,
+  "current_month_visitors": 101,
   "totals": {
-    "visits": 540,
-    "pageviews": 708
+    "visits": 546,
+    "pageviews": 714
   },
   "countries": [
     {
@@ -19,11 +19,11 @@
     },
     {
       "code": "SG",
-      "visits": 157
+      "visits": 160
     },
     {
       "code": "US",
-      "visits": 55
+      "visits": 57
     },
     {
       "code": "BR",
@@ -35,7 +35,7 @@
     },
     {
       "code": "SA",
-      "visits": 8
+      "visits": 9
     },
     {
       "code": "VN",
@@ -146,7 +146,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 156
+      "visits": 159
     },
     {
       "country": "GB",
@@ -166,7 +166,7 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 18
+      "visits": 19
     },
     {
       "country": "GB",
@@ -176,7 +176,7 @@
     {
       "country": "US",
       "name": "Dallas",
-      "visits": 9
+      "visits": 10
     },
     {
       "country": "HK",
@@ -192,6 +192,11 @@
       "country": "JP",
       "name": "Tokyo",
       "visits": 5
+    },
+    {
+      "country": "SA",
+      "name": "‘Uqlat aş Şuqūr",
+      "visits": 4
     },
     {
       "country": "US",
@@ -211,11 +216,6 @@
     {
       "country": "MX",
       "name": "Mexico City",
-      "visits": 3
-    },
-    {
-      "country": "SA",
-      "name": "‘Uqlat aş Şuqūr",
       "visits": 3
     },
     {

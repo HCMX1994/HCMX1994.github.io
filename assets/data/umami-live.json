@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-16T06:49:19.162+00:00",
+  "captured_at": "2026-11-16T18:41:34.339+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 105,
+  "current_month_visitors": 107,
   "totals": {
-    "visits": 552,
-    "pageviews": 720
+    "visits": 554,
+    "pageviews": 722
   },
   "countries": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "code": "SG",
-      "visits": 160
+      "visits": 161
     },
     {
       "code": "US",
@@ -47,7 +47,7 @@
     },
     {
       "code": "AR",
-      "visits": 3
+      "visits": 4
     },
     {
       "code": "MX",
@@ -146,7 +146,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 159
+      "visits": 160
     },
     {
       "country": "GB",
@@ -301,6 +301,11 @@
     {
       "country": "AR",
       "name": "San Miguel",
+      "visits": 1
+    },
+    {
+      "country": "AR",
+      "name": "Santa Fe",
       "visits": 1
     },
     {

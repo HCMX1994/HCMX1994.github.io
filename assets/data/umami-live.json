@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-23T14:57:47.592+00:00",
+  "captured_at": "2026-11-24T02:57:31.115+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 123,
+  "current_month_visitors": 126,
   "totals": {
-    "visits": 588,
-    "pageviews": 763
+    "visits": 591,
+    "pageviews": 766
   },
   "countries": [
     {
@@ -23,11 +23,11 @@
     },
     {
       "code": "US",
-      "visits": 64
+      "visits": 66
     },
     {
       "code": "HK",
-      "visits": 15
+      "visits": 16
     },
     {
       "code": "BR",
@@ -174,14 +174,19 @@
       "visits": 15
     },
     {
+      "country": "HK",
+      "name": "Hong Kong",
+      "visits": 10
+    },
+    {
       "country": "US",
       "name": "Dallas",
       "visits": 10
     },
     {
-      "country": "HK",
-      "name": "Hong Kong",
-      "visits": 9
+      "country": "US",
+      "name": "Ashburn",
+      "visits": 7
     },
     {
       "country": "US",
@@ -192,11 +197,6 @@
       "country": "US",
       "name": "Santa Clara",
       "visits": 7
-    },
-    {
-      "country": "US",
-      "name": "Ashburn",
-      "visits": 6
     },
     {
       "country": "GB",
@@ -546,6 +546,11 @@
     {
       "country": "US",
       "name": "Allentown",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Hialeah",
       "visits": 1
     },
     {

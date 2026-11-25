@@ -3,23 +3,23 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-25T00:53:49.392+00:00",
+  "captured_at": "2026-11-25T14:38:28.551+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 128,
+  "current_month_visitors": 131,
   "totals": {
-    "visits": 596,
-    "pageviews": 777
+    "visits": 602,
+    "pageviews": 783
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 274
+      "visits": 277
     },
     {
       "code": "SG",
-      "visits": 165
+      "visits": 167
     },
     {
       "code": "US",
@@ -27,7 +27,7 @@
     },
     {
       "code": "HK",
-      "visits": 16
+      "visits": 17
     },
     {
       "code": "BR",
@@ -150,12 +150,12 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 164
+      "visits": 166
     },
     {
       "country": "GB",
       "name": "London",
-      "visits": 113
+      "visits": 115
     },
     {
       "country": "GB",
@@ -180,7 +180,7 @@
     {
       "country": "HK",
       "name": "Hong Kong",
-      "visits": 10
+      "visits": 11
     },
     {
       "country": "US",
@@ -188,14 +188,14 @@
       "visits": 10
     },
     {
-      "country": "US",
-      "name": "Ashburn",
+      "country": "GB",
+      "name": "Birmingham",
       "visits": 8
     },
     {
-      "country": "GB",
-      "name": "Birmingham",
-      "visits": 7
+      "country": "US",
+      "name": "Ashburn",
+      "visits": 8
     },
     {
       "country": "US",

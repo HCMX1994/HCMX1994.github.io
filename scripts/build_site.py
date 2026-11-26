@@ -19,10 +19,6 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 HOME_CSS = ROOT / 'assets/css/academic-home.css'
 HOME_CSS_NAME = f'academic-home.{hashlib.sha256(HOME_CSS.read_bytes()).hexdigest()[:12]}.css'
-BD_JS = ROOT / 'assets/js/bd-ris-demo.js'
-BD_JS_NAME = f'bd-ris-demo.{hashlib.sha256(BD_JS.read_bytes()).hexdigest()[:12]}.js'
-BD_MODEL_JS = ROOT / 'assets/js/bd-ris-model.js'
-BD_MODEL_JS_NAME = f'bd-ris-model.{hashlib.sha256(BD_MODEL_JS.read_bytes()).hexdigest()[:12]}.js'
 STATS_JS = ROOT / 'assets/js/profile-stats.js'
 STATS_JS_NAME = f'profile-stats.{hashlib.sha256(STATS_JS.read_bytes()).hexdigest()[:12]}.js'
 VISITOR_JS = ROOT / 'assets/js/visitor-map.js'
@@ -35,6 +31,7 @@ OUT = ROOT / '_site'
 ORIGIN = 'https://hcmx1994.github.io'
 SCHOLAR_URL = 'https://scholar.google.com/citations?user=vj_3bhQAAAAJ&hl=en'
 PUBLIC_ROOT_FILES = ('85d24de9d58fae23945a5d596cb929cc.txt',)
+LOCAL_PREVIEW_FILES = ('files/layout-preview-20260930.html', 'files/typography-preview-20260930.html')
 HOME_DESCRIPTION = ('Xuekang Liu, Lecturer (Assistant Professor) at Lancaster University. '
                     'Research in antennas, reconfigurable circuits, metasurfaces and sub-THz communications.')
 COLLECTIONS = {'posts': ('News & milestones', '/year-archive/'),
@@ -112,10 +109,6 @@ def render_layout(content, title, route, description=''):
     # A new stylesheet filename prevents returning visitors from using stale CSS.
     layout = layout.replace('href="/assets/css/academic-home.css"',
                             f'href="/assets/css/{HOME_CSS_NAME}"')
-    layout = layout.replace('src="/assets/js/bd-ris-demo.js"',
-                            f'src="/assets/js/{BD_JS_NAME}"')
-    layout = layout.replace('src="/assets/js/bd-ris-model.js"',
-                            f'src="/assets/js/{BD_MODEL_JS_NAME}"')
     layout = layout.replace('src="/assets/js/profile-stats.js"',
                             f'src="/assets/js/{STATS_JS_NAME}"')
     layout = layout.replace('src="/assets/js/visitor-map.js"',
@@ -175,6 +168,12 @@ def main():
     retired = OUT / 'publications'
     if not OUT.resolve().is_relative_to(ROOT.resolve()):
         raise ValueError('Output directory leaves the workspace')
+    for relative in LOCAL_PREVIEW_FILES:
+        private_preview = OUT / relative
+        if private_preview.exists():
+            if not private_preview.resolve().is_relative_to(OUT.resolve()):
+                raise ValueError('Preview output leaves _site')
+            private_preview.unlink()
     if retired.exists():
         if not retired.resolve().is_relative_to(OUT.resolve()):
             raise ValueError('Publication output leaves _site')
@@ -189,6 +188,8 @@ def main():
     for dirname in ['images', 'files']:
         for file in (ROOT / dirname).rglob('*'):
             if file.is_file():
+                if file.relative_to(ROOT).as_posix() in LOCAL_PREVIEW_FILES:
+                    continue
                 target = OUT / file.relative_to(ROOT)
                 target.parent.mkdir(parents=True, exist_ok=True)
                 if not target.exists() or file.stat().st_mtime_ns > target.stat().st_mtime_ns:
@@ -203,8 +204,11 @@ def main():
     (OUT / 'assets/js').mkdir(parents=True, exist_ok=True)
     shutil.copy2(STATS_JS, OUT / 'assets/js' / STATS_JS_NAME)
     shutil.copy2(VISITOR_JS, OUT / 'assets/js' / VISITOR_JS_NAME)
-    shutil.copy2(BD_JS, OUT / 'assets/js' / BD_JS_NAME)
-    shutil.copy2(BD_MODEL_JS, OUT / 'assets/js' / BD_MODEL_JS_NAME)
+    # The demonstration runs only in the loopback preview. Remove older outputs.
+    for file in (OUT / 'assets/js').glob('bd-ris-*.js'):
+        if not file.resolve().is_relative_to(OUT.resolve()):
+            raise ValueError('Demo output leaves _site')
+        file.unlink()
 
     home = (ROOT / '_includes/academic-home.html').read_text(encoding='utf-8-sig')
     from update_wos import render_panel as render_review_panel

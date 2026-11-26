@@ -5,7 +5,7 @@
 <main id="main">
   <section class="hero hero--refined hero--identity hero--compact hero--masthead hero--with-honorary hero--with-editorial-board hero--profile-summary" aria-labelledby="hero-title">
     <div class="hero-intro"><p class="eyebrow">Antennas · Circuits · Electromagnetics</p>
-      <div class="hero-name-row"><h1 id="hero-title">Xuekang Liu</h1><p class="hero-name-roles"><span>PhD Supervisor</span><span>Senior Member, IEEE</span></p></div></div>
+      <div class="hero-name-row"><h1 id="hero-title"><span class="hero-person-name">Xuekang Liu,</span> <span class="hero-name-credentials">PhD, Senior Member, IEEE</span></h1></div></div>
     <aside class="hero-profile" aria-label="Portrait">
       <figure class="hero-portrait"><div class="hero-portrait-window"><img src="/images/xuekang-liu-airport.jpg?v=20260924-hq" alt="Xuekang Liu at an airport" width="5273" height="3515" fetchpriority="high"></div></figure>
     </aside>
@@ -154,58 +154,6 @@
       </section>
     </div>
   </section>
-  <section class="bd-lab bd-v3 bd-wide" id="bd-lab" aria-labelledby="bd-title">
-      <div class="bd-wide-header"><div class="bd-wide-title">
-      <h2 id="bd-title">Beyond the diagonal.</h2>
-      </div>
-      <p class="bd-demo-notice"><strong>Concept illustration only.</strong> Lossless port-network and scalar wave model; not full-wave simulation or measured hardware performance.</p>
-      </div>
-      <div class="bd-controls" hidden>
-        <div class="bd-common-row">
-        <div class="bd-examples" role="group" aria-label="BD-RIS example"><button type="button" data-example="compare" aria-pressed="true">01 / D vs BD</button><button type="button" data-example="pairs" aria-pressed="false">02 / Back-to-back pairs</button></div>
-        <div class="bd-field-setup">
-        <div class="bd-illumination" role="group" aria-label="Source illumination"><span>Illumination</span><button type="button" data-field="near" aria-pressed="true">Near field</button><button type="button" data-field="far" aria-pressed="false">Far field</button></div>
-        <p class="bd-source-note"></p>
-        </div></div>
-        <div class="bd-compare-panel">
-          <div class="bd-panel-controls">
-<div class="bd-select-row"><div class="bd-fixed-operation"><span>Operation</span><strong>Reflection</strong></div><label for="bd-goal">Common objective<select id="bd-goal"><option value="peak">Target power</option><option value="sidelobes" selected>Sidelobe suppression</option></select></label></div>
-
-          <label class="bd-slider-label" for="bd-target"><span>Target beam angle</span><output id="bd-target-value">0°</output></label><input id="bd-target" type="range" min="-55" max="55" step="1" value="0">
-          <div class="bd-suppression"><label class="bd-slider-label" for="bd-strength"><span>Allowed target-power drop</span><output id="bd-strength-value">1.0 dB</output></label><input id="bd-strength" type="range" min="0.05" max="1" step="0.05" value="0.5"></div>
-          <p class="bd-brief" aria-live="polite"></p>
-          </div>
-          <div class="bd-panel-visual">
-          <div class="bd-plot-heading"><span class="bd-d-label">Dashed: <b class="bd-d-name">D-RIS</b></span><span class="bd-b-label">Solid: BD-RIS</span><button type="button" class="bd-play">Pause</button></div>
-          <svg class="bd-compare-plot" viewBox="0 0 480 300" role="img" aria-labelledby="bd-plot-title bd-plot-desc"><title id="bd-plot-title">Optimised diagonal and beyond-diagonal responses</title><desc id="bd-plot-desc">Both curves use the same input, array, objective and fixed relative-power scale. Radius is logarithmic array-factor power, not range. Both outgoing beams are evaluated in the far field, even when the illumination is near field.</desc><g class="bd-grid"></g><path class="bd-main-b"></path><path class="bd-main-d"></path><path class="bd-guard-left"></path><path class="bd-guard-right"></path><path class="bd-main-target"></path><g class="bd-antenna-drawing"></g><circle class="bd-flow-b" r="3"></circle><circle class="bd-flow-d" r="2.5"></circle><text x="16" y="22" class="bd-v3-svg-label">Relative array-factor power</text><text x="464" y="22" text-anchor="end" class="bd-mode-label bd-v3-svg-label"></text><text x="240" y="289" text-anchor="middle" class="bd-network-label bd-v3-svg-label">BD: 8 ports · 4 groups · group size 2</text></svg>
-          </div>
-          <details class="bd-extra-controls bd-comparison-details"><summary>Comparison details &amp; S parameters</summary>
-            <p class="bd-comparison-condition"></p><p>Suppression directly minimises the highest power outside a shared main-beam sector, subject to the same target direction and minimum target power. D-RIS optimises all eight phases; BD-RIS also varies amplitudes within each lossless pair. The optimised D-RIS solution remains a feasible BD-RIS candidate.</p><p class="bd-current-constraints"></p>
-            <table class="bd-result-table"><caption>Same reference; values are model diagnostics only</caption><thead><tr><th>Metric</th><th class="bd-d-name">D-RIS</th><th>BD-RIS</th></tr></thead><tbody><tr><th>At target</th><td data-result="d-target"></td><td data-result="b-target"></td></tr><tr><th>Actual peak angle</th><td data-result="d-direction"></td><td data-result="b-direction"></td></tr><tr><th>Highest sidelobe / target</th><td data-result="d-side"></td><td data-result="b-side"></td></tr><tr><th>Highest sidelobe · common scale ↓</th><td data-result="d-score"></td><td data-result="b-score"></td></tr></tbody></table>
-            <p>The main-beam sector is fixed before optimisation: |sin θ − sin θ₀| &lt; 2.24/8 = 0.28 for both designs. Its boundaries and the refined peaks outside it are included in the maximum-power check. This is a fixed-sector sidelobe metric, not a first-null SLL estimate; equal sectors do not imply identical half-power beamwidths. Curves share one power reference and are not separately peak-normalised.</p><p class="bd-search-status"></p>
-            <p class="bd-model-health"></p><div class="bd-matrix-pair"><figure><figcaption class="bd-d-matrix-title"></figcaption><div class="bd-matrix-d"></div></figure><figure><figcaption class="bd-b-matrix-title"></figcaption><div class="bd-matrix-b"></div></figure></div><p>Matrix brightness = magnitude. Hover or focus a cell for complex S. Each reflection matrix R maps the same incident vector a to b. Full-network port ordering is listed below.</p><details><summary>Complex full S matrices</summary><pre class="bd-matrix-values"></pre></details>
-          </details>
-        </div>
-        <div class="bd-pairs-panel" hidden>
-          <div class="bd-panel-controls">
-<p class="bd-pair-intro">8 independent pairs · 8 front + 8 rear ports · group size 2.</p>
-          <div class="bd-modes" role="group" aria-label="Paired operating mode"><button type="button" data-pair-mode="reflection">Reflection</button><button type="button" data-pair-mode="transmission">Transmission</button><button type="button" data-pair-mode="hybrid" aria-pressed="true">Hybrid</button></div>
-
-          <label class="bd-slider-label" for="bd-share"><span>Input port power sent to rear</span><output id="bd-share-value">50%</output></label><input id="bd-share" type="range" min="0" max="1" step="0.05" value="0.5">
-          <div class="bd2-adjustments"><div><label class="bd-slider-label" for="bd-reflected"><span>Reflection angle</span><output id="bd-reflected-value">−25°</output></label><input id="bd-reflected" type="range" min="-55" max="55" step="1" value="-25"></div><div><label class="bd-slider-label" for="bd-transmitted"><span>Transmission angle</span><output id="bd-transmitted-value">30°</output></label><input id="bd-transmitted" type="range" min="-55" max="55" step="1" value="30"></div></div>
-          <p class="bd-pair-brief bd-brief" aria-live="polite"></p>
-          </div>
-          <div class="bd-panel-visual">
-          <div class="bd-plot-heading"><span class="bd-b-label">Front: receive / reflect</span><span class="bd-t-label">Rear: transmit</span><button type="button" class="bd-play">Pause</button></div>
-          <svg class="bd-pair-plot" viewBox="0 0 480 300" role="img" aria-label="8 back-to-back two-port groups with independently steered reflection and transmission"><g class="bd-pair-grid"></g><path class="bd-pair-r"></path><path class="bd-pair-t"></path><g class="bd-pair-antennas"></g><circle class="bd-flow-r" r="3"></circle><circle class="bd-flow-t" r="3"></circle><text x="16" y="22" class="bd-v3-svg-label">Reflected</text><text x="464" y="22" text-anchor="end" class="bd-v3-svg-label">Transmitted</text><text x="240" y="289" text-anchor="middle" class="bd-v3-svg-label">8 pairs · group size 2 · no inter-group transfer</text></svg>
-          </div>
-        </div>
-        <details class="bd-extra-controls bd-source-controls"><summary>Source position</summary><label class="bd-slider-label" for="bd-incidence"><span>Source angle</span><output id="bd-incidence-value">45°</output></label><input id="bd-incidence" type="range" min="-55" max="55" step="1" value="45"><div class="bd-range-control"><label class="bd-slider-label" for="bd-range"><span>Source distance / wavelength</span><output id="bd-range-value">5 λ</output></label><input id="bd-range" type="range" min="5" max="20" step="0.5" value="5"></div><p>Shared by both tabs. Near/far selects the <em>illumination</em>; outgoing plots remain far-field angular patterns. Source distance is measured from the array centre.</p></details>
-      </div>
-      <p class="bd-fallback">Enable JavaScript to compare lossless diagonal and beyond-diagonal S-parameter responses.</p>
-      <p class="bd-error" hidden role="alert"></p>
-      <!-- LOCAL_BD_NOTES -->
-    </section>
   <section id="contact" class="contact-section contact-section--with-visitors">
     <div class="contact-copy"><h2>Good research starts<br> with a conversation.</h2><p>For research enquiries and academic collaboration, get in touch.</p><a class="contact-email" href="mailto:xuekangliu@outlook.com">xuekangliu@outlook.com <span aria-hidden="true">↗</span></a><p class="review-email">For peer-review correspondence:<br><a class="contact-email" href="mailto:xuekangliu@ieee.org">xuekangliu@ieee.org <span aria-hidden="true">↗</span></a></p><div class="contact-links"><a href="https://scholar.google.com/citations?user=vj_3bhQAAAAJ&amp;hl=en">Google Scholar ↗</a><a href="https://www.linkedin.com/in/xuekang-liu-7a383a1b0/">LinkedIn ↗</a><a href="https://orcid.org/0000-0002-3318-6812">ORCID ↗</a><a href="https://www.researchgate.net/profile/Xuekang-Liu">ResearchGate ↗</a></div></div>
     <!-- UMAMI_CONTACT_PANEL -->

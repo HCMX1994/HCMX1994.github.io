@@ -3,19 +3,19 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-25T14:38:28.551+00:00",
+  "captured_at": "2026-11-26T00:31:48.693+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 131,
+  "current_month_visitors": 132,
   "totals": {
-    "visits": 602,
-    "pageviews": 783
+    "visits": 604,
+    "pageviews": 785
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 277
+      "visits": 279
     },
     {
       "code": "SG",
@@ -155,7 +155,7 @@
     {
       "country": "GB",
       "name": "London",
-      "visits": 115
+      "visits": 116
     },
     {
       "country": "GB",
@@ -465,6 +465,11 @@
     {
       "country": "GB",
       "name": "Rochdale",
+      "visits": 1
+    },
+    {
+      "country": "GB",
+      "name": "Woking",
       "visits": 1
     },
     {

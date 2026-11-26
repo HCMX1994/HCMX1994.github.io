@@ -1054,3 +1054,8 @@ body.collegiate-site #main .editorial-roles p{font-size:14px;line-height:1.65;ma
 body.collegiate-site #main .hero-appointment a,
 body.collegiate-site #main .hero-appointment a:hover,
 body.collegiate-site #main .hero-appointment a:focus{color:inherit;text-decoration:none;border:0;box-shadow:none}
+
+/* Academic credentials form part of the name heading, without a separate role row. */
+body.collegiate-site #main .hero--profile-summary h1{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:10px;row-gap:4px}
+body.collegiate-site #main .hero--profile-summary .hero-person-name{min-width:0}
+body.collegiate-site #main .hero--profile-summary .hero-name-credentials{font-size:clamp(16px,1.5vw,20px);line-height:1.35;font-weight:400;letter-spacing:0;white-space:nowrap}

@@ -47,11 +47,15 @@ def main():
         pages[file.resolve()] = page
         if 'data-owner-only=' in text or re.search(r'<details\b[^>]*\bclass="[^"]*\bbd-model\b', text):
             failures.append(f'Local owner notes leaked into public output: {file}')
+        if 'id="bd-lab"' in text or '/__local-bd-ris/' in text or re.search(r'<script\b[^>]*\bsrc="[^"]*bd-ris-', text):
+            failures.append(f'Local-only demonstration leaked into public output: {file}')
         if '{{' in text or '{%' in text:
             failures.append(f'Unresolved template: {file}')
     checked = 0
     if (OUT / 'local').exists():
         failures.append('Local-only directory must not be included in public output')
+    if any((OUT / 'assets/js').glob('bd-ris-*.js')):
+        failures.append('Local-only demonstration scripts must not be included in public output')
     if 'publications' in manifest['collections']:
         failures.append('Publication records should be maintained on Google Scholar')
     if any(file != OUT / 'publications/index.html' for file in (OUT / 'publications').rglob('*.html')):

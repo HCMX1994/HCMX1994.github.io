@@ -3,27 +3,27 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-28T08:05:38.352+00:00",
+  "captured_at": "2026-11-28T16:58:58.992+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 143,
+  "current_month_visitors": 146,
   "totals": {
-    "visits": 623,
-    "pageviews": 822
+    "visits": 627,
+    "pageviews": 827
   },
   "countries": [
     {
       "code": "GB",
-      "visits": 295
+      "visits": 296
     },
     {
       "code": "SG",
-      "visits": 168
+      "visits": 169
     },
     {
       "code": "US",
-      "visits": 67
+      "visits": 69
     },
     {
       "code": "HK",
@@ -150,7 +150,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 167
+      "visits": 168
     },
     {
       "country": "GB",
@@ -160,7 +160,7 @@
     {
       "country": "GB",
       "name": "Wembley",
-      "visits": 105
+      "visits": 106
     },
     {
       "country": "GB",
@@ -170,7 +170,7 @@
     {
       "country": "US",
       "name": "Council Bluffs",
-      "visits": 20
+      "visits": 21
     },
     {
       "country": "GB",
@@ -575,6 +575,11 @@
     {
       "country": "US",
       "name": "Irvine",
+      "visits": 1
+    },
+    {
+      "country": "US",
+      "name": "Lexington",
       "visits": 1
     },
     {

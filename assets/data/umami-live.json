@@ -3,14 +3,14 @@
   "source": "Umami",
   "website_id": "d8c1f3fa-cb3e-4753-9aba-a78aa9a99836",
   "domain": "hcmx1994.github.io",
-  "captured_at": "2026-11-27T14:00:21.306+00:00",
+  "captured_at": "2026-11-28T00:07:18.666+00:00",
   "started_at": "2026-09-24T17:17:56.509+00:00",
   "timezone": "Europe/London",
   "current_month": "2026-11",
-  "current_month_visitors": 140,
+  "current_month_visitors": 142,
   "totals": {
-    "visits": 618,
-    "pageviews": 817
+    "visits": 620,
+    "pageviews": 819
   },
   "countries": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "code": "SG",
-      "visits": 167
+      "visits": 168
     },
     {
       "code": "US",
@@ -74,6 +74,10 @@
       "visits": 2
     },
     {
+      "code": "ES",
+      "visits": 2
+    },
+    {
       "code": "FR",
       "visits": 2
     },
@@ -95,10 +99,6 @@
     },
     {
       "code": "EG",
-      "visits": 1
-    },
-    {
-      "code": "ES",
       "visits": 1
     },
     {
@@ -150,7 +150,7 @@
     {
       "country": "SG",
       "name": "Singapore",
-      "visits": 166
+      "visits": 167
     },
     {
       "country": "GB",
@@ -425,6 +425,11 @@
     {
       "country": "EG",
       "name": "Giza",
+      "visits": 1
+    },
+    {
+      "country": "ES",
+      "name": "Santa Cruz de la Zarza",
       "visits": 1
     },
     {
